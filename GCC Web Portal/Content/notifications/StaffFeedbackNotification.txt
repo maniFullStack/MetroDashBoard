@@ -1,0 +1,6 @@
+﻿This is an automated notification to let you know that a guest has replied to their feedback request. To view and respond to their message, please click on the link below.
+
+{Link}
+
+
+Please Note: This is an automated notification. Please do not reply to this email.

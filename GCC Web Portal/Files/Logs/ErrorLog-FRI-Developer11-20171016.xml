@@ -1,0 +1,99 @@
+<error>
+	<date>2017-10-16T14:17:41</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-10-16T14:21:16</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-10-16T14:23:07</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-10-16T14:46:43</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-10-16T15:07:17</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-10-16T15:19:33</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-10-16T15:28:05</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-10-16T15:39:06</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-10-16T15:42:38</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-10-16T15:42:47</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/PropertyDashboard/CNSH</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;System.Data.IDbCommand.ExecuteReader-&amp;gt;ExecuteDbDataReader-&amp;gt;ExecuteReader-&amp;gt;RunExecuteReader-&amp;gt;RunExecuteReader-&amp;gt;RunExecuteReaderTds-&amp;gt;FinishExecuteReader-&amp;gt;get_MetaData-&amp;gt;TryConsumeMetaData-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-10-16T15:42:47</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/PropertyDashboard/CNSH</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>

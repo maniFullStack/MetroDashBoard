@@ -1,0 +1,7 @@
+/* Chances Maple Ridge */
+body.survey {
+    background:url('../../Images/backgrounds/cch.jpg') repeat-y scroll center -5px;
+}
+#header-logo {
+    background-image:url('../../Images/headers/ChancesMapleRidgeHeader.jpg');
+}

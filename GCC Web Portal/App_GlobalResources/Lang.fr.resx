@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DonationReturntoSite" xml:space="preserve">
+    <value>Retour au site</value>
+  </data>
+  <data name="Donation_Final1" xml:space="preserve">
+    <value>Vos réactions sont importantes pour nous, et nous espérons recevoir vos commentaires. Nous ferons notre possible pour répondre à votre demande au cours des 12 à 24 prochaines heures.</value>
+  </data>
+  <data name="Donation_Final2" xml:space="preserve">
+    <value>En cliquant sur « Terminer », vous reconnaissez que vos renseignements personnels (coordonnées et réactions) sont recueillis et utilisées par la Great Canadian Gaming Corporation (GCGC) au nom de la BCLC en vertu du Freedom of Information and Protection of Privacy Act de la Colombie Britannique. Ils ne seront utilisés qu’à des fins de rapports et recherches de la GCGC et pour gérer le processus de réactions des clients.</value>
+  </data>
+  <data name="Donation_Final3" xml:space="preserve">
+    <value>Vos renseignements ne seront PAS vendus, partagés avec une tierce partie ni utilisées à des fins de sollicitation. Si vous avez des questions à ce sujet, veuillez écrire à l’agent de la protection de la vie privée de la GCGC à la Great Canadian Gaming Corporation au 95, rue Schooner à Coquitlam en Colombie-Britannique, V3K 7A8.</value>
+  </data>
+  <data name="Donation_PageTitle" xml:space="preserve">
+    <value>Commandite de Great Canadian Gaming – Formulaire de demande de don</value>
+  </data>
+  <data name="Donation_Q1" xml:space="preserve">
+    <value>* 1. Nom de l’organisme :</value>
+  </data>
+  <data name="Donation_Q10" xml:space="preserve">
+    <value>* 10. Veuillez spécifier le montant ou la valeur de votre demande :</value>
+  </data>
+  <data name="Donation_Q11" xml:space="preserve">
+    <value>11. Avez-vous déjà reçu un don de la Great Canadian Gaming Corporation ou des propriétés suivantes? Avez-vous envoyé une demande actuelle à d’autres propriétés?&lt;br/&gt;Veuillez indiquer lesquelles :</value>
+  </data>
+  <data name="Donation_Q11Current" xml:space="preserve">
+    <value>Demande actuelle</value>
+  </data>
+  <data name="Donation_Q11Past" xml:space="preserve">
+    <value>Appui déjà accordé</value>
+  </data>
+  <data name="Donation_Q12" xml:space="preserve">
+    <value>12. Inscrivez la date à laquelle vous avez fait une demande d’appui et le type d’appui que vous avez reçu auparavant, ou le genre de demande qui est actuellement à l’étude, s’il y a lieu.</value>
+  </data>
+  <data name="Donation_Q13" xml:space="preserve">
+    <value>* 13. Veuillez fournir une brève description de votre organisme :</value>
+  </data>
+  <data name="Donation_Q14" xml:space="preserve">
+    <value>* 14. Veuillez fournir une brève description de l’événement ou du programme pour lequel vous recherchez un don ou une commandite :</value>
+  </data>
+  <data name="Donation_Q1Title" xml:space="preserve">
+    <value>Vous souhaitez savoir si Great Canadian peut appuyer votre organisme? Veuillez remplir et soumettre ce formulaire de demande.</value>
+  </data>
+  <data name="Donation_Q2" xml:space="preserve">
+    <value>* 2. Votre organisme est-il un organisme de bienfaisance enregistré?</value>
+  </data>
+  <data name="Donation_Q3" xml:space="preserve">
+    <value>3. Si oui, veuillez inscrire votre numéro de permis d’organisme de bienfaisance :</value>
+  </data>
+  <data name="Donation_Q4" xml:space="preserve">
+    <value>4. Sinon, décrivez le type d’organisme (CCP d’école, organisme à but non lucratif, groupe communautaire, etc.).</value>
+  </data>
+  <data name="Donation_Q5ContactEmail" xml:space="preserve">
+    <value>* Adresse courriel de la personne-ressource :</value>
+  </data>
+  <data name="Donation_Q5ContactName" xml:space="preserve">
+    <value>* Nom de la personne-ressource :</value>
+  </data>
+  <data name="Donation_Q5ContactPhone" xml:space="preserve">
+    <value>* Numéro de téléphone de la personne-ressource :</value>
+  </data>
+  <data name="Donation_Q5ContactTitle" xml:space="preserve">
+    <value>* Titre de la personne-ressource :</value>
+  </data>
+  <data name="Donation_Q5Title" xml:space="preserve">
+    <value>* 5. Coordonnées :</value>
+  </data>
+  <data name="Donation_Q6City" xml:space="preserve">
+    <value>* Ville/village :</value>
+  </data>
+  <data name="Donation_Q6Postal" xml:space="preserve">
+    <value>* Code postal :</value>
+  </data>
+  <data name="Donation_Q6Province" xml:space="preserve">
+    <value>* Province :</value>
+  </data>
+  <data name="Donation_Q6Street" xml:space="preserve">
+    <value>* Adresse civique :</value>
+  </data>
+  <data name="Donation_Q6Title" xml:space="preserve">
+    <value>* 6. Adresse postale de l’organisme :</value>
+  </data>
+  <data name="Donation_Q7" xml:space="preserve">
+    <value>* 7. Numéro de téléphone principal de l’organisme</value>
+  </data>
+  <data name="Donation_Q8" xml:space="preserve">
+    <value>8. Lien vers le site Web (s’il y a lieu) :</value>
+  </data>
+  <data name="Donation_Q9Donation" xml:space="preserve">
+    <value>&amp;nbsp;DON</value>
+  </data>
+  <data name="Donation_Q9Other" xml:space="preserve">
+    <value>&amp;nbsp;AUTRE</value>
+  </data>
+  <data name="Donation_Q9OtherTitle" xml:space="preserve">
+    <value>Si vous avez coché AUTRE, veuillez spécifier :</value>
+  </data>
+  <data name="Donation_Q9Sponsor" xml:space="preserve">
+    <value>&amp;nbsp;COMMANDITE</value>
+  </data>
+  <data name="Donation_Q9Title" xml:space="preserve">
+    <value>* 9. Vous recherchez :</value>
+  </data>
+  <data name="Page1_EmailAddress" xml:space="preserve">
+    <value>Adresse courriel</value>
+  </data>
+  <data name="Page1_EnterEmail" xml:space="preserve">
+    <value>S'il vous plaît entrer le courriel du client ci-dessous. Cette opération est facultative.</value>
+  </data>
+  <data name="Page1_Question1" xml:space="preserve">
+    <value>Comment le client a été contacté?</value>
+  </data>
+  <data name="Page1_Question1_1" xml:space="preserve">
+    <value>En personne</value>
+  </data>
+  <data name="Page1_Question1_2" xml:space="preserve">
+    <value>Téléphone</value>
+  </data>
+  <data name="Page1_Question2_1" xml:space="preserve">
+    <value>Aucune propriété spécifique</value>
+  </data>
+  <data name="Page1_Question2_10" xml:space="preserve">
+    <value>Great American Casino</value>
+  </data>
+  <data name="Page1_Question2_11" xml:space="preserve">
+    <value>Hard Rock Casino Vancouver</value>
+  </data>
+  <data name="Page1_Question2_12" xml:space="preserve">
+    <value>Hastings Racetrack &amp; Casino</value>
+  </data>
+  <data name="Page1_Question2_13" xml:space="preserve">
+    <value>River Rock Casino Resort</value>
+  </data>
+  <data name="Page1_Question2_14" xml:space="preserve">
+    <value>Casino Shorelines à Thousand Islands</value>
+  </data>
+  <data name="Page1_Question2_15" xml:space="preserve">
+    <value>Shorelines Slots at Kawartha Downs</value>
+  </data>
+  <data name="Page1_Question2_16" xml:space="preserve">
+    <value>View Royal Casino</value>
+  </data>
+  <data name="Page1_Question2_17" xml:space="preserve">
+    <value>Casino Nouveau Brunswick</value>
+  </data>
+  <data name="Page1_Question2_18" xml:space="preserve">
+    <value>Shorelines Casino Belleville</value>
+  </data>
+  <data name="Page1_Question2_2" xml:space="preserve">
+    <value>Casino Nanaimo</value>
+  </data>
+  <data name="Page1_Question2_3" xml:space="preserve">
+    <value>Casino Nova Scotia - Halifax</value>
+  </data>
+  <data name="Page1_Question2_4" xml:space="preserve">
+    <value>Casino Nova Scotia - Sydney</value>
+  </data>
+  <data name="Page1_Question2_5" xml:space="preserve">
+    <value>Chances Chilliwack</value>
+  </data>
+  <data name="Page1_Question2_6" xml:space="preserve">
+    <value>Chances Dawson Creek</value>
+  </data>
+  <data name="Page1_Question2_7" xml:space="preserve">
+    <value>Chances Maple Ridge</value>
+  </data>
+  <data name="Page1_Question2_8" xml:space="preserve">
+    <value>Elements Casino</value>
+  </data>
+  <data name="Page1_Question2_9" xml:space="preserve">
+    <value>Fraser Downs Racetrack &amp; Casino</value>
+  </data>
+  <data name="Page1_SelectProperty" xml:space="preserve">
+    <value>S'il vous plaît sélectionner les biens que vous souhaitez fournir une rétroaction pour</value>
+  </data>
+  <data name="Page1_StaffName" xml:space="preserve">
+    <value>Nom du Personnel</value>
+  </data>
+  <data name="Page1_StartFeedback" xml:space="preserve">
+    <value>Pour démarrer le processus de rétroaction , s'il vous plaît entrer votre adresse courriel ci-dessous. Votre adresse courriel sera utilisées pour le suivi et l'établissement de rapports seulement.</value>
+  </data>
+  <data name="Page1_Thankyou" xml:space="preserve">
+    <value>Merci de contacter le</value>
+  </data>
+  <data name="Page2_Question1" xml:space="preserve">
+    <value>Quel emplacement Great American Casino avez-vous &lt;u &gt; dernier &lt;/ u&gt; visitez?</value>
+  </data>
+  <data name="Page2_Question2" xml:space="preserve">
+    <value>1. Quel type de rétroaction voulez-vous donner?</value>
+  </data>
+  <data name="Page2_Question2_1" xml:space="preserve">
+    <value>Posez une question</value>
+  </data>
+  <data name="Page2_Question2_2" xml:space="preserve">
+    <value>Signaler un problème</value>
+  </data>
+  <data name="Page2_Question2_3" xml:space="preserve">
+    <value>Offrir un compliment</value>
+  </data>
+  <data name="Page2_Question2_4" xml:space="preserve">
+    <value>Proposer une amélioration</value>
+  </data>
+  <data name="Page2_Question2_5" xml:space="preserve">
+    <value>Demander pour un don / support</value>
+  </data>
+  <data name="Page2_Radio1" xml:space="preserve">
+    <value>&amp;nbspEverett</value>
+  </data>
+  <data name="Page2_Radio2" xml:space="preserve">
+    <value>&amp;nbspLakewood</value>
+  </data>
+  <data name="Page2_Radio3" xml:space="preserve">
+    <value>&amp;nbspTukwila</value>
+  </data>
+  <data name="Page2_Radio4" xml:space="preserve">
+    <value>&amp;nbspDeMoines</value>
+  </data>
+  <data name="Page3_Question1" xml:space="preserve">
+    <value>2. Ceci est relié à quelle partie de nos affaires?</value>
+  </data>
+  <data name="Page3_Question1_1" xml:space="preserve">
+    <value>Machine à sous</value>
+  </data>
+  <data name="Page3_Question1_10" xml:space="preserve">
+    <value>Service à la clientèle</value>
+  </data>
+  <data name="Page3_Question1_11" xml:space="preserve">
+    <value>Stationnement</value>
+  </data>
+  <data name="Page3_Question1_12" xml:space="preserve">
+    <value>Marketing et promotions</value>
+  </data>
+  <data name="Page3_Question1_13" xml:space="preserve">
+    <value>Ventes de groupe/ restauration/ évènements</value>
+  </data>
+  <data name="Page3_Question1_14" xml:space="preserve">
+    <value>Demande de commandite</value>
+  </data>
+  <data name="Page3_Question1_15" xml:space="preserve">
+    <value>Jeu Responsable</value>
+  </data>
+  <data name="Page3_Question1_16" xml:space="preserve">
+    <value>Relations avec investisseurs</value>
+  </data>
+  <data name="Page3_Question1_17" xml:space="preserve">
+    <value>Demandes et renseignements médiatiques</value>
+  </data>
+  <data name="Page3_Question1_18" xml:space="preserve">
+    <value>Autre</value>
+  </data>
+  <data name="Page3_Question1_2" xml:space="preserve">
+    <value>Jeux de table / poker</value>
+  </data>
+  <data name="Page3_Question1_3" xml:space="preserve">
+    <value>Loto</value>
+  </data>
+  <data name="Page3_Question1_4" xml:space="preserve">
+    <value>Nourriture et Boissons</value>
+  </data>
+  <data name="Page3_Question1_5" xml:space="preserve">
+    <value>Divertissement</value>
+  </data>
+  <data name="Page3_Question1_6" xml:space="preserve">
+    <value>Un hôtel</value>
+  </data>
+  <data name="Page3_Question1_7" xml:space="preserve">
+    <value>Racebook</value>
+  </data>
+  <data name="Page3_Question1_8" xml:space="preserve">
+    <value>Course de Chevaux</value>
+  </data>
+  <data name="Page3_Question1_9" xml:space="preserve">
+    <value>Motorcoach</value>
+  </data>
+  <data name="Page3_Question2" xml:space="preserve">
+    <value>3.  Veuillez fournir votre rétroaction ou les détails de votre demande ci-dessous.</value>
+  </data>
+  <data name="Page3_Question3_Part1" xml:space="preserve">
+    <value>4. Avez-vous une carte du Club de récompenses?</value>
+  </data>
+  <data name="Page3_Question3_Part2" xml:space="preserve">
+    <value>Veuillez fournir votre</value>
+  </data>
+  <data name="Page3_Question3_Part3" xml:space="preserve">
+    <value>numéro du Club de récompenses afin que nous puissions mieux vous servir.</value>
+  </data>
+  <data name="Page3_Question4" xml:space="preserve">
+    <value>5. Voulez-vous que le personnel du casino vous communique au sujet de votre rétroaction? Veuillez choisir l’une des options suivantes :</value>
+  </data>
+  <data name="Page3_Question4_1" xml:space="preserve">
+    <value>Par adresse courriel</value>
+  </data>
+  <data name="Page3_Question4_2" xml:space="preserve">
+    <value>Par téléphone</value>
+  </data>
+  <data name="Page3_Question4_3" xml:space="preserve">
+    <value>Je ne veux pas être contacté</value>
+  </data>
+  <data name="Page4_Email" xml:space="preserve">
+    <value>Courriel du contact</value>
+  </data>
+  <data name="Page4_Name" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
+  <data name="Page4_Question1" xml:space="preserve">
+    <value>Veuillez nous fournir vos coordonnées. Vous ne serez seulement contacté par rapport à votre rétroaction.</value>
+  </data>
+  <data name="Page4_Telephone" xml:space="preserve">
+    <value>Numéro de téléphone</value>
+  </data>
+  <data name="Page5_Response1" xml:space="preserve">
+    <value>Vos commentaires sont importants pour nous et nous sommes impatients de recevoir vos commentaires et chercherons à répondre à toutes les questions dans les 12-24 heures. Si votre question est plus urgente , s'il vous plaît contacter le service à la clientèle au</value>
+  </data>
+  <data name="Page5_Response1_2" xml:space="preserve">
+    <value>En cliquant sur " Terminer" ci-dessous , vous reconnaissez que vous êtes conscient que vos informations personnelles (informations de contact et de la rétroaction ) sont recueillies et utilisé par Great Gaming américain ( GAG ), conformément à applicable accès à l'information et de la protection des lois sur la confidentialité. Il ne sera utilisées que pour les rapports et la recherche des fins de GAG et d'administrer le processus de rétroaction des clients.</value>
+  </data>
+  <data name="Page5_Response1_3" xml:space="preserve">
+    <value>Vos informations ne seront pas vendues , partagées avec des tiers , ou utilisées à des fins de solliciter. Si vous avez des questions à ce sujet, s'il vous plaît écrivez à GAG à 12715 4th Ave. W. Everett , WA 98204</value>
+  </data>
+  <data name="Page5_Response2" xml:space="preserve">
+    <value>Vos commentaires sont importants pour nous et nous sommes impatients de recevoir vos commentaires et chercherons à répondre à toutes les questions dans les 12-24 heures . Si votre question est plus urgente , s'il vous plaît contacter le service à la clientèle au</value>
+  </data>
+  <data name="Page5_Response2_2" xml:space="preserve">
+    <value>En cliquant sur " Terminer" ci-dessous , vous reconnaissez que vous êtes conscient que vos informations personnelles (informations de contact et de la rétroaction ) sont recueillies et utilisées par la Grande Société canadienne Casino ( GCGC ) conformément à applicable accès à l'information et de la protection des lois sur la confidentialité. Il ne sera utilisé que pour les rapports et la recherche des fins de GCGC et pour administrer le processus de rétroaction des clients.</value>
+  </data>
+  <data name="Page5_Response2_3" xml:space="preserve">
+    <value>Vos informations ne seront pas vendues , partagées avec des tiers , ou utilisées à des fins de solliciter. Si vous avez des questions à ce sujet, s'il vous plaît écrire au responsable de la confidentialité de GCGC à 95 Schooner Street, Coquitlam , BC V3K 7A8.</value>
+  </data>
+  <data name="Page5_Response3" xml:space="preserve">
+    <value>Vos commentaires sont importants pour nous et nous sommes impatients de recevoir vos commentaires et chercherons à répondre à toutes les questions dans les 12-24 heures. Si votre question est plus urgente , s'il vous plaît contacter le service à la clientèle au</value>
+  </data>
+  <data name="Page5_Response3_2" xml:space="preserve">
+    <value>En cliquant sur " Terminer" ci-dessous , vous reconnaissez que vous êtes conscient que vos informations personnelles (informations de contact et de la rétroaction ) sont recueillies et utilisées par la Grande Société canadienne Casino ( GCGC ) au nom de la BCLC , conformément à la liberté de l'information et de la protection de la Colombie- Britannique de la vie privée. Il ne sera utilisé que pour les rapports et la recherche des fins de GCGC et pour administrer le processus de rétroaction des clients.</value>
+  </data>
+  <data name="Page5_Response3_3" xml:space="preserve">
+    <value>Vos informations ne seront pas vendues , partagées avec des tiers , ou utilisées à des fins de solliciter. Si vous avez des questions à ce sujet, s'il vous plaît écrire au responsable de la confidentialité de GCGC à 95 Schooner Street, Coquitlam , BC V3K 7A8.</value>
+  </data>
+  <data name="SFeedbackContinueButton" xml:space="preserve">
+    <value>Continuer</value>
+  </data>
+  <data name="SFeedbackDoneButton" xml:space="preserve">
+    <value>Terminer</value>
+  </data>
+  <data name="SFeedbackGoToItemButton" xml:space="preserve">
+    <value>Aller à l' article Feedback</value>
+  </data>
+  <data name="SFeedbackGoToListButton" xml:space="preserve">
+    <value>Aller à la liste Commentaires</value>
+  </data>
+  <data name="SFeedbackGoToSurveyButton" xml:space="preserve">
+    <value>Aller à la liste Enquête</value>
+  </data>
+  <data name="SFeedbackNextButton" xml:space="preserve">
+    <value>Continuer</value>
+  </data>
+  <data name="SFeedbackOptional" xml:space="preserve">
+    <value>Optionnel</value>
+  </data>
+  <data name="SFeedbackPageTitle" xml:space="preserve">
+    <value>Contactez-nous</value>
+  </data>
+  <data name="SFeedbackPreviousButton" xml:space="preserve">
+    <value>Précédent</value>
+  </data>
+  <data name="SFeedbackReturnButton" xml:space="preserve">
+    <value>Retour au Site</value>
+  </data>
+</root>

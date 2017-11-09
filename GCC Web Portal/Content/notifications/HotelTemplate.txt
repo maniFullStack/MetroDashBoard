@@ -1,0 +1,37 @@
+﻿You're receiving this email because a guest filled out the hotel survey on GCGamingSurvey.com.
+
+Did the guest experience any problems?
+
+{Problems}
+
+Did the guest request a response / follow-up by property staff?
+
+{Response}
+
+Brief description of the problem (if any)
+
+{ProblemDescription}
+
+Comments about staff (if any)
+
+{StaffComment}
+
+General comments or suggestions (if any)
+
+{GeneralComments}
+
+Memorable employee or area (if any)
+
+{MemorableEmployee}
+
+To access the survey responses, please click on (or copy and paste) the following link:
+
+{SurveyLink}
+
+This email has been sent to the following people:
+{Recipients}
+
+Note: This is an automated response. Please do not reply to this email.
+
+
+{FeedbackNoteHTML}

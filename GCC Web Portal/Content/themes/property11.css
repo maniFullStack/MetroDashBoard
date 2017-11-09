@@ -1,0 +1,7 @@
+/* Casino Nova Scotia - Halifax */
+body.survey {
+    background:#000 url('../../Images/backgrounds/cnsh.jpg') fixed repeat-x center bottom;
+}
+#header-logo {
+    background-image:url('../../Images/headers/CasinoNovaScotiaHalifaxHeader.jpg');
+}

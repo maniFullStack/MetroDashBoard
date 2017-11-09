@@ -1,0 +1,7 @@
+/* Casino Nova Scotia - Sydney */
+body.survey {
+    background:#000 url('../../Images/backgrounds/cnss.jpg') fixed repeat-x center bottom;
+}
+#header-logo {
+    background-image:url('../../Images/headers/CasinoNovaScotiaSydneyHeader.jpg');
+}

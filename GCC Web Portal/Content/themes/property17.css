@@ -1,0 +1,9 @@
+﻿/* Kawartha Downs */
+body.survey {
+    background:#fff;
+}
+#header-logo {
+    background-image:url('../../Images/headers/KawarthaDownsHeader.jpg');
+    width:756px;
+    height:113px;
+}

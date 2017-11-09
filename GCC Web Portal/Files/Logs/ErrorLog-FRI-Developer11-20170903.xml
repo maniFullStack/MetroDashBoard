@@ -1,0 +1,42 @@
+<error>
+	<date>2017-09-03T13:21:10</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/SnapshotExport</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;RecordError-&amp;gt;RaiseOnError-&amp;gt;Invoke-&amp;gt;Application_Error-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>1</smioseventid>
+	<apperrorsource>Website-Uncaught</apperrorsource>
+	<message>Uncaught exception was unhandled.</message>
+<exceptioninfo>
+	<message>Code blocks are not supported in this context.</message>
+	<source>System.Web</source>
+	<stacktrace>   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Routing.PageRouteHandler.GetHttpHandler(RequestContext requestContext)
+   at System.Web.Routing.UrlRoutingModule.PostResolveRequestCache(HttpContextBase context)
+   at System.Web.Routing.UrlRoutingModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</stacktrace>
+</exceptioninfo>
+	<innerexception>
+&amp;lt;exceptioninfo&amp;gt;
+	&amp;lt;message&amp;gt;Code blocks are not supported in this context.&amp;lt;/message&amp;gt;
+	&amp;lt;source&amp;gt;System.Web&amp;lt;/source&amp;gt;
+	&amp;lt;stacktrace&amp;gt;   at System.Web.UI.ControlBuilder.AppendSubBuilder(ControlBuilder subBuilder)
+   at System.Web.UI.TemplateParser.AppendSubBuilder(ControlBuilder builder, ControlBuilder subBuilder)
+   at System.Web.UI.TemplateParser.ProcessCodeBlock(Match match, CodeBlockType blockType, String text)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)&amp;lt;/stacktrace&amp;gt;
+&amp;lt;/exceptioninfo&amp;gt;
+	</innerexception>
+</error>

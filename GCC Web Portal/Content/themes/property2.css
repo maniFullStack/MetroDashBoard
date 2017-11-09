@@ -1,0 +1,7 @@
+/* River Rock Casino Resort */ 
+body.survey {
+    background:#182839 url('../../Images/backgrounds/rr.png') no-repeat 50% top;
+}
+#header-logo {
+    background-image:url('../../Images/headers/RiverRockHeader.jpg');
+}

@@ -1,0 +1,16 @@
+﻿You're receiving this email because a feedback request for {CasinoName} has been flagged as Tier 3.
+
+
+You can view and respond to the feedback request by clicking on (or copying and pasting) the following link:
+{FeedbackLink}
+
+
+To access the survey responses, please click on (or copy and paste) the following link:
+{SurveyLink}
+
+
+This email has been sent to the following people:
+{Recipients}
+
+
+Note: This is an automated response. Please do not reply to this email.

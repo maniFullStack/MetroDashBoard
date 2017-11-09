@@ -1,0 +1,222 @@
+<error>
+	<date>2015-05-08T05:06:32</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;.ctor-&amp;gt;.ctor-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>9</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase</apperrorsource>
+	<message>Could not create SQL connection.</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabaseReporting.GetConnectionString() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 66
+   at WebsiteUtilities.SQLDatabase..ctor() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 85</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2015-05-08T05:06:32</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.ExecStoredP</apperrorsource>
+	<message>There was an error executing the stored procedure (data table).
+Procedure Name: spCOM_WebReportingLogon
+Parameter List:
+@Email=&apos;rmarskell@forumresearch.com&apos;
+@Password=&apos;Drackir1&apos;
+@ClientID=&apos;1&apos;
+@IP=&apos;No IPv4 address found&apos;
+@OutputValue=&apos;&apos;
+</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataTable(String procedureName, SqlParameter[] sqlParameters) in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 174</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2015-05-08T05:11:24</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx?rd=</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;.ctor-&amp;gt;.ctor-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>9</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase</apperrorsource>
+	<message>Could not create SQL connection.</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabaseReporting.GetConnectionString() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 66
+   at WebsiteUtilities.SQLDatabase..ctor() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 85</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2015-05-08T05:11:24</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx?rd=</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.ExecStoredP</apperrorsource>
+	<message>There was an error executing the stored procedure (data table).
+Procedure Name: spCOM_WebReportingLogon
+Parameter List:
+@Email=&apos;rmarskell@forumresearch.com&apos;
+@Password=&apos;Drackir1&apos;
+@ClientID=&apos;1&apos;
+@IP=&apos;No IPv4 address found&apos;
+@OutputValue=&apos;&apos;
+</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataTable(String procedureName, SqlParameter[] sqlParameters) in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 174</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2015-05-08T05:15:24</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;.ctor-&amp;gt;.ctor-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>9</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase</apperrorsource>
+	<message>Could not create SQL connection.</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabaseReporting.GetConnectionString() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 66
+   at WebsiteUtilities.SQLDatabase..ctor() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 85</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2015-05-08T05:15:24</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.ExecStoredP</apperrorsource>
+	<message>There was an error executing the stored procedure (data table).
+Procedure Name: spCOM_WebReportingLogon
+Parameter List:
+@Email=&apos;rmarskell@forumresearch.com&apos;
+@Password=&apos;Drackir1&apos;
+@ClientID=&apos;1&apos;
+@IP=&apos;No IPv4 address found&apos;
+@OutputValue=&apos;&apos;
+</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataTable(String procedureName, SqlParameter[] sqlParameters) in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 174</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2015-05-08T05:19:06</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;.ctor-&amp;gt;.ctor-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>9</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase</apperrorsource>
+	<message>Could not create SQL connection.</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabaseReporting.GetConnectionString() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 66
+   at WebsiteUtilities.SQLDatabase..ctor() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 85</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2015-05-08T05:19:06</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.ExecStoredP</apperrorsource>
+	<message>There was an error executing the stored procedure (data table).
+Procedure Name: spCOM_WebReportingLogon
+Parameter List:
+@Email=&apos;rmarskell@forumresearch.com&apos;
+@Password=&apos;Drackir1&apos;
+@ClientID=&apos;1&apos;
+@IP=&apos;No IPv4 address found&apos;
+@OutputValue=&apos;&apos;
+</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataTable(String procedureName, SqlParameter[] sqlParameters) in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 174</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2015-05-08T05:23:14</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;.ctor-&amp;gt;.ctor-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>9</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase</apperrorsource>
+	<message>Could not create SQL connection.</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabaseReporting.GetConnectionString() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 66
+   at WebsiteUtilities.SQLDatabase..ctor() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 85</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2015-05-08T05:23:14</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.ExecStoredP</apperrorsource>
+	<message>There was an error executing the stored procedure (data table).
+Procedure Name: spCOM_WebReportingLogon
+Parameter List:
+@Email=&apos;rmarskell@forumresearch.com&apos;
+@Password=&apos;Drackir1&apos;
+@ClientID=&apos;1&apos;
+@IP=&apos;No IPv4 address found&apos;
+@OutputValue=&apos;&apos;
+</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataTable(String procedureName, SqlParameter[] sqlParameters) in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 174</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2015-05-08T05:32:37</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;.ctor-&amp;gt;.ctor-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>9</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase</apperrorsource>
+	<message>Could not create SQL connection.</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabaseReporting.GetConnectionString() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 66
+   at WebsiteUtilities.SQLDatabase..ctor() in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 85</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2015-05-08T05:32:37</date>
+	<server>DrackComp</server>
+	<pageurl>http://localhost:13033/Login.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;LoadRecursive-&amp;gt;OnLoad-&amp;gt;Callback-&amp;gt;Page_Load-&amp;gt;TryLogUserIn-&amp;gt;LogUserIn-&amp;gt;Load-&amp;gt;Load-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;ExecStoredProcedureDataTable-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.ExecStoredP</apperrorsource>
+	<message>There was an error executing the stored procedure (data table).
+Procedure Name: spCOM_WebReportingLogon
+Parameter List:
+@Email=&apos;rmarskell@forumresearch.com&apos;
+@Password=&apos;Drackir1&apos;
+@ClientID=&apos;1&apos;
+@IP=&apos;No IPv4 address found&apos;
+@OutputValue=&apos;&apos;
+</message>
+<exceptioninfo>
+	<message>Object reference not set to an instance of an object.</message>
+	<source>WebsiteUtilities</source>
+	<stacktrace>   at WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataTable(String procedureName, SqlParameter[] sqlParameters) in c:\Development\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 174</stacktrace>
+</exceptioninfo>
+</error>

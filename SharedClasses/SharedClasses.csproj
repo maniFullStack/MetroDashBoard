@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F0798E5-5A12-472D-BE80-9D3ED9BD6F5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharedClasses</RootNamespace>
+    <AssemblyName>SharedClasses</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebsiteUtilities">
+      <HintPath>..\GCC Web Portal\_DLL\WebsiteUtilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthenticatedHandler.cs" />
+    <Compile Include="AuthenticatedMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthenticatedPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Config.cs" />
+    <Compile Include="DynamicDropDownList.cs" />
+    <Compile Include="EmailManager.cs" />
+    <Compile Include="FeedbackEventType.cs" />
+    <Compile Include="FeedbackStatus.cs" />
+    <Compile Include="GEISurveyLanguages.cs" />
+    <Compile Include="IReportFilter.cs" />
+    <Compile Include="NotificationReasons.cs" />
+    <Compile Include="PropertyGraphs.cs" />
+    <Compile Include="PropertyTools.cs" />
+    <Compile Include="ReportFilterDropDownList.cs" />
+    <Compile Include="ReportFilterListBox.cs" />
+    <Compile Include="ReportFilterTextBox.cs" />
+    <Compile Include="ReportingTools.cs" />
+    <Compile Include="SnapshotSurveyType.cs" />
+    <Compile Include="SurveyDropDown.cs" />
+    <Compile Include="SurveySessionControl.cs" />
+    <Compile Include="GCCPropertyShortCode.cs" />
+    <Compile Include="ISurveyControl.cs" />
+    <Compile Include="SurveyRadioButton.cs" />
+    <Compile Include="SurveyTextBox.cs" />
+    <Compile Include="SurveyCheckBox.cs" />
+    <Compile Include="SurveyTools.cs" />
+    <Compile Include="GEISurveyType.cs" />
+    <Compile Include="GCCProperty.cs" />
+    <Compile Include="LoginErrorCode.cs" />
+    <Compile Include="MasterPageWithUser.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageManager.cs" />
+    <Compile Include="PasswordResetCode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SurveyType.cs" />
+    <Compile Include="UserGroups.cs" />
+    <Compile Include="UserInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SentimentAnalyzer\SentimentAnalyzer.csproj">
+      <Project>{7fc91cb8-2c25-4550-b773-29553f676339}</Project>
+      <Name>SentimentAnalyzer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

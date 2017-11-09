@@ -1,0 +1,54 @@
+/* iCheck plugin Flat skin, blue
+----------------------------------- */
+.icheckbox_flat-blue,
+.iradio_flat-blue {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url(data:image/png;base64,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);
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_flat-blue {
+    background-position: 0 0;
+}
+    .icheckbox_flat-blue.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox_flat-blue.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox_flat-blue.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio_flat-blue {
+    background-position: -88px 0;
+}
+    .iradio_flat-blue.checked {
+        background-position: -110px 0;
+    }
+    .iradio_flat-blue.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio_flat-blue.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+    .icheckbox_flat-blue,
+    .iradio_flat-blue {
+        background-image: url(blue@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+}

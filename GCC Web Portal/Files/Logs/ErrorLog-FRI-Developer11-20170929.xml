@@ -1,0 +1,128 @@
+<error>
+	<date>2017-09-29T05:27:17</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-09-29T05:27:43</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/SnapshotExport</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;RaisePostBackEvent-&amp;gt;RaisePostBackEvent-&amp;gt;System.Web.UI.IPostBackEventHandler.RaisePostBackEvent-&amp;gt;RaisePostBackEvent-&amp;gt;OnClick-&amp;gt;btnGenerateReport_Click-&amp;gt;GenerateReport-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;System.Data.IDbCommand.ExecuteReader-&amp;gt;ExecuteDbDataReader-&amp;gt;ExecuteReader-&amp;gt;RunExecuteReader-&amp;gt;RunExecuteReader-&amp;gt;RunExecuteReaderTds-&amp;gt;FinishExecuteReader-&amp;gt;get_MetaData-&amp;gt;TryConsumeMetaData-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-09-29T05:29:09</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-09-29T05:29:26</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/SnapshotExport</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;RaisePostBackEvent-&amp;gt;RaisePostBackEvent-&amp;gt;System.Web.UI.IPostBackEventHandler.RaisePostBackEvent-&amp;gt;RaisePostBackEvent-&amp;gt;OnClick-&amp;gt;btnGenerateReport_Click-&amp;gt;GenerateReport-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.ExecStoredP</apperrorsource>
+	<message>There was an error executing the stored procedure (data set).
+Procedure Name: spReports_Snapshot_Details
+Parameter List:
+</message>
+<exceptioninfo>
+	<message>Divide by zero error encountered.
+The statement has been terminated.
+Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+	<source>.Net SqlClient Data Provider</source>
+	<stacktrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataSet(String procedureName, SqlParameter[] sqlParameters) in d:\Development\LBC\Forum\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 255</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2017-09-29T05:30:44</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/SnapshotExport</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;RaisePostBackEvent-&amp;gt;RaisePostBackEvent-&amp;gt;System.Web.UI.IPostBackEventHandler.RaisePostBackEvent-&amp;gt;RaisePostBackEvent-&amp;gt;OnClick-&amp;gt;btnGenerateReport_Click-&amp;gt;GenerateReport-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.ExecStoredP</apperrorsource>
+	<message>There was an error executing the stored procedure (data set).
+Procedure Name: spReports_Snapshot_Details
+Parameter List:
+</message>
+<exceptioninfo>
+	<message>Divide by zero error encountered.
+The statement has been terminated.
+Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+	<source>.Net SqlClient Data Provider</source>
+	<stacktrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TrySetMetaData(_SqlMetaDataSet metaData, Boolean moreInfo)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataSet(String procedureName, SqlParameter[] sqlParameters) in d:\Development\LBC\Forum\WebsiteUtilities4.5\WebsiteUtilities\SQLDatabase.cs:line 255</stacktrace>
+</exceptioninfo>
+</error>
+<error>
+	<date>2017-09-29T12:16:45</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-09-29T12:17:10</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/SnapshotExport</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;RaisePostBackEvent-&amp;gt;RaisePostBackEvent-&amp;gt;System.Web.UI.IPostBackEventHandler.RaisePostBackEvent-&amp;gt;RaisePostBackEvent-&amp;gt;OnClick-&amp;gt;btnGenerateReport_Click-&amp;gt;GenerateReport-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;System.Data.IDbCommand.ExecuteReader-&amp;gt;ExecuteDbDataReader-&amp;gt;ExecuteReader-&amp;gt;RunExecuteReader-&amp;gt;RunExecuteReader-&amp;gt;RunExecuteReaderTds-&amp;gt;FinishExecuteReader-&amp;gt;get_MetaData-&amp;gt;TryConsumeMetaData-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>
+<error>
+	<date>2017-09-29T12:44:57</date>
+	<server>FRI-Developer11</server>
+	<pageurl>http://localhost:13033/default.aspx</pageurl>
+	<callfunction>ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;MgdIndicateCompletion-&amp;gt;ProcessRequestNotification-&amp;gt;ProcessRequestNotificationHelper-&amp;gt;ProcessRequestNotificationPrivate-&amp;gt;BeginProcessRequestNotification-&amp;gt;ResumeSteps-&amp;gt;ExecuteStep-&amp;gt;System.Web.HttpApplication.IExecutionStep.Execute-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestWithNoAssert-&amp;gt;ProcessRequest-&amp;gt;ProcessRequest-&amp;gt;ProcessRequestMain-&amp;gt;OnLoadComplete-&amp;gt;Callback-&amp;gt;Page_LoadComplete-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;ExecStoredProcedureDataSet-&amp;gt;Fill-&amp;gt;Fill-&amp;gt;FillInternal-&amp;gt;Fill-&amp;gt;FillFromReader-&amp;gt;FillLoadDataRow-&amp;gt;Read-&amp;gt;TryReadInternal-&amp;gt;TryHasMoreRows-&amp;gt;TryRun-&amp;gt;ThrowExceptionAndWarning-&amp;gt;OnError-&amp;gt;OnError-&amp;gt;OnInfoMessage-&amp;gt;SQLInfoMessageHandler-&amp;gt;WriteLog-&amp;gt;WriteLog-&amp;gt;</callfunction>
+	<smioseventid>4</smioseventid>
+	<apperrorsource>Website-WebsiteUtilities.SQLDatabase.SQLInfoMess</apperrorsource>
+	<message>Warning: Null value is eliminated by an aggregate or other SET operation.</message>
+</error>

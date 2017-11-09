@@ -1,0 +1,121 @@
+﻿@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Montserrat:700);
+body {
+    background-color:#c0c0c0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+#top-break {
+    height:20px;
+}
+#header-logo {
+    width:800px;
+    height:120px;
+    margin:10px auto 5px auto;
+}
+#main-content {
+    margin-top:10px;
+    background:#fff;
+    -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 0 9px 4px rgba(0,0,0,0.25);
+    box-shadow: 0 0 9px 4px rgba(0,0,0,0.25);
+    padding-bottom:10px;
+}
+.navbar-text {
+    color:#fff;
+}
+.doughnut-legend {
+  list-style: none;
+  position: absolute;
+  right: 8px;
+  top: 0;
+}
+.doughnut-legend li {
+  display: block;
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  padding: 2px 8px 2px 28px;
+  font-size: 12px;
+  cursor: default;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+.doughnut-legend li:hover {
+  background-color: #fafafa;
+}
+.doughnut-legend li span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.skin-green .treeview-menu>li>span {
+    color: #8aa4af;
+}
+.sidebar-menu .treeview-menu>li>span {
+    padding: 5px 35px 5px 15px;
+    display: block;
+    font-size: 14px;
+    white-space:normal;
+}
+.sidebar-menu .treeview-menu.filter-list>li {
+    position:relative;
+    min-height:30px;
+    border-bottom:1px solid #1a2226;
+}
+.tab-pane a {
+    display:inline-block;
+    width:100%;
+    height:20px;
+    line-height:20px;
+    color:#fff;
+}
+.tab-pane a:hover {
+    color:#aaa;
+}
+.sidebar-menu>li>a>.fa-long-arrow-up,
+.sidebar-menu>li>a>.fa-long-arrow-down {
+    width:10px;
+}
+.skin-green .sidebar-menu > li.header {
+    font-size:1em;
+    color:#8aa4af
+}
+.detail-list {
+    background:#2c3b41;
+    color:#8aa4af;
+    padding: 5px 35px 5px 20px;
+    position: relative;
+    min-height: 30px;
+    border-bottom: 1px solid #1a2226;
+}
+
+
+body.hold-transition {
+  /* Fix for IE */
+}
+body.hold-transition .content-wrapper,
+body.hold-transition .right-side,
+body.hold-transition .main-footer,
+body.hold-transition .main-sidebar,
+body.hold-transition .left-side,
+body.hold-transition .main-header > .navbar,
+body.hold-transition .main-header .logo {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.survey-progress-bar {
+    width:50%;
+    margin:10px auto;
+}

@@ -1,0 +1,1807 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebsiteUtilities</name>
+    </assembly>
+    <members>
+        <member name="P:WebsiteUtilities.AuthenticatedHandler`1.User">
+            <summary>
+            Information about the currently logged in user.
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.AuthenticatedPage`1">
+            <summary>
+            The basic AuthenticatedPage for a website.
+            </summary>
+            <typeparam name="T">The UserInformation (derived) class which while definte the type for the User variable across the site.</typeparam>
+        </member>
+        <member name="P:WebsiteUtilities.AuthenticatedPage`1.User">
+            <summary>
+            Information about the currently logged in user.
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.Conversion">
+            <summary>
+            This class contains many static methods for converting anything from strings &amp; numbers to data tables &amp; Excel files.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.StringToInt(System.String)">
+            <summary>
+            This function is used to convert a string to an integer.
+            <para>Returns: the integer or 0 if invalid.</para>
+            </summary>
+            <param name="convert">The string to convert to integer.</param>
+            <returns>0 on error or the string as an integer.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.StringToLong(System.String)">
+            <summary>
+            This function is used to convert a string to an long.
+            <para>Returns: the long or 0 if invalid.</para>
+            </summary>
+            <param name="convert">The string to convert to long.</param>
+            <returns>0 on error or the string as a long.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.StringToLong(System.String,System.Int32)">
+            <summary>
+            This function is used to convert a string to an integer.
+            <para>Returns: the integer or 0 if invalid.</para>
+            </summary>
+            <param name="convert">The string to convert to integer.</param>
+            <param name="returnValue">Changes default return from 0 to specified number</param>
+            <returns>0 on error or the string as an long.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.StringToInt(System.String,System.Int32)">
+            <summary>
+            This function is used to convert a string to an integer.
+            <para>Returns: the integer or 0 if invalid.</para>
+            </summary>
+            <param name="convert">The string to convert to integer.</param>
+            <param name="returnValue">Changes default return from 0 to specified number</param>
+            <returns>0 on error or the string as an integer.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.StringToInt(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            This function is used to convert a string to an integer between a minimum and maximum value. If the value is outside of the bounds, it will be constrained to the bound value.
+            </summary>
+            <param name="convert">The string to convert to integer.</param>
+            <param name="minVal">The minimum value to constrain the converted integer to (inclusive).</param>
+            <param name="maxVal">The maximum value to constrain the converted integer to (inclusive).</param>
+            <param name="invalidValue">The value to return if <paramref name="convert"/> cannot be converted.</param>
+            <returns>An integer constrained within the minVal and maxVal (inclusive) or <paramref name="invalidValue"/> if it cannot be parsed. </returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.StringToDbl(System.String)">
+            <summary>
+            This function is used to convert a string to a double.
+            <para>Returns: the integer or 0 if invalid.</para>
+            </summary>
+            <param name="convert">The string to convert to double type.</param>
+            <returns>0 on error or the string as a double.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.StringBooleanToInt(System.String)">
+            <summary>
+            Convert the'True' or 'False' that an MSSQL bit returns to an int
+            <para>Returns: 1 if 'True', otherwise 0</para>
+            </summary>
+            <param name="convert">The string boolean value to convert to 1.</param>
+            <returns>1 if 'True', otherwise 0</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.StringToDbl(System.String,System.Double)">
+            <summary>
+            This function is used to convert a string to a double.
+            <para>Returns: the integer or 0 if invalid.</para>
+            </summary>
+            <param name="convert">The string to convert to double type.</param>
+            <returns>0 on error or the string as a double.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.ObjectToString(System.Object)">
+            <summary>
+            This function is used to convert a object, string or null to string.
+            <para>Returns: the string or String.Empty.</para>
+            </summary>
+            <param name="convert">The object to convert to string.</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.IntToBool(System.Int32)">
+            <summary>
+            Converts an integer to a boolean. 1 = True, Anything else = False
+            </summary>
+            <param name="toBool">The integer to be converted to a boolean.</param>
+            <returns>1 = True, Anything else = False</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.StringToBool(System.String)">
+            <summary>
+            Converts a string to a boolean. Any format of the word "true" or the number "1" = true. Anything else = false
+            </summary>
+            <param name="toBool">The string to be converted to a boolean.</param>
+            <returns>"true", "1" = True, Anything else = False</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.XMLEncodeString(System.String)">
+            <summary>
+            This function converts a specific entity's safe XML supported equivalent back into the original entity. Used in conjunction with XMLDecodeString.
+            </summary>
+            <param name="fromxmlsafe">The XML string to encode.</param>
+            <returns>An encoded XML string.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.XMLDecodeString(System.String)">
+            <summary>
+            This function converts specific entities in a string to their safe XML supported equivalent. Used in conjunction with XMLEncodeString.
+            </summary>
+            <param name="fromxmlsafe">The XML string to decode.</param>
+            <returns>A decoded XML string.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DateTimeToXMLString(System.DateTime)">
+            <summary>
+            This function converts a DateTime object to the XML safe string in the format: yyyy-MM-ddTHH:mm:ss
+            </summary>
+            <param name="toConvert">The DateTime to convert to a string.</param>
+            <returns>An XML date/time string in the format "yyyy-MM-ddTHH:mm:ss" or an empty string if there was an error.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.XMLDateToDateTime(System.String)">
+            <summary>
+            Converts an ISO 8601 date/time string (yyyy-MM-ddTHH:mm:ss) to a DateTime object. Milliseconds, if they exist, are stripped.
+            </summary>
+            <param name="toConvert">The XML date/time string to convert.</param>
+            <returns>A date time object. If there was an error loading the string, the DateTime will just be a new object.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DBDateStringToDateTime(System.String)">
+            <summary>
+            Converts a date/time string extracted from the database (dd/MM/yyyy h:mm:ss tt), to a datetime object.
+            </summary>
+            <param name="fromdb">The database date/time string to convert.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DateTimeToDBDateString(System.DateTime)">
+            <summary>
+            Converts a date time object to a format for use in inserting into database.
+            </summary>
+            <param name="date">The database date/time to convert.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.TranslateDate(System.DateTime,System.String,WebsiteUtilities.ConversionDateFormatType)">
+            <summary>
+            Returns the date string in proper format, respective of the language.
+            </summary>
+            <param name="dt">The date to output.</param>
+            <param name="langcode">The current language ID.</param>
+            <param name="dateFormatType">Specifies how to format the returned date string.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.TranslateDate(System.DateTime,System.String,WebsiteUtilities.ConversionDateFormatType,System.Boolean)">
+            <summary>
+            Returns the date string in proper format, respective of the language.
+            </summary>
+            <param name="dt">The date to output.</param>
+            <param name="langcode">The current language ID.</param>
+            <param name="dateformat">Specifies how to format the returned date string.</param>
+            <param name="addtz">Whether or not to add timezone information to the end of the date string.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.TranslateDate(System.String,System.String,WebsiteUtilities.ConversionDateFormatType)">
+            <summary>
+            Returns the date string in proper format, respective of the language.
+            </summary>
+            <param name="datestring">The date in XML date string (ISO 8601) format.</param>
+            <param name="langcode">The current language ID.</param>
+            <param name="dateformat">Specifies how to format the returned date string.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.TranslateDate(System.String,System.String,WebsiteUtilities.ConversionDateFormatType,System.Boolean)">
+            <summary>
+            Returns the date string in proper format, respective of the language.
+            </summary>
+            <param name="datestring">The date in XML date string (ISO 8601) format.</param>
+            <param name="langcode">The current language ID.</param>
+            <param name="dateformat">Specifies how to format the returned date string.</param>
+            <param name="addtz">Whether or not to add timezone information to the end of the date string.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DataTableToJSON(System.Data.DataTable)">
+            <summary>
+            This method converts a DataTable to a JSON array. Each object in the array corresponds to a row in the table and the column names are the keys for the key value pairs in each record.
+            </summary>
+            <param name="dt">The datatable to convert.</param>
+            <returns>A JSON encoded string.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.StripPhoneNumber(System.String,System.Boolean@)">
+            <summary>
+            Takes a validated phone number and removes all special characters and formats as 10 digit plain number
+            </summary>
+            <param name="sPhone">Validated phone number string</param>
+            <param name="error"></param>
+            <returns>Plain phone number "##########"</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.StripPhoneNumber(System.String,WebsiteUtilities.PhoneType,System.Boolean@)">
+            <summary>
+            akes a validated phone number and removes all special characters and formats as specified
+            </summary>
+            <param name="sPhone">Validated phone number string</param>
+            <param name="ptReturnType">The way the phone number will be formatted</param>
+            <returns>Formatted phone number</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.FormatPercent(System.String)">
+            <summary>
+            Formats a string number into a percentage to 0 decimal places. If the string is null or empty, an empty string will be returned. If the string is not valid, 0% will be returned.
+            </summary>
+            <param name="number">The string containing the number to be parsed and formatted.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.FormatPercent(System.Double)">
+            <summary>
+            Formats a number into a percentage to 0 decimal places.
+            </summary>
+            <param name="number">The number to be formatted.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.FormatPercent(System.String,System.Int32)">
+            <summary>
+            Formats a string number into a percentage. If the string is null or empty, an empty string will be returned. If the string is not valid, 0% will be returned.
+            </summary>
+            <param name="number">The string containing the number to be parsed and formatted.</param>
+            <param name="decimalPlaces">The number of decimal places to show.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.FormatPercent(System.Double,System.Int32)">
+            <summary>
+            Formats a number into a percentage.
+            </summary>
+            <param name="number">The number to be formatted.</param>
+            <param name="decimalPlaces">The number of decimal places to show.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.FormatNumber(System.String,System.Int32)">
+            <summary>
+            Formats a number to a certain number of decimal places.
+            </summary>
+            <param name="number">The number to format.</param>
+            <param name="decimalPlaces">The number of decimal places to format it to.</param>
+            <returns>Returns String.Empty if the number is null or empty or the formatted number otherwise. Defaults to 0 if conversion fails.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.FormatNumber(System.Double,System.Int32)">
+            <summary>
+            Formats a number to a certain number of decimal places.
+            </summary>
+            <param name="number">The number to format.</param>
+            <param name="decimalPlaces">The number of decimal places to format it to.</param>
+            <returns>Returns a string containing the formatted number.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DataTableToExcel(System.Data.DataTable,System.String,System.String,System.Boolean)">
+            <summary>
+            Generates an Excel file (xls, not xlsx) from the passed datatable.
+            </summary>
+            <param name="dt">The datatable to convert to the Excel file. Data column names will be in the first row,.</param>
+            <param name="sheetName">The name of the worksheet in Excel. Spaces are automatically converted to underscores.</param>
+            <param name="outputFile">The full path to the output file.</param>
+            <param name="overwrite">If true, the current file will be erased if it exists. Otherwise, the table will be added to the existing file. If the table matches a table that already exists in the file, the file's version will be dropped.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DataTableToExcel(System.Data.DataTable,System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            Generates an Excel file (type depends on connection string from web.config) from the passed datatable. Note that column names are limited to 64 characters. If they are longer they will be truncated.
+            </summary>
+            <param name="dt">The datatable to convert to the Excel file. Data column names will be in the first row,.</param>
+            <param name="sheetName">The name of the worksheet in Excel. Spaces are automatically converted to underscores.</param>
+            <param name="outputFile">The full path to the output file.</param>
+            <param name="overwrite">If true, the current file will be erased if it exists. Otherwise, the table will be added to the existing file. If the table matches a table that already exists in the file, the file's version will be dropped.</param>
+            <param name="maxRows">The maximum number of rows to output from the DataTable.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DataTableToExcel(System.Data.DataTable,System.String,System.String,System.Boolean,System.String@)">
+            <summary>
+            Generates an Excel file (xls, not xlsx) from the passed datatable.
+            </summary>
+            <param name="dt">The datatable to convert to the Excel file. Data column names will be in the first row,.</param>
+            <param name="sheetName">The name of the worksheet in Excel. Spaces are automatically converted to underscores.</param>
+            <param name="outputFile">The full path to the output file.</param>
+            <param name="overwrite">If true, the current file will be erased if it exists. Otherwise, the table will be added to the existing file. If the table matches a table that already exists in the file, the file's version will be dropped.</param>
+            <param name="fullPathToFile">The full path to the file on the file system.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DataTableToExcel(System.Data.DataTable,System.String,System.String,System.Boolean,System.Int32,System.String@)">
+            <summary>
+            Generates an Excel file (xls, not xlsx) from the passed datatable.
+            </summary>
+            <param name="dt">The datatable to convert to the Excel file. Data column names will be in the first row,.</param>
+            <param name="sheetName">The name of the worksheet in Excel. Spaces are automatically converted to underscores.</param>
+            <param name="outputFile">The full path to the output file.</param>
+            <param name="overwrite">If true, the current file will be erased if it exists. Otherwise, the table will be added to the existing file. If the table matches a table that already exists in the file, the file's version will be dropped.</param>
+            <param name="maxRows">The maximum number of rows to output from the DataTable.</param>
+            <param name="fullPathToFile">The full path to the file on the file system.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DataTableToExcel(System.Data.DataTable,System.String,System.String,System.Boolean,System.Int32,System.Int32,System.String@)">
+            <summary>
+            Generates an Excel file (type depends on connection string from web.config) from the passed datatable. Note that column names are limited to 64 characters. If they are longer they will be truncated.
+            </summary>
+            <param name="dt">The datatable to convert to the Excel file. Data column names will be in the first row,.</param>
+            <param name="sheetName">The name of the worksheet in Excel. Spaces are automatically converted to underscores.</param>
+            <param name="outputFile">The full path to the output file.</param>
+            <param name="overwrite">If true, the current file will be erased if it exists. Otherwise, the table will be added to the existing file. If the table matches a table that already exists in the file, the file's version will be dropped.</param>
+            <param name="maxRows">The maximum number of rows to output from the DataTable.</param>
+            <param name="maxCols">The maximum number of columns to output from the DataTable.</param>
+            <param name="fullPathTofile">The full path to the file on the file system.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DataTableToCSV(System.Data.DataTable,System.String,System.Boolean)">
+            <summary>
+            Generates a CSV file from the passed datatable.
+            </summary>
+            <param name="dt">The datatable to convert to the CSV file. Data column names will be in the first row,.</param>
+            <param name="outputFile">The full path to the output file.</param>
+            <param name="overwrite">If true, the current file will be erased if it exists. Otherwise, it will be appended.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DataTableToCSV(System.Data.DataTable,System.String,System.Boolean,System.Int32)">
+            <summary>
+            Generates a CSV file from the passed datatable.
+            </summary>
+            <param name="dt">The datatable to convert to the CSV file. Data column names will be in the first row,.</param>
+            <param name="outputFile">The full path to the output file.</param>
+            <param name="overwrite">If true, the current file will be erased if it exists. Otherwise, it will be appended.</param>
+            <param name="maxCols">The maximum number of columns to output from the DataTable.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.DataTableToCSV(System.Data.DataTable,System.String,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Generates a CSV file from the passed datatable.
+            </summary>
+            <param name="dt">The datatable to convert to the CSV file. Data column names will be in the first row. Note: Currently, newline characters will be replaced by spaces.</param>
+            <param name="outputFile">The full path to the output file.</param>
+            <param name="overwrite">If true, the current file will be erased if it exists. Otherwise, it will be appended.</param>
+            <param name="maxRows">The maximum number of rows to output from the DataTable.</param>
+            <param name="maxCols">The maximum number of columns to output from the DataTable.</param>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.CSVToDataTable(System.String,System.Boolean)">
+            <summary>
+            Converts a CSV file into a data table.
+            </summary>
+            <param name="csvFilePath">The full path to the CSV file.</param>
+            <param name="columnNamesInFirstRow">If true, the values in the first row will be assumed to </param>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.CSVToDataTable(System.IO.Stream,System.Boolean)">
+            <summary>
+            Converts a CSV stream into a data table.
+            </summary>
+            <param name="csvFileStream">The stream associated with the CSV file.</param>
+            <param name="columnNamesInFirstRow">If true, the values in the first row will be assumed to </param>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.ConvertCSVToDataTable(WebsiteUtilities.CSVReader,System.Boolean)">
+            <summary>
+            Takes a CSVReader and converts it into a data table.
+            </summary>
+            <param name="csv">The CSVReader object to convert.</param>
+            <param name="columnNamesInFirstRow">If true, the first row's values will be treated as the data tables column names. Otherwise, they will be loaded as "Column 1", "Column 2", etc.</param>
+            <returns>The converted datatable.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Conversion.TransposeDataTable(System.Data.DataTable)">
+            <summary>
+            Transposes (switches rows for columns) a DataTable and returns the new transposed DataTable object. Assumes all values are strings.
+            </summary>
+            <param name="inputTable">The DataTable to transpose.</param>
+            <returns>The transposed DataTable.</returns>
+        </member>
+        <member name="T:WebsiteUtilities.PhoneType">
+            <summary>
+            The type of phone number to validate.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.PhoneType.Plain">
+            <summary>
+            #########
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.PhoneType.Styled">
+            <summary>
+            (###) ###-####
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.PhoneType.Dashed">
+            <summary>
+            ###-###-####
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.PhoneType.Spaced">
+            <summary>
+            ### ### ####
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.ConversionDateFormatType">
+            <summary>
+            This enumeration is used within the Validation class to differentiate between different types of date formats.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ConversionDateFormatType.ShortDate">
+            <summary>
+            6/15/2009 (en-US)
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ConversionDateFormatType.LongDate">
+            <summary>
+            Monday, June 15, 2009 (en-US)
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ConversionDateFormatType.GeneralDateTime">
+            <summary>
+            6/15/2009 1:45 PM (en-US)
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ConversionDateFormatType.FullDateTime">
+            <summary>
+            Monday, June 15, 2009 1:45 PM (en-US)
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ConversionDateFormatType.MonthName">
+            <summary>
+            June
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ConversionDateFormatType.ShortMonthName">
+            <summary>
+            Jun
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ConversionDateFormatType.ShortTime">
+            <summary>
+            1:20 PM
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ConversionDateFormatType.LongTime">
+            <summary>
+            1:45:30 PM
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.CSVReader">
+            <summary>
+            Class to read data from a CSV file
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.CSVReader.ReadRow(WebsiteUtilities.CSVRow)">
+            <summary>
+            Reads a row of data from a CSV file
+            </summary>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebsiteUtilities.CSVRow">
+            <summary>
+            Class to store one CSV row
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.CSVRow.LineText">
+            <summary>
+            The text of the line. Set after the row has been written.
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.CSVWriter">
+            <summary>
+            Class to write data to a CSV file
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.CSVWriter.#ctor(System.IO.Stream)">
+            <summary>
+            Creates a new CSVWriter object that will write to the underlying stream.
+            </summary>
+            <param name="stream"></param>
+        </member>
+        <member name="M:WebsiteUtilities.CSVWriter.#ctor(System.String)">
+            <summary>
+            Creates a new CSVWriter object that will write to the passed file.
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="M:WebsiteUtilities.CSVWriter.WriteRow(WebsiteUtilities.CSVRow)">
+            <summary>
+            Writes a single row to a CSV file.
+            </summary>
+            <param name="row">The row to be written</param>
+        </member>
+        <member name="T:WebsiteUtilities.EmailLog">
+            <summary>
+            Log Emails to Database
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.EmailLog.LogEmail(System.Net.Mail.MailMessage)">
+            <summary>
+            Take data from msg for log
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.ErrorHandler.WriteLog(System.String,System.String,WebsiteUtilities.ErrorHandler.ErrorEventID)">
+            <summary>
+            Writes log information to the Application, database and flat file logs (if enabled).
+            </summary>
+            <param name="appSource">The source of the error. "Website-" will be automatically prepended to this. Max 40 chars.</param>
+        </member>
+        <member name="M:WebsiteUtilities.ErrorHandler.WriteLog(System.String,System.String,WebsiteUtilities.ErrorHandler.ErrorEventID,System.Exception)">
+            <summary>
+            Writes log information to the Application, database and flat file logs (if enabled). Includes information about the passed exception automatically.
+            </summary>
+            /// <param name="appSource">The source of the error. "Website-" will be automatically prepended to this. Max 40 chars.</param>
+        </member>
+        <member name="M:WebsiteUtilities.ErrorHandler.WriteLog(System.String,System.String,WebsiteUtilities.ErrorHandler.ErrorEventID,System.Exception,System.Boolean)">
+            <summary>
+            Private function that allows for passing whether or not the errors should recurse if the log has an error when writing.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.ErrorHandler.GenerateExceptionInfoString(System.Exception,System.Boolean)">
+            <summary>
+            Generates a string containing information about the exceptions message, source and a stack trace.
+            </summary>
+            <param name="ex">The exception to generate the info string from.</param>
+        </member>
+        <member name="M:WebsiteUtilities.ErrorHandler.ErrorName(WebsiteUtilities.ErrorHandler.ErrorEventID)">
+            <summary>
+            Returns a string value for the name of the event type.
+            </summary>
+            <param name="evt">The event ID.</param>
+        </member>
+        <member name="M:WebsiteUtilities.ErrorHandler.ErrorName(System.Int32)">
+            <summary>
+            Returns a string value for the name of the event type.
+            </summary>
+            <param name="evt">The event ID.</param>
+        </member>
+        <member name="M:WebsiteUtilities.ErrorHandler.CheckEnabledLogs">
+            <summary>
+            Checks for what logs are enabled in Web.Config
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.ErrorHandler.LogToEventLog">
+            <summary>
+            Whether or not to log to the Event Log
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.ErrorHandler.LogToDatabase">
+            <summary>
+            Whether or not to log to the Database
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.ErrorHandler.LogToFile">
+            <summary>
+            Whether or not to log to the File
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.ErrorHandler.ErrorEventID">
+            <summary>
+            Error event IDs. Used to categorize errors.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ErrorHandler.ErrorEventID.Unknown">
+            <summary>
+            Default. Don't use this one if it can be avoided.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ErrorHandler.ErrorEventID.General">
+            <summary>
+            General errors.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ErrorHandler.ErrorEventID.SQLError">
+            <summary>
+            Error in SQL queries.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ErrorHandler.ErrorEventID.LogError">
+            <summary>
+            Error in LogHandler. Do not use this.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ErrorHandler.ErrorEventID.LogErrorSQL">
+            <summary>
+            Error in LogHandler. Do not use this.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ErrorHandler.ErrorEventID.LogErrorEvent">
+            <summary>
+            Error in LogHandler. Do not use this.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ErrorHandler.ErrorEventID.LogErrorFile">
+            <summary>
+            Error in LogHandler. Do not use this.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ErrorHandler.ErrorEventID.ConnectionError">
+            <summary>
+            Connection error.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.ExtensionMethods.Truncate(System.String,System.Int32)">
+            <summary>
+            Truncates a string to the specified max length. If the string is shorter than the max length, it will be returned as is.
+            </summary>
+            <param name="value">The string to truncate.</param>
+            <param name="maxLength">The maximum number of characters you want in the string.</param>
+            <returns>A truncated version of the string if applicable.</returns>
+        </member>
+        <member name="T:WebsiteUtilities.ReplaceTemplate">
+            <summary>
+            This class is used to read a template file and replace specific key phrases with information.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.ReplaceTemplate.AddReplacementValue(System.String,System.String)">
+            <summary>
+            Adds a value to be replaced in the template.
+            
+            Throws ArgumentException.
+            </summary>
+            <param name="key">The value to be replaced.</param>
+            <param name="value">The value to replace it with.</param>
+        </member>
+        <member name="M:WebsiteUtilities.ReplaceTemplate.AddReplacementValue(System.String,System.String[],System.Func{System.String,System.String,System.Int32,System.String})">
+            <summary>
+            Adds a value to be replaced in the template with the ability to customize the output using a function.
+            
+            Throws ArgumentException.
+            </summary>
+            <param name="key">The value to be replaced.</param>
+            <param name="values">The array value to be replaced.</param>
+            <param name="customReplaceFunction">The function to be run when replacing. Will be passed the key and value and should return the final output string.</param>
+        </member>
+        <member name="M:WebsiteUtilities.ReplaceTemplate.#ctor(System.String)">
+            <summary>
+            Creates a new Template and loads the content from the passed file.
+            </summary>
+            <param name="templateFile">The path to the file that contains the content for this template.</param>
+        </member>
+        <member name="M:WebsiteUtilities.ReplaceTemplate.GetTemplate">
+            <summary>
+            Gets the template and replaces the keys from ReplaceValues.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.ReplaceTemplate.GetTemplate(System.String,System.String)">
+            <summary>
+            Gets the template and replaces the string
+            </summary>
+            <param name="beginDelimitator">The delimiter that begins the replacement string in the template. Defaults to "{".</param>
+            <param name="endDelimitator">The delimiter that ends the replacement string in the template. Defaults to "}".</param>
+            <returns></returns>
+        </member>
+        <member name="P:WebsiteUtilities.ReplaceTemplate.TemplateContent">
+            <summary>
+            The content loaded from the template file. Note: No values have been replaced.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.ImageProcessor.Rotate90AndSave(System.String,System.Boolean)">
+            <summary>
+            Rotates an image by 90 degrees and saves it over the original.
+            </summary>
+            <param name="filename">The full path of the image file to be rotated.</param>
+            <param name="left">If true, this will rotate the image to the left instead of to the right.</param>
+            <returns>True if successful. False otherwise.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.ImageProcessor.Rotate180AndSave(System.String)">
+            <summary>
+            Rotates an image by 180 degrees and saves it over the original.
+            </summary>
+            <param name="filename">The full path of the image file to be rotated.</param>
+            <returns>True if successful. False otherwise.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.ImageProcessor.Rotate90AndSave(System.Byte[],System.Boolean,System.Byte[]@)">
+            <summary>
+            Rotates an image by 90 degrees.
+            </summary>
+            <param name="imageData">A byte array of the image data.</param>
+            <param name="left">If true, this will rotate the image to the left instead of to the right.</param>
+            <param name="newImage">An output parameter containing the rotated image.</param>
+            <returns>True if successful. False otherwise.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.ImageProcessor.Rotate180AndSave(System.Byte[],System.Byte[]@)">
+            <summary>
+            Rotates an image by 180 degrees.
+            </summary>
+            <param name="imageData">A byte array of the image data.</param>
+            /// <param name="newImage">An output parameter containing the rotated image.</param>
+            <returns>True if successful. False otherwise.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.ImageProcessor.GetContentType(System.Drawing.Image)">
+            <summary>
+            Returns the content type string (ie. image/jpeg) for jpeg, gif, png and tiff files. Defaults to image/bmp for anything else.
+            </summary>
+            <param name="img">The image to check.</param>
+        </member>
+        <member name="F:WebsiteUtilities.JSONBuilder._jsonsb">
+            <summary>
+            The JSON string builder.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.JSONBuilder._typeDepth">
+            <summary>
+            The type depth stack that ensures the user is calling things properly.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.#ctor">
+            <summary>
+            Creates an empty JSON object.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.#ctor(System.Boolean)">
+            <summary>
+            Creates an empty JSON object or array depending on the value of <paramref name="isArray"/>.
+            </summary>
+            <param name="isArray">If true, it will create an empty JSON array.</param>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddString(System.String,System.String)">
+            <summary>
+            Adds a name value pair where the value is of type string to the current object.
+            </summary>
+            <param name="name">The name in the name value pair.</param>
+            <param name="str">The string value of the name value pair.</param>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddString(System.String)">
+            <summary>
+            Adds a value of type string to the current object. This can only be used while in an array.
+            </summary>
+            <param name="str">The string value to add.</param>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddInt(System.String,System.Int32)">
+            <summary>
+            Adds a name value pair where the value is of type int to the current object.
+            </summary>
+            <param name="name">The name in the name value pair.</param>
+            <param name="num">The int value of the name value pair.</param>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddInt(System.Int32)">
+            <summary>
+            Adds a value of type int to the current object. This can only be used while in an array.
+            </summary>
+            <param name="num">The int value to add.</param>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddBool(System.String,System.Boolean)">
+            <summary>
+            Adds a name value pair where the value is of type bool to the current object.
+            </summary>
+            <param name="name">The name in the name value pair.</param>
+            <param name="val">The boolean value of the name value pair.</param>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddBool(System.Boolean)">
+            <summary>
+            Adds a value of type int to the current object. This can only be used while in an array.
+            </summary>
+            <param name="val">The boolean value to add.</param>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddFloat(System.String,System.Single)">
+            <summary>
+            Adds a value of type float to the current object.
+            </summary>
+            <param name="name">The name of the float.</param>
+            <param name="num">The float value to add.</param>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddFloat(System.Single)">
+            <summary>
+            Adds a value of type float to an array. This can only be used while in an array.
+            </summary>
+            <param name="num">The float value to add.</param>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddObject(System.String,System.String)">
+            <summary>
+            This adds a named object that has already been created. This does not need to be closed. <paramref name="obj"/> should be a validly formatted JSON object or array.
+            </summary>
+            <param name="name">The name of the object to add.</param>
+            <param name="obj">A validly formatted JSON object or array to add.</param>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddObject(System.String)">
+            <summary>
+            This starts a named object.
+            </summary>
+            <param name="name">The name of the object to add.</param>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddObject">
+            <summary>
+            This starts an unnamed object for use in an array.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.CloseObject">
+            <summary>
+            This closes an object that has been opened using AddObject() or AddObject(string).
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddArray(System.String)">
+            <summary>
+            This starts a named array.
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.AddArray">
+            <summary>
+            Starts a nested array. Can only be used within an already open array.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.CloseArray">
+            <summary>
+            Closes a currently open array.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.JSONBuilder.ToString">
+            <summary>
+            Outputs the final JSON string.
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.JSONBuilder.InternalType">
+            <summary>
+            An internal type for handling the currently open type of object.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.RequestVars.Get``1(System.String,``0)">
+            <summary>
+            Returns a value as a specific type from the query string or the default value if it can't be parsed.
+            </summary>
+            <typeparam name="T">The type that the object should be.</typeparam>
+            <param name="qsid">The name corresponding to the query string value you are trying to get.</param>
+            <param name="defaultvalue">The default value to return. (ie. In case it doesn't exist or there is an error converting.)</param>
+            <returns>The value of the query string variable, or the default value on error/bad input.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.RequestVars.GetEncoded(System.String,System.String)">
+            <summary>
+            Returns a value as a specific type from the query string or the default value if it can't be parsed and uses Server.HtmlEncode on it before returning it. Useful for form input fields.
+            </summary>
+            <param name="qsid">The name corresponding to the query string value you are trying to get.</param>
+            <param name="defaultvalue">The default value to return. (ie. In case it doesn't exist or there is an error converting.)</param>
+        </member>
+        <member name="M:WebsiteUtilities.RequestVars.Post``1(System.String,``0)">
+            <summary>
+            Returns a value as a specific Type from form POST data or the default value if it cannot be parsed.
+            </summary>
+            <typeparam name="T">The type that the object should be.</typeparam>
+            <param name="qsid">The name corresponding to the form object value you are trying to get.</param>
+            <param name="defaultvalue">The default value to return. (ie. In case it doesn't exist or there is an error converting.)</param>
+            <returns>The value of the POST string variable, or the default value on error/bad input.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.RequestVars.PostEncoded(System.String,System.String)">
+            <summary>
+            Returns a value as a specific Type from form POST data or the default value if it cannot be parsed and encodes it using Server.HtmlEncode. Useful for form input fields.
+            </summary>
+            <param name="qsid">The name corresponding to the form object value you are trying to get.</param>
+            <param name="defaultvalue">The default value to return. (ie. In case it doesn't exist or there is an error converting.)</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.RequestVars.GetRequestIPv4Address">
+            <summary>
+            Attempts to find and return the IPv4 address of the current address.
+            </summary>
+            <returns>A string containing the IP address, "No IPv4 address found" if no address was found or "Unknown" if something went terribly wrong.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SessionWrapper.Get``1(System.String)">
+            <summary>
+            Retrieves an element of the type specified from the session (if it exists). Returns the default value of the type if there's an error or if it doesn't exist.
+            </summary>
+            <typeparam name="T">The type of object to get from the session.</typeparam>
+            <param name="key">The session index name.</param>
+            <returns>Returns the value of the session variable or the default value of the type if there's an error or if it doesn't exist.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SessionWrapper.Get``1(System.String,``0)">
+            <summary>
+            Retrieves an element of the type specified from the session (if it exists). Returns the default value passed if there's an error or if it doesn't exist.
+            </summary>
+            <typeparam name="T">The type of object to get from the session.</typeparam>
+            <param name="key">The session index name.</param>
+            <param name="defaultValue">The default value to return if something is wrong.</param>
+            <returns>Returns the value of the session variable or the default value of the type if there's an error or if it doesn't exist.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SessionWrapper.Add``1(System.String,``0)">
+            <summary>
+            This method will add or overwrite a key value pair currently in the session.
+            </summary>
+            <typeparam name="T">The type of object to add to the session.</typeparam>
+            <param name="key">The string representing the object in the session.</param>
+            <param name="value">The value to be stored.</param>
+            <returns>True if successful; else false.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SessionWrapper.Remove(System.String)">
+            <summary>
+            Removes the element with the given key from the session.
+            </summary>
+            <param name="key">The element to remove from the session.</param>
+        </member>
+        <member name="M:WebsiteUtilities.SessionWrapper.Exists(System.String)">
+            <summary>
+            Returns true if an element with the passed key exists in the session.
+            </summary>
+            <param name="key">The key to find in the session dictionary.</param>
+        </member>
+        <member name="M:WebsiteUtilities.SessionWrapper.ClearSessionElementsWithPrefix(System.String)">
+            <summary>
+            Clears all session elements with the specified prefix.
+            </summary>
+            <param name="prefix">The string prefixed onto the beginning of the session key.</param>
+            <returns>true if HttpContext exists and no errors</returns>
+        </member>
+        <member name="T:WebsiteUtilities.SQLDatabaseSMI">
+            <summary>
+            SQLDatabase object that uses the "DatabaseSMI" connection string from web.config.
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.SQLDatabase">
+            <summary>
+            Used to make queries on the SQL database. The connection will use the "DatabaseDefault" connection string from web.config.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.SQLDatabase.CustomMessageSeverity">
+            <summary>
+            The severity to be used with custom messages from Stored Procedure RAISERROR calls
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.#ctor">
+            <summary>
+            Initializes the SQL object and sets up the connection parameters.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.GetConnectionString">
+            <summary>
+            Returns the connection string.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.SQLInfoMessageHandler(System.Object,System.Data.SqlClient.SqlInfoMessageEventArgs)">
+            <summary>
+            Logs SQL
+            </summary>
+            <param name="sender"></param>
+            <param name="ea"></param>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.NonQuery(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes a non-query with parameters on the database connection specified in the constructor.
+            </summary>
+            <param name="querytext">The text of the query.</param>
+            <param name="sqlParameters">A (params) array of SqlParameters to pass into the SqlCommand object.</param>
+            <returns>The number of rows affected or -1 on error.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.NonQuery(System.String,WebsiteUtilities.SQLParamList)">
+            <summary>
+            Executes a non-query with parameters on the database connection specified in the constructor.
+            </summary>
+            <param name="querytext">The text of the query.</param>
+            <param name="paramlist">An SQLParamList object containing SqlParameters to pass into the SqlCommand object.</param>
+            <returns>The number of rows affected or -1 on error.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataTable(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes a stored procedure.
+            </summary>
+            <param name="procedureName">The name of the stored procedure. Do not prepend "EXEC".</param>
+            <param name="sqlParameters">A params array of SqlParameters to pass into the SqlCommand object.</param>
+            <returns>A DataTable representing the returned dataset. If more than one dataset is returned from the query, the last one will be returned from this method.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataTable(System.String,WebsiteUtilities.SQLParamList)">
+            <summary>
+            Executes a stored procedure.
+            </summary>
+            <param name="procedureName">The name of the stored procedure. Do not prepend "EXEC".</param>
+            <param name="paramlist">An SQLParamList object containing SqlParameters to pass into the SqlCommand object.</param>
+            <returns>A DataTable representing the returned dataset. If more than one dataset is returned from the query, the last one will be returned from this method.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataSet(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes a stored procedure.
+            </summary>
+            <param name="procedureName">The name of the stored procedure. Do not prepend "EXEC".</param>
+            <param name="sqlParameters">A params array of SqlParameters to pass into the SqlCommand object.</param>
+            <returns>A DataSet representing the returned dataset(s).</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.ExecStoredProcedureDataSet(System.String,WebsiteUtilities.SQLParamList)">
+            <summary>
+            Executes a stored procedure.
+            </summary>
+            <param name="procedureName">The name of the stored procedure. Do not prepend "EXEC".</param>
+            <param name="paramlist">An SQLParamList object containing SqlParameters to pass into the SqlCommand object.</param>
+            <returns>A DataSet representing the returned dataset(s).</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.QueryDataSet(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes a query on the database with parameters.
+            </summary>        
+            <param name="querytext">The text of the query.</param>
+            <param name="sqlParameters">A (params) array of SqlParameters to pass into the SqlCommand object.</param>
+            <returns>An object of type System.Data.DataSet containing the results of the queried data.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.QueryDataSet(System.String,WebsiteUtilities.SQLParamList)">
+            <summary>
+            Executes a query on the database with parameters.
+            </summary>        
+            <param name="querytext">The text of the query.</param>
+            <param name="paramlist">An SQLParamList object containing SqlParameters to pass into the SqlCommand object.</param>
+            <returns>An object of type System.Data.DataSet containing the results of the queried data.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.QueryDataTable(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes a query on the database with parameters.
+            </summary>        
+            <param name="querytext">The text of the query.</param>
+            <param name="paramlist">An SQLParamList object containing SqlParameters to pass into the SqlCommand object.</param>
+            <returns>An object of type System.Data.DataTable containing the results of the queried data.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.QueryDataTable(System.String,WebsiteUtilities.SQLParamList)">
+            <summary>
+            Executes a query on the database with parameters.
+            </summary>        
+            <param name="querytext">The text of the query.</param>
+            <param name="paramlist">A SQLParamList object containing SqlParameters to pass into the SqlCommand object.</param>
+            <returns>An object of type System.Data.DataTable containing the results of the queried data.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.QueryAndReturnIdentity(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Will execute an insert query and return the identity value for the inserted row. Used to insert a row and retrieve the auto-generated identity value at the same time. On error, it returns the default value of T.
+            </summary>
+            <typeparam name="T">The type of the identity.</typeparam>
+            <param name="querytext">An insert query.</param>
+            <param name="sqlParameters">A (params) array of SqlParameters to pass into the SqlCommand object.</param>
+            <returns>The identity value for the inserted row.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.QueryAndReturnIdentity(System.String,WebsiteUtilities.SQLParamList)">
+            <summary>
+            Will execute an insert query and return the identity value for the inserted row. Used to insert a row and retrieve the auto-generated identity value at the same time. On error, it returns the default value of T.
+            </summary>
+            <typeparam name="T">The type of the identity.</typeparam>
+            <param name="querytext">An insert query.</param>
+            <param name="paramlist">A SQLParamList object containing SqlParameters to pass into the SqlCommand object.</param>
+            <returns>The identity value for the inserted row.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.Transaction(System.String[],System.Int32[]@)">
+            <summary>
+            Runs a series of queries in a transaction and rolls back the transaction.
+            </summary>
+            <param name="queries">A string array of queries to be run in the transaction.</param>
+            <param name="returnvalues">The return values (rows affected) for each query.</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.QueryScalarValue``1(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes a scalar query with parameters and returns the value as type T.
+            </summary>
+            <typeparam name="T">The type of the value being returned.</typeparam>
+            <param name="querytext">The query to run.</param>
+            <param name="sqlParameters">A (params) array of SqlParameters to pass into the SqlCommand object.</param>
+            <returns>The scalar value of type T returned by the query.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.QueryScalarValue``1(System.String,WebsiteUtilities.SQLParamList)">
+            <summary>
+            Executes a scalar query with parameters and returns the value as type T.
+            </summary>
+            <typeparam name="T">The type of the value being returned.</typeparam>
+            <param name="querytext">The query to run.</param>
+            <param name="paramlist">An SQLParamList object containing SqlParameters to pass into the SqlCommand object.</param>
+            <returns>The scalar value of type T returned by the query.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.QueryScalarValue``1(System.String,``0,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Executes a scalar query with parameters and returns the value as type T or the defaultreturn value if there is an error in conversion.
+            </summary>
+            <typeparam name="T">The type of the value being returned.</typeparam>
+            <param name="querytext">The query to run.</param>
+            <param name="defaultreturn">The default value to return if there is an error converting the value.</param>
+            <param name="sqlParameters">A (params) array of SqlParameters to pass into the SqlCommand object.</param>
+            <returns>The scalar value of type T returned by the query.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.QueryScalarValue``1(System.String,``0,WebsiteUtilities.SQLParamList)">
+            <summary>
+            Executes a scalar query with parameters and returns the value as type T or the defaultreturn value if there is an error in conversion.
+            </summary>
+            <typeparam name="T">The type of the value being returned.</typeparam>
+            <param name="querytext">The query to run.</param>
+            <param name="defaultreturn">The default value to return if there is an error converting the value.</param>
+            <param name="paramlist">An SQLParamList object containing SqlParameters to pass into the SqlCommand object.</param>
+            <returns>The scalar value of type T returned by the query.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabase.EscapeLIKE(System.String)">
+            <summary>
+            Used to escape special charecters in a LIKE query, assumes the "ESCAPE '\'" clause is set. Note: Automatically calls SQLDatabase.RemoveSQLInject().
+            </summary>        
+            <param name="data">
+            The string data to be escaped
+            </param>
+            <returns>
+            The escaped SQL string.
+            </returns>
+        </member>
+        <member name="P:WebsiteUtilities.SQLDatabase.CommandTimeout">
+            <summary>
+            The timeout for the SqlCommand in seconds.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.SQLDatabase.Connection">
+            <summary>
+            Gets the connection object for the current instance.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.SQLDatabase.ExceptionList">
+            <summary>
+            The list of current exceptions after the last query.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.SQLDatabase.HasError">
+            <summary>
+            Whether or not the object has any exceptions from the previous query.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.SQLDatabase.MessageList">
+            <summary>
+            The list of current exceptions after the last query.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.SQLDatabase.HasMessages">
+            <summary>
+            Whether or not any sql info messages were returned from the query.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.SQLDatabase.HasCustomMessage">
+            <summary>
+            Whether or not any sql info messages were returned with a severity of CustomMessageSeverity from the query.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.SQLDatabase.FirstCustomMessage">
+            <summary>
+            Returns the first message in the message list with a severity equal to CustomMessageSeverity.  Returns String.Empty otherwise
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.SQLDatabase.LogErrors">
+            <summary>
+            This property allows you to define whether or not you want to allow
+            the object to log errors. This should only be used in the error log
+            class unless you know exactly what you're doing.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabaseSMI.GetConnectionString">
+            <summary>
+            Gets the connection string with the name "DatabaseSMI"
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.SQLDatabaseServer">
+            <summary>
+            SQLDatabase object that uses the "DatabaseSMI" connection string from web.config.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabaseServer.GetConnectionString">
+            <summary>
+            Gets the connection string with the name "DatabaseSMI"
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.SQLDatabaseWeb">
+            <summary>
+            SQLDatabase object that uses the "DatabaseWeb" connection string from web.config.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabaseWeb.GetConnectionString">
+            <summary>
+            Gets the connection string with the name "DatabaseWeb"
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.SQLDatabaseDebug">
+            <summary>
+            SQLDatabase object that uses the "DatabaseDebug" connection string from web.config.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabaseDebug.GetConnectionString">
+            <summary>
+            Gets the connection string with the name "DatabaseDebug"
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.SQLDatabaseReporting">
+            <summary>
+            SQLDatabase object that uses the "DatabaseDebug" connection string from web.config.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.SQLDatabaseReporting.GetConnectionString">
+            <summary>
+            Gets the connection string with the name "DatabaseReporting"
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.SQLParamList">
+            <summary>
+            Allows for adding SqlParameters to a list using chaining.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.SQLParamList.Add(System.String,System.Object)">
+            <summary>
+            Adds a SqlParameter object to the list.
+            </summary>
+            <param name="name">The name of the parameter (including the @ sign).</param>
+            <param name="value">The value of the parameter.</param>
+            <returns>The modified SQLParamList object.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLParamList.AddOutputParam(System.String,System.Int32,System.Data.SqlClient.SqlParameter@)">
+            <summary>
+            Adds a paramter with the direction specified as "Output".
+            </summary>
+            <param name="name">The name of the output parameter</param>
+            <param name="parameterSize">The size of the parameter. For ints, this is 4. For varchar, it is the max length of the column.</param>
+            <param name="outputParameterReference">A reference to the output parameter for use in retrieving the value.</param>
+            <returns>The modified SQLParamList object.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.SQLParamList.Add(System.Data.SqlClient.SqlParameter)">
+            <summary>
+            Adds a SqlParameter to the list.
+            </summary>
+            <param name="param">The SqlParam to add to the list.</param>
+        </member>
+        <member name="M:WebsiteUtilities.SQLParamList.ToArray">
+            <summary>
+            Retrieves the SqlParameter array.
+            </summary>
+            <returns>An array of SqlParameter objects.</returns>
+        </member>
+        <member name="P:WebsiteUtilities.SQLParamList.Count">
+            <summary>
+            Returns the number of items currently in the parameter list.
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.UserInfoExtensions">
+            <summary>
+            UserInformation Extension Methods 
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.UserInfoExtensions.UpdatePassword``1(``0,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ui"></param>
+            <param name="oldPass"></param>
+            <param name="newPass"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInfoExtensions.IsInGroup(WebsiteUtilities.UserInformation,System.Int32)">
+            <summary>
+            Is User in specified Group 
+            </summary>
+            <param name="user">UserInformation Object</param>
+            <param name="groupId">The GroupId to check if user a part of.</param>
+            <returns><see cref="T:System.Boolean"/>True if in group false if not</returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInfoExtensions.ToggleActiveStatus``1(``0)">
+            <summary>
+            Toggle the active status of this user.
+            </summary>
+            <param name="user">UserInformation Object</param>
+            <typeparam name="T"></typeparam>
+            <returns>T of updated user</returns> 
+        </member>
+        <member name="M:WebsiteUtilities.UserInfoExtensions.ToggleActiveStatus``1(``0,System.Boolean)">
+            <summary>
+            Toggle the active status of this user.
+            </summary>
+            <param name="user">UserInformation Object</param>
+            <param name="active">Force this value as status.</param>
+            <typeparam name="T"></typeparam>
+            <returns>T of updated user</returns>
+        </member>
+        <member name="T:WebsiteUtilities.UserInformation">
+            <summary>
+                This class is used as a base for UserInformation across websites.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.#ctor">
+            <summary>
+                Private constructor to prevent class from being initialized externally.
+            </summary>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.Load(System.String,System.String,System.Boolean,System.Int32,System.Int32@)">
+            <summary>
+                Load method for user information class. If UserID = -1, the user failed to be loaded. Override this method to handle user logins.
+            </summary>
+            <param name="usernameOrEmail">The username or email to check. Which one to pass depends on the useEmailForLogin parameter.</param>
+            <param name="password">The password to try.</param>
+            <param name="useEmailForLogin">If true, the usernameOrEmail value will be assumed to be an email.</param>
+            <param name="clientID">The client ID of the login attempt.</param>
+            <param name="outputValue">
+                <para>The value output from the query. Use this to generate response messages. Values are:</para>
+                <para>-1 - Unknown error. Something went wrong with the query.</para>
+                <para>0 - Success</para>
+                <para>1 - User is locked out.</para>
+                <para>2 - Login failed.</para>
+                <para>3 - No user or email was specified.</para>
+                <para>4 - User doesn't exist.</para>
+            </param>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.Load(System.Int32)">
+            <summary>
+                Loads a user based on their ID. Override this method to handle extra user information.
+            </summary>
+            <param name="userID">The ID of the user to load.</param>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.Load(System.String)">
+            <summary>
+                Loads a user based on their GUID string.
+            </summary>
+            <param name="guid">The GUID of the user to look up.</param>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.LogUserIn``1(System.String,System.String,System.Boolean,System.Int32,System.Int32@)">
+            <summary>
+                Virtual method used to attempt a user login. If the user could not be logged in, null will be returned. If the user is logged in, the object will be added to the session with the key "UserInfo". Requires "DatabaseReporting" connection string to be defined in web.config unless it's overridden.
+            </summary>
+            <param name="usernameOrEmail">The username or email to check. Which one to pass depends on the useEmailForLogin parameter.</param>
+            <param name="password">The password to try.</param>
+            <param name="useEmailForLogin">If true, the usernameOrEmail value will be assumed to be an email.</param>
+            <param name="clientID">The client ID of the login attempt.</param>
+            <param name="outputValue">
+                <para>The value output from the query. Use this to generate response messages. Values are:</para>
+                <para>-1 - Unknown error. Something went wrong with the query.</para>
+                <para>0 - Success</para>
+                <para>1 - User is locked out.</para>
+                <para>2 - Login failed.</para>
+                <para>3 - No user or email was specified.</para>
+                <para>4 - User doesn't exist.</para>
+            </param>
+            <returns>Null if the user could not be logged in or the UserInformation object </returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.GetUser``1(System.Int32)">
+            <summary>
+                Gets a user's information from the database. Requires "DatabaseReporting" connection string to be defined in web.config unless it's overridden.
+            </summary>
+            <typeparam name="T">A type of UserInformation class (or, simply, UserInformation). Override this class to add customizations to the user.</typeparam>
+            <param name="userID">The ID of the user in the database.</param>
+            <returns>A UserInformation object with data from the passed user ID. If the ID is invalid or there was an error, returns null.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.GetUser``1(System.String)">
+            <summary>
+                Gets a user's information from the database. Requires "DatabaseReporting" connection string to be defined in web.config unless it's overridden.
+            </summary>
+            <typeparam name="T">A derived UserInformation class (or, simply, UserInformation). Override this class to add customizations to the user.</typeparam>
+            <param name="guid">The user's GUID value.</param>
+            <returns>A UserInformation object with data from the passed GUID. If the ID is invalid or there was an error, returns null.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.GetUser``1(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Get User by username or email address 
+            </summary>
+            <param name="userNameOrEmail">Username or Email for user</param>
+            <param name="clientId">Client Id user is associated to</param>
+            <param name="isEmailSearch">(Optional: defaults to false if not specified) Search by email instead of username</param>
+            <typeparam name="T">Child of UserInformation</typeparam>
+            <returns>T</returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.GetUser``1(System.String,System.Int32)">
+            <summary>
+            Get User by username or email address 
+            </summary>
+            <param name="userNameOrEmail">Username or Email for user</param>
+            <param name="clientId">Client Id user is associated to</param>
+            <typeparam name="T">Child of UserInformation</typeparam>
+            <returns>T</returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.ResetPassword(System.Int32,System.Int32@)">
+            <summary>
+                Assgn new reset GUID to user and update password reset date
+            </summary>
+            <param name="userId"></param>
+            <param name="errorCode">
+                Action Response Code
+                Error Codes:
+                0 -- Unknown Error
+                1 -- Success
+                2 -- UserId not found
+                3 -- Something went horribly wrong(Multiple records affected)
+                4 -- UserId not provided
+                5 -- Critical Error
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.UpdatePassword``1(System.String,System.String)">
+            <summary>
+            Update Existing User's password by reset code 
+            </summary>
+            <param name="guid">Reset code sent to users email.</param>
+            <param name="newPass">User's new chosen password.</param>
+            <typeparam name="T">Child of UserInformation</typeparam>
+            <returns>
+            /////Error Codes/////
+            1 - Success
+            2 - User not found 
+            3 - Reset code expired
+            4 - Invalid password
+            5 - Database error
+            6 - No rows updated 
+            7 - Provided Password is incorrect
+            </returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.UpdatePassword``1(System.Int32,System.String,System.String)">
+            <summary>
+            Perform Password Change for regular password change 
+            </summary>
+            <param name="userid"></param>
+            <param name="newPass"></param>
+            <param name="oldPass"></param>
+            <typeparam name="T"></typeparam>
+            <returns>
+            1 - Success
+            2 - User not found 
+            3 - Reset code expired
+            4 - Invalid password
+            5 - Database error
+            6 - No rows updated 
+            7 - Provided Password is incorrect
+            </returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.UpdatePassword``1(``0,System.String,System.String)">
+            <summary>
+            Perform Password Update
+            </summary>
+            <param name="ui">Retrieved User</param>
+            <param name="oldPass">User's current password</param>
+            <param name="newPass">User's new password </param>
+            <returns>
+            /////Error Codes//////
+            1 - Success
+            2 - User not found 
+            3 - Reset code expired
+            4 - Invalid password
+            5 - Database error
+            6 - No rows updated 
+            7 - Provided Password is incorrect
+            </returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.AddUserToGroup(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Add a user to a security group for a given client
+            </summary>
+            <param name="userId">Id of User to add to group</param>
+            <param name="groupId">Id of Group to add user to</param>
+            <param name="clientId">Client Id Group belongs to </param>
+            <returns>
+            0 - Unknown Error
+            1 - Success
+            2 - Group Not Found
+            3 - User already in group
+            4 - Database Error
+            </returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.AddUserToGroup(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Add a user to a security group for a given client
+            </summary>
+            <param name="userId">Id of User to add to group</param>
+            <param name="groupId">Id of Group to add user to</param>
+            <param name="clientId">Client Id Group belongs to </param>
+            <param name="customFlag1">Custom Int Flag (Application specific)</param>
+            <param name="customFlag2">Custom Int Flag (Application specific)</param>
+            <param name="customChar1">Custom String Flag (Application specific)</param>
+            <param name="customChar2">Custom String Flag (Application specific)</param>
+            <returns>
+            /////Error Codes/////
+            0 - Unknown Error
+            1 - Success
+            2 - Group Not Found
+            3 - User already in group
+            4 - Database Error
+            </returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.IsInGroup(System.Int32,System.Int32)">
+            <summary>
+            Checks if user is currently registered in a given group 
+            </summary>
+            <param name="userId">User's ID </param>
+            <param name="groupId">Group to check if is User is member in</param>
+            <returns>True if user and group match false if either user or group not found or user not in group</returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.CreateNewUser``1(System.String,System.String,System.Int32,System.String,System.String,System.String,System.Int32@)">
+            <summary>
+            Create New User Login in database
+            </summary>
+            <param name="username">requested username, must be unique to client id</param>
+            <param name="password">Users's password - must be between 6-20 characters</param>
+            <param name="clientId">Client Id client id for application</param>
+            <param name="firstName">User's First Name</param>
+            <param name="lastName">User's Last Name</param>
+            <param name="email">User's Email - Must be globalally unique</param>
+            <param name="error">
+            Error output - 
+            //////Codes//////
+            0- Unknown Error
+            1- Success
+            2- Username or Email Exists
+            3- Invalid Email address
+            4- Invalid Characters in first or last name 
+            5- Password invalid 
+            6- Database Error
+            
+            </param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.ToggleActiveUserStatus``1(System.Int32,System.Nullable{System.Boolean},System.Int32@)">
+            <summary>
+            Toggles the user's active status 
+            </summary>
+            <typeparam name="T">Child of UserInformation </typeparam>
+            <param name="id">UserId</param>
+            <param name="active">Set to true or false explicitly define what the active state should be </param>
+            <param name="error">Error Code Output
+            /////Error Codes//////
+            0 - Unknown Error
+            1 - Success
+            2 - User not found
+            3 - Database Error
+            </param>
+            <returns>T of UserInformation</returns>
+        </member>
+        <member name="M:WebsiteUtilities.UserInformation.SetUserDataFromDataRow(System.Data.DataRow)">
+            <summary>
+                Sets the UserInformation's properties based on a DataRow.
+            </summary>
+            <param name="dr">The data row to pull user information from.</param>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.Username">
+            <summary>
+                Gets or sets the user's username.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.UserID">
+            <summary>
+                Gets or sets the user ID value from the database.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.FirstName">
+            <summary>
+                Gets or sets the user's first name.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.LastName">
+            <summary>
+                Gets or sets the user's last name.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.FullName">
+            <summary>
+                Gets the full name of the user in the format "&lt;FirstName&gt; &lt;LastName&gt;".
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.FullNameReverse">
+            <summary>
+                Gets the full name of the user in the format "&lt;LastName&gt;, &lt;FirstName&gt;".
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.Email">
+            <summary>
+                Gets or sets the user's email.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.LastLoginDate">
+            <summary>
+                The last time the user was logged in.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.PasswordExpireDate">
+            <summary>
+                The date the user's password expires.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.PasswordResetDate">
+            <summary>
+                The date the user reset their password.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.LoginCount">
+            <summary>
+                The amount of times the user has logged in.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.CreationDate">
+            <summary>
+                The date the user was created.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.ModificationDate">
+            <summary>
+                The last time this user was modified.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.ModifiedUserID">
+            <summary>
+                The user who last modified this user.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.GUID">
+            <summary>
+                The GUID of the user from the database.
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.IsActive">
+            <summary>
+            Is The User In a Deleted / Inactive 
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.CustomFlag1">
+            <summary>
+            The first custom flag associated with this user/group
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.CustomFlag2">
+            <summary>
+            The second custom flag associated with this user/group
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.CustomChar1">
+            <summary>
+            The first custom character string associated with this user/group
+            </summary>
+        </member>
+        <member name="P:WebsiteUtilities.UserInformation.CustomChar2">
+            <summary>
+            The second custom character string associated with this user/group
+            </summary>
+        </member>
+        <member name="T:WebsiteUtilities.Validation">
+            <summary>
+            This class is a static class used for validating data.
+            </summary>f
+        </member>
+        <member name="M:WebsiteUtilities.Validation.RegExMatch(System.String,System.String)">
+            <summary>
+            This function does regular expression matching and returns a true or false value for the results of the pattern match.
+            </summary>
+            <param name="toCheck">The string to be checked.</param>
+            <param name="regEx">The regular expression pattern.</param>
+            <returns>Whether (true) or not (false) the pattern matched.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.RegExCount(System.String,System.String)">
+            <summary>
+            Perform regular expression matching returning a count for occurences
+            </summary>
+            <param name="toCheck">The string to be checked.</param>
+            <param name="regEx">The regular expression pattern.</param>
+            <returns>Number of occurences of pattern in toCheck string</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.RegExCheck(System.String,WebsiteUtilities.ValidationType)">
+            <summary>
+            This method checks data to see if it is valid.
+            </summary>
+            <param name="strVal">The string data to check.</param>
+            <param name="typeValid">This specifies the type of validation to use.</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.RegExCheck(System.String,WebsiteUtilities.ValidationType,System.Int32,System.Int32)">
+            <summary>
+            This method checks data to see if it is valid as well as allowing you to specify a minimum/maximum length. (Overrides Password minimum length.)
+            </summary>
+            <param name="strVal">The string data to check.</param>
+            <param name="typeValid">This specifies the type of validation to use.</param>
+            <param name="minLength">This is the minimum length that the string must be to pass validation.</param>
+            <param name="maxLength">This is the maximum length that the string must be to pass validation.</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.TryParseDateTime(System.String)">
+            <summary>
+            Used by function IsDateTime() to validate format of string as a date (MM/dd/yyyy)
+            </summary>
+            <param name="value">A string to attempt to convert to a date time.</param>
+            <returns>DateTime from string or DateTime.MinValue if String was invalid</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.TryParseDateTime(System.String,System.String)">
+            <summary>
+            Attempts to convert a string to a date and checks it in a specified format
+            </summary>
+            <param name="value">A string to attempt to convert to a date time.</param>
+            <param name="format">Standard DateTime format string, must be valid</param>
+            <returns>DateTime from string or DateTime.MinValue if String or format was invalid</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.TryParseDateTime(System.String,System.String,System.DateTime)">
+            <summary>
+            Attempts to convert a string to a date and checks it in a specified format
+            </summary>
+            <param name="value">A string to attempt to convert to a date time</param>
+            <param name="format">Standard DateTime format string, must be valid</param>
+            <param name="defaultDate">Default return value in case of error</param>
+            <returns>DateTime from string or specified default value if String or format was invalid</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.IsDateTime(System.String)">
+            <summary>
+            Checks to see if a string is a valid (MM/dd/yyyy) datetime or not.
+            </summary>
+            <param name="value">The string value to attempt to convert to a date time.</param>
+            <returns>True if the string is a valid date time.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.IsDateTime(System.String,System.String)">
+            <summary>
+            Checks to see if a string is a valid datetime or not.
+            </summary>
+            <param name="value">The string value to attempt to convert to a date time.</param>
+            <param name="format">DateTime format that 'value' must comply with</param>
+            <returns>True if the string is a valid date time.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.IsDateTime(System.String,System.String,System.DateTime@)">
+            <summary>
+            Checks to see if a string is a valid datetime or not.
+            </summary>
+            <param name="value">The string value to attempt to convert to a date time.</param>
+            <param name="format">DateTime format that 'value' must comply with</param>
+            <param name="datetimeobj">An out parameter which contains the parsed date time object.</param>
+            <returns>True if the string is a valid date time.</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.IsGreaterDateTime(System.String,System.DateTime)">
+            <summary>
+            Checks to see if string is proper datetime format (MM/dd/yyyy), then checks if date is greater than or equal to comparison
+            </summary>
+            <param name="value">The string value to attempt to convert to a date time</param>
+            <param name="compare">DateTime of date to compare value to, if value was a valid date</param>
+            <returns>True if value is a valid date and is greater or equal to comparison date, and false if else</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.IsLesserDateTime(System.String,System.DateTime)">
+            <summary>
+            Checks to see if string is proper datetime format (MM/dd/yyyy), then checks if date is less than or equal to comparison
+            </summary>
+            <param name="value">The string value to attempt to convert to a date time</param>
+            <param name="compare">DateTime of date to compare value to, if value was a valid date</param>
+            <returns>True if value is a valid date and is lesser or equal to comparison date, and false if else</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.IsInDBTable(System.String,WebsiteUtilities.SQLDatabase,WebsiteUtilities.SQLParamList)">
+            <summary>
+            Runs the query string passed as a parameter. Returns true if records were returned for the query and false if none were returned.
+            </summary>
+            <param name="query">The select statement.</param>
+            <param name="sqlDB">The database object to run the query on.</param>
+            <param name="sqlParams">Optional. SQLParamList for the query.</param>
+            <returns>True if results exist, false otherwise</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.IsInDBTable(System.String,WebsiteUtilities.SQLDatabase,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Runs the query string passed as a parameter. Returns true if records were returned for the query and false if none were returned.
+            </summary>
+            <param name="query">The select statement.</param>
+            <param name="sqlDB">The database object to run the query on.</param>
+            <param name="sqlParams">Optional. Any SqlParameters for the query.</param>
+            <returns>True if results exist, false otherwise</returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.In``1(``0,``0[])">
+            <summary>
+            Validates whether the given vale falls into a range of values of the same type 
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebsiteUtilities.Validation.ValidateSIN(System.String)">
+            <summary>
+            Checks whether or not a SIN is valid. Does not check formatting, only if the number itself is a valid SIN.
+            </summary>
+            <param name="sin">Nine-digit SIN string.</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebsiteUtilities.ValidationType">
+            <summary>
+            This enumeration is used within the Validation class to differentiate between different types of validations.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ValidationType.Name">
+            <summary>
+            Only letters and spaces allowed.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ValidationType.NameNoSpace">
+            <summary>
+            Only letters allowed.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ValidationType.Email">
+            <summary>
+            Only valid email address formats allowed.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ValidationType.Password">
+            <summary>
+            Only letters, spaces and !#$@%&amp;*+=?^_{|}~- allowed. 8 characters or longer.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ValidationType.Postal">
+            <summary>
+            Only postal codes in the format "A1A 1A1" allowed.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ValidationType.PostalAlternate">
+            <summary>
+            Postal codes in the format "A1A1A1" or "A1A 1A1" allowed.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ValidationType.ZipCode">
+            <summary>
+            Only 5 digit (eg. 12345) or 9 digit (eg. 12345-6789) zip codes allowed.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ValidationType.Phone">
+            <summary>
+            Only numbers in the format "###-###-####" allowed.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ValidationType.PhoneOpen">
+            <summary>
+            "(###) ###-####" allowed, spaces or dashes with brackets around first three, all optional
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ValidationType.PhoneAlternate">
+            <summary>
+            Only 10 digit numbers (eg. "##########") allowed.
+            </summary>
+        </member>
+        <member name="F:WebsiteUtilities.ValidationType.PhoneExt">
+            <summary>
+            Only 1 to 5 digit numbers allowed.
+            </summary>
+        </member>
+    </members>
+</doc>

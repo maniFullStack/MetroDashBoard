@@ -1,0 +1,8 @@
+/* Hard Rock Casino Vancouver */
+body.survey {
+    background:#000 url('../../Images/backgrounds/hr.jpg') repeat-x top left;
+}
+ 
+#header-logo {
+    background-image:url('../../Images/headers/HardRockHeader.jpg');
+}

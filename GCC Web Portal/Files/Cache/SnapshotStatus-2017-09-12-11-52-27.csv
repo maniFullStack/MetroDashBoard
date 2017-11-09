@@ -1,0 +1,201 @@
+Location,Department,RecordCount,ActualSalaryCount,ActualHourlyCount,TargetSalaryCount,TargetHourlyCount,TotalCount,SalaryCompletionRate,HourlyCompletionRate,CompletionRate
+Overall,All Departments,4463,755,3708,797,4804,5601,0.9473024,0.7718568,0.796822
+Bingo Esquimalt,All Departments,0,0,0,1,19,20,0,0,0
+Bingo Esquimalt,Gaming Operations: Bingo and F&B,0,0,0,1,19,20,0,0,0
+Casino Nanaimo,All Departments,118,19,99,19,108,127,1,0.9166667,0.9291338
+Casino Nanaimo,Cage / Count,16,0,16,0,19,19,,0.8421053,0.8421053
+Casino Nanaimo,Food & Beverage,19,2,17,1,18,19,2,0.9444444,1
+Casino Nanaimo,Guest Services/Slots,15,1,14,0,17,17,,0.8235294,0.8823529
+Casino Nanaimo,Operations Management,12,11,1,11,0,11,1,,1.090909
+Casino Nanaimo,Security,11,2,9,3,10,13,0.6666667,0.9,0.8461539
+Casino Nanaimo,Surveillance,9,3,6,4,7,11,0.75,0.8571429,0.8181818
+Casino Nanaimo,Table Games,36,0,36,0,37,37,,0.972973,0.972973
+Casino New Brunswick,All Departments,314,73,241,56,379,435,1.303571,0.6358839,0.7218391
+Casino New Brunswick,Banquets,6,0,6,0,46,46,,0.1304348,0.1304348
+Casino New Brunswick,Cage / Count,15,0,15,0,21,21,,0.7142857,0.7142857
+Casino New Brunswick,Casino Guest Services including GS Manager and Marketing Coordintor,0,0,0,0,11,11,,0,0
+Casino New Brunswick,Casino Housekeeping including Leads ,0,0,0,0,15,15,,0,0
+Casino New Brunswick,Culinary,30,0,30,0,55,55,,0.5454546,0.5454546
+Casino New Brunswick,"Exec. Hskper, HGS Mgr, Exec Chef, Fac. Mgr, Buf. Mgr, Pub Mgr, Banq. Mgr, S&C Mgr, S&C Coord, Hot Hskping Sup, Facilities",0,0,0,15,0,15,0,,0
+Casino New Brunswick,Finance /Database Analyst / Human Resources/IT(TSG),0,0,0,11,0,11,0,,0
+Casino New Brunswick,Food & Beverage Buffet including Buffet Sups,0,0,0,0,25,25,,0,0
+Casino New Brunswick,Food & Beverage Pub & Beverage including Pub Sups and Bev Hostesses,0,0,0,0,31,31,,0,0
+Casino New Brunswick,Hotel Housekeeping including Lead and supervisor,0,0,0,0,22,22,,0,0
+Casino New Brunswick,"Hotel Ops Mrgs & Sups, Sales & Catering, Fac. Lead, Hotel Hskping Lead (combined into Exec Housekeeper)",0,0,0,,,,,,
+Casino New Brunswick,"Hotel: Res., Concierge and GS, Night Audit, GS Supervisor ",0,0,0,0,14,14,,0,0
+Casino New Brunswick,"Leadership, Admin Assist Mktg Mgr, Cage Mgr, Spa Mgr, Asian Host, Receiving, IT Mgr, Sec. Mgr, db Mgr, Ent.",0,0,0,17,0,17,0,,0
+Casino New Brunswick,Security (Incl. Event Safety Officers) ,0,0,0,0,46,46,,0,0
+Casino New Brunswick,Slots (includes Slot Techs),11,0,11,0,21,21,,0.5238096,0.5238096
+Casino New Brunswick,Spa Aestaticians and Lead,0,0,0,0,10,10,,0,0
+Casino New Brunswick,Surveillance,0,0,0,0,12,12,,0,0
+Casino New Brunswick,Table Games Dealers & Dual Supervisors,0,0,0,0,50,50,,0,0
+Casino New Brunswick,"Table Games Management including CSMs and Pit/Dual Pit Managers, Full Table Sups",0,0,0,13,0,13,0,,0
+Casino Nova Scotia Halifax,All Departments,304,58,246,54,267,321,1.074074,0.9213483,0.9470405
+Casino Nova Scotia Halifax,Cage/Countroom/Guest Services,0,0,0,1,32,33,0,0,0
+Casino Nova Scotia Halifax,Culinary / Stewarding,13,1,12,1,15,16,1,0.8,0.8125
+Casino Nova Scotia Halifax,Food & Beverage: Banquets,18,1,17,0,20,20,,0.85,0.9
+Casino Nova Scotia Halifax,Food & Beverage: Beverage,23,1,22,0,23,23,,0.9565217,1
+Casino Nova Scotia Halifax,Food & Beverage: Restaurants,14,0,14,1,14,15,0,1,0.9333333
+Casino Nova Scotia Halifax,Housekeeping/Maintenance/Facilities,16,2,14,0,16,16,,0.875,1
+Casino Nova Scotia Halifax,Operations Support & Specialists,15,15,0,16,0,16,0.9375,,0.9375
+Casino Nova Scotia Halifax,Ops Management & Department Heads,17,17,0,19,0,19,0.8947368,,0.8947368
+Casino Nova Scotia Halifax,Security,33,4,29,4,31,35,1,0.9354839,0.9428571
+Casino Nova Scotia Halifax,Slots,28,2,26,2,27,29,1,0.962963,0.9655172
+Casino Nova Scotia Halifax,Surveillance,14,2,12,2,11,13,1,1.090909,1.076923
+Casino Nova Scotia Halifax,Table Games,83,11,72,8,78,86,1.375,0.9230769,0.9651163
+Casino Nova Scotia Sydney,All Departments,122,24,98,24,103,127,1,0.9514563,0.9606299
+Casino Nova Scotia Sydney,Cage & Countroom,15,1,14,1,15,16,1,0.9333333,0.9375
+Casino Nova Scotia Sydney,Casino Operations,33,4,29,4,28,32,1,1.035714,1.03125
+Casino Nova Scotia Sydney,Culinary,9,0,9,0,12,12,,0.75,0.75
+Casino Nova Scotia Sydney,Food & Beverage,11,0,11,0,12,12,,0.9166667,0.9166667
+Casino Nova Scotia Sydney,"Operations Management, Admin & Misc",0,0,0,16,1,17,0,0,0
+Casino Nova Scotia Sydney,Property Services,7,0,7,0,7,7,,1,1
+Casino Nova Scotia Sydney,Security,22,2,20,2,21,23,1,0.952381,0.9565217
+Casino Nova Scotia Sydney,Surveillance,8,1,7,1,7,8,1,1,1
+Chances Chilliwack,All Departments,77,12,65,11,65,76,1.090909,1,1.013158
+Chances Chilliwack,"Bingo, Cage & Slots",26,0,26,0,26,26,,1,1
+Chances Chilliwack,Food & Beverage,27,0,27,0,27,27,,1,1
+Chances Chilliwack,Operations Management,11,11,0,11,0,11,1,,1
+Chances Chilliwack,Security,12,0,12,0,12,12,,1,1
+Chances Dawson Creek,All Departments,40,7,33,7,36,43,1,0.9166667,0.9302326
+Chances Dawson Creek,"Bingo, Cage & Slots",11,0,11,0,12,12,,0.9166667,0.9166667
+Chances Dawson Creek,Food & Beverage,13,0,13,0,15,15,,0.8666667,0.8666667
+Chances Dawson Creek,Operations Management,6,6,0,6,0,6,1,,1
+Chances Dawson Creek,Security,10,1,9,1,9,10,1,1,1
+Chances Maple Ridge,All Departments,67,14,53,14,59,73,1,0.8983051,0.9178082
+Chances Maple Ridge,Food & Beverage,21,2,19,1,22,23,2,0.8636364,0.9130435
+Chances Maple Ridge,"Gaming Operations: Bingo, Slots and Cage",24,1,23,0,26,26,,0.8846154,0.9230769
+Chances Maple Ridge,Operations Management,12,11,1,13,0,13,0.8461539,,0.9230769
+Chances Maple Ridge,Security,10,0,10,0,11,11,,0.9090909,0.9090909
+Elements Casino,All Departments,266,39,227,40,239,279,0.975,0.9497908,0.953405
+Elements Casino,Cage / Count,24,0,24,0,23,23,,1.043478,1.043478
+Elements Casino,Culinary,18,2,16,2,20,22,1,0.8,0.8181818
+Elements Casino,Food & Beverage,42,5,37,4,37,41,1.25,1,1.02439
+Elements Casino,Guest Services & Slots,28,3,25,3,25,28,1,1,1
+Elements Casino,Operations Management,18,17,1,17,1,18,1,1,1
+Elements Casino,Racing/Mutuels,0,0,0,3,13,16,0,0,0
+Elements Casino,Security,29,5,24,5,27,32,1,0.8888889,0.90625
+Elements Casino,Surveillance,12,4,8,5,7,12,0.8,1.142857,1
+Elements Casino,Table Games,81,1,80,1,86,87,1,0.9302326,0.9310345
+Flamboro Downs,All Departments,93,10,83,19,125,144,0.5263158,0.664,0.6458333
+Flamboro Downs,Admin/Operations Management,0,0,0,12,5,17,0,0,0
+Flamboro Downs,Food & Beverage  Non Gaming,0,0,0,,,,,,
+Flamboro Downs,Food & Beverage Culinary,0,0,0,0,14,14,,0,0
+Flamboro Downs,Food & Beverage Gaming,0,0,0,0,67,67,,0,0
+Flamboro Downs,Janitorial and Maintenance,0,0,0,0,10,10,,0,0
+Flamboro Downs,Security & Mutuels,0,0,0,7,29,36,0,0,0
+GCGC Corporate Office(s) - BC,All Departments,92,92,0,105,0,105,0.8761905,,0.8761905
+GCGC Corporate Office(s) - BC,BC Operations & Development Management,10,10,0,12,0,12,0.8333333,,0.8333333
+GCGC Corporate Office(s) - BC,Corporate Support Services,15,15,0,17,0,17,0.8823529,,0.8823529
+GCGC Corporate Office(s) - BC,Executive & Senior Management,7,7,0,11,0,11,0.6363636,,0.6363636
+GCGC Corporate Office(s) - BC,Finance & Accounting,23,23,0,24,0,24,0.9583333,,0.9583333
+GCGC Corporate Office(s) - BC,Human Resources & Payroll,13,13,0,14,0,14,0.9285714,,0.9285714
+GCGC Corporate Office(s) - BC,Technology Services Group,24,24,0,27,0,27,0.8888889,,0.8888889
+Georgian Downs,All Departments,23,7,16,7,19,26,1,0.8421053,0.8846154
+Georgian Downs,All Employees,0,0,0,7,19,26,0,0,0
+Great American Casino - DesMoines,All Departments,0,0,0,11,149,160,0,0,0
+Great American Casino - DesMoines,"Cage/Count, Surveillance & Security",0,0,0,0,21,21,,0,0
+Great American Casino - DesMoines,Food & Beverage,0,0,0,1,36,37,0,0,0
+Great American Casino - DesMoines,Operations Management,0,0,0,10,0,10,0,,0
+Great American Casino - DesMoines,Table Games,0,0,0,0,92,92,,0,0
+Great American Casino - Everett,All Departments,90,12,78,11,149,160,1.090909,0.52349,0.5625
+Great American Casino - Everett,"Cage/Count, Surveillance & Security",0,0,0,0,21,21,,0,0
+Great American Casino - Everett,Food & Beverage,25,2,23,1,36,37,2,0.6388889,0.6756757
+Great American Casino - Everett,Operations Management,5,5,0,10,0,10,0.5,,0.5
+Great American Casino - Everett,Table Games,46,3,43,0,92,92,,0.4673913,0.5
+Great American Casino - Lakewood,All Departments,142,14,128,13,136,149,1.076923,0.9411765,0.9530202
+Great American Casino - Lakewood,"Cage/Count, Surveillance & Security",0,0,0,0,21,21,,0,0
+Great American Casino - Lakewood,Food & Beverage,40,3,37,1,37,38,3,1,1.052632
+Great American Casino - Lakewood,Operations Management,8,6,2,12,1,13,0.5,2,0.6153846
+Great American Casino - Lakewood,Table Games,73,3,70,0,77,77,,0.9090909,0.9480519
+Great American Casino - Tukwila,All Departments,104,14,90,16,171,187,0.875,0.5263158,0.5561497
+Great American Casino - Tukwila,"Cage/Count, Surveillance & Security",0,0,0,0,21,21,,0,0
+Great American Casino - Tukwila,Food & Beverage,30,3,27,1,57,58,3,0.4736842,0.5172414
+Great American Casino - Tukwila,Operations Management,8,8,0,15,0,15,0.5333334,,0.5333334
+Great American Casino - Tukwila,Table Games,50,1,49,0,93,93,,0.5268817,0.5376344
+Hard Rock Casino Vancouver,All Departments,549,76,473,71,527,598,1.070423,0.8975332,0.9180602
+Hard Rock Casino Vancouver,Cage / Count,51,4,47,3,50,53,1.333333,0.94,0.9622642
+Hard Rock Casino Vancouver,Culinary,36,3,33,3,35,38,1,0.9428571,0.9473684
+Hard Rock Casino Vancouver,Food & Beverage,87,4,83,4,90,94,1,0.9222222,0.9255319
+Hard Rock Casino Vancouver,Guest Services & Retail,17,1,16,1,18,19,1,0.8888889,0.8947368
+Hard Rock Casino Vancouver,"Human Resources, Accounting, Maintenance (Property)",0,0,0,0,0,0,,,
+Hard Rock Casino Vancouver,"Marketing, Sales, Buyer",0,0,0,0,0,0,,,
+Hard Rock Casino Vancouver,Security,44,6,38,6,40,46,1,0.95,0.9565217
+Hard Rock Casino Vancouver,Senior Management (includes DHs) (Formerly Operations Management),0,0,0,32,7,39,0,0,0
+Hard Rock Casino Vancouver,Slots,33,5,28,5,32,37,1,0.875,0.8918919
+Hard Rock Casino Vancouver,Surveillance,21,9,12,9,15,24,1,0.8,0.875
+Hard Rock Casino Vancouver,Table Games & Customer Loyalty,208,12,196,6,226,232,2,0.8672566,0.8965517
+Hard Rock Casino Vancouver,"Theatre: Box Office, Ushers",16,3,13,2,14,16,1.5,0.9285714,1
+Hastings Racecourse,All Departments,197,34,163,38,254,292,0.8947368,0.6417323,0.6746575
+Hastings Racecourse,Cage / Count,13,1,12,0,14,14,,0.8571429,0.9285714
+Hastings Racecourse,Culinary,2,0,2,0,15,15,,0.1333333,0.1333333
+Hastings Racecourse,Food & Beverage,32,1,31,0,61,61,,0.5081967,0.5245901
+Hastings Racecourse,HPI & Customer Service,14,0,14,0,18,18,,0.7777778,0.7777778
+Hastings Racecourse,Mutuels,35,3,32,0,35,35,,0.9142857,1
+Hastings Racecourse,Operations Management & Marketing,24,22,2,32,3,35,0.6875,0.6666667,0.6857143
+Hastings Racecourse,Property Services,14,0,14,0,17,17,,0.8235294,0.8235294
+Hastings Racecourse,Racing and First Aid,20,0,20,0,53,53,,0.3773585,0.3773585
+Hastings Racecourse,Security,15,1,14,0,17,17,,0.8235294,0.8823529
+Hastings Racecourse,Slots & Guest Services,20,0,20,0,17,17,,1.176471,1.176471
+Hastings Racecourse,Surveillance,8,6,2,6,4,10,1,0.5,0.8
+River Rock Casino Resort,All Departments,1236,134,1102,130,1221,1351,1.030769,0.9025389,0.9148779
+River Rock Casino Resort,Accounting / Receiving / Human Resources,22,16,6,17,7,24,0.9411765,0.8571429,0.9166667
+River Rock Casino Resort,Cage / Count,69,4,65,4,75,79,1,0.8666667,0.8734177
+River Rock Casino Resort,Casino: Guest Services,28,0,28,0,35,35,,0.8,0.8
+River Rock Casino Resort,Culinary,88,2,86,0,96,96,,0.8958333,0.9166667
+River Rock Casino Resort,Culinary / Food & Beverage Management & Admin,20,14,6,16,0,16,0.875,,1.25
+River Rock Casino Resort,Food & Beverage – Banquets,0,0,0,0,36,36,,0,0
+River Rock Casino Resort,Food & Beverage – Outlets,0,0,0,0,147,147,,0,0
+River Rock Casino Resort,"Hotel: Reservations, Front Office, Concierge and Guest Services",51,5,46,4,44,48,1.25,1.045455,1.0625
+River Rock Casino Resort,Housekeeping,60,3,57,1,60,61,3,0.95,0.9836066
+River Rock Casino Resort,Property Services,13,1,12,1,13,14,1,0.9230769,0.9285714
+River Rock Casino Resort,Resort Management ,6,6,0,12,0,12,0.5,,0.5
+River Rock Casino Resort,"Sales, Marketing & Player Relations",23,23,0,23,0,23,1,,1
+River Rock Casino Resort,Security,73,7,66,8,71,79,0.875,0.9295775,0.9240506
+River Rock Casino Resort,Senior Management,19,19,0,18,0,18,1.055556,,1.055556
+River Rock Casino Resort,Slots,50,7,43,4,48,52,1.75,0.8958333,0.9615384
+River Rock Casino Resort,Stewarding,15,0,15,0,21,21,,0.7142857,0.7142857
+River Rock Casino Resort,Surveillance,28,9,19,10,21,31,0.9,0.9047619,0.9032258
+River Rock Casino Resort,Table Games – Dealer Supervisors ,0,0,0,0,165,165,,0,0
+River Rock Casino Resort,Table Games – Dealers,0,0,0,0,350,350,,0,0
+River Rock Casino Resort,Table Games Management,25,10,15,9,17,26,1.111111,0.8823529,0.9615384
+River Rock Casino Resort,Theatre,14,1,13,3,15,18,0.3333333,0.8666667,0.7777778
+Shorelines Casino Belleville,All Departments,1,0,1,26,242,268,0,0.004132231,0.003731343
+Shorelines Casino Belleville,Cage / Count,1,0,1,0,26,26,,0.03846154,0.03846154
+Shorelines Casino Belleville,Facilities,0,0,0,0,11,11,,0,0
+Shorelines Casino Belleville,Food & Beverage,0,0,0,2,62,64,0,0,0
+Shorelines Casino Belleville,Guest Services,0,0,0,1,10,11,0,0,0
+Shorelines Casino Belleville,Operations Management,0,0,0,10,0,10,0,,0
+Shorelines Casino Belleville,Operations Support (HR/Audit/IT),0,0,0,5,2,7,0,0,0
+Shorelines Casino Belleville,Security,0,0,0,0,24,24,,0,0
+Shorelines Casino Belleville,Slots,0,0,0,1,19,20,0,0,0
+Shorelines Casino Belleville,Surveillance,0,0,0,0,14,14,,0,0
+Shorelines Casino Belleville,Table Games Dealers,0,0,0,0,65,65,,0,0
+Shorelines Casino Belleville,Table Games Sups/PitMan/CSM,0,0,0,7,9,16,0,0,0
+Shorelines Kawartha,All Departments,135,33,102,36,101,137,0.9166667,1.009901,0.9854015
+Shorelines Kawartha,Cage / Count,28,5,23,5,24,29,1,0.9583333,0.9655172
+Shorelines Kawartha,Facilities,11,1,10,1,11,12,1,0.9090909,0.9166667
+Shorelines Kawartha,Marketing & Player Development,0,0,0,5,12,17,0,0,0
+Shorelines Kawartha,"Operations Management (HR, Audit, IT, Managers)",14,13,1,15,1,16,0.8666667,1,0.875
+Shorelines Kawartha,Security,28,2,26,1,26,27,2,1,1.037037
+Shorelines Kawartha,Slot Operations,25,3,22,5,20,25,0.6,1.1,1
+Shorelines Kawartha,Surveillance,12,4,8,4,7,11,1,1.142857,1.090909
+Shorelines Thousand Islands,All Departments,319,59,260,63,278,341,0.9365079,0.9352518,0.9354839
+Shorelines Thousand Islands,Cage / Count,34,4,30,4,31,35,1,0.9677419,0.9714286
+Shorelines Thousand Islands,Facilities/Maintenance,0,0,0,1,15,16,0,0,0
+Shorelines Thousand Islands,Food & Beverage,30,4,26,4,41,45,1,0.6341463,0.6666667
+Shorelines Thousand Islands,Guest Services,17,2,15,5,12,17,0.4,1.25,1
+Shorelines Thousand Islands,Operations Management,11,11,0,11,0,11,1,,1
+Shorelines Thousand Islands,Operations Support,13,11,2,12,2,14,0.9166667,1,0.9285714
+Shorelines Thousand Islands,Security,34,5,29,5,29,34,1,1,1
+Shorelines Thousand Islands,Slots,26,6,20,4,22,26,1.5,0.9090909,1
+Shorelines Thousand Islands,Surveillance,15,3,12,4,10,14,0.75,1.2,1.071429
+Shorelines Thousand Islands,Table Games,123,10,113,13,116,129,0.7692308,0.9741379,0.9534883
+View Royal Casino,All Departments,174,24,150,25,157,182,0.96,0.955414,0.956044
+View Royal Casino,Cage / Count,19,1,18,0,19,19,,0.9473684,1
+View Royal Casino,Food & Beverage,27,2,25,3,27,30,0.6666667,0.9259259,0.9
+View Royal Casino,Guest Services/Slots,17,1,16,0,19,19,,0.8421053,0.8947368
+View Royal Casino,Operations Management,12,11,1,16,0,16,0.6875,,0.75
+View Royal Casino,Security,17,1,16,2,16,18,0.5,1,0.9444444
+View Royal Casino,Surveillance,12,4,8,4,9,13,1,0.8888889,0.9230769
+View Royal Casino,Table Games,70,4,66,0,67,67,,0.9850746,1.044776

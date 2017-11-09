@@ -1,0 +1,9 @@
+﻿/* Thousand Islands */
+body.survey {
+    background:#fff;
+}
+#header-logo {
+    background-image:url('../../Images/headers/ThousandIslandsHeader.jpg');
+    width:756px;
+    height:113px;
+}

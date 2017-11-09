@@ -1,0 +1,28 @@
+﻿.jqplot-grid-canvas,.jqplot-axis {
+    display: none;
+}
+.mini-chart {
+    /*margin-top:-10px;*/
+    height:50px;
+    margin:-10px 0 0 25px;
+}
+.jqplot-point-label {
+    font-weight:bold;
+    color:#fff;
+}
+.table > thead > tr > th {
+    text-align:center;
+}
+.table > tbody > tr > td {
+    text-align:center;
+}
+.sub-zero {
+    color:#dd4b39
+}
+.table-bordered > tbody > tr > .sep {
+    border-top:none;
+    border-bottom:none;
+}
+table.results > thead > tr > th {
+    text-align:center;
+}

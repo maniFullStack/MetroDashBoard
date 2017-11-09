@@ -1,0 +1,36 @@
+﻿You're receiving this email because a guest of {CasinoName} triggered a notification based on their comments. Please read through the guest's responses below to craft an appropriate response, if required.
+
+The link is the only option to respond to and log the feedback.
+
+Did the guest experience any problems?
+{Problems}
+
+
+Did the guest request a response / follow-up by property staff?
+{Response}
+
+
+Brief description of the problem (if any):
+{ProblemDescription}
+
+
+Comments about staff (if any):
+{StaffComment}
+
+
+General comments or suggestions (if any):
+{GeneralComments}
+
+
+Memorable employee or area (if any):
+{MemorableEmployee}
+
+Review the other responses to the survey:
+{SurveyLink}
+{FeedbackLinkTXT}
+
+This email has been sent to the following people:
+{Recipients}
+
+
+Note: This is an automated response. Please do not reply to this email. Use the link above to respond to the feedback.

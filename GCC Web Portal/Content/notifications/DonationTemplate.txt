@@ -1,0 +1,14 @@
+﻿You're receiving this email because someone filled out a request for sponsorship or a donation from {CasinoName}.
+
+Please click on (or copy) the following link to review the full request:
+{Link}
+
+To track this feedback, use the following link:
+{FeedbackLink}
+
+
+This email has been sent to the following people:
+{Recipients}
+
+
+Note: This is an automated response. Please do not reply to this email.
