@@ -1,0 +1,9 @@
+﻿/* Ajax */
+body.survey {
+    background:#fff;
+}
+#header-logo {
+    background-image:url('../../Images/headers/AJAHeader.jpg');
+    width:756px;
+    height:113px;
+}

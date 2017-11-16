@@ -267,6 +267,10 @@
 
                                                 <asp:ListItem Text="Casino New Brunswick" Value="19"></asp:ListItem>
                                                 <asp:ListItem Text="Shorelines Casino Belleville" Value="20"></asp:ListItem>
+                                                <asp:ListItem Text="Bingo Esquimalt" Value="21"></asp:ListItem>
+                                                <asp:ListItem Text="Casino Woodbine" Value="22"></asp:ListItem>
+                                                <asp:ListItem Text="Casino Ajax" Value="23"></asp:ListItem>
+                                                <asp:ListItem Text="Great Blue Heron Casino" Value="24"></asp:ListItem>
                                             </sc:ReportFilterListBox>
                                         </div>
                                         <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>

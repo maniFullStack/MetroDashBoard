@@ -27,6 +27,9 @@ namespace SharedClasses {
 		ThousandIslands = 18,
         CasinoNewBrunswick = 19,
         ShorelinesCasinoBelleville = 20,
-        BingoEsquimalt = 21
+        BingoEsquimalt = 21,
+        CasinoWoodbine = 22,
+        CasinoAjax = 23,
+        GreatBlueHeronCasino = 24
     }
 }

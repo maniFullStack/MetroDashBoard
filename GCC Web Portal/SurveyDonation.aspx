@@ -190,23 +190,37 @@
 
         <div class="row">
             <div class="col-xs-6 col-md-5">Casino Nouveau-Brunswick (Moncton, NB)</div>
-            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="SurveyCheckBox3" SessionKey="Q11M_PastSupport" DBColumn="Q11M_PastSupport" DBValue="1" /></div>
-            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="SurveyCheckBox4" SessionKey="Q11M_CurrentRequest" DBColumn="Q11M_CurrentRequest" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11M_PastSupport" SessionKey="Q11M_PastSupport" DBColumn="Q11M_PastSupport" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11M_CurrentRequest" SessionKey="Q11M_CurrentRequest" DBColumn="Q11M_CurrentRequest" DBValue="1" /></div>
         </div>
+
+
+        <div class="row">
+            <div class="col-xs-6 col-md-5">Casino Woodbine (Woodbine, ON)</div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11N_PastSupport" SessionKey="Q11N_PastSupport" DBColumn="Q11N_PastSupport" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11N_CurrentRequest" SessionKey="Q11N_CurrentRequest" DBColumn="Q11N_CurrentRequest" DBValue="1" /></div>
+        </div>
+
 
 
         <%} else { %>
 
         <div class="row">
             <div class="col-xs-6 col-md-5">Shorelines Casino Thousand Islands (Gananoque, ON)</div>
-            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="SurveyCheckBox1" SessionKey="Q11L_PastSupport" DBColumn="Q11L_PastSupport" DBValue="1" /></div>
-            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="SurveyCheckBox2" SessionKey="Q11L_CurrentRequest" DBColumn="Q11L_CurrentRequest" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11O_PastSupport" SessionKey="Q11O_PastSupport" DBColumn="Q11O_PastSupport" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11O_CurrentRequest" SessionKey="Q11O_CurrentRequest" DBColumn="Q11O_CurrentRequest" DBValue="1" /></div>
         </div>
 
         <div class="row">
             <div class="col-xs-6 col-md-5">Casino New Brunswick (Moncton, NB)</div>
-            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11M_PastSupport" SessionKey="Q11M_PastSupport" DBColumn="Q11M_PastSupport" DBValue="1" /></div>
-            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11M_CurrentRequest" SessionKey="Q11M_CurrentRequest" DBColumn="Q11M_CurrentRequest" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11P_PastSupport" SessionKey="Q11P_PastSupport" DBColumn="Q11P_PastSupport" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11P_CurrentRequest" SessionKey="Q11P_CurrentRequest" DBColumn="Q11P_CurrentRequest" DBValue="1" /></div>
+        </div>
+
+          <div class="row">
+            <div class="col-xs-6 col-md-5">Casino Woodbine (Woodbine, ON)</div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11Q_PastSupport" SessionKey="Q11Q_PastSupport" DBColumn="Q11Q_PastSupport" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11Q_CurrentRequest" SessionKey="Q11Q_CurrentRequest" DBColumn="Q11Q_CurrentRequest" DBValue="1" /></div>
         </div>
 
 
@@ -215,11 +229,29 @@
         
          <div class="row">
             <div class="col-xs-6 col-md-5">Shorelines Casino Belleville (Belleville, ON)</div>
-            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11N_PastSupport" SessionKey="Q11N_PastSupport" DBColumn="Q11N_PastSupport" DBValue="1" /></div>
-            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11N_CurrentRequest" SessionKey="Q11N_CurrentRequest" DBColumn="Q11N_CurrentRequest" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11R_PastSupport" SessionKey="Q11R_PastSupport" DBColumn="Q11R_PastSupport" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11R_CurrentRequest" SessionKey="Q11R_CurrentRequest" DBColumn="Q11R_CurrentRequest" DBValue="1" /></div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-xs-6 col-md-5">Casino Ajax (Ajax, ON)</div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11S_PastSupport" SessionKey="Q11S_PastSupport" DBColumn="Q11S_PastSupport" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11S_CurrentRequest" SessionKey="Q11S_CurrentRequest" DBColumn="Q11S_CurrentRequest" DBValue="1" /></div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-xs-6 col-md-5">Great Blue Heron Casino (Port Perry, ON)</div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11T_PastSupport" SessionKey="Q11T_PastSupport" DBColumn="Q11T_PastSupport" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11T_CurrentRequest" SessionKey="Q11T_CurrentRequest" DBColumn="Q11T_CurrentRequest" DBValue="1" /></div>
         </div>
 
     </div>
+
+
 
     <p class="question"><%= Lang.Donation_Q12 %></p>
     <sc:SurveyTextBox ID="Q12" runat="server" SessionKey="Q12" DBColumn="Q12" MaxLength="200" Style="width:80%" Rows="2" TextMode="MultiLine"></sc:SurveyTextBox>

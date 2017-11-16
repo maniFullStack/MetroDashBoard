@@ -24,7 +24,7 @@ namespace GCC_Web_Portal
             if (Master.IsPropertyUser)
             {
 
-                if (ddlProperty.SelectedValue == "18" || ddlProperty.SelectedValue == "19")
+                if (ddlProperty.SelectedValue == "18" || ddlProperty.SelectedValue == "19" || ddlProperty.SelectedValue == "22")
                 {
                     GEILIndex = (GEISurveyLanguage)ddlSurveyLang.SelectedValue.StringToInt();
                 }
@@ -37,7 +37,7 @@ namespace GCC_Web_Portal
                 return;
             }
 
-            if (ddlProperty.SelectedValue == "18" || ddlProperty.SelectedValue == "19")
+            if (ddlProperty.SelectedValue == "18" || ddlProperty.SelectedValue == "19" || ddlProperty.SelectedValue == "22")
             {
                 GEILIndex = (GEISurveyLanguage)ddlSurveyLang.SelectedValue.StringToInt();
             }
@@ -58,7 +58,7 @@ namespace GCC_Web_Portal
             {
 
 
-                if (ddlProperty.SelectedValue == "18" || ddlProperty.SelectedValue == "19")
+                if (ddlProperty.SelectedValue == "18" || ddlProperty.SelectedValue == "19" || ddlProperty.SelectedValue == "22")
                 {
                     ddlSurveyLang.Items.Clear();
 

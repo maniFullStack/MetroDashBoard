@@ -19,7 +19,7 @@ namespace Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option or rebuild the Visual Studio project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "12.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Lang {
@@ -557,11 +557,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Casino Woodbine.
+        /// </summary>
+        internal static string Page1_Question2_19 {
+            get {
+                return ResourceManager.GetString("Page1_Question2_19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Casino Nanaimo.
         /// </summary>
         internal static string Page1_Question2_2 {
             get {
                 return ResourceManager.GetString("Page1_Question2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Casino Ajax.
+        /// </summary>
+        internal static string Page1_Question2_20 {
+            get {
+                return ResourceManager.GetString("Page1_Question2_20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Great Blue Heron Casino.
+        /// </summary>
+        internal static string Page1_Question2_21 {
+            get {
+                return ResourceManager.GetString("Page1_Question2_21", resourceCulture);
             }
         }
         

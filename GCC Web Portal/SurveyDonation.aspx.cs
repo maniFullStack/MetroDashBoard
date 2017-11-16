@@ -53,7 +53,7 @@ namespace GCC_Web_Portal
 
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            if ((new GCCPropertyShortCode[] { GCCPropertyShortCode.CNB }).Contains(Master.PropertyShortCode) || (new GCCPropertyShortCode[] { GCCPropertyShortCode.SCTI }).Contains(Master.PropertyShortCode))
+            if ((new GCCPropertyShortCode[] { GCCPropertyShortCode.CNB }).Contains(Master.PropertyShortCode) || (new GCCPropertyShortCode[] { GCCPropertyShortCode.SCTI }).Contains(Master.PropertyShortCode) || (new GCCPropertyShortCode[] { GCCPropertyShortCode.WDB }).Contains(Master.PropertyShortCode))
             {
                 btnEnglish.Visible = true;
                 btnFrench.Visible = true;
@@ -268,6 +268,36 @@ namespace GCC_Web_Portal
                         SurveyTools.SaveValue<bool>(Q11L_CurrentRequest);
                         SurveyTools.SaveValue<bool>(Q11M_PastSupport);
                         SurveyTools.SaveValue<bool>(Q11M_CurrentRequest);
+
+                        //2017-11-14 aDDING 3 NEW LOCATIONS
+                        SurveyTools.SaveValue<bool>(Q11N_PastSupport);
+                        SurveyTools.SaveValue<bool>(Q11N_CurrentRequest);
+
+
+                        SurveyTools.SaveValue<bool>(Q11O_PastSupport);
+                        SurveyTools.SaveValue<bool>(Q11O_CurrentRequest);
+
+
+                        SurveyTools.SaveValue<bool>(Q11P_PastSupport);
+                        SurveyTools.SaveValue<bool>(Q11P_CurrentRequest);
+
+
+                        SurveyTools.SaveValue<bool>(Q11Q_PastSupport);
+                        SurveyTools.SaveValue<bool>(Q11Q_CurrentRequest);
+
+
+                        SurveyTools.SaveValue<bool>(Q11R_PastSupport);
+                        SurveyTools.SaveValue<bool>(Q11R_CurrentRequest);
+
+
+                        SurveyTools.SaveValue<bool>(Q11S_PastSupport);
+                        SurveyTools.SaveValue<bool>(Q11S_CurrentRequest);
+
+
+                        SurveyTools.SaveValue<bool>(Q11T_PastSupport);
+                        SurveyTools.SaveValue<bool>(Q11T_CurrentRequest);
+
+
                         SurveyTools.SaveValue<string>(Q12);
                         SurveyTools.SaveValue<string>(Q13);
                         SurveyTools.SaveValue<string>(Q14);
@@ -430,6 +460,30 @@ namespace GCC_Web_Portal
             Q11L_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
             Q11M_PastSupport.PrepareQuestionForDB(columnList, sqlParams);
             Q11M_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
+
+            //2017-11-14  Adding 3 new ontario locations
+            Q11N_PastSupport.PrepareQuestionForDB(columnList, sqlParams);
+            Q11N_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
+
+            Q11O_PastSupport.PrepareQuestionForDB(columnList, sqlParams);
+            Q11O_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
+
+            Q11P_PastSupport.PrepareQuestionForDB(columnList, sqlParams);
+            Q11P_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
+
+            Q11Q_PastSupport.PrepareQuestionForDB(columnList, sqlParams);
+            Q11Q_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
+
+            Q11R_PastSupport.PrepareQuestionForDB(columnList, sqlParams);
+            Q11R_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
+
+            Q11S_PastSupport.PrepareQuestionForDB(columnList, sqlParams);
+            Q11S_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
+
+            Q11T_PastSupport.PrepareQuestionForDB(columnList, sqlParams);
+            Q11T_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
+
+
             Q12.PrepareQuestionForDB(columnList, sqlParams);
             Q13.PrepareQuestionForDB(columnList, sqlParams);
             Q14.PrepareQuestionForDB(columnList, sqlParams);

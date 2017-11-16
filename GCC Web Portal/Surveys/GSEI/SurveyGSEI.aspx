@@ -170,17 +170,18 @@
     <sc:MessageManager runat="server" ID="mmQ1"></sc:MessageManager>
     <div id="q1">
          <asp:Panel runat="server">
-            <% if ( new[] { "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "WDB","AJA","GBH" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Slots" runat="server" GroupName="Q1" SessionKey="Q1Slots" DBColumn="Q1" DBValue="Slots" Text="Playing Slots" /><br />
             <% } %>
-            <% if ( new[] { "RR", "HRCV", "VRL", "NAN", "CNSH", "CNSS", "GAG", "EC", "SCTI", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "RR", "HRCV", "VRL", "NAN", "CNSH", "CNSS", "GAG", "EC", "SCTI", "CNB", "WDB","GBH" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Tables" runat="server" GroupName="Q1" SessionKey="Q1Tables" DBColumn="Q1" DBValue="Tables" Text="Playing Tables" /><br />
             <% } %>
             <% if ( new[] { "RR", "HRCV", "VRL", "NAN", "CNSH", "CNSS", "EC", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Poker" runat="server" GroupName="Q1" SessionKey="Q1Poker" DBColumn="Q1" DBValue="Poker" Text="Playing Poker" /><br />
             <% } %>
             <sc:SurveyRadioButton ID="radQ1_Food" runat="server" GroupName="Q1" SessionKey="Q1Food" DBColumn="Q1" DBValue="Food" Text="Enjoying Food or Beverages" /><br />
-            <% if ( new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "WDB", "GBH" }.Contains(Master.PropertyShortCode.ToString()))
+               { %>
             <sc:SurveyRadioButton ID="radQ1_Entertainment" runat="server" GroupName="Q1" SessionKey="Q1Entertainment" DBColumn="Q1" DBValue="Entertainment" Text="Watching Live Entertainment at a show lounge or theatre" /><br />
             <% } %>
             <% if (Master.PropertyShortCode == GCCPropertyShortCode.RR || PropertyShortCode == GCCPropertyShortCode.CNB)
@@ -241,10 +242,12 @@
     </p>
 
     <div id="q2">
-        <% if ( new[] { "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if (new[] { "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "WDB", "AJA", "GBH" }.Contains(Master.PropertyShortCode.ToString()))
+           { %>
         <sc:SurveyCheckBox ID="chkQ2_Slots" runat="server" SessionKey="Q2Slots" DBColumn="Q2_Slots" DBValue="1" Text="Playing Slots" /><br />
         <% } %>
-        <% if ( new[] { "RR", "HRCV", "VRL", "NAN", "CNSH", "CNSS", "GAG", "EC", "SCTI", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if (new[] { "RR", "HRCV", "VRL", "NAN", "CNSH", "CNSS", "GAG", "EC", "SCTI", "CNB", "WDB", "GBH" }.Contains(Master.PropertyShortCode.ToString()))
+           { %>
         <sc:SurveyCheckBox ID="chkQ2_Tables" runat="server" SessionKey="Q2Tables" DBColumn="Q2_Tables" DBValue="1" Text="Playing Tables" /><br />
         <% } %>
         <% if ( new[] { "RR", "HRCV", "VRL", "NAN", "CNSH", "CNSS", "EC", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
@@ -253,7 +256,8 @@
         <% if (  !radQ1_Food.Checked ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Food" runat="server" SessionKey="Q2Food" DBColumn="Q2_Food" DBValue="1" Text="Enjoying Food or Beverages" /><br />
         <% } %>
-        <% if ( new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "WDB","GBH" }.Contains(Master.PropertyShortCode.ToString()))
+           { %>
         <sc:SurveyCheckBox ID="chkQ2_Entertainment" runat="server" SessionKey="Q2Entertainment" DBColumn="Q2_Entertainment" DBValue="1" Text="Watching Live Entertainment at a show lounge or theatre" /><br />
         <% } %>
         <% if (Master.PropertyShortCode == GCCPropertyShortCode.RR || PropertyShortCode == GCCPropertyShortCode.CNB)

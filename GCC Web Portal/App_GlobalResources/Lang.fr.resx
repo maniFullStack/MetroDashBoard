@@ -264,8 +264,17 @@
   <data name="Page1_Question2_18" xml:space="preserve">
     <value>Shorelines Casino Belleville</value>
   </data>
+  <data name="Page1_Question2_19" xml:space="preserve">
+    <value>Casino Woodbine</value>
+  </data>
   <data name="Page1_Question2_2" xml:space="preserve">
     <value>Casino Nanaimo</value>
+  </data>
+  <data name="Page1_Question2_20" xml:space="preserve">
+    <value>Casino Ajax</value>
+  </data>
+  <data name="Page1_Question2_21" xml:space="preserve">
+    <value>Great Blue Heron Casino</value>
   </data>
   <data name="Page1_Question2_3" xml:space="preserve">
     <value>Casino Nova Scotia - Halifax</value>

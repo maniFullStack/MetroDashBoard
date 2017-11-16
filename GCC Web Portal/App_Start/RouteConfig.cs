@@ -36,6 +36,16 @@ namespace GCGC_Web_Portal
 
 
 
+			//Seperate Terms and Conditions for WDB
+			routes.MapPageRoute("TermsAndConditions_WDB", "TermsAndConditions_SCTI/{propertyshortcode}", "~/TAndCSCTI.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
+			routes.MapPageRoute("TermsAndConditions_French_WDB", "TermsAndConditions_French_SCTI/{propertyshortcode}", "~/TandSCTI_French.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
+
+
+			//Seperate Terms and Conditions for GBH
+			routes.MapPageRoute("TermsAndConditions_GBH", "TermsAndConditions_SCTI/{propertyshortcode}", "~/TAndCSCTI.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
+			routes.MapPageRoute("TermsAndConditions_French_GBH", "TermsAndConditions_French_SCTI/{propertyshortcode}", "~/TandSCTI_French.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
+
+
 
 			routes.MapPageRoute( "SurveyFeedback", "Feedback/{propertyshortcode}/{page}/{redirectdirection}", "~/SurveyFeedback.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" }, { "page", "1" }, { "redirectdirection", "1" } } );
 			routes.MapPageRoute( "SurveyFeedbackStaff", "SFeedback/{propertyshortcode}/{page}/{redirectdirection}", "~/SurveyFeedback.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" }, { "page", "1" }, { "redirectdirection", "1" } } );
