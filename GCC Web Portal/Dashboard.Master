@@ -4,734 +4,734 @@
 <html>
 <head runat="server">
 	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>GCC Reporting Dashboard</title>
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GCC Reporting Dashboard</title>
+	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 	<link href="/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
 	<link href="/Content/dashboard.min.css" rel="stylesheet" type="text/css" />
-    <link href="/Content/daterangepicker.css" rel="stylesheet" type="text/css" />
+	<link href="/Content/daterangepicker.css" rel="stylesheet" type="text/css" />
 	<link href="/Content/skins/skin-green.min.css" rel="stylesheet" type="text/css" />
-    <link href="/Content/jquery.jqplot.min.css" rel="stylesheet" type="text/css" />
-    <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="/Content/reports.css" rel="stylesheet" type="text/css" />
+	<link href="/Content/jquery.jqplot.min.css" rel="stylesheet" type="text/css" />
+	<link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+	<link href="/Content/reports.css" rel="stylesheet" type="text/css" />
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+	<asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body class="hold-transition skin-green sidebar-mini">
-    <form id="form1" runat="server">
-        <div class="wrapper">
+	<form id="form1" runat="server">
+		<div class="wrapper">
 
-            <!-- Main Header -->
-            <header class="main-header">
+			<!-- Main Header -->
+			<header class="main-header">
 
-                <!-- Logo -->
-                <a href="/" class="logo">
-                    <!-- mini logo for sidebar mini 50x50 pixels -->
-                    <span class="logo-mini">GRP</span>
-                    <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg">GCC Reporting Portal</span>
-                </a>
+				<!-- Logo -->
+				<a href="/" class="logo">
+					<!-- mini logo for sidebar mini 50x50 pixels -->
+					<span class="logo-mini">GRP</span>
+					<!-- logo for regular state and mobile devices -->
+					<span class="logo-lg">GCC Reporting Portal</span>
+				</a>
 
-                <!-- Header Navbar -->
-                <nav class="navbar navbar-static-top" role="navigation">
-                    <!-- Sidebar toggle button-->
-                    <a href="#" class="sidebar-toggle hidden-lg" data-toggle="offcanvas" role="button">
-                        <span class="sr-only">Toggle navigation</span>
-                    </a>
-                    <!-- Navbar Right Menu -->
-                    <div class="navbar-custom-menu">
-                        <ul class="nav navbar-nav">
-                            <li class="navbar-text"><%= ReportingTools.CleanData( User.FirstName ) %> <%= ReportingTools.CleanData( User.LastName ) %></li>
-                            <li><a href="/Files/EFM Reference Guide 2016 ver1.6.pdf" target="_blank"><i class="fa fa-question-circle"></i> Help</a></li>
-                            <li><a href="/Login?lo=1"><i class="fa fa-sign-out"></i> Log Out</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            <!-- Left side column. contains the logo and sidebar -->
-            <aside class="main-sidebar">
-                <!-- sidebar: style can be found in sidebar.less -->
-                <section class="sidebar">
-                    <ul class="sidebar-menu">
-                        <li><a href="/" title="Home"><i class="fa fa-home"></i> Home</a></li>
-                        <% if ( new UserGroups[] { UserGroups.ForumAdmin, UserGroups.CorporateMarketing }.Contains( User.Group ) ) { %>
-                        <li><a href="/Admin/" title="Admin"><i class="fa fa-lock"></i>Admin</a></li>
-                        <% } %>
-                        <%--<% if ( User.Group != UserGroups.PropertyStaff ) { %>--%>
-                        <li class="treeview">
-                            <a href="#"><i class='fa fa-list'></i><span>Reports</span><i class="fa fa-angle-left pull-right"></i></a>
-                            <ul class="treeview-menu">
-                                <% if ( new UserGroups[] { UserGroups.ForumAdmin, UserGroups.CorporateManagement, UserGroups.CorporateMarketing, UserGroups.PropertyManagers }.Contains( User.Group ) ) { %>
-                                <li><a href="/Reports/Comparison" title="Date Range Comparison"><i class="fa fa-balance-scale"></i> Date Range Comparison</a></li>
-                                <li><a href="/Reports/KeyDriver" title="Key Driver"><i class="fa fa-key"></i> Key Driver</a></li>
-                                <li><a href="/Reports/Monthly" title="Monthly Report"><i class="fa fa-calendar"></i> Monthly Report</a></li>
-                                <li><a href="/Reports/MonthlyHotel" title="Monthly Hotel Report"><i class="fa fa-calendar"></i> Monthly Hotel Report</a></li>
-                                <li><a href="/Reports/Quarterly" title="Quarterly Report"><i class="fa fa-pie-chart"></i> Quarterly Report</a></li>
-                                <li><a href="/RespondentProfile" title="Respondent Profile"><i class="fa fa-users"></i> Respondent Profile</a></li>
-                                <li><a href="/GuestDetails" title="Respondent Search"><i class="fa fa-user"></i> Respondent Search</a></li>
-                                <% } %>
-                                <% if ( User.Group == UserGroups.PropertyStaff ) { %>
-                                <li><a href="/RespondentProfile" title="Respondent Profile"><i class="fa fa-users"></i> Respondent Profile</a></li>
-                                <li><a href="/GuestDetails" title="Respondent Search"><i class="fa fa-user"></i> Respondent Search</a></li>
-                                <% } %>
-                                <% if ( User.Group != UserGroups.PropertyStaff ) { %>
-                                <li><a href="/SnapshotExport" title="Snapshot Report"><i class="fa fa-camera"></i> Snapshot Report</a></li>
-                                <% } %>
-                                <% if ( new UserGroups[] { UserGroups.ForumAdmin, UserGroups.CorporateManagement, UserGroups.CorporateMarketing, UserGroups.PropertyManagers }.Contains( User.Group ) ) { %>
-                                <li><a href="/QuestionTopBottom/" title="Top / Bottom Questions"><i class="fa fa-long-arrow-up"></i>Top / <i class="fa fa-long-arrow-down"></i>Bottom Questions</a></li>
-                                <% } %>
-                                <% if ( User.Group != UserGroups.PropertyStaff ) { %>
-                                <li><a href="/Reports/WordCloud" title="Word Cloud"><i class="fa fa-cloud"></i> Word Cloud</a></li>
-                                <% } %>
+				<!-- Header Navbar -->
+				<nav class="navbar navbar-static-top" role="navigation">
+					<!-- Sidebar toggle button-->
+					<a href="#" class="sidebar-toggle hidden-lg" data-toggle="offcanvas" role="button">
+						<span class="sr-only">Toggle navigation</span>
+					</a>
+					<!-- Navbar Right Menu -->
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<li class="navbar-text"><%= ReportingTools.CleanData( User.FirstName ) %> <%= ReportingTools.CleanData( User.LastName ) %></li>
+							<li><a href="/Files/EFM Reference Guide 2016 ver1.6.pdf" target="_blank"><i class="fa fa-question-circle"></i> Help</a></li>
+							<li><a href="/Login?lo=1"><i class="fa fa-sign-out"></i> Log Out</a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<!-- Left side column. contains the logo and sidebar -->
+			<aside class="main-sidebar">
+				<!-- sidebar: style can be found in sidebar.less -->
+				<section class="sidebar">
+					<ul class="sidebar-menu">
+						<li><a href="/" title="Home"><i class="fa fa-home"></i> Home</a></li>
+						<% if ( new UserGroups[] { UserGroups.ForumAdmin, UserGroups.CorporateMarketing }.Contains( User.Group ) ) { %>
+						<li><a href="/Admin/" title="Admin"><i class="fa fa-lock"></i>Admin</a></li>
+						<% } %>
+						<%--<% if ( User.Group != UserGroups.PropertyStaff ) { %>--%>
+						<li class="treeview">
+							<a href="#"><i class='fa fa-list'></i><span>Reports</span><i class="fa fa-angle-left pull-right"></i></a>
+							<ul class="treeview-menu">
+								<% if ( new UserGroups[] { UserGroups.ForumAdmin, UserGroups.CorporateManagement, UserGroups.CorporateMarketing, UserGroups.PropertyManagers }.Contains( User.Group ) ) { %>
+								<li><a href="/Reports/Comparison" title="Date Range Comparison"><i class="fa fa-balance-scale"></i> Date Range Comparison</a></li>
+								<li><a href="/Reports/KeyDriver" title="Key Driver"><i class="fa fa-key"></i> Key Driver</a></li>
+								<li><a href="/Reports/Monthly" title="Monthly Report"><i class="fa fa-calendar"></i> Monthly Report</a></li>
+								<li><a href="/Reports/MonthlyHotel" title="Monthly Hotel Report"><i class="fa fa-calendar"></i> Monthly Hotel Report</a></li>
+								<li><a href="/Reports/Quarterly" title="Quarterly Report"><i class="fa fa-pie-chart"></i> Quarterly Report</a></li>
+								<li><a href="/RespondentProfile" title="Respondent Profile"><i class="fa fa-users"></i> Respondent Profile</a></li>
+								<li><a href="/GuestDetails" title="Respondent Search"><i class="fa fa-user"></i> Respondent Search</a></li>
+								<% } %>
+								<% if ( User.Group == UserGroups.PropertyStaff ) { %>
+								<li><a href="/RespondentProfile" title="Respondent Profile"><i class="fa fa-users"></i> Respondent Profile</a></li>
+								<li><a href="/GuestDetails" title="Respondent Search"><i class="fa fa-user"></i> Respondent Search</a></li>
+								<% } %>
+								<% if ( User.Group != UserGroups.PropertyStaff ) { %>
+								<li><a href="/SnapshotExport" title="Snapshot Report"><i class="fa fa-camera"></i> Snapshot Report</a></li>
+								<% } %>
+								<% if ( new UserGroups[] { UserGroups.ForumAdmin, UserGroups.CorporateManagement, UserGroups.CorporateMarketing, UserGroups.PropertyManagers }.Contains( User.Group ) ) { %>
+								<li><a href="/QuestionTopBottom/" title="Top / Bottom Questions"><i class="fa fa-long-arrow-up"></i>Top / <i class="fa fa-long-arrow-down"></i>Bottom Questions</a></li>
+								<% } %>
+								<% if ( User.Group != UserGroups.PropertyStaff ) { %>
+								<li><a href="/Reports/WordCloud" title="Word Cloud"><i class="fa fa-cloud"></i> Word Cloud</a></li>
+								<% } %>
 								<li><a href="/Reports/FeedbackExport">Feedback Detail Export</a></li>
-                            </ul>
-                        </li>
-                  <%--      <% } %> --%>
-                        <% if ( new UserGroups[] { UserGroups.ForumAdmin, UserGroups.CorporateManagement, UserGroups.CorporateMarketing, UserGroups.PropertyManagers, UserGroups.PropertyStaff }.Contains( User.Group ) ) { %>
-                        <li><a href="/Admin/Feedback/List" title="Feedback"><i class="fa fa-comment"></i> Feedback</a></li>
-                        <li><a href="/Admin/Surveys" title="Survey Results"><i class="fa fa-list-alt"></i> Survey Results</a></li>
-                        <% } %>
-                    <%--    <% if ( User.Group != UserGroups.PropertyStaff ) { %>
-                        <li><a href="/Reports/SocialMediaDashboard.aspx" title="Social Media"><i class="fa fa-bullhorn"></i> Social Media</a></li>
-                        <% } %>--%>
-                        <li class="treeview">
-                            <a href="#" title="Manual Survey Entry" target="_blank"><i class="fa fa-pencil-square-o"></i> Manual Survey Entry<i class="fa fa-angle-left pull-right"></i></a>
-                            <ul class="treeview-menu">
-                                <li><a href="/StaffSurveySelection" title="Manual GEI Survey Entry" target="_blank">GEI &ndash; Paper-based</a></li>
-                                <li><a href="/SFeedback" title="Manual Feedback Survey Entry" target="_blank">Feedback</a></li>
-                            </ul>
-                        </li>
-                        <asp:ContentPlaceHolder ID="SidebarListItems" runat="server"></asp:ContentPlaceHolder>
-                    </ul>
-                    <!-- Sidebar Menu -->
-                    <% if ( !HideAllFilters ) {%>
-                    <ul class="sidebar-menu">
-                        <li class="header">FILTERS</li>
-                        <li><a href="#" id="btnAddFilter" data-toggle="modal" data-target="#filter-modal"><i class='fa fa-plus-circle'></i><span><%= ( ActiveFilters == 0 ? "Add" : "Edit" ) %> Filter(s)</span></a></li>
-                        <% if (ActiveFilters > 0) { %>
-                        <li class="treeview active">
-                            <a href="#"><i class='fa fa-filter'></i><span>Active Filters</span> <span class="label label-primary pull-right"><%= ActiveFilters %></span></a>
-                            <ul class="treeview-menu filter-list">
-                                <%
-                                foreach (IReportFilter flt in Filters) {
-                                    if ( flt.IsActive && !IsFilterHidden( flt ) ) { %>
-                                    <li>
-                                        <span><%= flt.Label %>: <%= ReportingTools.CleanData( flt.GetSelectedFilterText() ) %></span>
-                                        <% if ( !flt.ID.Equals( "fltDateRange" )
-                                               && !( IsPropertyUser && flt.ID.Equals( "fltProperty" ) ) ) { %>
-                                        <a href="?rm=<%= flt.ID %>" class="btn btn-box-tool pull-right" style="position:absolute;top:0;right:5px;"><i class="fa fa-times"></i></a>
-                                        <% } %>
-                                    </li>
-                                <%  }
-                                } %>
-                            </ul>
-                        </li>
-                        <% } %>
-                    </ul>
-                    <% } %>
-                    <% if ( !String.IsNullOrWhiteSpace( lblRecordCount.Text ) ) { %>
-                    <ul class="sidebar-menu">
-                        <li class="header">DETAILS</li>
-                    </ul>
-                    <div class="detail-list">
-                        Records: <asp:Label runat="server" ID="lblRecordCount"></asp:Label>
-                    </div>
-                    <% } %>
-                    <!-- /.sidebar-menu -->
-                </section>
-                <!-- /.sidebar -->
-            </aside>
+							</ul>
+						</li>
+				  <%--      <% } %> --%>
+						<% if ( new UserGroups[] { UserGroups.ForumAdmin, UserGroups.CorporateManagement, UserGroups.CorporateMarketing, UserGroups.PropertyManagers, UserGroups.PropertyStaff }.Contains( User.Group ) ) { %>
+						<li><a href="/Admin/Feedback/List" title="Feedback"><i class="fa fa-comment"></i> Feedback</a></li>
+						<li><a href="/Admin/Surveys" title="Survey Results"><i class="fa fa-list-alt"></i> Survey Results</a></li>
+						<% } %>
+					<%--    <% if ( User.Group != UserGroups.PropertyStaff ) { %>
+						<li><a href="/Reports/SocialMediaDashboard.aspx" title="Social Media"><i class="fa fa-bullhorn"></i> Social Media</a></li>
+						<% } %>--%>
+						<li class="treeview">
+							<a href="#" title="Manual Survey Entry" target="_blank"><i class="fa fa-pencil-square-o"></i> Manual Survey Entry<i class="fa fa-angle-left pull-right"></i></a>
+							<ul class="treeview-menu">
+								<li><a href="/StaffSurveySelection" title="Manual GEI Survey Entry" target="_blank">GEI &ndash; Paper-based</a></li>
+								<li><a href="/SFeedback" title="Manual Feedback Survey Entry" target="_blank">Feedback</a></li>
+							</ul>
+						</li>
+						<asp:ContentPlaceHolder ID="SidebarListItems" runat="server"></asp:ContentPlaceHolder>
+					</ul>
+					<!-- Sidebar Menu -->
+					<% if ( !HideAllFilters ) {%>
+					<ul class="sidebar-menu">
+						<li class="header">FILTERS</li>
+						<li><a href="#" id="btnAddFilter" data-toggle="modal" data-target="#filter-modal"><i class='fa fa-plus-circle'></i><span><%= ( ActiveFilters == 0 ? "Add" : "Edit" ) %> Filter(s)</span></a></li>
+						<% if (ActiveFilters > 0) { %>
+						<li class="treeview active">
+							<a href="#"><i class='fa fa-filter'></i><span>Active Filters</span> <span class="label label-primary pull-right"><%= ActiveFilters %></span></a>
+							<ul class="treeview-menu filter-list">
+								<%
+								foreach (IReportFilter flt in Filters) {
+									if ( flt.IsActive && !IsFilterHidden( flt ) ) { %>
+									<li>
+										<span><%= flt.Label %>: <%= ReportingTools.CleanData( flt.GetSelectedFilterText() ) %></span>
+										<% if ( !flt.ID.Equals( "fltDateRange" )
+											   && !( IsPropertyUser && flt.ID.Equals( "fltProperty" ) ) ) { %>
+										<a href="?rm=<%= flt.ID %>" class="btn btn-box-tool pull-right" style="position:absolute;top:0;right:5px;"><i class="fa fa-times"></i></a>
+										<% } %>
+									</li>
+								<%  }
+								} %>
+							</ul>
+						</li>
+						<% } %>
+					</ul>
+					<% } %>
+					<% if ( !String.IsNullOrWhiteSpace( lblRecordCount.Text ) ) { %>
+					<ul class="sidebar-menu">
+						<li class="header">DETAILS</li>
+					</ul>
+					<div class="detail-list">
+						Records: <asp:Label runat="server" ID="lblRecordCount"></asp:Label>
+					</div>
+					<% } %>
+					<!-- /.sidebar-menu -->
+				</section>
+				<!-- /.sidebar -->
+			</aside>
 
-            <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper">
-                <!-- Content Header (Page header) -->
-                <section class="content-header">
-                    <asp:ContentPlaceHolder ID="MainContentHeader" runat="server">
-                        <h1>Page Header
-					    <small>Optional description</small>
-                        </h1>
-                        <ol class="breadcrumb">
-                            <li><a href="#"><i class="fa fa-dashboard"></i>Level</a></li>
-                            <li class="active">Here</li>
-                        </ol>
-                    </asp:ContentPlaceHolder>
-                </section>
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
+				<!-- Content Header (Page header) -->
+				<section class="content-header">
+					<asp:ContentPlaceHolder ID="MainContentHeader" runat="server">
+						<h1>Page Header
+						<small>Optional description</small>
+						</h1>
+						<ol class="breadcrumb">
+							<li><a href="#"><i class="fa fa-dashboard"></i>Level</a></li>
+							<li class="active">Here</li>
+						</ol>
+					</asp:ContentPlaceHolder>
+				</section>
 
-                <!-- Main content -->
-                <section class="content">
-                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
-                </section>
-                <!-- /.content -->
-            </div>
-            <!-- /.content-wrapper -->
+				<!-- Main content -->
+				<section class="content">
+					<asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+				</section>
+				<!-- /.content -->
+			</div>
+			<!-- /.content-wrapper -->
 
-            <!-- Main Footer -->
-            <footer class="main-footer">
-                <!-- To the right -->
-                <div class="pull-right hidden-xs">
-                    
-                </div>
-                <!-- Default to the left -->
-                <strong>Copyright &copy; <%= DateTime.Now.Year %> GCC.</strong> All rights reserved.
-            </footer>
-        </div>
-        <!-- ./wrapper -->
-        <div class="modal fade" id="filter-modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Filter Selection</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Choose the filter type(s) you'd like to apply below and then click the "Apply Filter" button at the bottom of this window to apply them to the reports.</p>
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            <% if ( !HideDateRangeFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingOne">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><%= fltDateRange.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="panel-body">
-                                        <uc1:DateRangeFilterControl runat="server" ID="fltDateRange" SessionKey="fltDateRange" DBColumn="DateCreated" Label="Date Range" />
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideRegionFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwo">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><%= fltRegion.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltRegion" SessionKey="fltRegion" DBColumn="Regions" SelectionMode="Multiple" Label="Region" Rows="5" CssClass="form-control">
-                                                <asp:ListItem Text="British Columbia" Value="BC"></asp:ListItem>
-                                                <asp:ListItem Text="Nova Scotia" Value="NS"></asp:ListItem>
-                                                <asp:ListItem Text="Washington" Value="WA"></asp:ListItem>
-                                                <asp:ListItem Text="New Brunswick" Value="NB"></asp:ListItem>
-                                                <asp:ListItem Text="Ontario" Value="ON"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HidePropertyFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><%= fltProperty.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body">
-                                        <% if (IsPropertyUser) { %>
-                                        <%= PropertyTools.GetCasinoName( User.Property ) %>
-                                        <% } else { %>
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltProperty" SessionKey="fltProperty" DBColumn="Property" IsNumericTableType="True" SelectionMode="Multiple" Label="Property" Rows="5" CssClass="form-control">
-                                                <%--<asp:ListItem Text="GCC Main" Value="1"></asp:ListItem>--%>
-                                                <asp:ListItem Text="River Rock Casino Resort" Value="2"></asp:ListItem>
-                                                <asp:ListItem Text="Hard Rock Casino Vancouver" Value="3"></asp:ListItem>
-                                                <%--<asp:ListItem Text="Fraser Downs Racetrack & Casino" Value="4"></asp:ListItem>--%>
-                                                <asp:ListItem Text="Elements Casino" Value="14"></asp:ListItem>
-                                                <asp:ListItem Text="Hastings Racetrack & Casino" Value="5"></asp:ListItem>
-                                                <asp:ListItem Text="View Royal Casino" Value="6"></asp:ListItem>
-                                                <asp:ListItem Text="Casino Nanaimo" Value="7"></asp:ListItem>
-                                                <asp:ListItem Text="Chances Chilliwack" Value="8"></asp:ListItem>
-                                                <asp:ListItem Text="Chances Maple Ridge" Value="9"></asp:ListItem>
-                                                <asp:ListItem Text="Chances Dawson Creek" Value="10"></asp:ListItem>
-                                                <asp:ListItem Text="Casino Nova Scotia - Halifax" Value="11"></asp:ListItem>
-                                                <asp:ListItem Text="Casino Nova Scotia - Sydney" Value="12"></asp:ListItem>
-                                                <asp:ListItem Text="Great American Casino" Value="13"></asp:ListItem>
-                                                
-                                                <asp:ListItem Text="Shorelines Slots at Kawartha Downs" Value="17"></asp:ListItem>
-                                                <asp:ListItem Text="Shorelines Casino Thousand Islands" Value="18"></asp:ListItem>
+			<!-- Main Footer -->
+			<footer class="main-footer">
+				<!-- To the right -->
+				<div class="pull-right hidden-xs">
+					
+				</div>
+				<!-- Default to the left -->
+				<strong>Copyright &copy; <%= DateTime.Now.Year %> GCC.</strong> All rights reserved.
+			</footer>
+		</div>
+		<!-- ./wrapper -->
+		<div class="modal fade" id="filter-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Filter Selection</h4>
+					</div>
+					<div class="modal-body">
+						<p>Choose the filter type(s) you'd like to apply below and then click the "Apply Filter" button at the bottom of this window to apply them to the reports.</p>
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<% if ( !HideDateRangeFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><%= fltDateRange.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									<div class="panel-body">
+										<uc1:DateRangeFilterControl runat="server" ID="fltDateRange" SessionKey="fltDateRange" DBColumn="DateCreated" Label="Date Range" />
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideRegionFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><%= fltRegion.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltRegion" SessionKey="fltRegion" DBColumn="Regions" SelectionMode="Multiple" Label="Region" Rows="5" CssClass="form-control">
+												<asp:ListItem Text="British Columbia" Value="BC"></asp:ListItem>
+												<asp:ListItem Text="Nova Scotia" Value="NS"></asp:ListItem>
+												<asp:ListItem Text="Washington" Value="WA"></asp:ListItem>
+												<asp:ListItem Text="New Brunswick" Value="NB"></asp:ListItem>
+												<asp:ListItem Text="Ontario" Value="ON"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HidePropertyFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><%= fltProperty.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									<div class="panel-body">
+										<% if (IsPropertyUser) { %>
+										<%= PropertyTools.GetCasinoName( User.Property ) %>
+										<% } else { %>
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltProperty" SessionKey="fltProperty" DBColumn="Property" IsNumericTableType="True" SelectionMode="Multiple" Label="Property" Rows="5" CssClass="form-control">
+												<%--<asp:ListItem Text="GCC Main" Value="1"></asp:ListItem>--%>
+												<asp:ListItem Text="River Rock Casino Resort" Value="2"></asp:ListItem>
+												<asp:ListItem Text="Hard Rock Casino Vancouver" Value="3"></asp:ListItem>
+												<%--<asp:ListItem Text="Fraser Downs Racetrack & Casino" Value="4"></asp:ListItem>--%>
+												<asp:ListItem Text="Elements Casino" Value="14"></asp:ListItem>
+												<asp:ListItem Text="Hastings Racetrack & Casino" Value="5"></asp:ListItem>
+												<asp:ListItem Text="View Royal Casino" Value="6"></asp:ListItem>
+												<asp:ListItem Text="Casino Nanaimo" Value="7"></asp:ListItem>
+												<asp:ListItem Text="Chances Chilliwack" Value="8"></asp:ListItem>
+												<asp:ListItem Text="Chances Maple Ridge" Value="9"></asp:ListItem>
+												<asp:ListItem Text="Chances Dawson Creek" Value="10"></asp:ListItem>
+												<asp:ListItem Text="Casino Nova Scotia - Halifax" Value="11"></asp:ListItem>
+												<asp:ListItem Text="Casino Nova Scotia - Sydney" Value="12"></asp:ListItem>
+												<asp:ListItem Text="Great American Casino" Value="13"></asp:ListItem>
+												
+												<asp:ListItem Text="Shorelines Slots at Kawartha Downs" Value="17"></asp:ListItem>
+												<asp:ListItem Text="Shorelines Casino Thousand Islands" Value="18"></asp:ListItem>
 
-                                                <asp:ListItem Text="Casino New Brunswick" Value="19"></asp:ListItem>
-                                                <asp:ListItem Text="Shorelines Casino Belleville" Value="20"></asp:ListItem>
-                                                <asp:ListItem Text="Bingo Esquimalt" Value="21"></asp:ListItem>
-                                                <asp:ListItem Text="Casino Woodbine" Value="22"></asp:ListItem>
-                                                <asp:ListItem Text="Casino Ajax" Value="23"></asp:ListItem>
-                                                <asp:ListItem Text="Great Blue Heron Casino" Value="24"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                        <% } %>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideSurveyTypeFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading21">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse21" aria-expanded="false" aria-controls="collapse21"><%= fltSurveyType.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading21">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltSurveyType" SessionKey="fltSurveyType" DBColumn="SurveyType" IsNumericTableType="True" SelectionMode="Multiple" Label="Survey Type" Rows="4" CssClass="form-control">
-                                                <asp:ListItem Text="GEI" Value="1"></asp:ListItem>
-                                                <asp:ListItem Text="GSEI" Value="-1"></asp:ListItem>
-                                                <asp:ListItem Text="Hotel" Value="2"></asp:ListItem>
-                                                <asp:ListItem Text="Feedback" Value="3"></asp:ListItem>
-                                                <asp:ListItem Text="Donation" Value="4"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideBusinessUnitFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading4">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4"><%= fltBusinessUnit.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltBusinessUnit" SessionKey="fltBusinessUnit" DBColumn="BusinessUnit" SelectionMode="Multiple" Label="Business Unit" Rows="5" CssClass="form-control">
-                                                <asp:ListItem Text="Slots" Value="Slots"></asp:ListItem>
-                                                <asp:ListItem Text="Tables" Value="Tables"></asp:ListItem>
-                                                <asp:ListItem Text="Poker" Value="Poker"></asp:ListItem>
-                                                <asp:ListItem Text="Food & Beverages" Value="Food"></asp:ListItem>
-                                                <asp:ListItem Text="Live Entertainment" Value="Entertainment"></asp:ListItem>
-                                                <asp:ListItem Text="Hotel" Value="Hotel"></asp:ListItem>
-                                                <asp:ListItem Text="Live Racing" Value="LiveRacing"></asp:ListItem>
-                                                <asp:ListItem Text="Racebook" Value="Racebook"></asp:ListItem>
-                                                <asp:ListItem Text="Bingo" Value="Bingo"></asp:ListItem>
-                                                <asp:ListItem Text="Lottery / Pull Tabs" Value="Lottery"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideSourceFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading5">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5"><%= fltSource.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltSource" SessionKey="fltSource" DBColumn="Source" IsNumericTableType="True" SelectionMode="Multiple" Label="Source" Rows="4" CssClass="form-control">
-                                                <asp:ListItem Text="DirectAccess" Value="1"></asp:ListItem>
-                                                <asp:ListItem Text="Email" Value="2"></asp:ListItem>
-                                                <asp:ListItem Text="Kiosk" Value="3"></asp:ListItem>
-                                                <asp:ListItem Text="StaffSurvey" Value="4"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideStatusFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading6">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6"><%= fltStatus.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltStatus" SessionKey="fltStatus" DBColumn="Status" SelectionMode="Multiple" Label="Status" Rows="3" CssClass="form-control">
-                                                <asp:ListItem Text="No Response Required" Value="1"></asp:ListItem>
-                                                <asp:ListItem Text="Response required - Active" Value="2"></asp:ListItem>
-                                                <asp:ListItem Text="Response required - Inactive" Value="3"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideFeedbackAgeFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading17">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse17" aria-expanded="false" aria-controls="collapse16"><%= fltFeedbackAge.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltFeedbackAge" SessionKey="fltFeedbackAge" DBColumn="FeedbackAge" SelectionMode="Multiple" Label="Feedback Age" Rows="3" CssClass="form-control">
-                                                <asp:ListItem Text="Under 24 hours" Value="1"></asp:ListItem>
-                                                <asp:ListItem Text="24 to 48 hours" Value="2"></asp:ListItem>
-                                                <asp:ListItem Text="Over 48 hours" Value="3"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideFeedbackTierFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading22">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse22" aria-expanded="false" aria-controls="collapse16"><%= fltFeedbackTier.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading22">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltFeedbackTier" SessionKey="fltFeedbackTier" DBColumn="FeedbackTier" SelectionMode="Multiple" Label="Feedback Tier" Rows="3" CssClass="form-control" IsNumericTableType="true">
-                                                <asp:ListItem Text="Tier 1" Value="1"></asp:ListItem>
-                                                <asp:ListItem Text="Tier 2" Value="2"></asp:ListItem>
-                                                <asp:ListItem Text="Tier 3" Value="3"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideFBVenueFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading7">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7"><%= fltFBVenue.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltFBVenue" SessionKey="fltFBVenue" DBColumn="Venue" IsNumericTableType="True" SelectionMode="Multiple" Label="F&B Venue" Rows="4" CssClass="form-control">
-                                                <asp:ListItem Text="Coffee Station / Gaming Floor" Value="1"></asp:ListItem>
-                                                <asp:ListItem Text="Celtic Junction Bar & Grille" Value="41"></asp:ListItem>
-                                                <asp:ListItem Text="Asylum Gastro-Pub and Live Sound Stage" Value="14"></asp:ListItem>
-                                                <asp:ListItem Text="Black Diamond Bar & Grille" Value="34"></asp:ListItem>
-                                                <asp:ListItem Text="The Bridge" Value="22"></asp:ListItem>
-                                                <asp:ListItem Text="Buffet" Value="51"></asp:ListItem>
-                                                <asp:ListItem Text="The Buffet" Value="5"></asp:ListItem>
-                                                <asp:ListItem Text="Casino Bar" Value="24"></asp:ListItem>
-                                                <asp:ListItem Text="Chip's Sandwich Shop" Value="19"></asp:ListItem>
-                                                <asp:ListItem Text="The Clubhouse Buffet" Value="23"></asp:ListItem>
-                                                <asp:ListItem Text="Concessions" Value="31"></asp:ListItem>
-                                                <asp:ListItem Text="Curve" Value="2"></asp:ListItem>
-                                                <asp:ListItem Text="Dogwood Room" Value="11"></asp:ListItem>
-                                                <asp:ListItem Text="Eclipse Lounge" Value="26"></asp:ListItem>
-                                                <asp:ListItem Text="Fu Express Authentic Asian Cuisine" Value="17"></asp:ListItem>
-                                                <asp:ListItem Text="Fuel Café" Value="20"></asp:ListItem>
-                                                <asp:ListItem Text="Furlongs Eatery" Value="28"></asp:ListItem>
-                                                <asp:ListItem Text="George Royal Room" Value="30"></asp:ListItem>
-                                                <asp:ListItem Text="Great American Casino" Value="42"></asp:ListItem>
-                                                <asp:ListItem Text="Harbourfront Lounge" Value="39"></asp:ListItem>
-                                                <asp:ListItem Text="High Limit Gaming Area" Value="40"></asp:ListItem>
-                                                <asp:ListItem Text="The Homestretch Buffet" Value="21"></asp:ListItem>
-                                                <asp:ListItem Text="Hub City Pub" Value="50"></asp:ListItem>
-                                                <asp:ListItem Text="International Food Court" Value="8"></asp:ListItem>
-                                                <asp:ListItem Text="Jade Room" Value="12"></asp:ListItem>
-                                                <asp:ListItem Text="Java Jacks Café" Value="7"></asp:ListItem>
-                                                <asp:ListItem Text="Jeromes" Value="29"></asp:ListItem>
-                                                <asp:ListItem Text="Lulu's Lounge" Value="4"></asp:ListItem>
-                                                <asp:ListItem Text="Phoenix Room" Value="13"></asp:ListItem>
-                                                <asp:ListItem Text="Poker Room" Value="9"></asp:ListItem>
-                                                <asp:ListItem Text="Prospects Lounge" Value="36"></asp:ListItem>
-                                                <asp:ListItem Text="Racebook" Value="25"></asp:ListItem>
-                                                <asp:ListItem Text="Roadies Burger Bar" Value="18"></asp:ListItem>
-                                                <asp:ListItem Text="Room Service" Value="52"></asp:ListItem>
-                                                <asp:ListItem Text="Rue 333" Value="49"></asp:ListItem>
-                                                <asp:ListItem Text="Salon Privé" Value="10"></asp:ListItem>
-                                                <asp:ListItem Text="Sea Harbour Seafood Restaurant" Value="6"></asp:ListItem>
-                                                <asp:ListItem Text="Silks Restaurant" Value="27"></asp:ListItem>
-                                                <asp:ListItem Text="Stake Restaurant" Value="16"></asp:ListItem>
-                                                <asp:ListItem Text="The Station" Value="38"></asp:ListItem>
-                                                <asp:ListItem Text="Tramonto Restaurant" Value="3"></asp:ListItem>
-                                                <asp:ListItem Text="Trapeze" Value="37"></asp:ListItem>
-                                                <asp:ListItem Text="Unlisted Buffet and Lounge" Value="15"></asp:ListItem>
-                                                <asp:ListItem Text="View Royal Patio" Value="33"></asp:ListItem>
-                                                <asp:ListItem Text="View Royal Restaurant" Value="32"></asp:ListItem>
-                                                <asp:ListItem Text="The Well" Value="35"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideEncoreNumberFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading8">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">Specific Player
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <label for="<%= fltEncoreNumber.ClientID %>"><%= fltEncoreNumber.Label %>:</label>
-                                            <sc:ReportFilterTextBox runat="server" ID="fltEncoreNumber" SessionKey="fltEncoreNumber" DBColumn="EncoreID" Label="Encore #" CssClass="form-control"></sc:ReportFilterTextBox>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="<%= fltPlayerEmail.ClientID %>"><%= fltPlayerEmail.Label %>:</label>
-                                            <sc:ReportFilterTextBox runat="server" ID="fltPlayerEmail" SessionKey="fltPlayerEmail" DBColumn="PlayerEmail" Label="Player Email" CssClass="form-control"></sc:ReportFilterTextBox>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideAgeRangeFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading9">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9"><%= fltAgeRange.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltAgeRange" SessionKey="fltAgeRange" DBColumn="AgeRange" SelectionMode="Multiple" Label="Age Range" Rows="6" CssClass="form-control">
-                                                <asp:ListItem Text="19-24" Value="19-24"></asp:ListItem>
-                                                <asp:ListItem Text="25-34" Value="25-34"></asp:ListItem>
-                                                <asp:ListItem Text="35-44" Value="35-44"></asp:ListItem>
-                                                <asp:ListItem Text="45-54" Value="45-54"></asp:ListItem>
-                                                <asp:ListItem Text="55-64" Value="55-64"></asp:ListItem>
-                                                <asp:ListItem Text="65 or older" Value="65 or older"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideGenderFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading10">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10"><%= fltGender.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltGender" SessionKey="fltGender" DBColumn="Gender" SelectionMode="Multiple" Label="Gender" Rows="2" CssClass="form-control">
-                                                <asp:ListItem Text="Male" Value="Male"></asp:ListItem>
-                                                <asp:ListItem Text="Female" Value="Female"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideLanguageFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading11">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11"><%= fltLanguage.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltLanguage" SessionKey="fltLanguage" DBColumn="Language" SelectionMode="Multiple" Label="Language" Rows="4" CssClass="form-control">
-                                                <asp:ListItem Text="Arabic / Middle Eastern" Value="14"></asp:ListItem>
-                                                <asp:ListItem Text="Chinese - Mandarin" Value="3"></asp:ListItem>
-                                                <asp:ListItem Text="Chinese – Cantonese" Value="15"></asp:ListItem>
-                                                <asp:ListItem Text="Eastern European languages" Value="5"></asp:ListItem>
-                                                <asp:ListItem Text="Farsi" Value="12"></asp:ListItem>
-                                                <asp:ListItem Text="French" Value="7"></asp:ListItem>
-                                                <asp:ListItem Text="Hindi" Value="8"></asp:ListItem>
-                                                <asp:ListItem Text="Japanese" Value="13"></asp:ListItem>
-                                                <asp:ListItem Text="Korean" Value="1"></asp:ListItem>
-                                                <asp:ListItem Text="Other (Specify Below)" Value="16"></asp:ListItem>
-                                                <asp:ListItem Text="Other Western European languages" Value="4"></asp:ListItem>
-                                                <asp:ListItem Text="Pakistani" Value="11"></asp:ListItem>
-                                                <asp:ListItem Text="Punjabi" Value="2"></asp:ListItem>
-                                                <asp:ListItem Text="Spanish" Value="6"></asp:ListItem>
-                                                <asp:ListItem Text="Tagalog" Value="9"></asp:ListItem>
-                                                <asp:ListItem Text="Vietnamese" Value="10"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideVisitsFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading12">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12"><%= fltVisits.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltVisits" SessionKey="fltVisits" DBColumn="Visits" SelectionMode="Multiple" Label="Visits" Rows="6" CssClass="form-control">
-                                                <asp:ListItem Text="This was my first visit" Value="This was my first visit"></asp:ListItem>
-                                                <asp:ListItem Text="2-7 times per week" Value="2-7 times per week"></asp:ListItem>
-                                                <asp:ListItem Text="Once per week" Value="Once per week"></asp:ListItem>
-                                                <asp:ListItem Text="2-3 times per month" Value="2-3 times per month"></asp:ListItem>
-                                                <asp:ListItem Text="Once per month" Value="Once per month"></asp:ListItem>
-                                                <asp:ListItem Text="Several times a year" Value="Several times a year"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideSegmentsFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading19">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse19" aria-expanded="false" aria-controls="collapse19"><%= fltSegments.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltSegments" SessionKey="fltSegments" DBColumn="SegmentFlags" SelectionMode="Multiple" Label="Segments" Rows="3" CssClass="form-control">
-                                                <asp:ListItem Text="Loyalty" Value="Loyalty"></asp:ListItem>
-                                                <asp:ListItem Text="Prive" Value="Prive"></asp:ListItem>
-                                                <asp:ListItem Text="Winback" Value="Winback"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideTenureFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading20">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse20" aria-expanded="false" aria-controls="collapse20"><%= fltTenure.Label %></a>
-                                    </h4>
-                                </div>
-                                <div id="collapse20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading20">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltTenure" SessionKey="fltTenure" DBColumn="Tenure" SelectionMode="Multiple" Label="Tenure" Rows="5" CssClass="form-control">
-                                                <asp:ListItem Text="New (Less than 1 year)" Value="New (Less than 1 year)"></asp:ListItem>
-                                                <asp:ListItem Text="1-3 years" Value="1-3 years"></asp:ListItem>
-                                                <asp:ListItem Text="4-6 years" Value="4-6 years"></asp:ListItem>
-                                                <asp:ListItem Text="7-10 years" Value="7-10 years"></asp:ListItem>
-                                                <asp:ListItem Text="Over 10 years" Value="Over 10 years"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideTierFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading18">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse18" aria-expanded="false" aria-controls="collapse18"><%= fltTier.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterListBox runat="server" ID="fltTier" SessionKey="fltTier" DBColumn="Tier" SelectionMode="Multiple" Label="Player Tier" Rows="5" CssClass="form-control">
-                                                <asp:ListItem Text="New" Value="New"></asp:ListItem>
-                                                <asp:ListItem Text="PromoPlayer" Value="PromoPlayer"></asp:ListItem>
-                                                <asp:ListItem Text="Diamond" Value="Diamond"></asp:ListItem>
-                                                <asp:ListItem Text="Double Diamond" Value="Double Diamond"></asp:ListItem>
-                                                <asp:ListItem Text="Triple Diamond" Value="Triple Diamond"></asp:ListItem>
-                                            </sc:ReportFilterListBox>
-                                        </div>
-                                        <p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                            <% if ( !HideTextSearchFilter ) { %>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading16">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse16" aria-expanded="false" aria-controls="collapse16"><%= fltTextSearch.Label %>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <sc:ReportFilterTextBox runat="server" ID="fltTextSearch" DBColumn="TextSearch" SessionKey="fltTextSearch" Label="Text Search" CssClass="form-control"></sc:ReportFilterTextBox>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <% } %>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-                        <asp:Button runat="server" CssClass="btn btn-primary" Text="Apply Filters" OnClick="ApplyFilters_Click" />
-                    </div>
-                </div>
-                <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dialog -->
-        </div>
-        <!-- /.modal -->
+												<asp:ListItem Text="Casino New Brunswick" Value="19"></asp:ListItem>
+												<asp:ListItem Text="Shorelines Casino Belleville" Value="20"></asp:ListItem>
+												<asp:ListItem Text="Bingo Esquimalt" Value="21"></asp:ListItem>
+												<asp:ListItem Text="Casino Woodbine" Value="22"></asp:ListItem>
+												<asp:ListItem Text="Casino Ajax" Value="23"></asp:ListItem>
+												<asp:ListItem Text="Great Blue Heron Casino" Value="24"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+										<% } %>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideSurveyTypeFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading21">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse21" aria-expanded="false" aria-controls="collapse21"><%= fltSurveyType.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading21">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltSurveyType" SessionKey="fltSurveyType" DBColumn="SurveyType" IsNumericTableType="True" SelectionMode="Multiple" Label="Survey Type" Rows="4" CssClass="form-control">
+												<asp:ListItem Text="GEI" Value="1"></asp:ListItem>
+												<asp:ListItem Text="GSEI" Value="-1"></asp:ListItem>
+												<asp:ListItem Text="Hotel" Value="2"></asp:ListItem>
+												<asp:ListItem Text="Feedback" Value="3"></asp:ListItem>
+												<asp:ListItem Text="Donation" Value="4"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideBusinessUnitFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading4">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4"><%= fltBusinessUnit.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltBusinessUnit" SessionKey="fltBusinessUnit" DBColumn="BusinessUnit" SelectionMode="Multiple" Label="Business Unit" Rows="5" CssClass="form-control">
+												<asp:ListItem Text="Slots" Value="Slots"></asp:ListItem>
+												<asp:ListItem Text="Tables" Value="Tables"></asp:ListItem>
+												<asp:ListItem Text="Poker" Value="Poker"></asp:ListItem>
+												<asp:ListItem Text="Food & Beverages" Value="Food"></asp:ListItem>
+												<asp:ListItem Text="Live Entertainment" Value="Entertainment"></asp:ListItem>
+												<asp:ListItem Text="Hotel" Value="Hotel"></asp:ListItem>
+												<asp:ListItem Text="Live Racing" Value="LiveRacing"></asp:ListItem>
+												<asp:ListItem Text="Racebook" Value="Racebook"></asp:ListItem>
+												<asp:ListItem Text="Bingo" Value="Bingo"></asp:ListItem>
+												<asp:ListItem Text="Lottery / Pull Tabs" Value="Lottery"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideSourceFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading5">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5"><%= fltSource.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltSource" SessionKey="fltSource" DBColumn="Source" IsNumericTableType="True" SelectionMode="Multiple" Label="Source" Rows="4" CssClass="form-control">
+												<asp:ListItem Text="DirectAccess" Value="1"></asp:ListItem>
+												<asp:ListItem Text="Email" Value="2"></asp:ListItem>
+												<asp:ListItem Text="Kiosk" Value="3"></asp:ListItem>
+												<asp:ListItem Text="StaffSurvey" Value="4"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideStatusFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading6">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6"><%= fltStatus.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltStatus" SessionKey="fltStatus" DBColumn="Status" SelectionMode="Multiple" Label="Status" Rows="3" CssClass="form-control">
+												<asp:ListItem Text="No Response Required" Value="1"></asp:ListItem>
+												<asp:ListItem Text="Response required - Active" Value="2"></asp:ListItem>
+												<asp:ListItem Text="Response required - Inactive" Value="3"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideFeedbackAgeFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading17">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse17" aria-expanded="false" aria-controls="collapse16"><%= fltFeedbackAge.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltFeedbackAge" SessionKey="fltFeedbackAge" DBColumn="FeedbackAge" SelectionMode="Multiple" Label="Feedback Age" Rows="3" CssClass="form-control">
+												<asp:ListItem Text="Under 24 hours" Value="1"></asp:ListItem>
+												<asp:ListItem Text="24 to 48 hours" Value="2"></asp:ListItem>
+												<asp:ListItem Text="Over 48 hours" Value="3"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideFeedbackTierFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading22">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse22" aria-expanded="false" aria-controls="collapse16"><%= fltFeedbackTier.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading22">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltFeedbackTier" SessionKey="fltFeedbackTier" DBColumn="FeedbackTier" SelectionMode="Multiple" Label="Feedback Tier" Rows="3" CssClass="form-control" IsNumericTableType="true">
+												<asp:ListItem Text="Tier 1" Value="1"></asp:ListItem>
+												<asp:ListItem Text="Tier 2" Value="2"></asp:ListItem>
+												<asp:ListItem Text="Tier 3" Value="3"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideFBVenueFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading7">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7"><%= fltFBVenue.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltFBVenue" SessionKey="fltFBVenue" DBColumn="Venue" IsNumericTableType="True" SelectionMode="Multiple" Label="F&B Venue" Rows="4" CssClass="form-control">
+												<asp:ListItem Text="Coffee Station / Gaming Floor" Value="1"></asp:ListItem>
+												<asp:ListItem Text="Celtic Junction Bar & Grille" Value="41"></asp:ListItem>
+												<asp:ListItem Text="Asylum Gastro-Pub and Live Sound Stage" Value="14"></asp:ListItem>
+												<asp:ListItem Text="Black Diamond Bar & Grille" Value="34"></asp:ListItem>
+												<asp:ListItem Text="The Bridge" Value="22"></asp:ListItem>
+												<asp:ListItem Text="Buffet" Value="51"></asp:ListItem>
+												<asp:ListItem Text="The Buffet" Value="5"></asp:ListItem>
+												<asp:ListItem Text="Casino Bar" Value="24"></asp:ListItem>
+												<asp:ListItem Text="Chip's Sandwich Shop" Value="19"></asp:ListItem>
+												<asp:ListItem Text="The Clubhouse Buffet" Value="23"></asp:ListItem>
+												<asp:ListItem Text="Concessions" Value="31"></asp:ListItem>
+												<asp:ListItem Text="Curve" Value="2"></asp:ListItem>
+												<asp:ListItem Text="Dogwood Room" Value="11"></asp:ListItem>
+												<asp:ListItem Text="Eclipse Lounge" Value="26"></asp:ListItem>
+												<asp:ListItem Text="Fu Express Authentic Asian Cuisine" Value="17"></asp:ListItem>
+												<asp:ListItem Text="Fuel Café" Value="20"></asp:ListItem>
+												<asp:ListItem Text="Furlongs Eatery" Value="28"></asp:ListItem>
+												<asp:ListItem Text="George Royal Room" Value="30"></asp:ListItem>
+												<asp:ListItem Text="Great American Casino" Value="42"></asp:ListItem>
+												<asp:ListItem Text="Harbourfront Lounge" Value="39"></asp:ListItem>
+												<asp:ListItem Text="High Limit Gaming Area" Value="40"></asp:ListItem>
+												<asp:ListItem Text="The Homestretch Buffet" Value="21"></asp:ListItem>
+												<asp:ListItem Text="Hub City Pub" Value="50"></asp:ListItem>
+												<asp:ListItem Text="International Food Court" Value="8"></asp:ListItem>
+												<asp:ListItem Text="Jade Room" Value="12"></asp:ListItem>
+												<asp:ListItem Text="Java Jacks Café" Value="7"></asp:ListItem>
+												<asp:ListItem Text="Jeromes" Value="29"></asp:ListItem>
+												<asp:ListItem Text="Lulu's Lounge" Value="4"></asp:ListItem>
+												<asp:ListItem Text="Phoenix Room" Value="13"></asp:ListItem>
+												<asp:ListItem Text="Poker Room" Value="9"></asp:ListItem>
+												<asp:ListItem Text="Prospects Lounge" Value="36"></asp:ListItem>
+												<asp:ListItem Text="Racebook" Value="25"></asp:ListItem>
+												<asp:ListItem Text="Roadies Burger Bar" Value="18"></asp:ListItem>
+												<asp:ListItem Text="Room Service" Value="52"></asp:ListItem>
+												<asp:ListItem Text="Rue 333" Value="49"></asp:ListItem>
+												<asp:ListItem Text="Salon Privé" Value="10"></asp:ListItem>
+												<asp:ListItem Text="Sea Harbour Seafood Restaurant" Value="6"></asp:ListItem>
+												<asp:ListItem Text="Silks Restaurant" Value="27"></asp:ListItem>
+												<asp:ListItem Text="Stake Restaurant" Value="16"></asp:ListItem>
+												<asp:ListItem Text="The Station" Value="38"></asp:ListItem>
+												<asp:ListItem Text="Tramonto Restaurant" Value="3"></asp:ListItem>
+												<asp:ListItem Text="Trapeze" Value="37"></asp:ListItem>
+												<asp:ListItem Text="Unlisted Buffet and Lounge" Value="15"></asp:ListItem>
+												<asp:ListItem Text="View Royal Patio" Value="33"></asp:ListItem>
+												<asp:ListItem Text="View Royal Restaurant" Value="32"></asp:ListItem>
+												<asp:ListItem Text="The Well" Value="35"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideEncoreNumberFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading8">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">Specific Player
+										</a>
+									</h4>
+								</div>
+								<div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+									<div class="panel-body">
+										<div class="form-group">
+											<label for="<%= fltEncoreNumber.ClientID %>"><%= fltEncoreNumber.Label %>:</label>
+											<sc:ReportFilterTextBox runat="server" ID="fltEncoreNumber" SessionKey="fltEncoreNumber" DBColumn="EncoreID" Label="Encore #" CssClass="form-control"></sc:ReportFilterTextBox>
+										</div>
+										<div class="form-group">
+											<label for="<%= fltPlayerEmail.ClientID %>"><%= fltPlayerEmail.Label %>:</label>
+											<sc:ReportFilterTextBox runat="server" ID="fltPlayerEmail" SessionKey="fltPlayerEmail" DBColumn="PlayerEmail" Label="Player Email" CssClass="form-control"></sc:ReportFilterTextBox>
+										</div>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideAgeRangeFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading9">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9"><%= fltAgeRange.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltAgeRange" SessionKey="fltAgeRange" DBColumn="AgeRange" SelectionMode="Multiple" Label="Age Range" Rows="6" CssClass="form-control">
+												<asp:ListItem Text="19-24" Value="19-24"></asp:ListItem>
+												<asp:ListItem Text="25-34" Value="25-34"></asp:ListItem>
+												<asp:ListItem Text="35-44" Value="35-44"></asp:ListItem>
+												<asp:ListItem Text="45-54" Value="45-54"></asp:ListItem>
+												<asp:ListItem Text="55-64" Value="55-64"></asp:ListItem>
+												<asp:ListItem Text="65 or older" Value="65 or older"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideGenderFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading10">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10"><%= fltGender.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltGender" SessionKey="fltGender" DBColumn="Gender" SelectionMode="Multiple" Label="Gender" Rows="2" CssClass="form-control">
+												<asp:ListItem Text="Male" Value="Male"></asp:ListItem>
+												<asp:ListItem Text="Female" Value="Female"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideLanguageFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading11">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11"><%= fltLanguage.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltLanguage" SessionKey="fltLanguage" DBColumn="Language" SelectionMode="Multiple" Label="Language" Rows="4" CssClass="form-control">
+												<asp:ListItem Text="Arabic / Middle Eastern" Value="14"></asp:ListItem>
+												<asp:ListItem Text="Chinese - Mandarin" Value="3"></asp:ListItem>
+												<asp:ListItem Text="Chinese – Cantonese" Value="15"></asp:ListItem>
+												<asp:ListItem Text="Eastern European languages" Value="5"></asp:ListItem>
+												<asp:ListItem Text="Farsi" Value="12"></asp:ListItem>
+												<asp:ListItem Text="French" Value="7"></asp:ListItem>
+												<asp:ListItem Text="Hindi" Value="8"></asp:ListItem>
+												<asp:ListItem Text="Japanese" Value="13"></asp:ListItem>
+												<asp:ListItem Text="Korean" Value="1"></asp:ListItem>
+												<asp:ListItem Text="Other (Specify Below)" Value="16"></asp:ListItem>
+												<asp:ListItem Text="Other Western European languages" Value="4"></asp:ListItem>
+												<asp:ListItem Text="Pakistani" Value="11"></asp:ListItem>
+												<asp:ListItem Text="Punjabi" Value="2"></asp:ListItem>
+												<asp:ListItem Text="Spanish" Value="6"></asp:ListItem>
+												<asp:ListItem Text="Tagalog" Value="9"></asp:ListItem>
+												<asp:ListItem Text="Vietnamese" Value="10"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideVisitsFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading12">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12"><%= fltVisits.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltVisits" SessionKey="fltVisits" DBColumn="Visits" SelectionMode="Multiple" Label="Visits" Rows="6" CssClass="form-control">
+												<asp:ListItem Text="This was my first visit" Value="This was my first visit"></asp:ListItem>
+												<asp:ListItem Text="2-7 times per week" Value="2-7 times per week"></asp:ListItem>
+												<asp:ListItem Text="Once per week" Value="Once per week"></asp:ListItem>
+												<asp:ListItem Text="2-3 times per month" Value="2-3 times per month"></asp:ListItem>
+												<asp:ListItem Text="Once per month" Value="Once per month"></asp:ListItem>
+												<asp:ListItem Text="Several times a year" Value="Several times a year"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideSegmentsFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading19">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse19" aria-expanded="false" aria-controls="collapse19"><%= fltSegments.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltSegments" SessionKey="fltSegments" DBColumn="SegmentFlags" SelectionMode="Multiple" Label="Segments" Rows="3" CssClass="form-control">
+												<asp:ListItem Text="Loyalty" Value="Loyalty"></asp:ListItem>
+												<asp:ListItem Text="Prive" Value="Prive"></asp:ListItem>
+												<asp:ListItem Text="Winback" Value="Winback"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideTenureFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading20">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse20" aria-expanded="false" aria-controls="collapse20"><%= fltTenure.Label %></a>
+									</h4>
+								</div>
+								<div id="collapse20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading20">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltTenure" SessionKey="fltTenure" DBColumn="Tenure" SelectionMode="Multiple" Label="Tenure" Rows="5" CssClass="form-control">
+												<asp:ListItem Text="New (Less than 1 year)" Value="New (Less than 1 year)"></asp:ListItem>
+												<asp:ListItem Text="1-3 years" Value="1-3 years"></asp:ListItem>
+												<asp:ListItem Text="4-6 years" Value="4-6 years"></asp:ListItem>
+												<asp:ListItem Text="7-10 years" Value="7-10 years"></asp:ListItem>
+												<asp:ListItem Text="Over 10 years" Value="Over 10 years"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideTierFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading18">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse18" aria-expanded="false" aria-controls="collapse18"><%= fltTier.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterListBox runat="server" ID="fltTier" SessionKey="fltTier" DBColumn="Tier" SelectionMode="Multiple" Label="Player Tier" Rows="5" CssClass="form-control">
+												<asp:ListItem Text="New" Value="New"></asp:ListItem>
+												<asp:ListItem Text="PromoPlayer" Value="PromoPlayer"></asp:ListItem>
+												<asp:ListItem Text="Diamond" Value="Diamond"></asp:ListItem>
+												<asp:ListItem Text="Double Diamond" Value="Double Diamond"></asp:ListItem>
+												<asp:ListItem Text="Triple Diamond" Value="Triple Diamond"></asp:ListItem>
+											</sc:ReportFilterListBox>
+										</div>
+										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
+									</div>
+								</div>
+							</div>
+							<% } %>
+							<% if ( !HideTextSearchFilter ) { %>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading16">
+									<h4 class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse16" aria-expanded="false" aria-controls="collapse16"><%= fltTextSearch.Label %>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
+									<div class="panel-body">
+										<div class="form-group">
+											<sc:ReportFilterTextBox runat="server" ID="fltTextSearch" DBColumn="TextSearch" SessionKey="fltTextSearch" Label="Text Search" CssClass="form-control"></sc:ReportFilterTextBox>
+										</div>
+									</div>
+								</div>
+							</div>
+							<% } %>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+						<asp:Button runat="server" CssClass="btn btn-primary" Text="Apply Filters" OnClick="ApplyFilters_Click" />
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
 
 
-        <!-- REQUIRED JS SCRIPTS -->
-        <script src="/Scripts/jquery-2.1.4.min.js"></script>
-        <script src="/Scripts/jquery.slimscroll.min.js"></script>
-        <script src="/Scripts/fastclick.min.js"></script>
-        <script src="/Scripts/bootstrap.min.js" type="text/javascript"></script>
-        <script src="/Scripts/moment.min.js"></script>
-        <script src="/Scripts/daterangepicker.js"></script>
-        <script src="/Scripts/dash-app.min.js" type="text/javascript"></script>
-        <script src="/Scripts/Chart.min.js"></script>
-        <script src="/Scripts/jquery.jqplot.min.js"></script>
-        <script src="/Scripts/jqplot.barRenderer.min.js"></script>
-        <script src="/Scripts/jqplot.pieRenderer.min.js"></script>
-        <script src="/Scripts/jqplot.categoryAxisRenderer.min.js"></script>
-        <script src="/Scripts/jqplot.pointLabels.min.js"></script>
-        <script src="/Scripts/jqplot.highlighter.min.js"></script>
-        <script src="/Scripts/Site.js"></script>
-        <asp:ContentPlaceHolder ID="FooterScripts" runat="server"></asp:ContentPlaceHolder>
-        <!-- Optionally, you can add Slimscroll and FastClick plugins.
+		<!-- REQUIRED JS SCRIPTS -->
+		<script src="/Scripts/jquery-2.1.4.min.js"></script>
+		<script src="/Scripts/jquery.slimscroll.min.js"></script>
+		<script src="/Scripts/fastclick.min.js"></script>
+		<script src="/Scripts/bootstrap.min.js" type="text/javascript"></script>
+		<script src="/Scripts/moment.min.js"></script>
+		<script src="/Scripts/daterangepicker.js"></script>
+		<script src="/Scripts/dash-app.min.js" type="text/javascript"></script>
+		<script src="/Scripts/Chart.min.js"></script>
+		<script src="/Scripts/jquery.jqplot.min.js"></script>
+		<script src="/Scripts/jqplot.barRenderer.min.js"></script>
+		<script src="/Scripts/jqplot.pieRenderer.min.js"></script>
+		<script src="/Scripts/jqplot.categoryAxisRenderer.min.js"></script>
+		<script src="/Scripts/jqplot.pointLabels.min.js"></script>
+		<script src="/Scripts/jqplot.highlighter.min.js"></script>
+		<script src="/Scripts/Site.js"></script>
+		<asp:ContentPlaceHolder ID="FooterScripts" runat="server"></asp:ContentPlaceHolder>
+		<!-- Optionally, you can add Slimscroll and FastClick plugins.
 				Both of these plugins are recommended to enhance the
 				user experience. Slimscroll is required when using the
 				fixed layout. -->
-    </form>
+	</form>
 </body>
 </html>

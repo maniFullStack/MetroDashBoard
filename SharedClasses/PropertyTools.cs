@@ -653,7 +653,7 @@ namespace SharedClasses {
 						case 1:
 							return "Coffee Station / Gaming Floor";
 						case 2:
-							return "Player's Lounge and Café";
+							return "Getaway Restaurant";
 					}
 					break;
 				case GCCPropertyShortCode.WDB:
@@ -662,7 +662,11 @@ namespace SharedClasses {
 						case 1:
 							return "Coffee Station / Gaming Floor";
 						case 2:
-							return "Windward Restaurant & Lounge";
+							return "Willows Dining Room";
+						case 3:
+							return "Willows Noodle Bar";
+						case 4:
+							return "Hoofbeats Lounge";
 					}
 					break;
 
@@ -672,7 +676,13 @@ namespace SharedClasses {
 						case 1:
 							return "Coffee Station / Gaming Floor";
 						case 2:
-							return "Windward Restaurant & Lounge";
+							return "Waters Edge Buffet";
+						case 3:
+							return "Lucky Stone Bar & Grill";
+						case 4:
+							return "Heron Bar";
+						case 5:
+							return "Game Side Dining";
 					}
 					break;
 
@@ -922,34 +932,46 @@ namespace SharedClasses {
 					break;
 
 
-
 				case GCCPropertyShortCode.AJA:
 					switch (mentionNumber)
 					{
 						case 1:
 							return "Coffee Station / Gaming Floor";
 						case 2:
-							return "Player's Lounge and Café";
+							return "Getaway Restaurant";
 					}
 					break;
 				case GCCPropertyShortCode.WDB:
 					switch (mentionNumber)
 					{
 						case 1:
-							return "station de café/salle de jeu";
+							return "Coffee Station / Gaming Floor";
 						case 2:
-							return "Restaurant et Lounge Windward";
+							return "Willows Dining Room";
+						case 3:
+							return "Willows Noodle Bar";
+						case 4:
+							return "Hoofbeats Lounge";
 					}
 					break;
+
 				case GCCPropertyShortCode.GBH:
 					switch (mentionNumber)
 					{
 						case 1:
-							return "station de café/salle de jeu";
+							return "Coffee Station / Gaming Floor";
 						case 2:
-							return "Restaurant et Lounge Windward";
+							return "Waters Edge Buffet";
+						case 3:
+							return "Lucky Stone Bar & Grill";
+						case 4:
+							return "Heron Bar";
+						case 5:
+							return "Game Side Dining";
 					}
 					break;
+
+					
 
 
 

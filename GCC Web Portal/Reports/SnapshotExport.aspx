@@ -108,7 +108,7 @@
 		<asp:ListItem Text="Cage & Countroom" Value="Cage & Countroom"></asp:ListItem>
 		<asp:ListItem Text="Cage / Count" Value="Cage / Count"></asp:ListItem>
         <asp:ListItem Text="Cage / Count, Surveillance & Security" Value="Cage / Count, Surveillance & Security"></asp:ListItem>
-        <asp:ListItem Text="Cage / Countroom / Guest Services" Value="Cage / Countroom / Guest Services"></asp:ListItem>
+        <asp:ListItem Text="Cage/Countroom/Guest Services" Value="Cage/Countroom/Guest Services"></asp:ListItem>
         <asp:ListItem Text="Casino: Guest Services" Value="Casino: Guest Services"></asp:ListItem>
         <%--<asp:ListItem Text="Casino Guest Services & Entertainment & Spa" Value="Casino Guest Services & Entertainment & Spa"></asp:ListItem>--%>
         <asp:ListItem Text="Casino Guest Services including GS Manager and Marketing Coordintor" Value="Casino Guest Services including GS Manager and Marketing Coordintor"></asp:ListItem>

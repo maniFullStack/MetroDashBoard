@@ -43,6 +43,8 @@ namespace GCC_Web_Portal
                         cnt++;
                     }
                 }
+
+                
                 return cnt;
             }
         }

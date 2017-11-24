@@ -280,7 +280,7 @@ namespace GCC_Web_Portal
             //Cage / Count, Surveillance & Security
             ddlDepartment.Items[ind++].Enabled = (propID == 13);
 
-            //Cage / Countroom / Guest Services
+            //Cage/Countroom/Guest Services
             ddlDepartment.Items[ind++].Enabled = (propID == 11);
             //Casino: Guest Services
             ddlDepartment.Items[ind++].Enabled = (propID == 2);
