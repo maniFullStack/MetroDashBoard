@@ -417,10 +417,17 @@
 				<% if(PropertyShortCode == GCCPropertyShortCode.CNB) { %>
 				<p><a href="/TermsAndConditions_CNB/<%= PropertyShortCode.ToString()%>" title="Terms and Conditions" target="_blank">Terms of Use, Full Contest Conditions and Privacy Policy</a></p>
 				<%}
-	   else if (PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH)
+	   else if (PropertyShortCode == GCCPropertyShortCode.SCTI)
 	   { %>
 				<p><a href="/TermsAndConditions_SCTI/<%= PropertyShortCode.ToString()%>" title="Terms and Conditions" target="_blank">Terms of Use, Full Contest Conditions and Privacy Policy</a></p>
-				<% } else { %>
+				<% } else if (PropertyShortCode ==  GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH) { %>
+
+
+				<p><a href="/TermsAndConditions_GTA/<%= PropertyShortCode.ToString()%>" title="Terms and Conditions" target="_blank">Terms of Use, Full Contest Conditions and Privacy Policy</a></p>
+
+
+
+				<%}     else { %>
 				<p><a href="/TermsAndConditions/<%= PropertyShortCode.ToString()%>" title="Terms and Conditions" target="_blank">Terms of Use, Full Contest Conditions and Privacy Policy</a></p>
 				<%} %>
 
@@ -469,13 +476,20 @@
 
 
 				<% }
-	   else if (PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH)
+	   else if (PropertyShortCode == GCCPropertyShortCode.SCTI)
 	   { %>
 				<p><a href="/TermsAndConditions_French_SCTI/<%= PropertyShortCode.ToString()%>" title="Terms and Conditions" target="_blank">Conditions d'utilisation, conditions complètes du concours et politique de confidentialité</a></p>
 
 
 
-				<%} else{ %>
+				<% } else if (PropertyShortCode  == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH) { %>
+
+
+				<p><a href="/TermsAndConditions_GTA/<%= PropertyShortCode.ToString()%>" title="Terms and Conditions" target="_blank">Terms of Use, Full Contest Conditions and Privacy Policy</a></p>
+
+
+
+				<%}     else { %>
 				<p><a href="/TermsAndConditions_French/<%= PropertyShortCode.ToString()%>" title="Terms and Conditions" target="_blank">Conditions d'utilisation, conditions complètes du concours et politique de confidentialité</a></p>
 
 				<%} %>
@@ -4355,7 +4369,7 @@
 
 
 			//20171128 -  commented out this section since on Page 10 multiple options are getting selected at the same time
-		<%--	<% if ( SurveyType == GEISurveyType.StaffSurvey && CurrentPage == 10 ) { %>
+			<%--	<% if ( SurveyType == GEISurveyType.StaffSurvey && CurrentPage == 10 ) { %>
 			$(".scale-question ").on("ifClicked", "input[type=radio]", function (evt) {
 				var $this = $(this);
 				$(".scale-question input[value=" + $this.val() + "]").not($this).iCheck('check');

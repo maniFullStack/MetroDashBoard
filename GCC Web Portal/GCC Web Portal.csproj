@@ -228,6 +228,7 @@
     <Content Include="Surveys\GSEI\GSEITAndCs.aspx" />
     <Content Include="TandCCNB.aspx" />
     <Content Include="TandCCNB_French.aspx" />
+    <Content Include="TandCGTA.aspx" />
     <Content Include="TandCHastings.aspx" />
     <Content Include="TandCSCTI.aspx" />
     <Content Include="TAndCs_French.aspx" />
@@ -717,6 +718,13 @@
     </Compile>
     <Compile Include="TandCCNB_French.aspx.designer.cs">
       <DependentUpon>TandCCNB_French.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TandCGTA.aspx.cs">
+      <DependentUpon>TandCGTA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TandCGTA.aspx.designer.cs">
+      <DependentUpon>TandCGTA.aspx</DependentUpon>
     </Compile>
     <Compile Include="TandCHastings.aspx.cs">
       <DependentUpon>TandCHastings.aspx</DependentUpon>

@@ -20,7 +20,7 @@ namespace GCC_Web_Portal
 
         //This is used to determine the sort order of the properties in the output file. It should be alphabetical.
         //int[] _propertySortOrder = { 1, 7, 11, 12, 8, 10, 9, 4, 13, 3, 5, 2, 6 };
-        private int[] _propertySortOrder = { 1, 7, 19, 11, 12, 8, 10, 9, 14, 13, 3, 5, 2, 17, 20 , 18, 6 };
+        private int[] _propertySortOrder = { 1, 7, 19, 11, 12, 8, 10, 9, 14, 13, 3, 5, 2, 17, 20 , 18, 6, 22,23,24 };
 
         private Dictionary<int, Dictionary<int, double>> _varianceLookup = new Dictionary<int, Dictionary<int, double>>();
 

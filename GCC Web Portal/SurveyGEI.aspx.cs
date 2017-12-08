@@ -507,6 +507,13 @@ namespace GCC_Web_Portal
 						|| PropertyShortCode == GCCPropertyShortCode.EC);
 
 
+
+
+					if(PropertyShortCode == GCCPropertyShortCode.WDB)
+					{
+						radQ27A_7.Text.Remove(0);
+						radQ27A_7.Text = "&nbsp;Electronic Table Games";
+					}
 				}
 
 				else if(strSurveyLang == "French")
@@ -575,6 +582,12 @@ namespace GCC_Web_Portal
 					radQ40A_13_F.Visible = (PropertyShortCode == GCCPropertyShortCode.HA
 						|| PropertyShortCode == GCCPropertyShortCode.EC);
 
+
+					if (PropertyShortCode == GCCPropertyShortCode.WDB)
+					{
+						radQ27A_7.Text.Remove(0);
+						radQ27A_7.Text = "&nbsp;Jeux de table électroniques";
+					}
 
 				}
 
