@@ -1757,7 +1757,16 @@ namespace GCC_Web_Portal
 						&& !Q18_51.Checked
 						&& !Q18_52.Checked
 						&& !Q18_53.Checked
-						&& !Q18_54.Checked) {
+						&& !Q18_54.Checked
+						&& !Q18_55.Checked
+						&& !Q18_56.Checked
+						&& !Q18_57.Checked
+						&& !Q18_58.Checked
+						&& !Q18_59.Checked
+						&& !Q18_60.Checked
+						&& !Q18_61.Checked
+						&& !Q18_62.Checked)
+					{
 						return true;
 					}
 					}
@@ -1820,7 +1829,15 @@ namespace GCC_Web_Portal
 						&& !Q18_51_F.Checked
 						&& !Q18_52_F.Checked
 						&& !Q18_53_F.Checked
-						&& !Q18_54_F.Checked)
+						&& !Q18_54_F.Checked
+						&& !Q18_55_F.Checked
+						&& !Q18_56_F.Checked
+						&& !Q18_57_F.Checked
+						&& !Q18_58_F.Checked
+						&& !Q18_59_F.Checked
+						&& !Q18_60_F.Checked
+						&& !Q18_61_F.Checked
+						&& !Q18_62_F.Checked)
 					{
 						return true;
 					}

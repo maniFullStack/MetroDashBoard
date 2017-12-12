@@ -61,6 +61,12 @@ namespace GCC_Web_Portal.Reports
                                                                 new SqlParameter("@MonthStart", ddlMonth.SelectedValue + "-01"),
                                                                 new SqlParameter("@PropertyID", ddlProperty.SelectedValue));
 
+
+            //DataSet ds = sql.ExecStoredProcedureDataSet("spReports_FeedbackReport",
+            //                                                   new SqlParameter("@MonthStart", ddlMonth.SelectedValue + "-01"),
+            //                                                   new SqlParameter("@PropertyID", ddlProperty.SelectedValue));
+
+
             using (ExcelPackage package = new ExcelPackage())
             {
                 GCCPropertyShortCode sc = (GCCPropertyShortCode)ddlProperty.SelectedValue.StringToInt(0);

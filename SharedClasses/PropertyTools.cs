@@ -124,16 +124,16 @@ namespace SharedClasses {
 
 
 				case GCCPropertyShortCode.WDB:
-					return "http://www.woodbineentertainment.com/";
+					return "http://casinowoodbine.com/";
 
-
+					
 
 				case GCCPropertyShortCode.AJA:
-					return "https://ajaxdowns.com/";
+					return "https://casinoajax.com/";
 
 
 				case GCCPropertyShortCode.GBH:
-					return "http://www.greatblueheroncasino.com/";
+					return "http://gbhcasino.com/";
 
 
 				default:
@@ -202,11 +202,11 @@ namespace SharedClasses {
 
 
 				case GCCPropertyShortCode.GBH:
-					return "905-985-4888";
+					return "888-294-3766";
 
 
 				case GCCPropertyShortCode.WDB:
-					return "416-675-1101";
+					return "888-345-7568";
 
 
 				case GCCPropertyShortCode.AJA:

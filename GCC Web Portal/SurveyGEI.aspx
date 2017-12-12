@@ -402,9 +402,21 @@
 				   { %>
 				<p>No purchase necessary. An Entrant may only enter the contest once during the promotional period. The contest promotional period will close at the end of the month in which this survey was completed. Duplicate entries will be deleted. Your personal information is collected and used by Great American Casino only for research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes.</p>
 				<% }
-	   else if (PropertyShortCode == GCCPropertyShortCode.SSKD || PropertyShortCode == GCCPropertyShortCode.AJA || PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.SCBE || PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH)
+	   else if (PropertyShortCode == GCCPropertyShortCode.SSKD || PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.SCBE)
 				   { %>
 				<p>No purchase necessary. An Entrant may only enter the contest once during the promotional period. The contest promotional period will close at the end of the month in which this survey was completed. Duplicate entries will be deleted. Your personal information is collected and used by Shorelines Casino on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research.  It will be used for GCGC's research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
+				<% }
+					 else if (PropertyShortCode == GCCPropertyShortCode.AJA)
+				   { %>
+				<p>No purchase necessary. An Entrant may only enter the contest once during the promotional period. The contest promotional period will close at the end of the month in which this survey was completed. Duplicate entries will be deleted. Your personal information is collected and used by Ajax Casino on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research.  It will be used for GCGC's research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
+				<% }
+					 else if (PropertyShortCode == GCCPropertyShortCode.WDB)
+				   { %>
+				<p>No purchase necessary. An Entrant may only enter the contest once during the promotional period. The contest promotional period will close at the end of the month in which this survey was completed. Duplicate entries will be deleted. Your personal information is collected and used by Woodbine Casino on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research.  It will be used for GCGC's research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
+				<% }
+					 else if (PropertyShortCode == GCCPropertyShortCode.GBH)
+				   { %>
+				<p>No purchase necessary. An Entrant may only enter the contest once during the promotional period. The contest promotional period will close at the end of the month in which this survey was completed. Duplicate entries will be deleted. Your personal information is collected and used by Great Blue Heron Casino on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research.  It will be used for GCGC's research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
 				<% }
 				   else if (PropertyShortCode == GCCPropertyShortCode.CNB)
 				   { %>
@@ -420,7 +432,7 @@
 	   else if (PropertyShortCode == GCCPropertyShortCode.SCTI)
 	   { %>
 				<p><a href="/TermsAndConditions_SCTI/<%= PropertyShortCode.ToString()%>" title="Terms and Conditions" target="_blank">Terms of Use, Full Contest Conditions and Privacy Policy</a></p>
-				<% } else if (PropertyShortCode ==  GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH) { %>
+				<% } else if (PropertyShortCode ==  GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH || PropertyShortCode == GCCPropertyShortCode.AJA) { %>
 
 
 				<p><a href="/TermsAndConditions_GTA/<%= PropertyShortCode.ToString()%>" title="Terms and Conditions" target="_blank">Terms of Use, Full Contest Conditions and Privacy Policy</a></p>
@@ -597,7 +609,7 @@
 						<sc:SurveyRadioButton ID="radQ1_Poker" runat="server" GroupName="Q1" SessionKey="Q1Poker" DBColumn="Q1" DBValue="Poker" Text="&nbsp;Playing Poker" /><br />
 						<% } %>
 						<sc:SurveyRadioButton ID="radQ1_Food" runat="server" GroupName="Q1" SessionKey="Q1Food" DBColumn="Q1" DBValue="Food" Text="&nbsp;Enjoying Food or Beverages" /><br />
-						<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB","WDB","GBH" }.Contains(PropertyShortCode.ToString()))
+						<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB" }.Contains(PropertyShortCode.ToString()))
 						   { %>
 						<sc:SurveyRadioButton ID="radQ1_Entertainment" runat="server" GroupName="Q1" SessionKey="Q1Entertainment" DBColumn="Q1" DBValue="Entertainment" Text="&nbsp;Watching Live Entertainment at a show lounge or theatre" /><br />
 						<% } %>
@@ -3659,6 +3671,10 @@
 				</p>
 				<uc1:YesNoControl runat="server" ID="Q40" SessionKey="Q40" DBColumn="Q40" />
 				<% } %>
+
+
+				<%if(!IsKioskOrStaffEntry){ %>
+
 				<% // OLG QUESTIONS (ONTARIO ONLY) %>
 				<% if (PropertyShortCode == GCCPropertyShortCode.SSKD || PropertyShortCode == GCCPropertyShortCode.AJA || PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.SCBE || PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH)
 				   { %>
@@ -3669,6 +3685,7 @@
 				<uc1:YesNoControl runat="server" ID="OLGYesNo" SessionKey="OLGYesNo" DBColumn="OLGYesNo" />
 
 				<% } %>
+				<%} %>
 				<div class="button-container">
 					<asp:Button runat="server" OnClick="Prev_Click" CssClass="btn btn-default" Text="Back" />
 					<asp:Button runat="server" OnClick="Next_Click" CssClass="btn btn-primary" Text="Next" />
@@ -4369,12 +4386,13 @@
 
 
 			//20171128 -  commented out this section since on Page 10 multiple options are getting selected at the same time
-			<%--	<% if ( SurveyType == GEISurveyType.StaffSurvey && CurrentPage == 10 ) { %>
+			//20171211 - Colin said this option is set on purpose so uncommenting it - Page 10, should select all at same time
+			<% if ( SurveyType == GEISurveyType.StaffSurvey && CurrentPage == 10 ) { %>
 			$(".scale-question ").on("ifClicked", "input[type=radio]", function (evt) {
 				var $this = $(this);
 				$(".scale-question input[value=" + $this.val() + "]").not($this).iCheck('check');
 			});
-			<% } %>--%>
+			<% } %>
 
 
 

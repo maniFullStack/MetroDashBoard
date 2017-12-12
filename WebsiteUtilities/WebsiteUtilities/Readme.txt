@@ -80,14 +80,14 @@ CREATE TABLE [dbo].[tblSYSAppErrorLogs](
 ====== web.config Example (With Defaults) ======
 <configuration>
   <appSettings>
-    <add key="LogToFile" value="false"/>
-    <add key="LogToDatabase" value="false"/>
-    <add key="LogToEventLog" value="false"/>
-    <add key="LogFileDirectory" value="~/Files/Logs/"/>
-    <add key="LogTableName" value="tblSYSAppErrorLogs"/>
+	<add key="LogToFile" value="false"/>
+	<add key="LogToDatabase" value="false"/>
+	<add key="LogToEventLog" value="false"/>
+	<add key="LogFileDirectory" value="~/Files/Logs/"/>
+	<add key="LogTableName" value="tblSYSAppErrorLogs"/>
   </appSettings>
   <connectionStrings>
 	<add name="DatabaseDefault" connectionString="Data Source=SQL2;Initial Catalog=MShopCanada;Integrated Security=SSPI" providerName="System.Data.SqlClient"/>
-    <add name="DatabaseWeb" connectionString="Data Source=SPOCK;Initial Catalog=web;Integrated Security=SSPI" providerName="System.Data.SqlClient"/>    
+	<add name="DatabaseWeb" connectionString="Data Source=SPOCK;Initial Catalog=web;Integrated Security=SSPI" providerName="System.Data.SqlClient"/>    
   </connectionStrings>
 </configuration>
