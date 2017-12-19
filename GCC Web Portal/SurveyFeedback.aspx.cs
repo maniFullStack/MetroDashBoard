@@ -214,6 +214,7 @@ namespace GCC_Web_Portal
 				fbkQ2.Items.Insert(16, new ListItem(Lang.Page3_Question1_16, "7"));
 				fbkQ2.Items.Insert(17, new ListItem(Lang.Page3_Question1_17, "11"));
 				fbkQ2.Items.Insert(18, new ListItem(Lang.Page3_Question1_18, "12"));
+		   
 
 				fbkQ5.Items.Insert(1, new ListItem(Lang.Page3_Question4_1, "By e-mail"));
 				fbkQ5.Items.Insert(2, new ListItem(Lang.Page3_Question4_2, "By telephone"));
@@ -535,7 +536,9 @@ namespace GCC_Web_Portal
 			if (ValidateAndSave(Master.CurrentPage, true, false))
 			{
 				//If the user selects “Ask for Donation/Support”, redirect to {propertyshortcode}/SurveyDonation.aspx
-				if (fbkQ1.SelectedIndex == 10 && Master.CurrentPage == 2)
+				//if (fbkQ1.SelectedIndex == 10 && Master.CurrentPage == 2)
+				//20171219_Redirecting to donation request based on selection
+				if (fbkQ1.SelectedIndex == 5 && Master.CurrentPage == 2)
 				{
 					Response.Redirect(String.Format("/DonationRequest/{0}/", AlignedPropertyShortCode.ToString()), true);
 					return;

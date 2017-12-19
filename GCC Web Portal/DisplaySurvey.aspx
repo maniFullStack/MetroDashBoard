@@ -590,7 +590,6 @@
 
 
 
-	<%} %>
 
 
 
@@ -624,7 +623,8 @@
 			</tr>
 		</table>
 	</div>
-
+	
+	<%} %>
 	<p class="question">
 		Did you experience a problem or issue during your<% if ( !IsKioskOrStaffEntry ) { %> most recent<% } %> visit<% if ( IsKioskOrStaffEntry ) { %> today<% } %>?
 	</p>
