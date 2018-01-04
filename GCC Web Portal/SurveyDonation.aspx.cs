@@ -298,6 +298,15 @@ namespace GCC_Web_Portal
                         SurveyTools.SaveValue<bool>(Q11T_CurrentRequest);
 
 
+                        SurveyTools.SaveValue<bool>(Q11U_PastSupport);
+                        SurveyTools.SaveValue<bool>(Q11U_CurrentRequest);
+
+
+
+                        SurveyTools.SaveValue<bool>(Q11V_PastSupport);
+                        SurveyTools.SaveValue<bool>(Q11V_CurrentRequest);
+
+
                         SurveyTools.SaveValue<string>(Q12);
                         SurveyTools.SaveValue<string>(Q13);
                         SurveyTools.SaveValue<string>(Q14);
@@ -482,6 +491,13 @@ namespace GCC_Web_Portal
 
             Q11T_PastSupport.PrepareQuestionForDB(columnList, sqlParams);
             Q11T_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
+
+            Q11U_PastSupport.PrepareQuestionForDB(columnList, sqlParams);
+            Q11U_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
+
+
+            Q11V_PastSupport.PrepareQuestionForDB(columnList, sqlParams);
+            Q11V_CurrentRequest.PrepareQuestionForDB(columnList, sqlParams);
 
 
             Q12.PrepareQuestionForDB(columnList, sqlParams);

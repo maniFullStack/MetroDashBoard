@@ -139,11 +139,11 @@
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11C_PastSupport" SessionKey="Q11C_PastSupport" DBColumn="Q11C_PastSupport" DBValue="1" /></div>
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11C_CurrentRequest" SessionKey="Q11C_CurrentRequest" DBColumn="Q11C_CurrentRequest" DBValue="1" /></div>
         </div>
-        <%--<div class="row">
-            <div class="col-xs-6 col-md-5">Fraser Downs Racetrack and Casino (Surrey, BC)</div>
+        <div class="row">
+            <div class="col-xs-6 col-md-5">Elements Casino (Surrey, BC)</div>
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11D_PastSupport" SessionKey="Q11D_PastSupport" DBColumn="Q11D_PastSupport" DBValue="1" /></div>
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11D_CurrentRequest" SessionKey="Q11D_CurrentRequest" DBColumn="Q11D_CurrentRequest" DBValue="1" /></div>
-        </div>--%>
+        </div>
         <div class="row">
             <div class="col-xs-6 col-md-5">View Royal Casino (Victoria, BC)</div>
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11E_PastSupport" SessionKey="Q11E_PastSupport" DBColumn="Q11E_PastSupport" DBValue="1" /></div>
@@ -179,6 +179,13 @@
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11K_PastSupport" SessionKey="Q11K_PastSupport" DBColumn="Q11K_PastSupport" DBValue="1" /></div>
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11K_CurrentRequest" SessionKey="Q11K_CurrentRequest" DBColumn="Q11K_CurrentRequest" DBValue="1" /></div>
         </div>
+
+                <div class="row">
+            <div class="col-xs-6 col-md-5">Shorelines Casino Belleville (Belleville, ON)</div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11R_PastSupport" SessionKey="Q11R_PastSupport" DBColumn="Q11R_PastSupport" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11R_CurrentRequest" SessionKey="Q11R_CurrentRequest" DBColumn="Q11R_CurrentRequest" DBValue="1" /></div>
+        </div>
+
 
 
         <% if (Session["CurrentUI"] == "fr-CA") { %>
@@ -227,12 +234,22 @@
         <%} %>
 
         
-         <div class="row">
-            <div class="col-xs-6 col-md-5">Shorelines Casino Belleville (Belleville, ON)</div>
-            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11R_PastSupport" SessionKey="Q11R_PastSupport" DBColumn="Q11R_PastSupport" DBValue="1" /></div>
-            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11R_CurrentRequest" SessionKey="Q11R_CurrentRequest" DBColumn="Q11R_CurrentRequest" DBValue="1" /></div>
+
+        <div class="row">
+            <div class="col-xs-6 col-md-5">Casino Nova Scotia (Halifax, NS)</div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11U_PastSupport" SessionKey="Q11U_PastSupport" DBColumn="Q11U_PastSupport" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11U_CurrentRequest" SessionKey="Q11U_CurrentRequest" DBColumn="Q11U_CurrentRequest" DBValue="1" /></div>
         </div>
 
+
+
+        <div class="row">
+            <div class="col-xs-6 col-md-5">Casino Nova Scotia (Sydney, NS)</div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11V_PastSupport" SessionKey="Q11V_PastSupport" DBColumn="Q11V_PastSupport" DBValue="1" /></div>
+            <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11V_CurrentRequest" SessionKey="Q11V_CurrentRequest" DBColumn="Q11V_CurrentRequest" DBValue="1" /></div>
+        </div>
+
+ 
 
 
         <div class="row">
