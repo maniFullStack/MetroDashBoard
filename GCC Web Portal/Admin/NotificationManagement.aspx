@@ -81,7 +81,7 @@
                                     <asp:ListItem Text="Shorelines Slots at Kawartha Downs" Value="17"></asp:ListItem>
                                     <asp:ListItem Text="Shorelines Casino Thousand Islands" Value="18"></asp:ListItem>
                                     <asp:ListItem Text="Casino New Brunswick" Value="19"></asp:ListItem>
-                                    <asp:ListItem Text="Shorelines Casino Belleville" Value="21"></asp:ListItem>
+                                    <asp:ListItem Text="Shorelines Casino Belleville" Value="20"></asp:ListItem>
                                     <asp:ListItem Text="Casino Woodbine" Value="22"></asp:ListItem>
                                     <asp:ListItem Text="Casino Ajax" Value="23"></asp:ListItem>
                                     <asp:ListItem Text="Great Blue Heron Casino" Value="24"></asp:ListItem>
