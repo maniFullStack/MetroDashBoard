@@ -945,13 +945,13 @@ namespace SharedClasses {
 					switch (mentionNumber)
 					{
 						case 1:
-							return "Coffee Station / Gaming Floor";
+							return "Station de café/salle de jeu";
 						case 2:
-							return "Willows Dining Room";
+							return "Salle à manger Willows";
 						case 3:
-							return "Willows Noodle Bar";
+							return "Bar à mouilles Willows";
 						case 4:
-							return "Hoofbeats Lounge";
+							return "Lounge Hoofbeats";
 					}
 					break;
 

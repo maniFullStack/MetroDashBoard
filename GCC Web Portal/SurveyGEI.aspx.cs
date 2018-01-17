@@ -3475,7 +3475,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20F_M1_F);
 								SaveValue(Q20G_M1_F);
 							}
-							if (Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked || Q18_42_F.Checked || Q18_49_F.Checked || Q18_53_F.Checked)
+							if (Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked || Q18_42_F.Checked || Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked)
 							{
 								SaveValue(Q19_M2_F);
 								SaveValue(Q20A_M2_F);
@@ -3489,8 +3489,14 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20F_M2_F);
 								SaveValue(Q20G_M2_F);
 							}
+
+
+
+
+
 							//if ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) {
-							if (Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27_F.Checked || Q18_33_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked)
+							if (Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27_F.Checked || Q18_33_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked || Q18_54_F.Checked || Q18_56_F.Checked || Q18_60_F.Checked)
+								
 							{
 								SaveValue(Q19_M3_F);
 								SaveValue(Q20A_M3_F);
@@ -3502,7 +3508,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20G_M3_F);
 							}
 							//if ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) {
-							if (Q18_4_F.Checked || Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked)
+							if (Q18_4_F.Checked || Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked)
 							{
 								SaveValue(Q19_M4_F);
 								SaveValue(Q20A_M4_F);
@@ -3514,7 +3520,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20G_M4_F);
 							}
 							//if ( Q18_5.Checked || Q18_17.Checked || Q18_24.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked ) {
-							if (Q18_5_F.Checked || Q18_17_F.Checked || Q18_29_F.Checked || Q18_40_F.Checked || Q18_44_F.Checked || Q18_52_F.Checked || Q18_54.Checked)
+							if (Q18_5_F.Checked || Q18_17_F.Checked || Q18_29_F.Checked || Q18_40_F.Checked || Q18_44_F.Checked || Q18_52_F.Checked || Q18_54.Checked || Q18_62_F.Checked)
 							{
 								SaveValue(Q19_M5_F);
 								SaveValue(Q20A_M5_F);

@@ -49,6 +49,10 @@ namespace SharedClasses {
                 SQLDatabase sql = new SQLDatabase();
                 DataTable dt = sql.QueryDataTable( "SELECT PropertyID, Timezone, (SELECT TOP 1 GroupID FROM [tblCOM_UserToGroups] WHERE UserID = @UserID) AS [GroupID] FROM tblCOM_Users WHERE UserID = @UserID", new SqlParameter( "@UserID", UserID ) );
                 Property = (GCCProperty)dt.Rows[0]["PropertyID"].ToString().StringToInt();
+
+                
+
+                
                 Group = (UserGroups)dt.Rows[0]["GroupID"].ToString().StringToInt();
                 Timezone = dt.Rows[0]["Timezone"].ToString();
                 if ( String.IsNullOrWhiteSpace( Timezone ) ) {

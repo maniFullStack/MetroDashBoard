@@ -37,17 +37,17 @@ namespace GCGC_Web_Portal
 
 			//Seperate Terms and Conditions for AJA
 			routes.MapPageRoute("TermsAndConditions_AJA", "TermsAndConditions_GTA/{propertyshortcode}", "~/TandCGTA.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
-			routes.MapPageRoute("TermsAndConditions_French_AJA", "TermsAndConditions_French_GTA/{propertyshortcode}", "~/TandCGTA.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
+			routes.MapPageRoute("TermsAndConditions_French_AJA", "TermsAndConditions_French_GTA/{propertyshortcode}", "~/TandCGTA_French.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
 
 
 			//Seperate Terms and Conditions for WDB
 			routes.MapPageRoute("TermsAndConditions_WDB", "TermsAndConditions_GTA/{propertyshortcode}", "~/TandCGTA.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
-			routes.MapPageRoute("TermsAndConditions_French_WDB", "TermsAndConditions_French_GTA/{propertyshortcode}", "~/TandCGTA.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
+			routes.MapPageRoute("TermsAndConditions_French_WDB", "TermsAndConditions_French_GTA/{propertyshortcode}", "~/TandCGTA_French.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
 
 
 			//Seperate Terms and Conditions for GBH
 			routes.MapPageRoute("TermsAndConditions_GBH", "TermsAndConditions_GTA/{propertyshortcode}", "~/TandCGTA.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
-			routes.MapPageRoute("TermsAndConditions_French_GBH", "TermsAndConditions_French_GTA/{propertyshortcode}", "~/TandCGTA.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
+			routes.MapPageRoute("TermsAndConditions_French_GBH", "TermsAndConditions_French_GTA/{propertyshortcode}", "~/TandCGTA_French.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
 
 
 

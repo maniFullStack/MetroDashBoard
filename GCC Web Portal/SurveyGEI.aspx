@@ -469,9 +469,13 @@
 				   { %>
 				<p>Pas d'achat nécessaire. Un participant ne peut participer au concours qu'une seule fois pendant la période promotionnelle. La période promotionnelle du concours se terminera à la fin du mois au cours duquel le sondage a été Terminer. Les entrées en double seront supprimées. Vos renseignements personnels sont recueillis et utilisés par Great American Casino uniquement à des fins de recherche et d'administrer ce concours. Vos informations ne seront pas vendues, partagées avec des tiers ou utilisé à des fins de sollicitation.</p>
 				<% }
-	   else if (PropertyShortCode == GCCPropertyShortCode.SSKD || PropertyShortCode == GCCPropertyShortCode.AJA || PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.SCBE || PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH)
+	   else if (PropertyShortCode == GCCPropertyShortCode.SSKD || PropertyShortCode == GCCPropertyShortCode.AJA || PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.SCBE ||  PropertyShortCode == GCCPropertyShortCode.GBH)
 				   { %>
 				<p>Aucun achat nécessaire. Un participant ne peut participer au concours qu'une seule fois durant la période promotionnelle. La période promotionnelle du concours se terminera à la fin du mois au cours duquel le sondage a été complété. Les entrées en double seront supprimées. Vos renseignements personnels sont recueillis et utilisés par le Casino Shorelines au nom de la Great Canadian Gaming Corporation (GCGC) et de la Société des loteries et des jeux de l'Ontario (OLG) conformément à la Loi sur l'accès à l'information et la protection de la vie privée. Vos renseignements personnels sont utilisés aux fins d’administrer ce concours, à la recherche du service à la clientèle et pour la recherche du jeu responsable. Ils seront utilisés à des fins de recherche pour la GCGC et pour administrer ce concours. Vos informations ne seront pas vendues, partagées avec des tiers ou utilisées à des fins de sollicitation. Si vous aviez des questions à ce sujet, veuillez écrire à l'agent de confidentialité de la GCGC au 95 Schooner Street, Coquitlam, C.B. V3K 7A8.</p>
+				<% }
+					else if (PropertyShortCode == GCCPropertyShortCode.WDB)
+				   { %>
+				<p>Aucun achat nécessaire. Un participant ne peut participer au concours qu'une seule fois durant la période promotionnelle. La période promotionnelle du concours se terminera à la fin du mois au cours duquel le sondage a été complété. Les entrées en double seront supprimées. Vos renseignements personnels sont recueillis et utilisés par le Casino Woodbine au nom de la Great Canadian Gaming Corporation (GCGC) et de la Société des loteries et des jeux de l'Ontario (OLG) conformément à la Loi sur l'accès à l'information et la protection de la vie privée. Vos renseignements personnels sont utilisés aux fins d’administrer ce concours, à la recherche du service à la clientèle et pour la recherche du jeu responsable. Ils seront utilisés à des fins de recherche pour la GCGC et pour administrer ce concours. Vos informations ne seront pas vendues, partagées avec des tiers ou utilisées à des fins de sollicitation. Si vous aviez des questions à ce sujet, veuillez écrire à l'agent de confidentialité de la GCGC au 95 Schooner Street, Coquitlam, C.B. V3K 7A8.</p>
 				<% }
 				   else if (PropertyShortCode == GCCPropertyShortCode.CNB)
 				   { %>
@@ -497,7 +501,7 @@
 				<% } else if (PropertyShortCode  == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH) { %>
 
 
-				<p><a href="/TermsAndConditions_GTA/<%= PropertyShortCode.ToString()%>" title="Terms and Conditions" target="_blank">Terms of Use, Full Contest Conditions and Privacy Policy</a></p>
+				<p><a href="/TermsAndConditions_French_GTA/<%= PropertyShortCode.ToString()%>" title="Terms and Conditions" target="_blank">Conditions d'utilisation, conditions complètes du concours et politique de confidentialité</a></p>
 
 
 
@@ -1841,9 +1845,9 @@
 
 					<%if (PropertyShortCode == GCCPropertyShortCode.WDB)
 					  { %>
-					<sc:SurveyCheckBox ID="Q18_55_F" runat="server" SessionKey="Q18_55" DBColumn="Q18_55" DBValue="1" Text="&nbsp;Willows Dining Room" /><br />
-					<sc:SurveyCheckBox ID="Q18_56_F" runat="server" SessionKey="Q18_56" DBColumn="Q18_56" DBValue="1" Text="&nbsp;Willows Noodle Bar" /><br />
-					<sc:SurveyCheckBox ID="Q18_57_F" runat="server" SessionKey="Q18_57" DBColumn="Q18_57" DBValue="1" Text="&nbsp;Hoofbeats Lounge" /><br />
+					<sc:SurveyCheckBox ID="Q18_55_F" runat="server" SessionKey="Q18_55" DBColumn="Q18_55" DBValue="1" Text="&nbsp;Salle à manger Willows" /><br />
+					<sc:SurveyCheckBox ID="Q18_56_F" runat="server" SessionKey="Q18_56" DBColumn="Q18_56" DBValue="1" Text="&nbsp;Bar à mouilles Willows " /><br />
+					<sc:SurveyCheckBox ID="Q18_57_F" runat="server" SessionKey="Q18_57" DBColumn="Q18_57" DBValue="1" Text="&nbsp;Lounge Hoofbeats" /><br />
 					<% } %>
 					<%if (PropertyShortCode == GCCPropertyShortCode.AJA)
 					  { %>

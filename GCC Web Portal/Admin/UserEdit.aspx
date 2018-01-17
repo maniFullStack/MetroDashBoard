@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard.Master" AutoEventWireup="true" CodeBehind="UserEdit.aspx.cs" Inherits="GCC_Web_Portal.Admin.UserEdit"
     AllowedGroups="ForumAdmin,CorporateMarketing" %>
+
 <%@ MasterType VirtualPath="~/Dashboard.Master" %>
 <%@ Import Namespace="System" %>
 <%@ Import Namespace="System.Data" %>
@@ -17,7 +18,7 @@
     </ol>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
-<% if ( Data == null ) { %>
+    <% if ( Data == null ) { %>
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="box box-danger box-solid">
@@ -25,12 +26,12 @@
                     <h3 class="box-title">Error</h3>
                 </div>
                 <div class="box-body">
-                      Unable to load the data. Please try again.
+                    Unable to load the data. Please try again.
                 </div>
             </div>
         </div>
     </div>
-<% } else { %>
+    <% } else { %>
     <% if ( TopMessage.IsVisible ) { %>
     <div class="row">
         <div class="col-md-6">
@@ -50,15 +51,15 @@
                     User not found. Pleas go back and try again.
                     <% } else { %>
                     <div class="form-group">
-                    	<label for="<%= txtFirstName.ClientID %>">First Name</label>
+                        <label for="<%= txtFirstName.ClientID %>">First Name</label>
                         <asp:TextBox runat="server" ID="txtFirstName" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                    	<label for="<%= txtLastName.ClientID %>">Last Name</label>
+                        <label for="<%= txtLastName.ClientID %>">Last Name</label>
                         <asp:TextBox runat="server" ID="txtLastName" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                    	<label for="<%= txtEmail.ClientID %>">Email</label>
+                        <label for="<%= txtEmail.ClientID %>">Email</label>
                         <asp:TextBox runat="server" ID="txtEmail" CssClass="form-control"></asp:TextBox>
                     </div>
                     <div class="form-group">
@@ -78,14 +79,14 @@
                             <asp:ListItem Text="Casino Nova Scotia - Halifax" Value="11"></asp:ListItem>
                             <asp:ListItem Text="Casino Nova Scotia - Sydney" Value="12"></asp:ListItem>
                             <asp:ListItem Text="Great American Casino" Value="13"></asp:ListItem>
-                            
+
                             <asp:ListItem Text="Shorelines Slots at Kawartha Downs" Value="17"></asp:ListItem>
                             <asp:ListItem Text="Shorelines Casino Thousand Islands" Value="18"></asp:ListItem>
                             <asp:ListItem Text="Casino New Brunswick" Value="19"></asp:ListItem>
                             <asp:ListItem Text="Shorelines Casino Belleville" Value="20"></asp:ListItem>
-                              <asp:ListItem Text="Casino Woodbine" Value="22"></asp:ListItem>
-                                    <asp:ListItem Text="Casino Ajax" Value="23"></asp:ListItem>
-                                    <asp:ListItem Text="Great Blue Heron Casino" Value="24"></asp:ListItem>
+                            <asp:ListItem Text="Casino Woodbine" Value="22"></asp:ListItem>
+                            <asp:ListItem Text="Casino Ajax" Value="23"></asp:ListItem>
+                            <asp:ListItem Text="Great Blue Heron Casino" Value="24"></asp:ListItem>
                         </asp:DropDownList>
                     </div>
                     <div class="form-group">
@@ -123,8 +124,8 @@
                 </div>
             </div>
         </div>
-    </div>    
-<% } %>
+    </div>
+    <% } %>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="FooterScripts" runat="server">
 </asp:Content>

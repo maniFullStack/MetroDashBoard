@@ -232,6 +232,7 @@
     <Content Include="TandCHastings.aspx" />
     <Content Include="TandCSCTI.aspx" />
     <Content Include="TAndCs_French.aspx" />
+    <Content Include="TandCGTA_French.aspx" />
     <Content Include="TandSCTI_French.aspx" />
     <Content Include="Unauthorized.aspx" />
     <Content Include="Reports\QuarterlyReport.aspx" />
@@ -746,6 +747,13 @@
     </Compile>
     <Compile Include="TAndCs_French.aspx.designer.cs">
       <DependentUpon>TAndCs_French.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TandCGTA_French.aspx.cs">
+      <DependentUpon>TandCGTA_French.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TandCGTA_French.aspx.designer.cs">
+      <DependentUpon>TandCGTA_French.aspx</DependentUpon>
     </Compile>
     <Compile Include="TandSCTI_French.aspx.cs">
       <DependentUpon>TandSCTI_French.aspx</DependentUpon>
