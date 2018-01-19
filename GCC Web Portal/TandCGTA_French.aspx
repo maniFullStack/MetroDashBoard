@@ -70,13 +70,13 @@
                 <ul>
 
 
-<li> Pour participer et être admissible à gagner, le participant doit répondre à toutes les questions obligatoires du sondage sur l’expérience des clients du Shorelines Casino.</li>
+<li> Pour participer et être admissible à gagner, le participant doit répondre à toutes les questions obligatoires du sondage sur l’expérience des clients du Casino Woodbine.</li>
 <li> Les inscriptions doivent être faites directement sur le site du sondage fourni via un lien dans un courriel envoyé par la GCGC. Les photocopies, les télécopies, les courriels ou les appels téléphoniques ne sont pas considérés comme des inscriptions admissibles.</li>
 <li> Les participants doivent fournir une adresse électronique valide. Le prénom et nom de tous les participants en ligne établit l'identité du participant.</li>
 <li> Le nom et l'adresse électronique de tous les participants seront utilisés pour effectuer le tirage au sort.</li>
 <li> Un participant ne peut participer au concours qu'une seule fois pendant la période promotionnelle. Les entrées en double seront supprimées.</li>
 <li> L'utilisation de logiciels ou d'autres matériels à des fins de saisie multiple est interdite et entraînera la disqualification.</li>
-<li> Toutes les inscriptions provenant de toutes les propriétés de Shorelines Casino en Ontario seront regroupées chaque mois aux fins de la tenue du concours.</li>
+<li> Toutes les inscriptions provenant de toutes les propriétés de Casino Woodbine en Ontario seront regroupées chaque mois aux fins de la tenue du concours.</li>
 <li> Un (1) gagnant sera choisi au hasard parmi les participants le 1er jour du mois suivant la réception de l’inscription, à 13 h ou dès que possible après 13 h. Le processus de tirage au sort est le suivant :</li>
 <li> Toutes les inscriptions seront recueillies pendant la période du concours.</li>
 <li> Lors de la soumission, chaque inscription recevra un nombre fractionnaire généré de façon aléatoire entre 0 et 1. Par exemple, 0,212874.</li>
@@ -87,9 +87,9 @@
 <li> Les chances de gagner dépendront du nombre d'inscriptions admissibles reçues avant la date limite du concours.</li>
 <li> Les participants gagnants seront contactés par courriel le plus tôt possible après le tirage au sort par la GCGC.</li>
 <li> Les participants gagnants auront dix (10) jours pour réclamer leur prix, après quoi le prix est annulé et devient la propriété de la GCGC.</li>
-<li> Le gagnant recevra une (1) carte-cadeau d'une valeur de 100 $ pouvant être utilisée dans tout établissement de Shorelines Casino.</li>
+<li> Le gagnant recevra une (1) carte-cadeau d'une valeur de 100 $ pouvant être utilisée dans tout établissement de Casino Woodbine.</li>
 <li> Aucun prix n’a une valeur monétaire. Tous les prix doivent être acceptés comme tels. </li>
-<li> Le gagnant doit réclamer son prix au bureau du service à la clientèle du Shorelines Casino de son choix.</li>
+<li> Le gagnant doit réclamer son prix au bureau du service à la clientèle du Casino Woodbine de son choix.</li>
 <li> Le gagnant est responsable de ramasser son propre prix.</li>
 <li> Le gagnant devra présenter une pièce d'identité avec photo valide (y compris une preuve d'âge) et remplir le formulaire d'autorisation du gagnant avant la remise du prix. Le non-respect de cette règle entraînera la disqualification du gagnant, et le prix deviendra la propriété de la GCGC.</li>
 <li> Toute intention de la part du participant de se déformer par l'utilisation d'alias et d'adresses électroniques sera disqualifiée. En cas de litige concernant l'identité de la personne qui soumet une inscription électronique, l'inscription sera jugée comme ayant été  soumise par la personne dont le nom figure dans la base de données.</li>
@@ -99,7 +99,7 @@
 
                 </ul>
                 <h3>Renseignements personnels et politique de confidentialité</h3>
-                <p>Vos renseignements personnels sont recueillis et utilisés par le Casino Shorelines au nom de la Great Canadian Gaming Corporation (GCGC) et de la Société des loteries et des jeux de l'Ontario (OLG) conformément à la Loi sur l'accès à l'information et la protection de la vie privée. Vos renseignements personnels sont utilisés aux fins d’administrer ce concours, à la recherche du service à la clientèle et pour la recherche du jeu responsable. Ils seront utilisés à des fins de recherche pour la GCGC et pour administrer ce concours. Vos informations ne seront pas vendues, partagées avec des tiers ou utilisées à des fins de sollicitation. Si vous aviez des questions à ce sujet, veuillez écrire à l'agent de confidentialité de la GCGC au 95 Schooner Street, Coquitlam, C.B. V3K 7A8.</p>
+                <p>Vos renseignements personnels sont recueillis et utilisés par le Casino Woodbine au nom de la Great Canadian Gaming Corporation (GCGC) et de la Société des loteries et des jeux de l'Ontario (OLG) conformément à la Loi sur l'accès à l'information et la protection de la vie privée. Vos renseignements personnels sont utilisés aux fins d’administrer ce concours, à la recherche du service à la clientèle et pour la recherche du jeu responsable. Ils seront utilisés à des fins de recherche pour la GCGC et pour administrer ce concours. Vos informations ne seront pas vendues, partagées avec des tiers ou utilisées à des fins de sollicitation. Si vous aviez des questions à ce sujet, veuillez écrire à l'agent de confidentialité de la GCGC au 95 Schooner Street, Coquitlam, C.B. V3K 7A8.</p>
             </div>
         </div>
         <asp:ScriptManager runat="server">

@@ -674,7 +674,7 @@
 						<sc:SurveyRadioButton ID="radQ1_Poker_F" runat="server" GroupName="Q1" SessionKey="Q1Poker" DBColumn="Q1" DBValue="Poker" Text="&nbsp;Jouer au poker" /><br />
 						<% } %>
 						<sc:SurveyRadioButton ID="radQ1_Food_F" runat="server" GroupName="Q1" SessionKey="Q1Food" DBColumn="Q1" DBValue="Food" Text="&nbsp;Profiter de la gastronomie" /><br />
-						<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "WDB", "GBH" }.Contains(PropertyShortCode.ToString()))
+						<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "GBH" }.Contains(PropertyShortCode.ToString()))
 						   { %>
 						<sc:SurveyRadioButton ID="radQ1_Entertainment_F" runat="server" GroupName="Q1" SessionKey="Q1Entertainment" DBColumn="Q1" DBValue="Entertainment" Text="&nbsp;Profiter du divertissement à notre Lounge " /><br />
 						<% } %>
@@ -746,7 +746,7 @@
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Food" runat="server" SessionKey="Q2Food" DBColumn="Q2_Food" DBValue="1" Text="&nbsp;Enjoying Food or Beverages" /><br />
 					<% } %>
-					<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "WDB", "GBH" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
+					<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "GBH" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Entertainment" runat="server" SessionKey="Q2Entertainment" DBColumn="Q2_Entertainment" DBValue="1" Text="&nbsp;Watching Live Entertainment at a show lounge or theatre" /><br />
 					<% } %>
@@ -799,7 +799,7 @@
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Food_F" runat="server" SessionKey="Q2Food" DBColumn="Q2_Food" DBValue="1" Text="&nbsp;Profiter de la gastronomie" /><br />
 					<% } %>
-					<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "WDB", "GBH" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
+					<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "GBH" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Entertainment_F" runat="server" SessionKey="Q2Entertainment" DBColumn="Q2_Entertainment" DBValue="1" Text="&nbsp;Profiter du divertissement à notre Lounge " /><br />
 					<%--"&nbsp;Assister à un spectacle à notre salle de spectacles ou à notre pub"--%>
@@ -3395,7 +3395,7 @@
 				<% if (!IsKioskOrStaffEntry)
 				   { %>
 				<p class="question">
-					Plus précisément, veuillez évaluer votre niveau de satisfaction de la réponse du <% = CasinoName%> à votre problème pour ce «Oui» est de :
+					Plus précisément, veuillez évaluer votre niveau de satisfaction de la réponse du <% = CasinoName%> à votre problème pour ce qui est de :
 				</p>
 				<div class="row grid-header">
 					<div class="col-md-6"></div>
