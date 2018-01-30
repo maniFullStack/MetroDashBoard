@@ -428,7 +428,7 @@
 			<% if ( Data["Q18_34"].Equals( 1 ) ) { %><li>Black Diamond Bar & Grille</li><% } %>
 			<% if ( Data["Q18_35"].Equals( 1 ) ) { %><li>The Well</li><% } %>
 			<% if ( Data["Q18_36"].Equals( 1 ) ) { %><li>Prospects Lounge</li><% } %>
-			<% if ( Data["Q18_37"].Equals( 1 ) ) { %><li>Trapeze</li><% } %>
+			<% if ( Data["Q18_37"].Equals( 1 ) ) { %><li>3Sixty Buffet</li><% } %>
 			<% if ( Data["Q18_38"].Equals( 1 ) ) { %><li>The Station</li><% } %>
 			<% if ( Data["Q18_39"].Equals( 1 ) ) { %><li>Harbourfront Lounge</li><% } %>
 			<% if ( Data["Q18_40"].Equals( 1 ) ) { %><li>High Limit Gaming Area</li><% } %>
@@ -444,6 +444,19 @@
 			<% if ( Data["Q18_50"].Equals( 1 ) ) { %><li>Hub City Pub</li><% } %>
 			<% if ( Data["Q18_51"].Equals( 1 ) ) { %><li>Buffet</li><% } %>
 			<% if ( Data["Q18_52"].Equals( 1 ) ) { %><li>Room Service</li><% } %>
+            <% if ( Data["Q18_53"].Equals( 1 ) ) { %><li>Windward Restaurant and Lounge</li><% } %>
+            <% if ( Data["Q18_54"].Equals( 1 ) ) { %><li>The Buffet</li><% } %>
+            <% if ( Data["Q18_55"].Equals( 1 ) ) { %><li>Willows Dining Room</li><% } %>
+            <% if ( Data["Q18_56"].Equals( 1 ) ) { %><li>Willows Noddle Bar</li><% } %>
+            <% if ( Data["Q18_57"].Equals( 1 ) ) { %><li>Hoofbeats Lounge</li><% } %>
+            <% if ( Data["Q18_58"].Equals( 1 ) ) { %><li>Getaway Restaurant</li><% } %>
+            <% if ( Data["Q18_59"].Equals( 1 ) ) { %><li>Waters Edge Buffet</li><% } %>
+            <% if ( Data["Q18_60"].Equals( 1 ) ) { %><li>Lucky Stone Bar & Grill</li><% } %>
+            <% if ( Data["Q18_61"].Equals( 1 ) ) { %><li>Heron Bar</li><% } %>
+            <% if ( Data["Q18_62"].Equals( 1 ) ) { %><li>Game Side Dinning</li><% } %>
+
+
+                
 		</ul>
 	</div>
 

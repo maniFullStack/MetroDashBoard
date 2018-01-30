@@ -1,6 +1,7 @@
 ﻿using GCC_Web_Portal.Controls;
 using SharedClasses;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web.UI.WebControls;
@@ -329,6 +330,28 @@ namespace GCC_Web_Portal
             }
         }
 
+
+
+
+
+
+        public bool IsMultiPropertyUser
+        {
+            get
+            {
+                return true;
+            }
+        }
+
+
+
+        public class PropData
+{
+    public int Value { get; set; }
+    public string Text { get; set; }
+}
+
+
         protected void Page_Init(object sender, EventArgs e)
         {
             fltDateRange.User = User;
@@ -362,6 +385,29 @@ namespace GCC_Web_Portal
                 fltProperty.SelectedValue = ((int)User.Property).ToString();
             }
 
+
+            //if (IsMultiPropertyUser)
+            //{
+            //    List<GCCProperty> myprop = new List<GCCProperty>();
+            //    myprop.Add(GCCProperty.CasinoNewBrunswick);
+            //    fltProperty.Items.Clear();
+            //    fltProperty.DataSource = myprop;
+                
+            //    fltProperty.DataBind();
+               
+            //    ////fltProperty.OnClear = fltProperty_OnClear;
+            //    //List<PropData> data = new List<PropData>();
+            //    //data.Add(new PropData() { Value = 2, Text = "River Rock Casino Resort" });
+            //    //data.Add(new PropData() { Value = 3, Text = "Hard Rock Casino Vancouver" });
+
+            //    //fltProperty.DataSource = data;
+            //    //fltProperty.DataMember = "Text";
+            //    //fltProperty.DataBind();
+               
+
+            //    //fltProperty.SelectedIndexChanged += fltProperty_SelectedIndexChanged;
+            //    //fltProperty.SelectedValue = ((int)User.Property).ToString();
+            //}
             //Set filters from query string
             int sf = RequestVars.Get("sf", 0);
             if (sf == 1)

@@ -245,6 +245,12 @@
 										<% if (IsPropertyUser) { %>
 										<%= PropertyTools.GetCasinoName( User.Property ) %>
 										<% } else { %>
+
+
+
+                                      <%--  <% if (!IsMultiPropertyUser) { %>--%>
+									
+
 										<div class="form-group">
 											<sc:ReportFilterListBox runat="server" ID="fltProperty" SessionKey="fltProperty" DBColumn="Property" IsNumericTableType="True" SelectionMode="Multiple" Label="Property" Rows="5" CssClass="form-control">
 												<%--<asp:ListItem Text="GCC Main" Value="1"></asp:ListItem>--%>
@@ -472,7 +478,7 @@
 												<asp:ListItem Text="Stake Restaurant" Value="16"></asp:ListItem>
 												<asp:ListItem Text="The Station" Value="38"></asp:ListItem>
 												<asp:ListItem Text="Tramonto Restaurant" Value="3"></asp:ListItem>
-												<asp:ListItem Text="Trapeze" Value="37"></asp:ListItem>
+												<asp:ListItem Text="3Sixty Buffet" Value="37"></asp:ListItem>
 												<asp:ListItem Text="Unlisted Buffet and Lounge" Value="15"></asp:ListItem>
 												<asp:ListItem Text="View Royal Patio" Value="33"></asp:ListItem>
 												<asp:ListItem Text="View Royal Restaurant" Value="32"></asp:ListItem>

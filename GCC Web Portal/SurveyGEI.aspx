@@ -210,7 +210,7 @@
 					<% } else if (PropertyShortCode == GCCPropertyShortCode.CNSH) { %>
 					<h3>Dinner for four at 3Sixty Buffet</h3>
 					<% } else if (PropertyShortCode == GCCPropertyShortCode.CNSS) { %>
-					<h3>Dinner for four at All Star Grille</h3>
+					<h3>Dinner for four at Celtic Junction Bar & Grille!</h3>
 					<% } else if (PropertyShortCode == GCCPropertyShortCode.CNB) { %>
 					<h3>A Dinner buffet for 4!</h3>
 
@@ -256,7 +256,7 @@
 					<% } else if (PropertyShortCode == GCCPropertyShortCode.CNSH) { %>
 					<h3>Dinner for four at 3Sixty Buffet</h3>
 					<% } else if (PropertyShortCode == GCCPropertyShortCode.CNSS) { %>
-					<h3>Dinner for four at All Star Grille</h3>
+					<h3>Dinner for four at Celtic Junction Bar & Grille!</h3>
 
 					<% } else if (PropertyShortCode == GCCPropertyShortCode.CNB) { %>
 					<h3>Vous pourriez gagner un souper-buffet pour 4!</h3>
