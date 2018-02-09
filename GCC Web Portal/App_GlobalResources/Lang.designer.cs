@@ -88,6 +88,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to By clicking &quot;Done&quot; below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected and used by Great Canadian Casino Corporation (GCGC) on behalf of OLG in accordance with Ontario&apos;s Freedom of Information and Protection of Privacy Act. It will only be used for GCGC&apos;s reporting &amp; research purposes and to administer the guest feedback process..
+        /// </summary>
+        internal static string Donation_Final2_Ontario {
+            get {
+                return ResourceManager.GetString("Donation_Final2_Ontario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Your information will NOT be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC&apos;s Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8..
         /// </summary>
         internal static string Donation_Final3 {
@@ -1111,6 +1120,15 @@ namespace Resources {
         internal static string Page5_Response2_2 {
             get {
                 return ResourceManager.GetString("Page5_Response2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By clicking &quot;Done&quot; below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected and used by Great Canadian Casino Corporation (GCGC) in accordance with applicable Freedom of Information and Protection of Privacy laws. It will only be used for GCGC&apos;s reporting &amp; research purposes and to administer the guest feedback process..
+        /// </summary>
+        internal static string Page5_Response2_2_Ontario {
+            get {
+                return ResourceManager.GetString("Page5_Response2_2_Ontario", resourceCulture);
             }
         }
         

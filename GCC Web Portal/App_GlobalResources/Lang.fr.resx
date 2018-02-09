@@ -126,6 +126,9 @@
   <data name="Donation_Final2" xml:space="preserve">
     <value>En cliquant sur « Terminer », vous reconnaissez que vos renseignements personnels (coordonnées et réactions) sont recueillis et utilisées par la Great Canadian Gaming Corporation (GCGC) au nom de la BCLC en vertu du Freedom of Information and Protection of Privacy Act de la Colombie Britannique. Ils ne seront utilisés qu’à des fins de rapports et recherches de la GCGC et pour gérer le processus de réactions des clients.</value>
   </data>
+  <data name="Donation_Final2_Ontario" xml:space="preserve">
+    <value>By clicking "Done" below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected and used by Great Canadian Casino Corporation (GCGC) on behalf of OLG in accordance with Ontario's Freedom of Information and Protection of Privacy Act. It will only be used for GCGC's reporting &amp; research purposes and to administer the guest feedback process.</value>
+  </data>
   <data name="Donation_Final3" xml:space="preserve">
     <value>Vos renseignements ne seront PAS vendus, partagés avec une tierce partie ni utilisées à des fins de sollicitation. Si vous avez des questions à ce sujet, veuillez écrire à l’agent de la protection de la vie privée de la GCGC à la Great Canadian Gaming Corporation au 95, rue Schooner à Coquitlam en Colombie-Britannique, V3K 7A8.</value>
   </data>
@@ -449,6 +452,9 @@
   </data>
   <data name="Page5_Response2_2" xml:space="preserve">
     <value>En cliquant sur " Terminer" ci-dessous , vous reconnaissez que vous êtes conscient que vos informations personnelles (informations de contact et de la rétroaction ) sont recueillies et utilisées par la Grande Société canadienne Casino ( GCGC ) conformément à applicable accès à l'information et de la protection des lois sur la confidentialité. Il ne sera utilisé que pour les rapports et la recherche des fins de GCGC et pour administrer le processus de rétroaction des clients.</value>
+  </data>
+  <data name="Page5_Response2_2_Ontario" xml:space="preserve">
+    <value>By clicking "Done" below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected and used by Great Canadian Casino Corporation (GCGC) in accordance with applicable Freedom of Information and Protection of Privacy laws. It will only be used for GCGC's reporting &amp; research purposes and to administer the guest feedback process.</value>
   </data>
   <data name="Page5_Response2_3" xml:space="preserve">
     <value>Vos informations ne seront pas vendues , partagées avec des tiers , ou utilisées à des fins de solliciter. Si vous avez des questions à ce sujet, s'il vous plaît écrire au responsable de la confidentialité de GCGC à 95 Schooner Street, Coquitlam , BC V3K 7A8.</value>

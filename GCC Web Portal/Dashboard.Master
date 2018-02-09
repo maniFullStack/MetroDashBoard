@@ -462,9 +462,12 @@
 												<asp:ListItem Text="Hub City Pub" Value="50"></asp:ListItem>
 												<asp:ListItem Text="International Food Court" Value="8"></asp:ListItem>
 												<asp:ListItem Text="Jade Room" Value="12"></asp:ListItem>
-												<asp:ListItem Text="Java Jacks Café" Value="7"></asp:ListItem>
+												<%--<asp:ListItem Text="Java Jacks Café" Value="7"></asp:ListItem>--%>
+
+                                                <asp:ListItem Text="Starbucks" Value="7"></asp:ListItem>
 												<asp:ListItem Text="Jeromes" Value="29"></asp:ListItem>
-												<asp:ListItem Text="Lulu's Lounge" Value="4"></asp:ListItem>
+												<%--<asp:ListItem Text="Lulu's Lounge" Value="4"></asp:ListItem>--%>
+                                                <asp:ListItem Text="Curve Lounge" Value="4"></asp:ListItem>
 												<asp:ListItem Text="Phoenix Room" Value="13"></asp:ListItem>
 												<asp:ListItem Text="Poker Room" Value="9"></asp:ListItem>
 												<asp:ListItem Text="Prospects Lounge" Value="36"></asp:ListItem>

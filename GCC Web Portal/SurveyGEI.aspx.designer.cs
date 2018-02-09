@@ -1624,15 +1624,6 @@ namespace GCC_Web_Portal {
         protected global::SharedClasses.SurveyCheckBox Q18_3;
         
         /// <summary>
-        /// Q18_4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SharedClasses.SurveyCheckBox Q18_4;
-        
-        /// <summary>
         /// Q18_5 control.
         /// </summary>
         /// <remarks>
@@ -2153,15 +2144,6 @@ namespace GCC_Web_Portal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::SharedClasses.SurveyCheckBox Q18_3_F;
-        
-        /// <summary>
-        /// Q18_4_F control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SharedClasses.SurveyCheckBox Q18_4_F;
         
         /// <summary>
         /// Q18_5_F control.

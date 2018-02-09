@@ -1554,10 +1554,12 @@
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_2" runat="server" SessionKey="Q18_2" DBColumn="Q18_2" DBValue="1" Text="&nbsp;Curve" /><br />
 					<sc:SurveyCheckBox ID="Q18_3" runat="server" SessionKey="Q18_3" DBColumn="Q18_3" DBValue="1" Text="&nbsp;Tramonto Restaurant" /><br />
-					<!-- <sc:SurveyCheckBox ID="Q18_4" runat="server" SessionKey="Q18_4" DBColumn="Q18_4" DBValue="1" Text="&nbsp;Lulu's Lounge" /><br /> -->
+					<%--<sc:SurveyCheckBox ID="Q18_4" runat="server" SessionKey="Q18_4" DBColumn="Q18_4" DBValue="1" Text="&nbsp;Curve Lounge" /><br />--%>
+					
 					<sc:SurveyCheckBox ID="Q18_5" runat="server" SessionKey="Q18_5" DBColumn="Q18_5" DBValue="1" Text="&nbsp;The Buffet" /><br />
 					<sc:SurveyCheckBox ID="Q18_6" runat="server" SessionKey="Q18_6" DBColumn="Q18_6" DBValue="1" Text="&nbsp;Sea Harbour Seafood Restaurant" /><br />
-					<sc:SurveyCheckBox ID="Q18_7" runat="server" SessionKey="Q18_7" DBColumn="Q18_7" DBValue="1" Text="&nbsp;Java Jacks Café" /><br />
+					<%--<sc:SurveyCheckBox ID="Q18_7" runat="server" SessionKey="Q18_7" DBColumn="Q18_7" DBValue="1" Text="&nbsp;Java Jacks Café" /><br />--%>
+					<sc:SurveyCheckBox ID="Q18_7" runat="server" SessionKey="Q18_7" DBColumn="Q18_7" DBValue="1" Text="&nbsp;Starbucks" /><br />
 					<sc:SurveyCheckBox ID="Q18_8" runat="server" SessionKey="Q18_8" DBColumn="Q18_8" DBValue="1" Text="&nbsp;International Food Court" /><br />
 					<% } %>
 					<% if (PropertyShortCode == GCCPropertyShortCode.HRCV)
@@ -1722,10 +1724,12 @@
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_2_F" runat="server" SessionKey="Q18_2" DBColumn="Q18_2" DBValue="1" Text="&nbsp;Courbe" /><br />
 					<sc:SurveyCheckBox ID="Q18_3_F" runat="server" SessionKey="Q18_3" DBColumn="Q18_3" DBValue="1" Text="&nbsp;Tramonto Restaurant" /><br />
-					<sc:SurveyCheckBox ID="Q18_4_F" runat="server" SessionKey="Q18_4" DBColumn="Q18_4" DBValue="1" Text="&nbsp;Lulu's Lounge" /><br />
+					<%--<sc:SurveyCheckBox ID="Q18_4_F" runat="server" SessionKey="Q18_4" DBColumn="Q18_4" DBValue="1" Text="&nbsp;Lulu's Lounge" /><br />--%>
+					<%--<sc:SurveyCheckBox ID="Q18_4_F" runat="server" SessionKey="Q18_4" DBColumn="Q18_4" DBValue="1" Text="&nbsp;Curve Lounge" /><br />--%>
 					<sc:SurveyCheckBox ID="Q18_5_F" runat="server" SessionKey="Q18_5" DBColumn="Q18_5" DBValue="1" Text="&nbsp;Le Buffet" /><br />
 					<sc:SurveyCheckBox ID="Q18_6_F" runat="server" SessionKey="Q18_6" DBColumn="Q18_6" DBValue="1" Text="&nbsp;Sea Harbour Fruits de mer" /><br />
-					<sc:SurveyCheckBox ID="Q18_7_F" runat="server" SessionKey="Q18_7" DBColumn="Q18_7" DBValue="1" Text="&nbsp;Java Jacks Café" /><br />
+					<%--<sc:SurveyCheckBox ID="Q18_7_F" runat="server" SessionKey="Q18_7" DBColumn="Q18_7" DBValue="1" Text="&nbsp;Java Jacks Café" /><br />--%>
+					<sc:SurveyCheckBox ID="Q18_7_F" runat="server" SessionKey="Q18_7" DBColumn="Q18_7" DBValue="1" Text="&nbsp;Starbucks" /><br />
 					<sc:SurveyCheckBox ID="Q18_8_F" runat="server" SessionKey="Q18_8" DBColumn="Q18_8" DBValue="1" Text="&nbsp;Cour internationale de l'alimentation" /><br />
 					<% } %>
 					<% if (PropertyShortCode == GCCPropertyShortCode.HRCV)
@@ -1988,7 +1992,7 @@
 				<% } %>
 				<% } %>
 				<%-- <% if (Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked) { %>--%>
-				<% if (Q18_4.Checked || Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked)
+				<% if (Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked)
 				   { %>
 				<h2>Food & Beverage Experience - <%= GetFoodAndBevName(4) %></h2>
 				<p class="question">
@@ -2398,7 +2402,7 @@
 				<% } %>
 				<% } %>
 				<%-- <% if (Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked) { %>--%>
-				<% if (Q18_4_F.Checked || Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked)
+				<% if (Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked)
 				   { %>
 				<h2>Expérience restauration - <%= GetFoodAndBevName_French(4) %></h2>
 				<p class="question">

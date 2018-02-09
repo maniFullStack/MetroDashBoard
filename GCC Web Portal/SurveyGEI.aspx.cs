@@ -1707,7 +1707,7 @@ namespace GCC_Web_Portal
 					if ( !Q18_1.Checked
 						&& !Q18_2.Checked
 						&& !Q18_3.Checked
-						&& !Q18_4.Checked
+						//&& !Q18_4.Checked
 						&& !Q18_5.Checked
 						&& !Q18_6.Checked
 						&& !Q18_7.Checked
@@ -1779,7 +1779,7 @@ namespace GCC_Web_Portal
 					if ( !Q18_1_F.Checked
 						&& !Q18_2_F.Checked
 						&& !Q18_3_F.Checked
-						&& !Q18_4_F.Checked
+						//&& !Q18_4_F.Checked
 						&& !Q18_5_F.Checked
 						&& !Q18_6_F.Checked
 						&& !Q18_7_F.Checked
@@ -2806,7 +2806,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							SaveValue(Q18_1);
 							SaveValue(Q18_2);
 							SaveValue(Q18_3);
-							SaveValue(Q18_4);
+							//SaveValue(Q18_4);
 							SaveValue(Q18_5);
 							SaveValue(Q18_6);
 							SaveValue(Q18_7);
@@ -2877,7 +2877,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							SaveValue(Q18_1_F);
 							SaveValue(Q18_2_F);
 							SaveValue(Q18_3_F);
-							SaveValue(Q18_4_F);
+							//SaveValue(Q18_4_F);
 							SaveValue(Q18_5_F);
 							SaveValue(Q18_6_F);
 							SaveValue(Q18_7_F);
@@ -2997,7 +2997,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								retVal = false;
 							}
 							//if ( ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) && (
-							if ((Q18_4.Checked || Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked) && (
+							if ((Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked) && (
 								  !CheckForAnswer(Q19_M4)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M4))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M4))
@@ -3169,7 +3169,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20G_M3);
 							}
 							//if ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) {
-							if (Q18_4.Checked || Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked)
+							if (Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked)
 							{
 								SaveValue(Q19_M4);
 								SaveValue(Q20A_M4);
@@ -3330,7 +3330,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								retVal = false;
 							}
 							//if ( ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) && (
-							if ((Q18_4_F.Checked || Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked) && (
+							if ((Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked) && (
 								  !CheckForAnswer(Q19_M4_F)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M4_F))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M4_F))
@@ -3508,7 +3508,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20G_M3_F);
 							}
 							//if ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) {
-							if (Q18_4_F.Checked || Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked)
+							if (Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked)
 							{
 								SaveValue(Q19_M4_F);
 								SaveValue(Q20A_M4_F);
@@ -4862,7 +4862,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 			Q18_1.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_2.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_3.PrepareQuestionForDB( columnList, sqlParams );
-			Q18_4.PrepareQuestionForDB( columnList, sqlParams );
+			//Q18_4.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_5.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_6.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_7.PrepareQuestionForDB( columnList, sqlParams );
@@ -5269,7 +5269,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 			Q18_1_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_2_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_3_F.PrepareQuestionForDB( columnList, sqlParams );
-			Q18_4_F.PrepareQuestionForDB( columnList, sqlParams );
+			//Q18_4_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_5_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_6_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_7_F.PrepareQuestionForDB( columnList, sqlParams );

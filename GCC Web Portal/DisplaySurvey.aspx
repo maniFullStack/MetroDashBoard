@@ -395,10 +395,12 @@
 			<% if ( Data["Q18_1"].Equals( 1 ) ) { %><li>Coffee Station / Gaming Floor</li><% } %>
 			<% if ( Data["Q18_2"].Equals( 1 ) ) { %><li>Curve</li><% } %>
 			<% if ( Data["Q18_3"].Equals( 1 ) ) { %><li>Tramonto Restaurant</li><% } %>
-			<% if ( Data["Q18_4"].Equals( 1 ) ) { %><li>Lulu's Lounge</li><% } %>
+			<%--<% if ( Data["Q18_4"].Equals( 1 ) ) { %><li>Lulu's Lounge</li><% } %>--%>
+            <% if ( Data["Q18_4"].Equals( 1 ) ) { %><li>Curve Lounge</li><% } %>
 			<% if ( Data["Q18_5"].Equals( 1 ) ) { %><li>The Buffet</li><% } %>
 			<% if ( Data["Q18_6"].Equals( 1 ) ) { %><li>Sea Harbour Seafood Restaurant</li><% } %>
-			<% if ( Data["Q18_7"].Equals( 1 ) ) { %><li>Java Jacks Café</li><% } %>
+			<%--<% if ( Data["Q18_7"].Equals( 1 ) ) { %><li>Java Jacks Café</li><% } %>--%>
+            <% if ( Data["Q18_7"].Equals( 1 ) ) { %><li>Starbucks</li><% } %>
 			<% if ( Data["Q18_8"].Equals( 1 ) ) { %><li>International Food Court</li><% } %>
 			<% if ( Data["Q18_14"].Equals( 1 ) ) { %><li>Asylum Gastro-Pub and Live Sound Stage</li><% } %>
 			<% if ( Data["Q18_15"].Equals( 1 ) ) { %><li>UnListed Buffet and Lounge</li><% } %>

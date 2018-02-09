@@ -289,7 +289,13 @@
         //===========================================================================
         else if ( Master.CurrentPage == 2 ) { %>
     <p><%= Lang.Donation_Final1 %></p>
+    <%if(Master.PropertyShortCode == GCCPropertyShortCode.WDB ||
+         Master.PropertyShortCode == GCCPropertyShortCode.AJA || Master.PropertyShortCode == GCCPropertyShortCode.GBH ||
+         Master.PropertyShortCode == GCCPropertyShortCode.SCTI || Master.PropertyShortCode == GCCPropertyShortCode.SSKD || Master.PropertyShortCode == GCCPropertyShortCode.SCBE){ %>
+    <p><%= Lang.Donation_Final2_Ontario %></p>
+    <%}else{ %>
     <p><%= Lang.Donation_Final2 %></p>
+    <%} %>
     <p><%= Lang.Donation_Final3 %></p>
 
     

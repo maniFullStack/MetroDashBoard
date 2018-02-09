@@ -223,7 +223,8 @@ namespace SharedClasses {
 		public static string GetShowLoungeName(GCCPropertyShortCode shortCode, int hrcvOrECLocation = 0 ) {
 			switch ( shortCode ) {
 				case GCCPropertyShortCode.RR:
-					return "Lulu's Lounge";
+                    //return "Lulu's Lounge";
+                    return "Curve Lounge";
 				case GCCPropertyShortCode.HRCV:
 					if ( hrcvOrECLocation != 1 && hrcvOrECLocation != 2 ) {
 						return "Asylum Gastro-Pub and Live Sound Stage or UnListed Buffet and Lounge";
@@ -283,7 +284,8 @@ namespace SharedClasses {
 			switch (shortCode)
 			{
 				case GCCPropertyShortCode.RR:
-					return "Lulu's Lounge";
+                    //return "Lulu's Lounge";
+                    return "Curve Lounge";
 				case GCCPropertyShortCode.HRCV:
 					if (hrcvOrECLocation != 1 && hrcvOrECLocation != 2)
 					{
@@ -439,13 +441,18 @@ namespace SharedClasses {
 						case 3:
 							return "Tramonto Restaurant";
 						case 4:
-							return "Lulu's Lounge";
+                            //return "Lulu's Lounge";
+                            return "Curve Lounge";
 						case 5:
 							return "The Buffet";
 						case 6:
 							return "Sea Harbour Seafood Restaurant";
-						case 7:
-							return "Java Jacks Café";
+                        //case 7:
+                        //    return "Java Jacks Café";
+                            //20180205 replacing 
+                        case 7:
+                            return "Starbucks";
+
 						case 8:
 							return "International Food Court";
 						case 9:
@@ -710,13 +717,16 @@ namespace SharedClasses {
 						case 3:
 							return "Tramonto Restaurant";
 						case 4:
-							return "Lulu's Lounge";
+                            //return "Lulu's Lounge";
+                            return "Curve Lounge";
 						case 5:
 							return "The Buffet";
 						case 6:
 							return "Sea Harbour Seafood Restaurant";
-						case 7:
-							return "Java Jacks Café";
+                        //case 7:
+                        //    return "Java Jacks Café";
+                        case 7:
+                            return "Starbucks";
 						case 8:
 							return "International Food Court";
 						case 9:

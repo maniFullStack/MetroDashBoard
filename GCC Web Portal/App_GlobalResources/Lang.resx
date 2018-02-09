@@ -283,21 +283,15 @@
   <data name="Page1_Question2_18" xml:space="preserve">
     <value>Shorelines Casino Belleville</value>
   </data>
-
-  
-
   <data name="Page1_Question2_19" xml:space="preserve">
     <value>Casino Woodbine</value>
   </data>
-
   <data name="Page1_Question2_20" xml:space="preserve">
     <value>Casino Ajax</value>
   </data>
-
   <data name="Page1_Question2_21" xml:space="preserve">
     <value>Great Blue Heron Casino</value>
   </data>
-  
   <data name="Page1_Question2_2" xml:space="preserve">
     <value>Casino Nanaimo</value>
   </data>
@@ -516,5 +510,11 @@
   </data>
   <data name="SFeedbackReturnButton" xml:space="preserve">
     <value>Return to Website</value>
+  </data>
+  <data name="Donation_Final2_Ontario" xml:space="preserve">
+    <value>By clicking "Done" below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected and used by Great Canadian Casino Corporation (GCGC) on behalf of OLG in accordance with Ontario's Freedom of Information and Protection of Privacy Act. It will only be used for GCGC's reporting &amp; research purposes and to administer the guest feedback process.</value>
+  </data>
+  <data name="Page5_Response2_2_Ontario" xml:space="preserve">
+    <value>By clicking "Done" below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected and used by Great Canadian Casino Corporation (GCGC) in accordance with applicable Freedom of Information and Protection of Privacy laws. It will only be used for GCGC's reporting &amp; research purposes and to administer the guest feedback process.</value>
   </data>
 </root>

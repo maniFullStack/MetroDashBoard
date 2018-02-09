@@ -153,7 +153,7 @@ namespace GCC_Web_Portal
 				fbkProperty.Items.Insert(17, new ListItem(Lang.Page1_Question2_19, "22"));
 				fbkProperty.Items.Insert(18, new ListItem(Lang.Page1_Question2_20, "23"));
 				fbkProperty.Items.Insert(19, new ListItem(Lang.Page1_Question2_21, "24"));
-
+				
 				fbkProperty.Items.Insert(20, new ListItem(Lang.Page1_Question2_1, "1")); //No Specific Property
 
 				fbkDirectQuestion.Items.Insert(1, new ListItem(Lang.Page1_Question2B_1, "1"));

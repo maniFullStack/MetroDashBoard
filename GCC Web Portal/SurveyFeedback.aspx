@@ -161,6 +161,11 @@
     <p><%=Lang.Page5_Response2%> <%= PropertyTools.GetPhoneNumber( Master.PropertyShortCode, -1 ) %></p>
     <p><%=Lang.Page5_Response2_2%></p>
     <p><%=Lang.Page5_Response2_3%></p>
+     <% } else if (AlignedPropertyShortCode == GCCPropertyShortCode.WDB || AlignedPropertyShortCode == GCCPropertyShortCode.AJA || AlignedPropertyShortCode == GCCPropertyShortCode.GBH) { %>
+    
+    <p><%=Lang.Page5_Response2%> <%= PropertyTools.GetPhoneNumber( Master.PropertyShortCode, -1 ) %></p>
+    <p><%=Lang.Page5_Response2_2_Ontario%></p>
+    <p><%=Lang.Page5_Response2_3%></p>
 
     <% } else { %>
 
