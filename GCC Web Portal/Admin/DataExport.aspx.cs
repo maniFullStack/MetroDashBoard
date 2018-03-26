@@ -21,7 +21,7 @@ namespace GCC_Web_Portal.Admin
 
             SQLParamList sqlParams = new SQLParamList()
                                             .Add("@DateRange_Begin", drDateRange.BeginDate)
-                                            .Add("@DateRange_End", drDateRange.EndDate)
+                                            .Add("@DateRange_End", Convert.ToDateTime(drDateRange.EndDate))
                                             .Add("@SurveyType", ddlSurvey.SelectedValue);
             if (ddlProperty.SelectedIndex == 0)
             {

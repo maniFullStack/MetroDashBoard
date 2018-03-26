@@ -65,9 +65,15 @@ namespace GCC_Web_Portal.Controls
             get
             {
                 DateTime date;
+
+              //  DateTime date; =  new DateTime(date.Year,date.Month,date.Day,0,0,0);
+
                 if (DateTime.TryParseExact(hdnEnd.Value, DATE_FORMAT, CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
                 {
-                    return date.AddDays(1).AddMilliseconds(-1); //Return end of day
+                    //return date.AddDays(1).AddMilliseconds(-1); //Return end of day
+
+                    date = new DateTime(date.Year, date.Month, date.Day, 23, 59, 59); //20180312 - Since the End date was having 00:00:00 HH:mm:ss end of day was not selected so manually forcing to select till End of day
+                    return date;
                 }
                 else
                 {

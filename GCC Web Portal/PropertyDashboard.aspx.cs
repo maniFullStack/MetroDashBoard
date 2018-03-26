@@ -103,6 +103,13 @@ namespace GCC_Web_Portal
             //Grab the last 5 months and place them in a string array
             DateTime startDate = DateTime.Now.AddMonths(-4).AddDays(-DateTime.Now.AddMonths(-1).Day + 1).Date;
             DateTime endDate = DateTime.Now.Date;
+
+
+
+
+
+            //DateTime startDate = Master.GetFilters();
+            //DateTime endDate = DateTime.Now.Date;
             var months = Enumerable.Range(0, 5).Select(startDate.AddMonths).Select(m => m.ToString("yyyy-MM")).ToList();
 
             ArrayList aDataGCC = new ArrayList();

@@ -1482,7 +1482,7 @@ namespace GCC_Web_Portal
 						{
 							sb.Append("Un hôtel");
 						}
-						if (radQ27A_10_F.GetValue())
+				    		if (radQ27A_10_F.GetValue())
 						{
 							sb.Append("Autre:");
 							sb.Append(txtQ27A_OtherExplanation_F.Text);
@@ -2969,7 +2969,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								retVal = false;
 							}
-							if ((Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_42.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked) && (
+							if ((Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked) && (
 								  !CheckForAnswer(Q19_M2)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M2))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M2))
@@ -3142,7 +3142,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20F_M1);
 								SaveValue(Q20G_M1);
 							}
-							if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_42.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked)
+							if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked ||  Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked)
 							{
 								SaveValue(Q19_M2);
 								SaveValue(Q20A_M2);
@@ -3302,7 +3302,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								retVal = false;
 							}
-							if ((Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked || Q18_42_F.Checked || Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked) && (
+							if ((Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked || Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked) && (
 								  !CheckForAnswer(Q19_M2_F)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M2_F))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M2_F))
@@ -3475,7 +3475,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20F_M1_F);
 								SaveValue(Q20G_M1_F);
 							}
-							if (Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked || Q18_42_F.Checked || Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked)
+							if (Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked ||  Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked)
 							{
 								SaveValue(Q19_M2_F);
 								SaveValue(Q20A_M2_F);
