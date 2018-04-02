@@ -509,7 +509,7 @@ namespace GCC_Web_Portal
 
 
 
-					if(PropertyShortCode == GCCPropertyShortCode.WDB)
+					if (PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.ECF || PropertyShortCode == GCCPropertyShortCode.ECM)
 					{
 						radQ27A_7.Text.Remove(0);
 						radQ27A_7.Text = "&nbsp;Electronic Table Games";
@@ -583,7 +583,7 @@ namespace GCC_Web_Portal
 						|| PropertyShortCode == GCCPropertyShortCode.EC);
 
 
-					if (PropertyShortCode == GCCPropertyShortCode.WDB)
+					if (PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.ECF || PropertyShortCode == GCCPropertyShortCode.ECM)
 					{
 						radQ27A_7.Text.Remove(0);
 						radQ27A_7.Text = "&nbsp;Jeux de table électroniques";
@@ -1482,7 +1482,7 @@ namespace GCC_Web_Portal
 						{
 							sb.Append("Un hôtel");
 						}
-				    		if (radQ27A_10_F.GetValue())
+							if (radQ27A_10_F.GetValue())
 						{
 							sb.Append("Autre:");
 							sb.Append(txtQ27A_OtherExplanation_F.Text);
@@ -1765,7 +1765,13 @@ namespace GCC_Web_Portal
 						&& !Q18_59.Checked
 						&& !Q18_60.Checked
 						&& !Q18_61.Checked
-						&& !Q18_62.Checked)
+						&& !Q18_62.Checked
+						&& !Q18_63.Checked
+						&& !Q18_64.Checked
+						&& !Q18_65.Checked
+						&& !Q18_66.Checked
+						&& !Q18_67.Checked
+						&& !Q18_68.Checked)
 					{
 						return true;
 					}
@@ -1837,7 +1843,13 @@ namespace GCC_Web_Portal
 						&& !Q18_59_F.Checked
 						&& !Q18_60_F.Checked
 						&& !Q18_61_F.Checked
-						&& !Q18_62_F.Checked)
+						&& !Q18_62_F.Checked
+						 && !Q18_63_F.Checked
+						&& !Q18_64_F.Checked
+						&& !Q18_65_F.Checked
+						&& !Q18_66_F.Checked
+						&& !Q18_67_F.Checked
+						&& !Q18_68_F.Checked)
 					{
 						return true;
 					}
@@ -2865,6 +2877,12 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							SaveValue(Q18_60);
 							SaveValue(Q18_61);
 							SaveValue(Q18_62);
+							SaveValue(Q18_63);
+							SaveValue(Q18_64);
+							SaveValue(Q18_65);
+							SaveValue(Q18_66);
+							SaveValue(Q18_67);
+							SaveValue(Q18_68);
 						}
 				 
 
@@ -2936,6 +2954,12 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							SaveValue(Q18_60_F);
 							SaveValue(Q18_61_F);
 							SaveValue(Q18_62_F);
+							SaveValue(Q18_63_F);
+							SaveValue(Q18_64_F);
+							SaveValue(Q18_65_F);
+							SaveValue(Q18_66_F);
+							SaveValue(Q18_67_F);
+							SaveValue(Q18_68_F);
 						}
 				 
 
@@ -2969,7 +2993,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								retVal = false;
 							}
-							if ((Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked) && (
+							if ((Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked) && (
 								  !CheckForAnswer(Q19_M2)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M2))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M2))
@@ -2983,7 +3007,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								retVal = false;
 							}
 							//if ( ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) && (
-							if ((Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked) && (
+							if ((Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked) && (
 								  !CheckForAnswer(Q19_M3)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M3))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M3))
@@ -2997,7 +3021,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								retVal = false;
 							}
 							//if ( ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) && (
-							if ((Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked) && (
+							if ((Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked || Q18_65.Checked || Q18_68.Checked) && (
 								  !CheckForAnswer(Q19_M4)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M4))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M4))
@@ -3302,7 +3326,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								retVal = false;
 							}
-							if ((Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked || Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked) && (
+							if ((Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked || Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked || Q18_63_F.Checked || Q18_66_F.Checked) && (
 								  !CheckForAnswer(Q19_M2_F)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M2_F))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M2_F))
@@ -3316,7 +3340,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								retVal = false;
 							}
 							//if ( ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) && (
-							if ((Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27_F.Checked || Q18_33_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked || Q18_54_F.Checked || Q18_56_F.Checked || Q18_60_F.Checked) && (
+							if ((Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27_F.Checked || Q18_33_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked || Q18_54_F.Checked || Q18_56_F.Checked || Q18_60_F.Checked || Q18_64_F.Checked || Q18_67_F.Checked) && (
 								  !CheckForAnswer(Q19_M3_F)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M3_F))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M3_F))
@@ -3330,7 +3354,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								retVal = false;
 							}
 							//if ( ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) && (
-							if ((Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked) && (
+							if ((Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked || Q18_65_F.Checked || Q18_68_F.Checked) && (
 								  !CheckForAnswer(Q19_M4_F)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M4_F))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M4_F))
@@ -3475,7 +3499,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20F_M1_F);
 								SaveValue(Q20G_M1_F);
 							}
-							if (Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked ||  Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked)
+							if (Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked ||  Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked || Q18_63_F.Checked || Q18_66_F.Checked)
 							{
 								SaveValue(Q19_M2_F);
 								SaveValue(Q20A_M2_F);
@@ -3495,7 +3519,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 
 
 							//if ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) {
-							if (Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27_F.Checked || Q18_33_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked || Q18_54_F.Checked || Q18_56_F.Checked || Q18_60_F.Checked)
+							if (Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27_F.Checked || Q18_33_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked || Q18_54_F.Checked || Q18_56_F.Checked || Q18_60_F.Checked || Q18_64_F.Checked || Q18_67_F.Checked)
 								
 							{
 								SaveValue(Q19_M3_F);
@@ -3508,7 +3532,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20G_M3_F);
 							}
 							//if ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) {
-							if (Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked)
+							if (Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked || Q18_65_F.Checked || Q18_68_F.Checked)
 							{
 								SaveValue(Q19_M4_F);
 								SaveValue(Q20A_M4_F);
@@ -4913,6 +4937,20 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 			Q18_52.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_53.PrepareQuestionForDB( columnList, sqlParams);
 			Q18_54.PrepareQuestionForDB( columnList, sqlParams);
+			Q18_55.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_56.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_57.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_58.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_59.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_60.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_61.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_62.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_63.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_64.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_65.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_66.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_67.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_68.PrepareQuestionForDB(columnList, sqlParams);
 
 			Q19_M1.PrepareQuestionForDB( columnList, sqlParams );
 			Q20A_M1.PrepareQuestionForDB( columnList, sqlParams );
@@ -5320,6 +5358,20 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 			Q18_52_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_53_F.PrepareQuestionForDB( columnList, sqlParams);
 			Q18_54_F.PrepareQuestionForDB( columnList, sqlParams);
+			Q18_55_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_56_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_57_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_58_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_59_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_60_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_61_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_62_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_63_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_64_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_65_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_66_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_67_F.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_68_F.PrepareQuestionForDB(columnList, sqlParams);
 
 			Q19_M1_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q20A_M1_F.PrepareQuestionForDB( columnList, sqlParams );

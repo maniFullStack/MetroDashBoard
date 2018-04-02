@@ -12,7 +12,7 @@ namespace GCC_Web_Portal.Reports
 	public partial class ComparisonReport : AuthenticatedPage
 	{
 		//This is used to determine the sort order of the properties in the output file. It should be alphabetical.
-		private int[] _propertySortOrder = { 1, 7, 19, 11, 12, 8, 10, 9, 14, 13, 3, 5, 2, 20, 18, 6, 22,23,24 };
+		private int[] _propertySortOrder = { 1, 7, 19, 11, 12, 8, 10, 9, 14, 13, 3, 5, 2, 20, 18, 6, 22,23,24,25,26,27,28 };
 
 		protected enum CellFormat
 		{

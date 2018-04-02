@@ -188,6 +188,10 @@
     <Content Include="Content\themes\property22.css" />
     <Content Include="Content\themes\property23.css" />
     <Content Include="Content\themes\property24.css" />
+    <Content Include="Content\themes\property25.css" />
+    <Content Include="Content\themes\property26.css" />
+    <Content Include="Content\themes\property27.css" />
+    <Content Include="Content\themes\property28.css" />
     <Content Include="Controls\ScaleQuestionControlFrench.ascx" />
     <Content Include="Controls\TenScaleQuestionControl.ascx" />
     <Content Include="Controls\SurveyProgressBar.ascx" />
@@ -199,6 +203,10 @@
     <Content Include="Images\headers\CasinoNewBrunswickHeader.jpg" />
     <Content Include="Images\headers\CasinoNewBrunswickHeader.png" />
     <Content Include="Images\headers\DonationHeader_French.jpg" />
+    <Content Include="Images\headers\ECBHeader.jpg" />
+    <Content Include="Images\headers\ECFHeader.jpg" />
+    <Content Include="Images\headers\ECGRHeader.jpg" />
+    <Content Include="Images\headers\ECMHeader.jpg" />
     <Content Include="Images\headers\ElementsCasinoHeader.jpg" />
     <Content Include="Images\headers\GBHHeader.jpg" />
     <Content Include="Images\headers\KawarthaDownsHeader.jpg" />

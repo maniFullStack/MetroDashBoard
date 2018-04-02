@@ -602,6 +602,42 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Elements Casino Brantford.
+        /// </summary>
+        internal static string Page1_Question2_25 {
+            get {
+                return ResourceManager.GetString("Page1_Question2_25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Elements Casino Flamboro.
+        /// </summary>
+        internal static string Page1_Question2_26 {
+            get {
+                return ResourceManager.GetString("Page1_Question2_26", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Elements Casino Grand River.
+        /// </summary>
+        internal static string Page1_Question2_27 {
+            get {
+                return ResourceManager.GetString("Page1_Question2_27", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Elements Casino Mohawk.
+        /// </summary>
+        internal static string Page1_Question2_28 {
+            get {
+                return ResourceManager.GetString("Page1_Question2_28", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Casino Nova Scotia - Halifax.
         /// </summary>
         internal static string Page1_Question2_3 {

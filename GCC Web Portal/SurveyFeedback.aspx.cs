@@ -227,9 +227,9 @@ namespace GCC_Web_Portal
 			int j = 1;
 
 			//slots
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH","AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH","AJA","ECB","ECF","ECGR","ECM" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Table Games / Poker
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "VRL", "NAN", "GAG", "CNSH", "CNSS", "EC", "SCTI", "CNB","SCBE","WDB","GBH" }.Contains(AlignedPropertyShortCode.ToString()));
+            fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "VRL", "NAN", "GAG", "CNSH", "CNSS", "EC", "SCTI", "CNB", "SCBE", "WDB", "GBH", "ECB", "ECF", "ECM" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Bingo
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "CCH", "CMR", "CDC" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Food & Beverage
@@ -241,7 +241,7 @@ namespace GCC_Web_Portal
 			//Racebook
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "NAN", "CMR", "CNSS", "EC", "SSKD", "SCBE", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Horse Racing
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "HA", "CNSS", "EC" }.Contains(AlignedPropertyShortCode.ToString()));
+            fbkQ2.Items[j++].Enabled = (new[] { "GCC", "HA", "CNSS", "EC", "ECF", "ECGR", "ECM" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Motorcoach / Bus Tours
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "CNSH" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Guest Services

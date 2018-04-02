@@ -517,4 +517,16 @@
   <data name="Page5_Response2_2_Ontario" xml:space="preserve">
     <value>By clicking "Done" below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected and used by Great Canadian Casino Corporation (GCGC) in accordance with applicable Freedom of Information and Protection of Privacy laws. It will only be used for GCGC's reporting &amp; research purposes and to administer the guest feedback process.</value>
   </data>
+  <data name="Page1_Question2_25" xml:space="preserve">
+    <value>Elements Casino Brantford</value>
+  </data>
+  <data name="Page1_Question2_26" xml:space="preserve">
+    <value>Elements Casino Flamboro</value>
+  </data>
+  <data name="Page1_Question2_27" xml:space="preserve">
+    <value>Elements Casino Grand River</value>
+  </data>
+  <data name="Page1_Question2_28" xml:space="preserve">
+    <value>Elements Casino Mohawk</value>
+  </data>
 </root>

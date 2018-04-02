@@ -2119,6 +2119,60 @@ namespace GCC_Web_Portal {
         protected global::SharedClasses.SurveyCheckBox Q18_62;
         
         /// <summary>
+        /// Q18_63 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_63;
+        
+        /// <summary>
+        /// Q18_64 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_64;
+        
+        /// <summary>
+        /// Q18_65 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_65;
+        
+        /// <summary>
+        /// Q18_66 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_66;
+        
+        /// <summary>
+        /// Q18_67 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_67;
+        
+        /// <summary>
+        /// Q18_68 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_68;
+        
+        /// <summary>
         /// Q18_1_F control.
         /// </summary>
         /// <remarks>
@@ -2639,6 +2693,60 @@ namespace GCC_Web_Portal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::SharedClasses.SurveyCheckBox Q18_62_F;
+        
+        /// <summary>
+        /// Q18_63_F control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_63_F;
+        
+        /// <summary>
+        /// Q18_64_F control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_64_F;
+        
+        /// <summary>
+        /// Q18_65_F control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_65_F;
+        
+        /// <summary>
+        /// Q18_66_F control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_66_F;
+        
+        /// <summary>
+        /// Q18_67_F control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_67_F;
+        
+        /// <summary>
+        /// Q18_68_F control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q18_68_F;
         
         /// <summary>
         /// Q19_M1 control.

@@ -277,6 +277,10 @@
 												<asp:ListItem Text="Casino Woodbine" Value="22"></asp:ListItem>
 												<asp:ListItem Text="Casino Ajax" Value="23"></asp:ListItem>
 												<asp:ListItem Text="Great Blue Heron Casino" Value="24"></asp:ListItem>
+												<asp:ListItem Text="Elements Casino Brantford" Value="25"></asp:ListItem>
+								<asp:ListItem Text="Elements Casino Flamboro" Value="26"></asp:ListItem>
+								<asp:ListItem Text="Elements Casino Grand River" Value="27"></asp:ListItem>
+								<asp:ListItem Text="Elements Casino Mohawk" Value="28"></asp:ListItem>
 											</sc:ReportFilterListBox>
 										</div>
 										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>
@@ -486,6 +490,13 @@
 												<asp:ListItem Text="View Royal Patio" Value="33"></asp:ListItem>
 												<asp:ListItem Text="View Royal Restaurant" Value="32"></asp:ListItem>
 												<asp:ListItem Text="The Well" Value="35"></asp:ListItem>
+												<asp:ListItem Text="Getaway Restaurant" Value="53"></asp:ListItem>
+												<asp:ListItem Text="Pavillion Restaurant" Value="54"></asp:ListItem>
+												<asp:ListItem Text="Moon Bar" Value="55"></asp:ListItem>
+												<asp:ListItem Text="Sunset Bar" Value="56"></asp:ListItem>
+												<asp:ListItem Text="The Marketplace Eatery" Value="57"></asp:ListItem>
+												<asp:ListItem Text="The Terrace Dining Room" Value="58"></asp:ListItem>
+												<asp:ListItem Text="Oscars Sports Lounge" Value="59"></asp:ListItem>
 											</sc:ReportFilterListBox>
 										</div>
 										<p class="visible-lg-block"><small>To select multiple, use the CTRL and SHIFT keys.</small></p>

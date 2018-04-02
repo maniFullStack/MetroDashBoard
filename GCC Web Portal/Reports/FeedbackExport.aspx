@@ -61,6 +61,10 @@
                                 <asp:ListItem Text="Casino Woodbine" Value="22"></asp:ListItem>
                                 <asp:ListItem Text="Casino Ajax" Value="23"></asp:ListItem>
                                 <asp:ListItem Text="Great Blue Heron Casino" Value="24"></asp:ListItem>
+                                <asp:ListItem Text="Elements Casino Brantford" Value="25"></asp:ListItem>
+                                <asp:ListItem Text="Elements Casino Flamboro" Value="26"></asp:ListItem>
+                                <asp:ListItem Text="Elements Casino Grand River" Value="27"></asp:ListItem>
+                                <asp:ListItem Text="Elements Casino Mohawk" Value="28"></asp:ListItem>
                             </asp:DropDownList>
                             <% } %>
                         </div>

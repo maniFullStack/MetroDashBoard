@@ -30,6 +30,11 @@ namespace SharedClasses {
         BingoEsquimalt = 21,
         CasinoWoodbine = 22,
         CasinoAjax = 23,
-        GreatBlueHeronCasino = 24
+        GreatBlueHeronCasino = 24,
+        ElementsCasinoBrantford = 25,
+        ElementsCasinoFlamboro = 26,
+        ElementsCasinoGrandRiver = 27,
+        ElementsCasinoMohawk = 28
+
     }
 }

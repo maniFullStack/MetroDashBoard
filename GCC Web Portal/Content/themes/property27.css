@@ -1,0 +1,9 @@
+﻿/* Grand River */
+body.survey {
+    background:#fff;
+}
+#header-logo {
+    background-image:url('../../Images/headers/ECGRHeader.jpg');
+    width:756px;
+    height:113px;
+}

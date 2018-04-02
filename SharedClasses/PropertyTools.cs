@@ -66,6 +66,19 @@ namespace SharedClasses {
 					return 1;
 				case GCCPropertyShortCode.GBH:
 					return 1;
+
+                case GCCPropertyShortCode.ECB:
+                    return 1;
+
+                case GCCPropertyShortCode.ECF:
+                    return 1;
+
+                case GCCPropertyShortCode.ECGR:
+                    return 1;
+
+                case GCCPropertyShortCode.ECM:
+                    return 1;
+
 				default:
 					return 1;
 			}
@@ -134,6 +147,23 @@ namespace SharedClasses {
 
 				case GCCPropertyShortCode.GBH:
 					return "http://gbhcasino.com/";
+
+
+                case GCCPropertyShortCode.ECB:
+                    return "http://elementscasinobrantford.com/";
+
+
+                case GCCPropertyShortCode.ECF:
+                    return "http://elementscasinoflamboro.com/";
+
+
+                case GCCPropertyShortCode.ECGR:
+                    return "http://elementscasinograndriver.com/";
+
+
+                case GCCPropertyShortCode.ECM:
+                    return "http://elementscasinomohawk.com/";
+
 
 
 				default:
@@ -211,6 +241,24 @@ namespace SharedClasses {
 
 				case GCCPropertyShortCode.AJA:
 					return "866-445-3939";
+
+
+                case GCCPropertyShortCode.ECB:
+                    return "1-888-694-6946";
+
+
+                case GCCPropertyShortCode.ECF:
+                    return "905-628-4275";
+
+
+                case GCCPropertyShortCode.ECGR:
+                    return "516-846-2022";
+
+
+                case GCCPropertyShortCode.ECM:
+                    return "605-854-4053";
+
+
 			}
 			return String.Empty;
 		}
@@ -269,6 +317,20 @@ namespace SharedClasses {
 
 				case GCCPropertyShortCode.GBH:
 					return "Windward Restaurant & Lounge";
+
+
+
+                case GCCPropertyShortCode.ECB:
+                    return "Brantford Live Entertainment";
+
+
+                case GCCPropertyShortCode.ECF:
+                    return "Flamboro Live Entertainment";
+
+
+              
+                case GCCPropertyShortCode.ECM:
+                    return "Mohawk Live Entertainment";
 
 
 
@@ -339,6 +401,20 @@ namespace SharedClasses {
 				case GCCPropertyShortCode.GBH:
 					return "Restaurant et Lounge Windward";
 
+
+                case GCCPropertyShortCode.ECB:
+                    return "Brantford Live Entertainment";
+
+
+                case GCCPropertyShortCode.ECF:
+                    return "Flamboro Live Entertainment";
+
+
+
+                case GCCPropertyShortCode.ECM:
+                    return "Mohawk Live Entertainment";
+
+
 				default:
 					return String.Empty;
 			}
@@ -380,6 +456,11 @@ namespace SharedClasses {
 				case GCCPropertyShortCode.WDB:
 				case GCCPropertyShortCode.AJA:
 				case GCCPropertyShortCode.GBH:
+                case GCCPropertyShortCode.ECB:
+                case GCCPropertyShortCode.ECF:
+                case GCCPropertyShortCode.ECGR:
+                case GCCPropertyShortCode.ECM:
+
 					return "ON";
 				case GCCPropertyShortCode.GAG:
 					return "WA";
@@ -413,11 +494,19 @@ namespace SharedClasses {
 				case GCCPropertyShortCode.CNSS:
 				case GCCPropertyShortCode.CNB:
 					return "Atlantic Standard Time";
-				case GCCPropertyShortCode.FL:
-				case GCCPropertyShortCode.GD:
-				case GCCPropertyShortCode.SSKD:
-				case GCCPropertyShortCode.SCTI:
-				case GCCPropertyShortCode.SCBE:
+                case GCCPropertyShortCode.FL:
+                case GCCPropertyShortCode.GD:
+                case GCCPropertyShortCode.SSKD:
+                case GCCPropertyShortCode.SCTI:
+                case GCCPropertyShortCode.SCBE:
+                case GCCPropertyShortCode.WDB:
+                case GCCPropertyShortCode.AJA:
+                case GCCPropertyShortCode.GBH:
+                case GCCPropertyShortCode.ECB:
+                case GCCPropertyShortCode.ECF:
+                case GCCPropertyShortCode.ECGR:
+                case GCCPropertyShortCode.ECM:
+
 					return "Eastern Standard Time";
 				default:
 					//Default timezone is pacific
@@ -692,6 +781,66 @@ namespace SharedClasses {
 							return "Game Side Dining";
 					}
 					break;
+
+
+
+
+
+                case GCCPropertyShortCode.ECB:
+                    switch (mentionNumber)
+                    {
+                        case 1:
+                            return "Coffee Station / Gaming Floor";
+                        case 2:
+                            return "Getaway Restaurant";
+                    }
+                    break;
+
+
+
+                case GCCPropertyShortCode.ECF:
+                    switch (mentionNumber)
+                    {
+                        case 1:
+                            return "Coffee Station / Gaming Floor";
+                        case 2:
+                            return "Pavillion Restaurant";
+                        case 3:
+                            return "Moon Bar";
+                        case 4:
+                            return "Sunset Bar";
+                    }
+                    break;
+
+
+
+
+                case GCCPropertyShortCode.ECGR:
+                    switch (mentionNumber)
+                    {
+                        case 1:
+                            return "Coffee Station / Gaming Floor";
+                        case 2:
+                            return "Getaway Restaurant";
+                    }
+                    break;
+
+
+
+                case GCCPropertyShortCode.ECM:
+                    switch (mentionNumber)
+                    {
+                        case 1:
+                            return "Coffee Station / Gaming Floor";
+                        case 2:
+                            return "The Marketplace";
+                        case 3:
+                            return "The Terrace Dining Room";
+                        case 4:
+                            return "Oscars Sports";
+                       
+                    }
+                    break;
 
 
 			}
@@ -981,8 +1130,62 @@ namespace SharedClasses {
 					}
 					break;
 
-					
 
+                case GCCPropertyShortCode.ECB:
+                    switch (mentionNumber)
+                    {
+                        case 1:
+                            return "Coffee Station / Gaming Floor";
+                        case 2:
+                            return "Getaway Restaurant";
+                    }
+                    break;
+
+
+
+                case GCCPropertyShortCode.ECF:
+                    switch (mentionNumber)
+                    {
+                        case 1:
+                            return "Coffee Station / Gaming Floor";
+                        case 2:
+                            return "Getaway Restaurant";
+                        case 3:
+                            return "Moon Bar";
+                        case 4:
+                            return "Sunset Bar";
+                    }
+                    break;
+
+
+
+
+                case GCCPropertyShortCode.ECGR:
+                    switch (mentionNumber)
+                    {
+                        case 1:
+                            return "Coffee Station / Gaming Floor";
+                        case 2:
+                            return "Getaway Restaurant";
+                    }
+                    break;
+
+
+
+                case GCCPropertyShortCode.ECM:
+                    switch (mentionNumber)
+                    {
+                        case 1:
+                            return "Coffee Station / Gaming Floor";
+                        case 2:
+                            return "The Marketplace";
+                        case 3:
+                            return "The Terrace Dining Room";
+                        case 4:
+                            return "Oscars Sports";
+
+                    }
+                    break;
 
 
 			}
@@ -1063,6 +1266,21 @@ namespace SharedClasses {
 					return "Great Blue Heron Casino";
 
 
+                case 25:
+                    return "Elements Casino Brantford";
+
+
+                case 26:
+                    return "Elements Casino Flamboro";
+
+
+                case 27:
+                    return "Elements Casino Grand River";
+
+
+                case 28:
+                    return "Elements Casino Mohawk";
+
 				default:
 					return String.Empty;
 			}
@@ -1128,6 +1346,22 @@ namespace SharedClasses {
 				case 24:
 					return "Great Blue Heron Casino";
 
+
+                case 25:
+                    return "Elements Casino Brantford";
+
+
+                case 26:
+                    return "Elements Casino Flamboro";
+
+
+                case 27:
+                    return "Elements Casino Grand River";
+
+
+                case 28:
+                    return "Elements Casino Mohawk";
+
 				default:
 					return String.Empty;
 			}
@@ -1178,6 +1412,20 @@ namespace SharedClasses {
 
 				case 24:
 					return "Rapid Rewards";
+
+
+                case 25:
+                    return "Winner's Circle";
+
+
+                case 26:
+                    return "Winner's Circle";
+
+                case 27:
+                    return "Winner's Circle";
+
+                case 28:
+                    return "Winner's Circle";
 				
 				default:
 					return String.Empty;
@@ -1225,7 +1473,21 @@ namespace SharedClasses {
 
 				case 24:
 					return "Récompenses rapides";
-				
+
+
+
+                case 25:
+                    return "cercle des gagnants";
+
+
+                case 26:
+                    return "cercle des gagnants";
+
+                case 27:
+                    return "cercle des gagnants";
+
+                case 28:
+                    return "cercle des gagnants";
 				default:
 					return String.Empty;
 			}
@@ -1261,7 +1523,10 @@ namespace SharedClasses {
 				case GCCPropertyShortCode.WDB:
 				case GCCPropertyShortCode.AJA:
 				case GCCPropertyShortCode.GBH:
-
+                case GCCPropertyShortCode.ECB:
+                case GCCPropertyShortCode.ECF:
+                case GCCPropertyShortCode.ECGR:
+                case GCCPropertyShortCode.ECM:
 					return "$100";
 				case GCCPropertyShortCode.CNB:
 					return "A Dinner Buffet for 4";
@@ -1303,6 +1568,10 @@ namespace SharedClasses {
 				case GCCPropertyShortCode.WDB:
 				case GCCPropertyShortCode.AJA:
 				case GCCPropertyShortCode.GBH:
+                case GCCPropertyShortCode.ECB:
+                case GCCPropertyShortCode.ECF:
+                case GCCPropertyShortCode.ECGR:
+                case GCCPropertyShortCode.ECM:
 					return "100 $";
 				case GCCPropertyShortCode.CNB:
 					return "Vous pourriez gagner un souper-buffet pour quatre personnes!";
@@ -1368,7 +1637,14 @@ namespace SharedClasses {
 
 				case GCCPropertyShortCode.GBH:
 					return "GBHHeader.jpg";
-
+                case GCCPropertyShortCode.ECB:
+                    return "ECBHeader.jpg";
+                case GCCPropertyShortCode.ECF:
+                    return "ECFHeader.jpg";
+                case GCCPropertyShortCode.ECGR:
+                    return "ECGRHeader.jpg";
+                case GCCPropertyShortCode.ECM:
+                    return "ECMHeader.jpg";
 				default:
 					return String.Empty;
 			}

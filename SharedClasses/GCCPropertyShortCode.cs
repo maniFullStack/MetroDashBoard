@@ -115,9 +115,45 @@ namespace SharedClasses {
 		  ///<summary>
 		///Great Blue Heron Casino
 		///</summary>
-		GBH = 24
+		GBH = 24,
 
 
+             
+
+
+        	  ///<summary>
+		///ElementsCasinoBrantford
+		///</summary>
+		ECB = 25,
+
+
+        	
+                   
+   
+            ///<summary>
+		/// ElementsCasinoFlamboro
+		///</summary>
+		ECF = 26,
+
+
+
+
+                 
+       
+        	  ///<summary>
+		///ElementsCasinoGrandRiver
+		///</summary>
+		ECGR = 27,
+
+
+
+
+
+        	  ///<summary>
+        ///Great Blue Heron CasinoElements Casino Mohawk
+
+		///</summary>
+		ECM = 28
 
 	}
 }

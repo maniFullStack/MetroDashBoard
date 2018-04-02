@@ -616,6 +616,78 @@ namespace GCC_Web_Portal {
         protected global::SharedClasses.SurveyCheckBox Q11T_CurrentRequest;
         
         /// <summary>
+        /// Q11W_PastSupport control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q11W_PastSupport;
+        
+        /// <summary>
+        /// Q11W_CurrentRequest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q11W_CurrentRequest;
+        
+        /// <summary>
+        /// Q11X_PastSupport control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q11X_PastSupport;
+        
+        /// <summary>
+        /// Q11X_CurrentRequest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q11X_CurrentRequest;
+        
+        /// <summary>
+        /// Q11Y_PastSupport control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q11Y_PastSupport;
+        
+        /// <summary>
+        /// Q11Y_CurrentRequest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q11Y_CurrentRequest;
+        
+        /// <summary>
+        /// Q11Z_PastSupport control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q11Z_PastSupport;
+        
+        /// <summary>
+        /// Q11Z_CurrentRequest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SharedClasses.SurveyCheckBox Q11Z_CurrentRequest;
+        
+        /// <summary>
         /// Q12 control.
         /// </summary>
         /// <remarks>
