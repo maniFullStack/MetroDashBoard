@@ -49,7 +49,7 @@ namespace GCC_Web_Portal.Reports.Hotel {
 
         protected void btnExport_Click(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             sql.CommandTimeout = 90;
             DataTable dt = sql.ExecStoredProcedureDataTable( "spReports_Monthly_Hotel",
                                                                 new SqlParameter("@MonthStart", ddlMonth.SelectedValue + "-01"),

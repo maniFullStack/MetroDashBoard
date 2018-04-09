@@ -14,7 +14,7 @@ namespace GCC_Web_Portal
         {
             CheckRedirect();
 
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             if(sql.HasError == true)
             {
                 string a;

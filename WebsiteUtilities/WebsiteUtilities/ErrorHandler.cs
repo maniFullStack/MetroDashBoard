@@ -140,7 +140,7 @@ namespace WebsiteUtilities {
                         logTableName = "tblSYSAppErrorLogs";
                     }
 
-                    SQLDatabase sql = new SQLDatabase();
+                    SQLDatabase sql = new SQLDatabase();   // sql.CommandTimeout = 120;
                     string ms = msg;
                     if (causeExc != null) {
                         ms += "\n" + GenerateExceptionInfoString(causeExc, false) + (causeExc.InnerException != null ? "\n---Inner Exception---\n" + GenerateExceptionInfoString(causeExc.InnerException, false) + "\n---End Inner Exception---" : "");

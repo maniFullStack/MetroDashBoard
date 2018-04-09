@@ -55,7 +55,7 @@ namespace GCC_Web_Portal.Reports
 
         protected void GenerateReport()
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             sql.CommandTimeout = 90;
             DataSet ds = sql.ExecStoredProcedureDataSet("spReports_FeedbackReport_2",
                                                                 new SqlParameter("@MonthStart", ddlMonth.SelectedValue + "-01"),

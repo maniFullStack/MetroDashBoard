@@ -622,7 +622,7 @@ namespace GCC_Web_Portal
 			}
 
 			columnList.Remove(0, 1);
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			rowID = sql.QueryAndReturnIdentity(String.Format("INSERT INTO [tblSurveyGEI] ({0}) VALUES ({1});", columnList, columnList.ToString().Replace("[", "@").Replace("]", String.Empty)), sqlParams);
 			if (!sql.HasError && rowID != -1)
 			{

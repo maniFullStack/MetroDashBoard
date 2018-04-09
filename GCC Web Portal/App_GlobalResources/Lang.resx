@@ -292,6 +292,9 @@
   <data name="Page1_Question2_21" xml:space="preserve">
     <value>Great Blue Heron Casino</value>
   </data>
+  <data name="Page1_Question2_25" xml:space="preserve">
+    <value>Elements Casino Brantford</value>
+  </data>
   <data name="Page1_Question2_2" xml:space="preserve">
     <value>Casino Nanaimo</value>
   </data>
@@ -323,7 +326,7 @@
     <value>Staff Name</value>
   </data>
   <data name="Page1_StartFeedback" xml:space="preserve">
-    <value>To start the feedback process, please enter your email address below. Your email address will be used for tracking &amp; reporting purposes only.</value>
+    <value>Providing your email address is optional and will only be used for tracking &amp; reporting purposes only.</value>
   </data>
   <data name="Page1_Thankyou" xml:space="preserve">
     <value>Thank you for contacting</value>
@@ -516,9 +519,6 @@
   </data>
   <data name="Page5_Response2_2_Ontario" xml:space="preserve">
     <value>By clicking "Done" below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected and used by Great Canadian Casino Corporation (GCGC) in accordance with applicable Freedom of Information and Protection of Privacy laws. It will only be used for GCGC's reporting &amp; research purposes and to administer the guest feedback process.</value>
-  </data>
-  <data name="Page1_Question2_25" xml:space="preserve">
-    <value>Elements Casino Brantford</value>
   </data>
   <data name="Page1_Question2_26" xml:space="preserve">
     <value>Elements Casino Flamboro</value>

@@ -36,7 +36,7 @@ namespace GCC_Web_Portal
 
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = new SQLParamList();
             var fltProperty = Master.GetFilter<ReportFilterListBox>("fltProperty");
             fltProperty.AddToQuery(sqlParams);

@@ -258,7 +258,7 @@ namespace SharedClasses {
 					msg.To.Add( emailAddress );
 					hasAddress = true;
 				} else {
-					SQLDatabase sql = new SQLDatabase();
+					SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 					DataTable dt = sql.QueryDataTable(@"
 SELECT [SendType], u.[FirstName], u.[LastName],  u.[Email]
 FROM [tblNotificationUsers] ne
@@ -328,7 +328,7 @@ WHERE psr.PropertyID = @PropertyID
 		}
 
 		public static void SendFeedbackNotifications( HttpServerUtility server, string feedbackUID, bool toGuest ) {
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			SQLParamList sqlParams = new SQLParamList().Add( "GUID", feedbackUID );
 			DataSet ds = sql.ExecStoredProcedureDataSet( "spFeedback_GetItem", sqlParams );
 			string GCCPortalUrl = ConfigurationManager.AppSettings["GCCPortalURL"].ToString();
@@ -518,7 +518,7 @@ WHERE psr.PropertyID = @PropertyID
 		}
 
 		public static void SaveWordCounts( SurveyType surveyType, int recordID, Dictionary<string, int> wordCounts ) {
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			StringBuilder query = new StringBuilder();
 			SQLParamList sqlParams = new SQLParamList();
 			int i = 1;

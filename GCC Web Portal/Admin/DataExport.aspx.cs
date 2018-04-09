@@ -17,7 +17,7 @@ namespace GCC_Web_Portal.Admin
 
         protected void btnExport_Click(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 
             SQLParamList sqlParams = new SQLParamList()
                                             .Add("@DateRange_Begin", drDateRange.BeginDate)

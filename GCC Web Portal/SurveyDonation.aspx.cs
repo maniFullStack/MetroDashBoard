@@ -135,7 +135,7 @@ namespace GCC_Web_Portal
         private void SendNotifications(int surveyID)
         {
             //Add the feedback
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SqlParameter feedbackUIDParam = new SqlParameter("@UID", System.Data.SqlDbType.UniqueIdentifier);
             feedbackUIDParam.Direction = System.Data.ParameterDirection.Output;
 
@@ -532,7 +532,7 @@ namespace GCC_Web_Portal
                      .Add("@DateEntered", DateTime.Now);
 
             columnList.Remove(0, 1);
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             rowID = sql.QueryAndReturnIdentity(String.Format("INSERT INTO [tblSurveyDonation] ({0}) VALUES ({1});", columnList, columnList.ToString().Replace("[", "@").Replace("]", String.Empty)), sqlParams);
             return (!sql.HasError && rowID != -1);
         }

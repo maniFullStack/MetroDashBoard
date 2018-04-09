@@ -58,7 +58,7 @@ namespace GCC_Web_Portal
 
           
 
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = Master.GetFilters();
             if (Master.IsPropertyUser)
             {

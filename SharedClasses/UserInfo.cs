@@ -46,7 +46,7 @@ namespace SharedClasses {
 
         private void LoadExtraData() {
             if ( UserID > -1 ) {
-                SQLDatabase sql = new SQLDatabase();
+                SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                 DataTable dt = sql.QueryDataTable( "SELECT PropertyID, Timezone, (SELECT TOP 1 GroupID FROM [tblCOM_UserToGroups] WHERE UserID = @UserID) AS [GroupID] FROM tblCOM_Users WHERE UserID = @UserID", new SqlParameter( "@UserID", UserID ) );
                 Property = (GCCProperty)dt.Rows[0]["PropertyID"].ToString().StringToInt();
 

@@ -82,7 +82,7 @@ namespace GCC_Web_Portal
             }
             if (!String.IsNullOrEmpty(textBox.Text.Trim()))
             {
-                SQLDatabase sql = new SQLDatabase();
+                SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                 int rows = sql.NonQuery(@"	INSERT INTO [tblFeedbackEvents] ( [FeedbackID], [FeedbackEventTypeID], [IsFromPlayer], [DateCreated], [Message], [NewStatusValue] )
 											VALUES ( ( SELECT FeedbackID FROM [tblFeedbackRequests] WHERE [UID] = @UID ), 3, 1, GETDATE(), @Message, NULL );",
                                         new SQLParamList()
@@ -118,7 +118,7 @@ namespace GCC_Web_Portal
         {
             if (!String.IsNullOrEmpty(GUID))
             {
-                SQLDatabase sql = new SQLDatabase();
+                SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                 SQLParamList sqlParams = new SQLParamList();
                 UserInfo ui = SessionWrapper.Get<UserInfo>("UserInfo");
                 sqlParams.Add("@GUID", GUID)

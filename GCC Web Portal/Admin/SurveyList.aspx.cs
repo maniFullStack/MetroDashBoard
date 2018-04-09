@@ -40,7 +40,7 @@ namespace GCC_Web_Portal.Admin
             string currentSort = RequestVars.Get("s", "D"); ; //Date
             string currentSortDir = RequestVars.Get("d", "D"); ; //Desc
 
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = Master.GetFilters()
                                             .Add("@Sort", currentSort)
                                             .Add("@SortDir", currentSortDir);

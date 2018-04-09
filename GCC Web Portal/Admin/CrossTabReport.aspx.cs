@@ -40,7 +40,7 @@ namespace GCC_Web_Portal.Admin
             drDateRange.User = User;
             if (!IsPostBack)
             {
-                SQLDatabase sql = new SQLDatabase();
+                SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                 DataTable dt = sql.QueryDataTable(@"
 SELECT [ColumnName],[Longlabel],[ShortLabel]
 FROM [GCC].[dbo].[tblSurveyQuestions]
@@ -77,7 +77,7 @@ ORDER BY SortOrder
 
         protected void btnExport_Click(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 
             if (String.IsNullOrWhiteSpace(ddlQuestion1.SelectedValue)
                 || String.IsNullOrWhiteSpace(ddlQuestion1.SelectedValue))

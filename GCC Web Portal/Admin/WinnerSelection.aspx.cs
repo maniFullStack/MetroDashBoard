@@ -32,7 +32,7 @@ namespace GCC_Web_Portal.Admin
         protected void btnExport_Click(object sender, EventArgs e)
         {
             string[] dateDetails = ddlMonthYear.SelectedValue.Split('-');
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = new SQLParamList()
                                             .Add("@Year", dateDetails[0].StringToInt())
                                             .Add("@Month", dateDetails[1].StringToInt());

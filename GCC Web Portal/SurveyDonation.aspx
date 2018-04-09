@@ -317,7 +317,7 @@
     <p><%= Lang.Donation_Final1 %></p>
     <%if(Master.PropertyShortCode == GCCPropertyShortCode.WDB ||
          Master.PropertyShortCode == GCCPropertyShortCode.AJA || Master.PropertyShortCode == GCCPropertyShortCode.GBH ||
-         Master.PropertyShortCode == GCCPropertyShortCode.SCTI || Master.PropertyShortCode == GCCPropertyShortCode.SSKD || Master.PropertyShortCode == GCCPropertyShortCode.SCBE
+         Master.PropertyShortCode == GCCPropertyShortCode.SCTI || Master.PropertyShortCode == GCCPropertyShortCode.SSKD || Master.PropertyShortCode == GCCPropertyShortCode.SCBE ||
          Master.PropertyShortCode == GCCPropertyShortCode.ECB|| Master.PropertyShortCode == GCCPropertyShortCode.ECF|| Master.PropertyShortCode == GCCPropertyShortCode.ECGR|| Master.PropertyShortCode == GCCPropertyShortCode.ECM){ %>
     <p><%= Lang.Donation_Final2_Ontario %></p>
     <%}else{ %>

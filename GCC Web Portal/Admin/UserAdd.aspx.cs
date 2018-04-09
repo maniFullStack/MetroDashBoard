@@ -49,7 +49,7 @@ namespace GCC_Web_Portal.Admin
                 return;
             }
 
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             DataTable dtEmail = sql.QueryDataTable("SELECT UserID FROM [tblCOM_Users] WHERE Email = @Email",
                                                     new SQLParamList().Add("@Email", txtEmail.Text));
             if (sql.HasError)

@@ -53,7 +53,7 @@ namespace GCC_Web_Portal
         {
             if (RespondentEmail != null || RespondentEncoreNumber != null)
             {
-                SQLDatabase sql = new SQLDatabase();
+                SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                 SQLParamList sqlParams = new SQLParamList()
                                             .Add("@EncoreNum", RespondentEncoreNumber)
                                             .Add("@Email", RespondentEmail);

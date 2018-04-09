@@ -17,7 +17,7 @@ namespace GCC_Web_Portal
 
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = GetFilters();
             DataSet ds = sql.ExecStoredProcedureDataSet("[spReports_Facilities]", sqlParams);
             if (!sql.HasError)

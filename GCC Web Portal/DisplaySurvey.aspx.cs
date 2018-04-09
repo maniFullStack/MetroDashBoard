@@ -147,7 +147,7 @@ namespace GCC_Web_Portal
         {
             if (SurveyType != SurveyType.None)
             {
-                SQLDatabase sql = new SQLDatabase();
+                SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                 DataTable dt = sql.ExecStoredProcedureDataTable("[spReports_Survey_GetData]", new SqlParameter("@SurveyType", (int)SurveyType), new SqlParameter("@RecordID", RecordID));
                 if (!sql.HasError && dt.Rows.Count == 1)
                 {

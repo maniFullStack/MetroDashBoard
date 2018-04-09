@@ -207,7 +207,7 @@ namespace GCC_Web_Portal
                     HideContent = true;
                     return;
                 }
-                SQLDatabase sql = new SQLDatabase();
+                SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                 DataTable dt = sql.QueryDataTable(@"
                     SELECT [BatchID],[EmailAddress],[PropertyID],[Encore],[PIN],[SurveyCompleted]
                     FROM [tblSurveyGEI_EmailPINs]

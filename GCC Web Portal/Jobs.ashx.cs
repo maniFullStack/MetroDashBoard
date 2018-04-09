@@ -39,7 +39,7 @@ namespace GCC_Web_Portal
                     DateTime endDate = DateTime.Now.Date.AddMilliseconds(-1);
                     //DateTime startDate = new DateTime( 2015, 7, 1 ).Date;
                     //DateTime endDate = new DateTime( 2015, 8, 1 ).Date.AddMilliseconds( -1 );
-                    SQLDatabase sql = new SQLDatabase();
+                    SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                     DataTable dt = sql.ExecStoredProcedureDataTable("spJobs_StatusEmail",
                                                     new SQLParamList()
                                                         .Add("@DateCreated_Begin", startDate)

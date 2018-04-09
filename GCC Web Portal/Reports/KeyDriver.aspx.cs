@@ -44,9 +44,10 @@ namespace GCC_Web_Portal.Reports
 
         protected void btnExport_Click(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 
             SQLParamList sqlParams = Master.GetFilters();
+            sql.CommandTimeout = 120;
 
             DataTable dt = sql.ExecStoredProcedureDataTable("spReports_KeyDriver", sqlParams);
             if (sql.HasError)

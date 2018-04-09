@@ -29,7 +29,7 @@ namespace GCC_Web_Portal
             if (!IsPostBack && PropertyShortCode == GCCPropertyShortCode.GCC)
             {
                 //Set up the restaurant list if we're looking at all locations
-                SQLDatabase sql = new SQLDatabase();
+                SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                 SQLParamList sqlParams = GetFilters();
                 DataTable dt = sql.QueryDataTable(
                     @"SELECT [RestaurantID]
@@ -51,7 +51,7 @@ namespace GCC_Web_Portal
 
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             sql.CommandTimeout = 120;
             SQLParamList sqlParams = GetFilters();
             if (PropertyShortCode == GCCPropertyShortCode.GCC)

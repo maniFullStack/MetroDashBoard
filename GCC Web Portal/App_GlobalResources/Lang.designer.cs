@@ -719,7 +719,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to To start the feedback process, please enter your email address below. Your email address will be used for tracking &amp; reporting purposes only..
+        ///   Looks up a localized string similar to Providing your email address is optional and will only be used for tracking &amp; reporting purposes only..
         /// </summary>
         internal static string Page1_StartFeedback {
             get {

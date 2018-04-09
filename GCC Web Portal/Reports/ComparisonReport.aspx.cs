@@ -31,7 +31,7 @@ namespace GCC_Web_Portal.Reports
 
 		protected void btnExport_Click(object sender, EventArgs e)
 		{
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			sql.CommandTimeout = 120;
 			SQLParamList sqlParams = new SQLParamList()
 											.Add("@DR1_Begin", drDateRangeFirst.BeginDate)

@@ -326,7 +326,7 @@ namespace GCC_Web_Portal
 					TopMessage.ErrorMessage = "Invalid link. Please ensure you copied the full link into the address bar.";
 					return;
 				}
-				SQLDatabase sql = new SQLDatabase();
+				SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 				DataTable dt = sql.QueryDataTable( @"
 												   SELECT [BatchID],[EmailAddress],[PropertyID],[Encore],[PIN],[SurveyCompleted]
 												   FROM [tblSurveyGEI_EmailPINs]
@@ -940,7 +940,7 @@ namespace GCC_Web_Portal
 					if (createTicket)
 					{
 						//Add the feedback
-						SQLDatabase sql = new SQLDatabase();
+						SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 						SqlParameter feedbackUIDParam = new SqlParameter("@UID", System.Data.SqlDbType.UniqueIdentifier);
 						feedbackUIDParam.Direction = System.Data.ParameterDirection.Output;
 
@@ -1396,7 +1396,7 @@ namespace GCC_Web_Portal
 					if (createTicket)
 					{
 						//Add the feedback
-						SQLDatabase sql = new SQLDatabase();
+						SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 						SqlParameter feedbackUIDParam = new SqlParameter("@UID", System.Data.SqlDbType.UniqueIdentifier);
 						feedbackUIDParam.Direction = System.Data.ParameterDirection.Output;
 
@@ -3157,7 +3157,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 						{
 							if (Q18_1.Checked || Q18_42.Checked)
 							{
-								SaveValue(Q19_M1);
+								 SaveValue(Q19_M1);
 								SaveValue(Q20A_M1);
 								SaveValue(Q20B_M1);
 								SaveValue(Q20C_M1);
@@ -3166,7 +3166,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20F_M1);
 								SaveValue(Q20G_M1);
 							}
-							if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked ||  Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked)
+							if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked)
 							{
 								SaveValue(Q19_M2);
 								SaveValue(Q20A_M2);
@@ -3181,7 +3181,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20G_M2);
 							}
 							//if ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) {
-							if (Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked)
+							if (Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked)
 							{
 								SaveValue(Q19_M3);
 								SaveValue(Q20A_M3);
@@ -3193,7 +3193,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20G_M3);
 							}
 							//if ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) {
-							if (Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked)
+							if (Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked || Q18_65.Checked || Q18_68.Checked)
 							{
 								SaveValue(Q19_M4);
 								SaveValue(Q20A_M4);
@@ -5635,7 +5635,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 
 			Dictionary<string, int> wordCounts = null;
 			columnList.Remove( 0, 1 );
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			rowID = sql.QueryAndReturnIdentity( String.Format( "INSERT INTO [tblSurveyGEI] ({0}) VALUES ({1});", columnList, columnList.ToString().Replace( "[", "@" ).Replace( "]", String.Empty ) ), sqlParams );
 			if ( !sql.HasError && rowID != -1 ) {
 

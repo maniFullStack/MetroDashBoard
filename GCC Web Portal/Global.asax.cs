@@ -90,7 +90,7 @@ namespace GCC_Web_Portal
             if (geiPageNumber != null)
             {
                 int pageNumber = (int)geiPageNumber;
-                SQLDatabase sql = new SQLDatabase();
+                SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                 sql.NonQuery(@"INSERT INTO [tblSurveyGEI_Abandonment] ([DateCreated], [PageNumber]) VALUES (GETDATE(), @PageNumber)", new SQLParamList().Add("@PageNumber", pageNumber));
             }
         }

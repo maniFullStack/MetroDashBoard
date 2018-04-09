@@ -169,7 +169,7 @@ namespace GCC_Web_Portal
             if (Q29.SelectedValue == 1)
             {
                 //Add the feedback
-                SQLDatabase sql = new SQLDatabase();
+                SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                 SqlParameter feedbackUIDParam = new SqlParameter("@UID", System.Data.SqlDbType.UniqueIdentifier);
                 feedbackUIDParam.Direction = System.Data.ParameterDirection.Output;
 
@@ -1078,7 +1078,7 @@ namespace GCC_Web_Portal
             sqlParams.Add("@DateEntered", DateTime.Now);
 
             columnList.Remove(0, 1);
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             rowID = sql.QueryAndReturnIdentity(String.Format("INSERT INTO [tblSurveyHotel] ({0}) VALUES ({1});", columnList, columnList.ToString().Replace("[", "@").Replace("]", String.Empty)), sqlParams);
             if (!sql.HasError && rowID != -1)
             {

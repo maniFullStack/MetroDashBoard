@@ -85,7 +85,7 @@ namespace GCC_Web_Portal
 
         protected void GenerateReport(bool isSurveillanceReport)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = new SQLParamList();
 
             string labelColumn = "Region";

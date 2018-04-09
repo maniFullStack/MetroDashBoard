@@ -319,7 +319,7 @@
     <value>Nom du Personnel</value>
   </data>
   <data name="Page1_StartFeedback" xml:space="preserve">
-    <value>Pour démarrer le processus de rétroaction , s'il vous plaît entrer votre adresse courriel ci-dessous. Votre adresse courriel sera utilisées pour le suivi et l'établissement de rapports seulement.</value>
+    <value>Fournir votre adresse e-mail est facultatif et ne sera utilisé qu'à des fins de suivi et de reporting</value>
   </data>
   <data name="Page1_Thankyou" xml:space="preserve">
     <value>Merci de contacter le</value>

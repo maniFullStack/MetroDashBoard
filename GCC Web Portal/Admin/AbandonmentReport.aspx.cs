@@ -34,7 +34,7 @@ namespace GCC_Web_Portal.Admin
 
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = Master.GetFilters();
             DataTable dt = sql.ExecStoredProcedureDataTable("spAdmin_Abandonment", sqlParams);
             if (!sql.HasError)

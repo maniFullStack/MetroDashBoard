@@ -217,7 +217,7 @@ namespace GCC_Web_Portal.Admin {
 			}
 			MessageTimeline.NoteTabActive = false;
 			if ( !String.IsNullOrWhiteSpace( textBox.Text.Trim() ) ) {
-				SQLDatabase sql = new SQLDatabase();
+				SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 				int rows = sql.NonQuery( @"	INSERT INTO [tblFeedbackEvents]  ( [FeedbackID], [FeedbackEventTypeID], [IsFromPlayer], [DateCreated], [Message], [NewStatusValue], [StaffMemberID] )
 											VALUES ( ( SELECT FeedbackID FROM [tblFeedbackRequests] WHERE [UID] = @UID ), 2, 0, GETDATE(), @Message, NULL, @UserID);",
 										new SQLParamList()
@@ -267,7 +267,7 @@ namespace GCC_Web_Portal.Admin {
 				return;
 			}
 
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			int rows = sql.NonQuery( @" INSERT INTO [tblFeedbackEvents] ( [FeedbackID], [FeedbackEventTypeID], [IsFromPlayer], [DateCreated], [Message], [NewStatusValue], [StaffMemberID], [StaffContact] )
 										VALUES ( ( SELECT FeedbackID FROM [tblFeedbackRequests] WHERE [UID] = @UID ), 4, 0, GETDATE(), @Message, NULL, @UserID, @StaffContact);",
 									new SQLParamList()
@@ -287,7 +287,7 @@ namespace GCC_Web_Portal.Admin {
 		protected void Page_LoadComplete( object sender, EventArgs e ) {
 
 			if ( !String.IsNullOrEmpty( GUID ) ) {
-				SQLDatabase sql = new SQLDatabase();
+				SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 				SQLParamList sqlParams = new SQLParamList();
 				sqlParams.Add( "@GUID", GUID );
 				DataSet ds = sql.ExecStoredProcedureDataSet( "[spFeedback_GetItem]", sqlParams );
@@ -343,7 +343,7 @@ namespace GCC_Web_Portal.Admin {
 				Session["CheckRefresh"] = Server.UrlDecode( System.DateTime.Now.ToString() );
 				return;
 			}
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			sql.ExecStoredProcedureDataTable( "spFeedback_ChangeStatus",
 												new SQLParamList()
 													.Add( "@UID", GUID )
@@ -363,7 +363,7 @@ namespace GCC_Web_Portal.Admin {
 				Session["CheckRefresh"] = Server.UrlDecode( System.DateTime.Now.ToString() );
 				return;
 			}
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			sql.ExecStoredProcedureDataTable( "spFeedback_ChangeStatus",
 												new SQLParamList()
 													.Add( "@UID", GUID )
@@ -388,7 +388,7 @@ namespace GCC_Web_Portal.Admin {
 				Session["CheckRefresh"] = Server.UrlDecode(System.DateTime.Now.ToString());
 				return;
 			}
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			sql.ExecStoredProcedureDataTable("spFeedback_ChangeStatus",
 												new SQLParamList()
 													.Add("@UID", GUID)
@@ -415,7 +415,7 @@ namespace GCC_Web_Portal.Admin {
 				return;
 			}
 			//Update the tier
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			sql.ExecStoredProcedureDataTable( "spFeedback_ChangeTier",
 												new SQLParamList()
 													.Add( "@UID", GUID )

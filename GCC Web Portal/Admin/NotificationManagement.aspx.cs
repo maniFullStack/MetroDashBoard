@@ -25,7 +25,7 @@ namespace GCC_Web_Portal.Admin
 						int sendType = RequestVars.Post("s", -1);
 						if (propSurvReaID != -1 && userID != -1 && sendType != -1)
 						{
-							SQLDatabase sql = new SQLDatabase();
+							SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 							int rows = sql.NonQuery(
 								@"DELETE FROM [tblNotificationUsers] WHERE [PropertySurveyReasonID] = @PropertySurveyReasonID AND [UserID] = @UserID AND [SendType] = @SendType",
 								new SQLParamList().Add("@PropertySurveyReasonID", propSurvReaID)
@@ -58,7 +58,7 @@ namespace GCC_Web_Portal.Admin
 						propSurvReaID = RequestVars.Get("p", -1);
 						if (propSurvReaID != -1)
 						{
-							SQLDatabase sql = new SQLDatabase();
+							SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 							DataTable dt = sql.QueryDataTable(@"
 SELECT [UserID],[FirstName],[LastName]
 FROM [tblCOM_Users]
@@ -113,7 +113,7 @@ ORDER BY [FirstName], [LastName]",
 
 		protected void Page_LoadComplete(object sender, EventArgs e)
 		{
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 
 			SQLParamList sqlParams = new SQLParamList();
 			if (ddlProperty.SelectedIndex == 0)
@@ -185,7 +185,7 @@ ORDER BY [PropertyName], psr.[SurveyTypeID], [ReasonDescription], [SendType], u.
 			if (ddlProperty.SelectedIndex > 0 && ddlSurvey.SelectedIndex > 0)
 			{
 				string selectedValue = ddlReason.SelectedValue;
-				SQLDatabase sql = new SQLDatabase();
+				SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 				DataTable dt = sql.QueryDataTable(@"
 SELECT nr.[ReasonID], nr.[ReasonDescription]
 FROM [tblNotificationPropertySurveyReason] psr
@@ -238,7 +238,7 @@ ORDER BY nr.[ReasonDescription]",
 			int propSurvReaID = hdnPSRID.Value.StringToInt(-1);
 			if (selectedUserID != -1 && selectedType != -1 && propSurvReaID != -1)
 			{
-				SQLDatabase sql = new SQLDatabase();
+				SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 				int rows = sql.NonQuery(@"INSERT INTO [tblNotificationUsers] VALUES (@PSRID, @UserID, @SendType);",
 										 new SQLParamList()
 												.Add("@PSRID", propSurvReaID)

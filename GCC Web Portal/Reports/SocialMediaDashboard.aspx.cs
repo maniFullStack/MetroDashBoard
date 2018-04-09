@@ -44,7 +44,7 @@ namespace GCC_Web_Portal.Reports
 
         protected void LoadData()
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = Master.GetFilters();
             Data = sql.ExecStoredProcedureDataSet("spGetSocialMediaCharts", sqlParams);
         }
@@ -79,7 +79,7 @@ namespace GCC_Web_Portal.Reports
                         foreach (object result in results)
                         {
                             JObject parsed_result = JObject.Parse(result.ToString());
-                            SQLDatabase sql = new SQLDatabase();
+                            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                             SQLParamList sqlParams = new SQLParamList();
                             sqlParams.Add("@keyword", keyword);
                             sqlParams.Add("@propertyID", propertyID);

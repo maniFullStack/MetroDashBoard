@@ -43,7 +43,7 @@ namespace GCC_Web_Portal.Admin
         {
             Title = "Email PIN Generator";
             Master.HideAllFilters = true;
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             if (BatchID == -1 && !IsPostBack)
             {
                 //Load the list
@@ -87,7 +87,7 @@ namespace GCC_Web_Portal.Admin
                 TopMessage.ErrorMessage = "Please enter a name for the new batch.";
                 return;
             }
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             sql.ExecStoredProcedureDataTable("spAdmin_CreateEmailBatch", new SqlParameter("@BatchName", txtNewBatch.Text), new SqlParameter("@CreateUserID", User.UserID));
             if (sql.HasError)
             {
@@ -115,7 +115,7 @@ namespace GCC_Web_Portal.Admin
 
         protected void btnSaveBatchNotes_Click(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             sql.NonQuery("UPDATE [tblSurveyGEI_EmailBatches] SET [Notes] = @Notes WHERE [EmailBatchID] = @BatchID;", new SqlParameter("@Notes", txtBatchNotes.Text), new SqlParameter("@BatchID", BatchID));
             if (sql.HasError)
             {
@@ -361,7 +361,7 @@ namespace GCC_Web_Portal.Admin
                                         bool firstRound = true;
 
                                         //Insert everything into the db
-                                        SQLDatabase sql = new SQLDatabase();
+                                        SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
                                         foreach (var sqlBatch in sqlBatches)
                                         {
                                             sql.NonQuery(sqlBatch.Item1, sqlBatch.Item2);

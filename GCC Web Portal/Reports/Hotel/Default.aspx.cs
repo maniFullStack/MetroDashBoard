@@ -42,7 +42,7 @@ namespace GCC_Web_Portal.Reports.Hotel
 
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = GetFilters();
             DataSet ds = sql.ExecStoredProcedureDataSet("[spReports_Hotel_Main]", sqlParams);
             if (!sql.HasError)

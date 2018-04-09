@@ -153,6 +153,10 @@ namespace GCC_Web_Portal
 				fbkProperty.Items.Insert(17, new ListItem(Lang.Page1_Question2_19, "22"));
 				fbkProperty.Items.Insert(18, new ListItem(Lang.Page1_Question2_20, "23"));
 				fbkProperty.Items.Insert(19, new ListItem(Lang.Page1_Question2_21, "24"));
+				fbkProperty.Items.Insert(19, new ListItem(Lang.Page1_Question2_25, "25"));
+				fbkProperty.Items.Insert(19, new ListItem(Lang.Page1_Question2_26, "26"));
+				fbkProperty.Items.Insert(19, new ListItem(Lang.Page1_Question2_27, "27"));
+				fbkProperty.Items.Insert(19, new ListItem(Lang.Page1_Question2_28, "28"));
 				
 				fbkProperty.Items.Insert(20, new ListItem(Lang.Page1_Question2_1, "1")); //No Specific Property
 
@@ -229,7 +233,7 @@ namespace GCC_Web_Portal
 			//slots
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH","AJA","ECB","ECF","ECGR","ECM" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Table Games / Poker
-            fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "VRL", "NAN", "GAG", "CNSH", "CNSS", "EC", "SCTI", "CNB", "SCBE", "WDB", "GBH", "ECB", "ECF", "ECM" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "VRL", "NAN", "GAG", "CNSH", "CNSS", "EC", "SCTI", "CNB", "SCBE", "WDB", "GBH", "ECB", "ECF", "ECM" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Bingo
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "CCH", "CMR", "CDC" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Food & Beverage
@@ -241,7 +245,7 @@ namespace GCC_Web_Portal
 			//Racebook
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "NAN", "CMR", "CNSS", "EC", "SSKD", "SCBE", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Horse Racing
-            fbkQ2.Items[j++].Enabled = (new[] { "GCC", "HA", "CNSS", "EC", "ECF", "ECGR", "ECM" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "HA", "CNSS", "EC", "ECF", "ECGR", "ECM" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Motorcoach / Bus Tours
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "CNSH" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Guest Services
@@ -422,7 +426,7 @@ namespace GCC_Web_Portal
 			{
 				int reasonID = fbkQ2.SelectedValue.StringToInt();
 				//Add the feedback
-				SQLDatabase sql = new SQLDatabase();
+				SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 				SqlParameter feedbackUIDParam = new SqlParameter("@UID", System.Data.SqlDbType.UniqueIdentifier);
 				feedbackUIDParam.Direction = System.Data.ParameterDirection.Output;
 
@@ -584,12 +588,17 @@ namespace GCC_Web_Portal
 						}
 					}
 					string email = SurveyTools.GetValue(fbkEmail, currentPage, String.Empty);
-					if (!Validation.RegExCheck(email, ValidationType.Email)
-						&& !(String.IsNullOrWhiteSpace(email) && IsStaffSurvey))
-					{ //Allow blanks on staff survey
-						mmTrackingEmail.ErrorMessage = "Please enter a valid email address.";
-						retVal = false;
-					}
+					
+				
+				// 20180406 - OLD wants to make this email address optional
+
+
+				//if (!Validation.RegExCheck(email, ValidationType.Email)
+					//    && !(String.IsNullOrWhiteSpace(email) && IsStaffSurvey))
+					//{ //Allow blanks on staff survey
+					//    mmTrackingEmail.ErrorMessage = "Please enter a valid email address.";
+					//    retVal = false;
+					//}
 					if (Master.PropertyShortCode == GCCPropertyShortCode.GCC && fbkProperty.SelectedIndex == 0)
 					{
 						fbkProperty.MessageManager.ErrorMessage = "Please indicate which property you are providing feedback for or select \"No Specific Property\".";
@@ -785,7 +794,7 @@ namespace GCC_Web_Portal
 			}
 
 			columnList.Remove(0, 1);
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			rowID = sql.QueryAndReturnIdentity(String.Format("INSERT INTO [tblSurveyFeedback] ({0}) VALUES ({1});", columnList, columnList.ToString().Replace("[", "@").Replace("]", String.Empty)), sqlParams);
 			if (!sql.HasError && rowID != -1)
 			{

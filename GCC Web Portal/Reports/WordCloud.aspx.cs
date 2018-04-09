@@ -64,7 +64,7 @@ namespace GCC_Web_Portal.Reports
 
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = Master.GetFilters()
                                            .Add("@IsHRStaff", IsHRUser)
                                            .Add("@IsCorpMarketing", IsCorpMarketing);

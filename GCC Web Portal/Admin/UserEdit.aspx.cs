@@ -35,7 +35,7 @@ namespace GCC_Web_Portal.Admin
         {
             Title = "GCC User Editor";
             Master.HideAllFilters = true;
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = new SQLParamList().Add("@UserID", UserID);
             DataTable dt = sql.ExecStoredProcedureDataTable("spAdmin_User_Get", sqlParams);
             if (!sql.HasError)
@@ -68,7 +68,7 @@ namespace GCC_Web_Portal.Admin
                 return;
             }
 
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             DataTable dtEmail = sql.QueryDataTable("SELECT UserID FROM [tblCOM_Users] WHERE UserID != @UserID AND Email = @Email",
                                                     new SQLParamList().Add("@UserID", UserID).Add("@Email", txtEmail.Text));
             if (sql.HasError)

@@ -54,7 +54,7 @@ namespace GCC_Web_Portal.Admin
 
             Title = "GCC Users";
             Master.HideAllFilters = true;
-            SQLDatabase sql = new SQLDatabase();
+            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
             SQLParamList sqlParams = new SQLParamList();
             if (CurrentPage == -1)
             {
@@ -130,7 +130,7 @@ namespace GCC_Web_Portal.Admin
 		///     Checks for valid login credentials. Returns 0 if successful, 1 if the username or password is empty, 2 if there was a SQL error, 3 if the user is locked out or 4 if the username or password is invalid.
 		/// </summary>
 		private static LoginErrorCode TryLogUserIn(int userID) {
-			SQLDatabase sql = new SQLDatabase();
+			SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
 			DataTable dt = sql.QueryDataTable( "SELECT email FROM tblCOM_Users WHERE UserID = " + userID );
 			if ( !sql.HasError && dt.Rows.Count > 0 ) {
 				int outputVal;

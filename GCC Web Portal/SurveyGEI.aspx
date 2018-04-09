@@ -1555,7 +1555,7 @@
 					<sc:SurveyCheckBox ID="Q18_2" runat="server" SessionKey="Q18_2" DBColumn="Q18_2" DBValue="1" Text="&nbsp;Curve" /><br />
 					<sc:SurveyCheckBox ID="Q18_3" runat="server" SessionKey="Q18_3" DBColumn="Q18_3" DBValue="1" Text="&nbsp;Tramonto Restaurant" /><br />
 					<%--<sc:SurveyCheckBox ID="Q18_4" runat="server" SessionKey="Q18_4" DBColumn="Q18_4" DBValue="1" Text="&nbsp;Curve Lounge" /><br />--%>
-					
+
 					<sc:SurveyCheckBox ID="Q18_5" runat="server" SessionKey="Q18_5" DBColumn="Q18_5" DBValue="1" Text="&nbsp;The Buffet" /><br />
 					<sc:SurveyCheckBox ID="Q18_6" runat="server" SessionKey="Q18_6" DBColumn="Q18_6" DBValue="1" Text="&nbsp;Sea Harbour Seafood Restaurant" /><br />
 					<%--<sc:SurveyCheckBox ID="Q18_7" runat="server" SessionKey="Q18_7" DBColumn="Q18_7" DBValue="1" Text="&nbsp;Java Jacks Café" /><br />--%>
@@ -1702,17 +1702,17 @@
 					<sc:SurveyCheckBox ID="Q18_63" runat="server" SessionKey="Q18_63" DBColumn="Q18_63" DBValue="1" Text="&nbsp;Pavillion Restaurant" /><br />
 					<sc:SurveyCheckBox ID="Q18_64" runat="server" SessionKey="Q18_64" DBColumn="Q18_64" DBValue="1" Text="&nbsp;Moon Bar" /><br />
 					<sc:SurveyCheckBox ID="Q18_65" runat="server" SessionKey="Q18_65" DBColumn="Q18_65" DBValue="1" Text="&nbsp;Sunset Bar" /><br />
-					
+
 
 
 					<% } %>
 
-							  <%if (PropertyShortCode == GCCPropertyShortCode.ECM)
+					<%if (PropertyShortCode == GCCPropertyShortCode.ECM)
 					  { %>
 					<sc:SurveyCheckBox ID="Q18_66" runat="server" SessionKey="Q18_66" DBColumn="Q18_66" DBValue="1" Text="&nbsp;The Marketplace" /><br />
 					<sc:SurveyCheckBox ID="Q18_67" runat="server" SessionKey="Q18_67" DBColumn="Q18_67" DBValue="1" Text="&nbsp;The Terrace Dining Rooms" /><br />
 					<sc:SurveyCheckBox ID="Q18_68" runat="server" SessionKey="Q18_68" DBColumn="Q18_68" DBValue="1" Text="&nbsp;Oscars Sports" /><br />
-					
+
 
 
 					<% } %>
@@ -1887,22 +1887,22 @@
 
 					<% } %>
 
-					 <%if (PropertyShortCode == GCCPropertyShortCode.ECF)
+					<%if (PropertyShortCode == GCCPropertyShortCode.ECF)
 					  { %>
 					<sc:SurveyCheckBox ID="Q18_63_F" runat="server" SessionKey="Q18_63" DBColumn="Q18_63" DBValue="1" Text="&nbsp;Pavillion Restaurant" /><br />
 					<sc:SurveyCheckBox ID="Q18_64_F" runat="server" SessionKey="Q18_64" DBColumn="Q18_64" DBValue="1" Text="&nbsp;Moon Bar" /><br />
 					<sc:SurveyCheckBox ID="Q18_65_F" runat="server" SessionKey="Q18_65" DBColumn="Q18_65" DBValue="1" Text="&nbsp;Sunset Bar" /><br />
-					
+
 
 
 					<% } %>
 
-							  <%if (PropertyShortCode == GCCPropertyShortCode.ECM)
+					<%if (PropertyShortCode == GCCPropertyShortCode.ECM)
 					  { %>
 					<sc:SurveyCheckBox ID="Q18_66_F" runat="server" SessionKey="Q18_66" DBColumn="Q18_66" DBValue="1" Text="&nbsp;The Marketplace" /><br />
 					<sc:SurveyCheckBox ID="Q18_67_F" runat="server" SessionKey="Q18_67" DBColumn="Q18_67" DBValue="1" Text="&nbsp;The Terrace Dining Rooms" /><br />
 					<sc:SurveyCheckBox ID="Q18_68_F" runat="server" SessionKey="Q18_68" DBColumn="Q18_68" DBValue="1" Text="&nbsp;Oscars Sports" /><br />
-					
+
 
 
 					<% } %>
@@ -2788,10 +2788,10 @@
 					 
 					   || PropertyShortCode == GCCPropertyShortCode.CNB
 					   || PropertyShortCode == GCCPropertyShortCode.SCBE
-                       || PropertyShortCode == GCCPropertyShortCode.ECB
-                       || PropertyShortCode == GCCPropertyShortCode.ECF
-                       || PropertyShortCode == GCCPropertyShortCode.ECM
-                    )
+					   || PropertyShortCode == GCCPropertyShortCode.ECB
+					   || PropertyShortCode == GCCPropertyShortCode.ECF
+					   || PropertyShortCode == GCCPropertyShortCode.ECM
+					)
 				   { %>
 				<p class="question">
 					<% if (!IsKioskOrStaffEntry)
@@ -2856,10 +2856,10 @@
 					 
 					   || PropertyShortCode == GCCPropertyShortCode.CNB
 					   || PropertyShortCode == GCCPropertyShortCode.SCBE
-                       || PropertyShortCode == GCCPropertyShortCode.ECB
-                       || PropertyShortCode == GCCPropertyShortCode.ECF
-                       || PropertyShortCode == GCCPropertyShortCode.ECM
-                    )
+					   || PropertyShortCode == GCCPropertyShortCode.ECB
+					   || PropertyShortCode == GCCPropertyShortCode.ECF
+					   || PropertyShortCode == GCCPropertyShortCode.ECM
+					)
 				   { %>
 				<p class="question">
 					<% if (!IsKioskOrStaffEntry)
@@ -3731,7 +3731,7 @@
 				<%if(!IsKioskOrStaffEntry){ %>
 
 				<% // OLG QUESTIONS (ONTARIO ONLY) %>
-				<% if (PropertyShortCode == GCCPropertyShortCode.SSKD || PropertyShortCode == GCCPropertyShortCode.AJA || PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.SCBE || PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH)
+				<% if (PropertyShortCode == GCCPropertyShortCode.SSKD || PropertyShortCode == GCCPropertyShortCode.AJA || PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.SCBE || PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH || PropertyShortCode == GCCPropertyShortCode.ECB || PropertyShortCode == GCCPropertyShortCode.ECF || PropertyShortCode == GCCPropertyShortCode.ECGR || PropertyShortCode == GCCPropertyShortCode.ECM)
 				   { %>
 				<p class="question">
 					On behalf of the Ontario Lottery & Gaming Corporation (OLG), we would like to ask you an additional 7 questions about your recent experience at <%= CasinoName %>.
@@ -3857,7 +3857,7 @@
 				<uc1:YesNoControlFrench runat="server" ID="Q40_F" SessionKey="Q40" DBColumn="Q40" />
 				<% } %>
 				<% // OLG QUESTIONS (ONTARIO ONLY) %>
-				<% if (PropertyShortCode == GCCPropertyShortCode.SSKD || PropertyShortCode == GCCPropertyShortCode.AJA || PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.SCBE || PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH)
+				<% if (PropertyShortCode == GCCPropertyShortCode.SSKD || PropertyShortCode == GCCPropertyShortCode.AJA || PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.SCBE || PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH || PropertyShortCode == GCCPropertyShortCode.ECB || PropertyShortCode == GCCPropertyShortCode.ECF || PropertyShortCode == GCCPropertyShortCode.ECGR || PropertyShortCode == GCCPropertyShortCode.ECM)
 				   { %>
 				<p class="question">
 					Au nom de la Société des loteries et des jeux de l'Ontario (OLG), nous aimerions vous poser 7 autres questions au sujet de votre expérience récente au <% = CasinoName%>. Pouvons-nous transmettre vos commentaires à l’OLG?
