@@ -161,7 +161,7 @@
     <p><%=Lang.Page5_Response2%> <%= PropertyTools.GetPhoneNumber( Master.PropertyShortCode, -1 ) %></p>
     <p><%=Lang.Page5_Response2_2%></p>
     <p><%=Lang.Page5_Response2_3%></p>
-     <% } else if (AlignedPropertyShortCode == GCCPropertyShortCode.WDB || AlignedPropertyShortCode == GCCPropertyShortCode.AJA || AlignedPropertyShortCode == GCCPropertyShortCode.GBH) { %>
+     <% } else if (AlignedPropertyShortCode == GCCPropertyShortCode.WDB || AlignedPropertyShortCode == GCCPropertyShortCode.AJA || AlignedPropertyShortCode == GCCPropertyShortCode.GBH || AlignedPropertyShortCode == GCCPropertyShortCode.SCTI || AlignedPropertyShortCode == GCCPropertyShortCode.SCBE || AlignedPropertyShortCode == GCCPropertyShortCode.SSKD || AlignedPropertyShortCode == GCCPropertyShortCode.ECB || AlignedPropertyShortCode == GCCPropertyShortCode.ECF || AlignedPropertyShortCode == GCCPropertyShortCode.ECGR || AlignedPropertyShortCode == GCCPropertyShortCode.ECM) { %>
     
     <p><%=Lang.Page5_Response2%> <%= PropertyTools.GetPhoneNumber( Master.PropertyShortCode, -1 ) %></p>
     <p><%=Lang.Page5_Response2_2_Ontario%></p>

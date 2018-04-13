@@ -153,12 +153,12 @@ namespace GCC_Web_Portal
 				fbkProperty.Items.Insert(17, new ListItem(Lang.Page1_Question2_19, "22"));
 				fbkProperty.Items.Insert(18, new ListItem(Lang.Page1_Question2_20, "23"));
 				fbkProperty.Items.Insert(19, new ListItem(Lang.Page1_Question2_21, "24"));
-				fbkProperty.Items.Insert(19, new ListItem(Lang.Page1_Question2_25, "25"));
-				fbkProperty.Items.Insert(19, new ListItem(Lang.Page1_Question2_26, "26"));
-				fbkProperty.Items.Insert(19, new ListItem(Lang.Page1_Question2_27, "27"));
-				fbkProperty.Items.Insert(19, new ListItem(Lang.Page1_Question2_28, "28"));
+				fbkProperty.Items.Insert(20, new ListItem(Lang.Page1_Question2_25, "25"));
+				fbkProperty.Items.Insert(21, new ListItem(Lang.Page1_Question2_26, "26"));
+				fbkProperty.Items.Insert(22, new ListItem(Lang.Page1_Question2_27, "27"));
+				fbkProperty.Items.Insert(23, new ListItem(Lang.Page1_Question2_28, "28"));
 				
-				fbkProperty.Items.Insert(20, new ListItem(Lang.Page1_Question2_1, "1")); //No Specific Property
+				fbkProperty.Items.Insert(24, new ListItem(Lang.Page1_Question2_1, "1")); //No Specific Property
 
 				fbkDirectQuestion.Items.Insert(1, new ListItem(Lang.Page1_Question2B_1, "1"));
 				fbkDirectQuestion.Items.Insert(2, new ListItem(Lang.Page1_Question2B_2, "2"));
@@ -217,13 +217,21 @@ namespace GCC_Web_Portal
 				fbkQ2.Items.Insert(15, new ListItem(Lang.Page3_Question1_15, "14"));
 				fbkQ2.Items.Insert(16, new ListItem(Lang.Page3_Question1_16, "7"));
 				fbkQ2.Items.Insert(17, new ListItem(Lang.Page3_Question1_17, "11"));
-				fbkQ2.Items.Insert(18, new ListItem(Lang.Page3_Question1_18, "12"));
+				
+
+				fbkQ2.Items.Insert(18, new ListItem(Lang.Page3_Question1_19, "32"));
+				fbkQ2.Items.Insert(19, new ListItem(Lang.Page3_Question1_18, "12"));
+
 		   
 
 				fbkQ5.Items.Insert(1, new ListItem(Lang.Page3_Question4_1, "By e-mail"));
 				fbkQ5.Items.Insert(2, new ListItem(Lang.Page3_Question4_2, "By telephone"));
 				fbkQ5.Items.Insert(3, new ListItem(Lang.Page3_Question4_3, "I do not want to be contacted"));
 			}
+
+
+
+			
 		}
 
 		protected void Page_LoadComplete(object sender, EventArgs e)
@@ -232,40 +240,57 @@ namespace GCC_Web_Portal
 
 			//slots
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH","AJA","ECB","ECF","ECGR","ECM" }.Contains(AlignedPropertyShortCode.ToString()));
+			
+			
+			
 			//Table Games / Poker
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "VRL", "NAN", "GAG", "CNSH", "CNSS", "EC", "SCTI", "CNB", "SCBE", "WDB", "GBH", "ECB", "ECF", "ECM" }.Contains(AlignedPropertyShortCode.ToString()));
+					
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "VRL", "NAN", "GAG", "CNSH", "CNSS", "EC", "SCTI", "CNB", "SCBE", "WDB", "GBH", "ECB"}.Contains(AlignedPropertyShortCode.ToString()));
+
+
+
+
 			//Bingo
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "CCH", "CMR", "CDC" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Food & Beverage
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA","ECM","ECB", "ECF","ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Entertainment
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "CCH", "CMR", "CDC", "CNSH", "EC" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "CCH", "CMR", "CDC", "CNSH", "EC","ECM", "ECB", "ECF" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Hotel
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Racebook
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "NAN", "CMR", "CNSS", "EC", "SSKD", "SCBE", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Horse Racing
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "HA", "CNSS", "EC", "ECF", "ECGR", "ECM" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "HA", "CNSS", "EC", "ECF", "ECM", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Motorcoach / Bus Tours
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "CNSH" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Guest Services
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Parking
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECF", "ECGR","ECB" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Marketing & Promotions
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECF", "ECGR","ECB" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Group Sales / Catering / Events
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "CNSH", "SSKD", "SCTI", "SCBE", "CNB", "WDB", "GBH", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "CNSH", "SSKD", "SCTI", "SCBE", "CNB", "WDB", "GBH", "AJA","ECM", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Sponsorship Request
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "WDB", "GBH", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Responsible Gaming
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Investor Relations
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB" , "ECF", "ECGR"}.Contains(AlignedPropertyShortCode.ToString()));
 			//Media Requests & Inquiries
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Other
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "AJA","ECM","ECB","ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
+
+
+			//Electronic Table Games	
+			//Other
+			fbkQ2.Items[j++].Enabled = (new[] {"ECM", "ECF"}.Contains(AlignedPropertyShortCode.ToString()));
+
+
+
+
 
 			//Slots
 			//fbkQ2.Items[j++].Enabled = ( new[] { "GCC", "RR", "HRCV", "FD", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI" }.Contains( AlignedPropertyShortCode.ToString() ) );
@@ -305,6 +330,15 @@ namespace GCC_Web_Portal
 			//fbkQ2.Items[j++].Enabled = ( new[] { "GCC", "RR", "HRCV", "FD", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI" }.Contains( AlignedPropertyShortCode.ToString() ) );
 			////Check all previous pages
 			//Must do in LoadComplete because controls load values in Load method (Init didn't work because reasons...)
+
+
+
+			//if (AlignedPropertyShortCode == GCCPropertyShortCode.ECF || AlignedPropertyShortCode == GCCPropertyShortCode.ECB || AlignedPropertyShortCode == GCCPropertyShortCode.ECM || AlignedPropertyShortCode == GCCPropertyShortCode.ECGR)
+			//{
+			//    fbkQ2.Items[3].Text = "Electronic Table Games";
+			//}
+
+
 
 			if (AlignedPropertyShortCode.ToString() == "CNB" || AlignedPropertyShortCode.ToString() == "SCTI" || AlignedPropertyShortCode.ToString() == "WDB")
 			{

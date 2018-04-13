@@ -327,12 +327,16 @@
 				   { %>
 				<p>Your personal information is collected and used by Great Canadian Gaming Corporation (GCGC) for GCGC's research purposes only. Any personal information provided is managed according to the Right to Information and Protection of Privacy Act of New Brunswick (RTIPPA NB) and other applicable legislation. Your information is kept confidential and secure and is not disclosed to anyone outside of the company or other third parties without your consent, unless required by law or regulation. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
 				<p>Please click "Next" to continue.</p>
-				<% }
-				   else
-				   { %>
-				<p>Your personal information is collected and used by Great Canadian Gaming Corporation (GCGC) on behalf of the British Columbia Lottery Corporation in accordance with British Columbia's Freedom of Information and Protection of Privacy Act. It will be used for GCGC's research purposes only. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
+				<% } else if (PropertyShortCode == GCCPropertyShortCode.ECF ||PropertyShortCode == GCCPropertyShortCode.ECB || PropertyShortCode == GCCPropertyShortCode.ECM || PropertyShortCode == GCCPropertyShortCode.ECGR) { %>
+				<p>Your personal information is collected and used by <%= CasinoName %> on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. It will be used for GCGC's research purposes only. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
 				<p>Please click "Next" to continue.</p>
-				<% } %>
+				<% } else { %>
+					
+					<p>Your personal information is collected and used by Great Canadian Gaming Corporation (GCGC) on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. It will be used for GCGC's research purposes only. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
+				<p>Please click "Next" to continue.</p>
+					
+					
+					<% } %>
 				<div class="button-container">
 					<asp:Button runat="server" OnClick="Next_Click" CssClass="btn btn-primary" Text="Next" />
 				</div>
@@ -421,7 +425,18 @@
 				   else if (PropertyShortCode == GCCPropertyShortCode.CNB)
 				   { %>
 				<p>No purchase necessary. An Entrant may only enter the contest once during the promotional period. The contest promotional period will close at the end of the month in which this survey was completed. Duplicate entries will be deleted. Your personal information is collected and used by Great Canadian Gaming Corporation (GCGC) for GCGC's research purposes only. Any personal information provided is managed according to the Right to Information and Protection of Privacy Act of New Brunswick (RTIPPA NB) and other applicable legislation. Your information is kept confidential and secure and is not disclosed to anyone outside of the company or other third parties without your consent, unless required by law or regulation. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
-				<% } else { %>
+
+					<% } else if (PropertyShortCode ==  GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH || PropertyShortCode == GCCPropertyShortCode.AJA|| PropertyShortCode == GCCPropertyShortCode.GBH || PropertyShortCode == GCCPropertyShortCode.ECB|| PropertyShortCode == GCCPropertyShortCode.ECF|| PropertyShortCode == GCCPropertyShortCode.ECGR|| PropertyShortCode == GCCPropertyShortCode.ECM) { %>
+					
+			  <h2>test</h2>
+				<p>No purchase necessary. An Entrant may only enter the contest once during the promotional period. The contest promotional period will close at the end of the month in which this survey was completed. Duplicate entries will be deleted. Your personal information is collected and used by <%=CasinoName %> on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research.  It will be used for GCGC's research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
+				
+				
+				
+				
+				<% } 
+					else
+					 { %>
 				<p>No purchase necessary. An Entrant may only enter the contest once during the promotional period. The contest promotional period will close at the end of the month in which this survey was completed. Duplicate entries will be deleted. Your personal information is collected and used by Great Canadian Gaming Corporation (GCGC) on behalf of the British Columbia Lottery Corporation in accordance with British Columbia's Freedom of Information and Protection of Privacy Act. It will be used for GCGC's research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
 				<% } %>
 				<p>For terms of use and full terms and conditions, please see below.</p>
@@ -480,6 +495,10 @@
 				   else if (PropertyShortCode == GCCPropertyShortCode.CNB)
 				   { %>
 				<p>Aucun achat nécessaire. Un participant ne peut participer au concours qu'une seule fois pendant la période promotionnelle. La période promotionnelle du concours se terminera à la fin du mois au cours duquel le sondage a été Terminer. Les entrées en double seront supprimées. Vos renseignements personnels sont recueillis et utilisés par la Great Canadian Gaming Corporation (GCGC) aux fins de recherche de la GCGC uniquement. Tous les renseignements personnels fournis sont gérés conformément à la Loi sur l'accès à l'information et à la protection de la vie privée du Nouveau-Brunswick (RTIPPA NB) et à d'autres lois applicables. Vos renseignements sont gardés confidentiels et sécurisés et ne sont divulgués à quiconque en dehors de la société ou d'autres tiers sans votre consentement, sauf si la loi ou le règlement l'exige. Si vous avez des questions à ce sujet, veuillez écrire à l'agent de confidentialité de GCGC au 95 rue Schooner, Coquitlam, C.-B. V3K 7A8.</p>
+			  
+				 <% } else if (PropertyShortCode == GCCPropertyShortCode.ECF ||PropertyShortCode == GCCPropertyShortCode.ECB || PropertyShortCode == GCCPropertyShortCode.ECM || PropertyShortCode == GCCPropertyShortCode.ECGR) { %>
+				
+				<p>Aucun achat nécessaire. Un participant ne peut participer au concours qu'une seule fois durant la période promotionnelle. La période promotionnelle du concours se terminera à la fin du mois au cours duquel le sondage a été complété. Les entrées en double seront supprimées. Vos renseignements personnels sont recueillis et utilisés par le Casino Woodbine au nom de la <%=CasinoName %> et de la Société des loteries et des jeux de l'Ontario (OLG) conformément à la Loi sur l'accès à l'information et la protection de la vie privée. Vos renseignements personnels sont utilisés aux fins d’administrer ce concours, à la recherche du service à la clientèle et pour la recherche du jeu responsable. Ils seront utilisés à des fins de recherche pour la GCGC et pour administrer ce concours. Vos informations ne seront pas vendues, partagées avec des tiers ou utilisées à des fins de sollicitation. Si vous aviez des questions à ce sujet, veuillez écrire à l'agent de confidentialité de la GCGC au 95 Schooner Street, Coquitlam, C.B. V3K 7A8.</p>
 				<% } else { %>
 				<p>Pas Aucun achat nécessaire. Un participant ne peut participer au concours qu'une seule fois pendant la période promotionnelle. La période promotionnelle du concours se terminera à la fin du mois au cours duquel le sondage a été Terminer. Les entrées en double seront supprimées. Vos renseignements personnels sont recueillis et utilisés par la Great Canadian Gaming Corporation (GCGC) au nom de la British Columbia Lottery Corporation conformément à la Loi sur l'accès à l'information et la protection de la vie privée de la Colombie-Britannique. Il sera utilisé à des fins de recherche GCGC et d'administrer ce concours. Vos informations ne seront pas vendues, partagées avec des tiers ou utilisé à des fins de sollicitation. Si vous avez des questions à ce sujet, veuillez écrire à l'agent de confidentialité de GCGC au 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
 				<% } %>
@@ -613,7 +632,7 @@
 						<sc:SurveyRadioButton ID="radQ1_Poker" runat="server" GroupName="Q1" SessionKey="Q1Poker" DBColumn="Q1" DBValue="Poker" Text="&nbsp;Playing Poker" /><br />
 						<% } %>
 						<sc:SurveyRadioButton ID="radQ1_Food" runat="server" GroupName="Q1" SessionKey="Q1Food" DBColumn="Q1" DBValue="Food" Text="&nbsp;Enjoying Food or Beverages" /><br />
-						<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB" }.Contains(PropertyShortCode.ToString()))
+						<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "ECB", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()))
 						   { %>
 						<sc:SurveyRadioButton ID="radQ1_Entertainment" runat="server" GroupName="Q1" SessionKey="Q1Entertainment" DBColumn="Q1" DBValue="Entertainment" Text="&nbsp;Watching Live Entertainment at a show lounge or theatre" /><br />
 						<% } %>
@@ -674,7 +693,7 @@
 						<sc:SurveyRadioButton ID="radQ1_Poker_F" runat="server" GroupName="Q1" SessionKey="Q1Poker" DBColumn="Q1" DBValue="Poker" Text="&nbsp;Jouer au poker" /><br />
 						<% } %>
 						<sc:SurveyRadioButton ID="radQ1_Food_F" runat="server" GroupName="Q1" SessionKey="Q1Food" DBColumn="Q1" DBValue="Food" Text="&nbsp;Profiter de la gastronomie" /><br />
-						<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "GBH" }.Contains(PropertyShortCode.ToString()))
+						<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "GBH", "ECB", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()))
 						   { %>
 						<sc:SurveyRadioButton ID="radQ1_Entertainment_F" runat="server" GroupName="Q1" SessionKey="Q1Entertainment" DBColumn="Q1" DBValue="Entertainment" Text="&nbsp;Profiter du divertissement à notre Lounge " /><br />
 						<% } %>
@@ -746,7 +765,7 @@
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Food" runat="server" SessionKey="Q2Food" DBColumn="Q2_Food" DBValue="1" Text="&nbsp;Enjoying Food or Beverages" /><br />
 					<% } %>
-					<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "GBH" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
+					<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "GBH", "ECB", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Entertainment" runat="server" SessionKey="Q2Entertainment" DBColumn="Q2_Entertainment" DBValue="1" Text="&nbsp;Watching Live Entertainment at a show lounge or theatre" /><br />
 					<% } %>
@@ -799,7 +818,7 @@
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Food_F" runat="server" SessionKey="Q2Food" DBColumn="Q2_Food" DBValue="1" Text="&nbsp;Profiter de la gastronomie" /><br />
 					<% } %>
-					<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "GBH" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
+					<% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "CNB", "GBH", "ECB", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Entertainment_F" runat="server" SessionKey="Q2Entertainment" DBColumn="Q2_Entertainment" DBValue="1" Text="&nbsp;Profiter du divertissement à notre Lounge " /><br />
 					<%--"&nbsp;Assister à un spectacle à notre salle de spectacles ou à notre pub"--%>
@@ -2784,14 +2803,12 @@
 					   || PropertyShortCode == GCCPropertyShortCode.CDC
 					   || PropertyShortCode == GCCPropertyShortCode.CNSH
 					   || PropertyShortCode == GCCPropertyShortCode.EC
-					   || PropertyShortCode == GCCPropertyShortCode.SCTI
-					 
+					   || PropertyShortCode == GCCPropertyShortCode.SCTI					 
 					   || PropertyShortCode == GCCPropertyShortCode.CNB
 					   || PropertyShortCode == GCCPropertyShortCode.SCBE
 					   || PropertyShortCode == GCCPropertyShortCode.ECB
 					   || PropertyShortCode == GCCPropertyShortCode.ECF
-					   || PropertyShortCode == GCCPropertyShortCode.ECM
-					)
+					   || PropertyShortCode == GCCPropertyShortCode.ECM)
 				   { %>
 				<p class="question">
 					<% if (!IsKioskOrStaffEntry)

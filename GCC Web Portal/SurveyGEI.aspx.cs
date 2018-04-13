@@ -406,6 +406,15 @@ namespace GCC_Web_Portal
 					Q9H.SetAnswerLabels(answerLabels);
 					Q9I.SetAnswerLabels(answerLabels);
 					Q9J.SetAnswerLabels(answerLabels);
+
+
+
+
+
+
+
+			   
+
 				}
 
 				else if(strSurveyLang == "French")
@@ -470,8 +479,8 @@ namespace GCC_Web_Portal
 						chkQ2_Entertainment.Text = "&nbsp;Watching Live Entertainment at our theatre or pub";
 					}
 
-					radQ27A_6.Visible = PropertyShortCode != GCCPropertyShortCode.GAG;
-					radQ27A_7.Visible = !new string[] { "HA", "CCH", "CMR", "CDC" }.Contains(PropertyShortCode.ToString());
+					radQ27A_6.Visible = (PropertyShortCode != GCCPropertyShortCode.GAG || PropertyShortCode == GCCPropertyShortCode.ECF || PropertyShortCode == GCCPropertyShortCode.ECM || PropertyShortCode == GCCPropertyShortCode.ECGR);
+					radQ27A_7.Visible = !new string[] { "HA", "CCH", "CMR", "CDC", "ECM","ECF", "ECGR" }.Contains(PropertyShortCode.ToString());
 					radQ27A_9.Visible = (PropertyShortCode == GCCPropertyShortCode.RR
 						|| PropertyShortCode == GCCPropertyShortCode.CNB);
 					radQ27A_11.Visible = (PropertyShortCode == GCCPropertyShortCode.CCH
@@ -484,9 +493,16 @@ namespace GCC_Web_Portal
 						|| PropertyShortCode == GCCPropertyShortCode.CDC
 						|| PropertyShortCode == GCCPropertyShortCode.CNSH
 						|| PropertyShortCode == GCCPropertyShortCode.CNB
-						|| PropertyShortCode == GCCPropertyShortCode.EC);
+						|| PropertyShortCode == GCCPropertyShortCode.EC
+						|| PropertyShortCode == GCCPropertyShortCode.ECF
+						|| PropertyShortCode == GCCPropertyShortCode.ECM
+						|| PropertyShortCode == GCCPropertyShortCode.ECGR
+						);
 					radQ27A_13.Visible = (PropertyShortCode == GCCPropertyShortCode.HA
-						|| PropertyShortCode == GCCPropertyShortCode.EC);
+						|| PropertyShortCode == GCCPropertyShortCode.EC
+                        || PropertyShortCode == GCCPropertyShortCode.ECF
+                        || PropertyShortCode == GCCPropertyShortCode.ECM
+                        || PropertyShortCode == GCCPropertyShortCode.ECGR);
 
 					radQ40A_6.Visible = PropertyShortCode != GCCPropertyShortCode.GAG;
 					radQ40A_7.Visible = !new string[] { "HA", "CCH", "CMR", "CDC" }.Contains(PropertyShortCode.ToString());
@@ -513,7 +529,30 @@ namespace GCC_Web_Portal
 					{
 						radQ27A_7.Text.Remove(0);
 						radQ27A_7.Text = "&nbsp;Electronic Table Games";
+
+
+						chkQ2_Tables.Text.Remove(0);
+						chkQ2_Tables.Text = "&nbsp;Playing Electronic Table Games";
+
+
+
+						radQ1_Tables.Text.Remove(0);
+						radQ1_Tables.Text = "&nbsp;Playing Electronic Table Games";
+
+						
 					}
+
+					if (PropertyShortCode == GCCPropertyShortCode.ECF || PropertyShortCode == GCCPropertyShortCode.ECM || PropertyShortCode == GCCPropertyShortCode.ECGR)
+					{
+										radQ1_Racebook.Text.Remove(0);
+										radQ1_Racebook.Text = "&nbsp;Watching Live Racing";
+
+
+										chkQ2_Racebook.Text.Remove(0);
+										chkQ2_Racebook.Text = "&nbsp;Watching Live Racing";
+
+					}
+
 				}
 
 				else if(strSurveyLang == "French")
@@ -547,7 +586,7 @@ namespace GCC_Web_Portal
 					}
 
 					radQ27A_6_F.Visible = PropertyShortCode != GCCPropertyShortCode.GAG;
-					radQ27A_7_F.Visible = !new string[] { "HA", "CCH", "CMR", "CDC" }.Contains(PropertyShortCode.ToString());
+					radQ27A_7_F.Visible = !new string[] { "HA", "CCH", "CMR", "CDC" ,"ECM","ECF", "ECGR" }.Contains(PropertyShortCode.ToString());
 					radQ27A_9_F.Visible = (PropertyShortCode == GCCPropertyShortCode.RR
 						|| PropertyShortCode == GCCPropertyShortCode.CNB);
 					radQ27A_11_F.Visible = (PropertyShortCode == GCCPropertyShortCode.CCH
@@ -562,7 +601,10 @@ namespace GCC_Web_Portal
 						|| PropertyShortCode == GCCPropertyShortCode.CNB
 						|| PropertyShortCode == GCCPropertyShortCode.EC);
 					radQ27A_13_F.Visible = (PropertyShortCode == GCCPropertyShortCode.HA
-						|| PropertyShortCode == GCCPropertyShortCode.EC);
+						|| PropertyShortCode == GCCPropertyShortCode.EC
+                        || PropertyShortCode == GCCPropertyShortCode.ECF
+                        || PropertyShortCode == GCCPropertyShortCode.ECM
+                        || PropertyShortCode == GCCPropertyShortCode.ECGR);
 
 					radQ40A_6_F.Visible = PropertyShortCode != GCCPropertyShortCode.GAG;
 					radQ40A_7_F.Visible = !new string[] { "HA", "CCH", "CMR", "CDC" }.Contains(PropertyShortCode.ToString());
@@ -1874,6 +1916,9 @@ namespace GCC_Web_Portal
 						&& PropertyShortCode != GCCPropertyShortCode.SCTI
 						&& PropertyShortCode != GCCPropertyShortCode.CNB
 						&& PropertyShortCode != GCCPropertyShortCode.SCBE
+                        && PropertyShortCode != GCCPropertyShortCode.ECF
+                        && PropertyShortCode != GCCPropertyShortCode.ECM
+                        && PropertyShortCode != GCCPropertyShortCode.ECB
 						) {
 						return true;
 					}

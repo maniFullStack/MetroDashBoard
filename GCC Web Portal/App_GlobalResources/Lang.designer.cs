@@ -935,6 +935,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Electronic Table Games.
+        /// </summary>
+        internal static string Page3_Question1_19 {
+            get {
+                return ResourceManager.GetString("Page3_Question1_19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Table Games / Poker.
         /// </summary>
         internal static string Page3_Question1_2 {

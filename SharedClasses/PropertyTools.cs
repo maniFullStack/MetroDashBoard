@@ -1397,7 +1397,7 @@ namespace SharedClasses {
 				case 17:
 					return "Winner's Circle";
 				case 18:
-					return "Winner's Circle";
+                    return "Axis Rewards";
 				case 19:
 					return "Rewards Club";
 
@@ -1458,8 +1458,8 @@ namespace SharedClasses {
 					return "Great Rewards Club";
 				case 17:
 					return "cercle des gagnants";
-				case 18:
-					return "cercle des gagnants";
+                case 18:
+                    return "Axis Rewards";
 				case 19:
 					return "Club de récompenses";
 				case 20:

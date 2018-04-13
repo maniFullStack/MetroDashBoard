@@ -15,7 +15,7 @@
         }
     </style>
 </asp:Content>
-<asp:Content ContentPlaceHolderID="SidebarListItems" runat="server"></asp:Content>
+<asp:Content ContentPlaceHolderID="SidebarListItems" runat="server"></asp:Conten>t
 <asp:Content ContentPlaceHolderID="MainContentHeader" runat="server"></asp:Content>
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
 <% if ( TopMessage.IsVisible ) { %>
