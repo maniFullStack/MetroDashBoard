@@ -80,6 +80,16 @@ namespace WebsiteUtilities {
             }
         }
 
+
+
+
+        // Summary:
+        //     The timeout for the SqlCommand in seconds.
+        public int CommandTimeout { get; set; }
+
+
+
+
         /// <summary>
         /// Returns the connection string.
         /// </summary>

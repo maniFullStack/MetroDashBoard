@@ -51,6 +51,11 @@ namespace GCC_Web_Portal
 			}
 		}
 
+
+
+
+		protected GCCPropertyShortCode NoSpecificPropertyShortCode { get; set; }
+
 		protected GCCPropertyShortCode AlignedPropertyShortCode
 		{
 			get
@@ -58,10 +63,41 @@ namespace GCC_Web_Portal
 				if (Master.PropertyShortCode == GCCPropertyShortCode.GCC)
 				{
 					int selectedProp = Conversion.StringToInt(fbkProperty.SelectedValue, 0);
-					if (selectedProp != 0)
+
+
+					if (fbkProperty.SelectedIndex == 24 && selectedProp == 1)   // No specific Property
+					{
+
+						int selectedNoSpecificProp = Conversion.StringToInt(fbkDirectQuestion.SelectedValue, 0);
+						if (selectedNoSpecificProp != 0)
+						{
+							try
+							{
+								GCCPropertyShortCode sc = (GCCPropertyShortCode)selectedNoSpecificProp;
+								return sc;
+							}
+							catch
+							{
+								return GCCPropertyShortCode.GCC;
+							}
+						}
+						else
+						{
+							return GCCPropertyShortCode.GCC;
+						}
+
+					}
+
+
+
+					if (selectedProp != 0 && fbkProperty.SelectedIndex != 24)
 					{
 						try
 						{
+
+
+
+
 							GCCPropertyShortCode sc = (GCCPropertyShortCode)selectedProp;
 							return sc;
 						}
@@ -70,15 +106,19 @@ namespace GCC_Web_Portal
 							return GCCPropertyShortCode.GCC;
 						}
 					}
-					else
-					{
-						return GCCPropertyShortCode.GCC;
-					}
+
+				   
+					return GCCPropertyShortCode.GCC;
 				}
 				else
 				{
 					return Master.PropertyShortCode;
 				}
+
+
+
+
+
 			}
 		}
 
@@ -157,14 +197,15 @@ namespace GCC_Web_Portal
 				fbkProperty.Items.Insert(21, new ListItem(Lang.Page1_Question2_26, "26"));
 				fbkProperty.Items.Insert(22, new ListItem(Lang.Page1_Question2_27, "27"));
 				fbkProperty.Items.Insert(23, new ListItem(Lang.Page1_Question2_28, "28"));
-				
+                
 				fbkProperty.Items.Insert(24, new ListItem(Lang.Page1_Question2_1, "1")); //No Specific Property
 
-				fbkDirectQuestion.Items.Insert(1, new ListItem(Lang.Page1_Question2B_1, "1"));
-				fbkDirectQuestion.Items.Insert(2, new ListItem(Lang.Page1_Question2B_2, "2"));
-				fbkDirectQuestion.Items.Insert(3, new ListItem(Lang.Page1_Question2B_3, "3"));
-				fbkDirectQuestion.Items.Insert(4, new ListItem(Lang.Page1_Question2B_4, "4"));
-				fbkDirectQuestion.Items.Insert(5, new ListItem(Lang.Page1_Question2B_5, "5"));
+
+				fbkDirectQuestion.Items.Insert(1, new ListItem(Lang.Page1_Question2B_1, "91"));
+				fbkDirectQuestion.Items.Insert(2, new ListItem(Lang.Page1_Question2B_2, "92"));
+				fbkDirectQuestion.Items.Insert(3, new ListItem(Lang.Page1_Question2B_3, "93"));
+				fbkDirectQuestion.Items.Insert(4, new ListItem(Lang.Page1_Question2B_4, "94"));
+				fbkDirectQuestion.Items.Insert(5, new ListItem(Lang.Page1_Question2B_5, "95"));
 
 				//fbkProperty.Items.Insert(16, new ListItem(Lang.Page1_Question2_17, "19"));
 
@@ -201,25 +242,25 @@ namespace GCC_Web_Portal
 
 				//PAGE 3 -- Initialize Drop Down Menus
 				fbkQ2.Items.Insert(1, new ListItem(Lang.Page3_Question1_1, "15"));
-				fbkQ2.Items.Insert(2, new ListItem(Lang.Page3_Question1_2, "17"));
-				fbkQ2.Items.Insert(3, new ListItem(Lang.Page3_Question1_3, "1"));
-				fbkQ2.Items.Insert(4, new ListItem(Lang.Page3_Question1_4, "3"));
-				fbkQ2.Items.Insert(5, new ListItem(Lang.Page3_Question1_5, "2"));
-				fbkQ2.Items.Insert(6, new ListItem(Lang.Page3_Question1_6, "6"));
-				fbkQ2.Items.Insert(7, new ListItem(Lang.Page3_Question1_7, "13"));
-				fbkQ2.Items.Insert(8, new ListItem(Lang.Page3_Question1_8, "5"));
-				fbkQ2.Items.Insert(9, new ListItem(Lang.Page3_Question1_9, "21"));
-				fbkQ2.Items.Insert(10, new ListItem(Lang.Page3_Question1_10, "4"));
-				fbkQ2.Items.Insert(11, new ListItem(Lang.Page3_Question1_11, "20"));
-				fbkQ2.Items.Insert(12, new ListItem(Lang.Page3_Question1_12, "10"));
-				fbkQ2.Items.Insert(13, new ListItem(Lang.Page3_Question1_13, "19"));
-				fbkQ2.Items.Insert(14, new ListItem(Lang.Page3_Question1_14, "16"));
-				fbkQ2.Items.Insert(15, new ListItem(Lang.Page3_Question1_15, "14"));
-				fbkQ2.Items.Insert(16, new ListItem(Lang.Page3_Question1_16, "7"));
-				fbkQ2.Items.Insert(17, new ListItem(Lang.Page3_Question1_17, "11"));
+				fbkQ2.Items.Insert(2, new ListItem(Lang.Page3_Question1_19, "32"));
+				fbkQ2.Items.Insert(3, new ListItem(Lang.Page3_Question1_2, "17"));
+				fbkQ2.Items.Insert(4, new ListItem(Lang.Page3_Question1_3, "1"));
+				fbkQ2.Items.Insert(5, new ListItem(Lang.Page3_Question1_4, "3"));
+				fbkQ2.Items.Insert(6, new ListItem(Lang.Page3_Question1_5, "2"));
+				fbkQ2.Items.Insert(7, new ListItem(Lang.Page3_Question1_6, "6"));
+				fbkQ2.Items.Insert(8, new ListItem(Lang.Page3_Question1_7, "13"));
+				fbkQ2.Items.Insert(9, new ListItem(Lang.Page3_Question1_8, "5"));
+				fbkQ2.Items.Insert(10, new ListItem(Lang.Page3_Question1_9, "21"));
+				fbkQ2.Items.Insert(11, new ListItem(Lang.Page3_Question1_10, "4"));
+				fbkQ2.Items.Insert(12, new ListItem(Lang.Page3_Question1_11, "20"));
+				fbkQ2.Items.Insert(13, new ListItem(Lang.Page3_Question1_12, "10"));
+				fbkQ2.Items.Insert(14, new ListItem(Lang.Page3_Question1_13, "19"));
+				fbkQ2.Items.Insert(15, new ListItem(Lang.Page3_Question1_14, "16"));
+				fbkQ2.Items.Insert(16, new ListItem(Lang.Page3_Question1_15, "14"));
+				fbkQ2.Items.Insert(17, new ListItem(Lang.Page3_Question1_16, "7"));
+				fbkQ2.Items.Insert(18, new ListItem(Lang.Page3_Question1_17, "11"));
 				
 
-				fbkQ2.Items.Insert(18, new ListItem(Lang.Page3_Question1_19, "32"));
 				fbkQ2.Items.Insert(19, new ListItem(Lang.Page3_Question1_18, "12"));
 
 		   
@@ -239,56 +280,47 @@ namespace GCC_Web_Portal
 			int j = 1;
 
 			//slots
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH","AJA","ECB","ECF","ECGR","ECM" }.Contains(AlignedPropertyShortCode.ToString()));
-			
-			
-			
-			//Table Games / Poker
-					
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "VRL", "NAN", "GAG", "CNSH", "CNSS", "EC", "SCTI", "CNB", "SCBE", "WDB", "GBH", "ECB"}.Contains(AlignedPropertyShortCode.ToString()));
-
-
-
-
+            fbkQ2.Items[j++].Enabled = (new[] { "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECB", "ECF", "ECGR", "ECM" }.Contains(AlignedPropertyShortCode.ToString()));
+            //Electronic Table Games	
+            fbkQ2.Items[j++].Enabled = (new[] { "ECM", "ECF" }.Contains(AlignedPropertyShortCode.ToString()));
+            //Table Games / Poker
+            fbkQ2.Items[j++].Enabled = (new[] { "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "VRL", "NAN", "GAG", "CNSH", "CNSS", "EC", "SCTI", "CNB", "SCBE", "WDB", "GBH", "ECB" }.Contains(AlignedPropertyShortCode.ToString()));
+                     
 			//Bingo
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "CCH", "CMR", "CDC" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "GCC", "CCH", "CMR", "CDC" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Food & Beverage
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA","ECM","ECB", "ECF","ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Entertainment
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "CCH", "CMR", "CDC", "CNSH", "EC","ECM", "ECB", "ECF" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "CCH", "CMR", "CDC", "CNSH", "EC", "ECM", "ECB", "ECF" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Hotel
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR" }.Contains(AlignedPropertyShortCode.ToString()));
+            fbkQ2.Items[j++].Enabled = (new[] { "BCO", "NSB", "GCC", "RR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Racebook
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "NAN", "CMR", "CNSS", "EC", "SSKD", "SCBE", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "GCC", "RR", "HRCV", "HA", "NAN", "CMR", "CNSS", "EC", "SSKD", "SCBE", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Horse Racing
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "HA", "CNSS", "EC", "ECF", "ECM", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "ONO", "GCC", "HA", "CNSS", "EC", "ECF", "ECM", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Motorcoach / Bus Tours
 			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "CNSH" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Guest Services
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Parking
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECF", "ECGR","ECB" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECF", "ECGR", "ECB" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Marketing & Promotions
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECF", "ECGR","ECB" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "CO", "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECF", "ECGR", "ECB" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Group Sales / Catering / Events
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "CNSH", "SSKD", "SCTI", "SCBE", "CNB", "WDB", "GBH", "AJA","ECM", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "CNSH", "SSKD", "SCTI", "SCBE", "CNB", "WDB", "GBH", "AJA", "ECM", "ECF", "ECGR", "ECB" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Sponsorship Request
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "CO", "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Responsible Gaming
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "CO", "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Investor Relations
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB" , "ECF", "ECGR"}.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "CO", "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Media Requests & Inquiries
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "CO", "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Other
-			fbkQ2.Items[j++].Enabled = (new[] { "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "AJA","ECM","ECB","ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "CO", "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 
 
-			//Electronic Table Games	
-			//Other
-			fbkQ2.Items[j++].Enabled = (new[] {"ECM", "ECF"}.Contains(AlignedPropertyShortCode.ToString()));
-
-
+		
 
 
 
@@ -506,6 +538,53 @@ namespace GCC_Web_Portal
 					gagLocation = " - " + gagLocation;
 				}
 			}
+
+
+
+
+			// 2018 04 18 Adding notification users for no specific property
+			// Adding proper PropertyID for No Specific Property Region Operations
+
+			//if (AlignedPropertyShortCode == GCCPropertyShortCode.GCC && fbkProperty.SelectedIndex == 24)   // No specific Property
+			//{
+
+
+			//    if (Master.PropertyShortCode == GCCPropertyShortCode.GCC)
+			//    {
+			//        int selectedProp = Conversion.StringToInt(fbkDirectQuestion.SelectedValue, 0);
+			//        if (selectedProp != 0)
+			//        {
+			//            try
+			//            {
+			//                GCCPropertyShortCode sc = (GCCPropertyShortCode)selectedProp;
+			//                NoSpecificPropertyShortCode = sc;
+			//            }
+			//            catch
+			//            {
+			//                NoSpecificPropertyShortCode = GCCPropertyShortCode.GCC;
+			//            }
+			//        }
+			//        else
+			//        {
+			//            NoSpecificPropertyShortCode = GCCPropertyShortCode.GCC;
+			//        }
+			//    }
+			//    else
+			//    {
+			//        NoSpecificPropertyShortCode = Master.PropertyShortCode;
+			//    }
+
+
+
+
+
+
+
+
+			//  //  AlignedPropertyShortCode = (GCCPropertyShortCode)Convert.ToInt32(fbkDirectQuestion.SelectedValue.ToString());
+
+			//}
+
 
 			NotificationReason nr = (NotificationReason)fbkQ2.SelectedValue.StringToInt();
 			//Send the notification

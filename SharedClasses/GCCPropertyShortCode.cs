@@ -148,12 +148,48 @@ namespace SharedClasses {
 
 
 
-
-        	  ///<summary>
-        ///Great Blue Heron CasinoElements Casino Mohawk
-
 		///</summary>
-		ECM = 28
+        ///ElementsCasino Mohawk
+        
+		ECM = 28,
+
+
+
+        ///</summary>
+        ///Ontario Operations
+        ONO = 91,
+
+
+
+        ///</summary>
+        ///Nova Scotia and New Brunswick
+        NSB = 92,
+
+
+
+        ///</summary>
+        ///British Columbia Operations
+        BCO = 93,
+
+
+
+        ///</summary>
+        ///Washington State Operations
+        WSO = 94,
+
+
+
+        ///</summary>
+        ///Corporate Office
+        CO  = 95
+
+
+
+
+
+
+
+
 
 	}
 }

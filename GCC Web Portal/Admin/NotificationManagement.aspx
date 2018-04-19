@@ -82,15 +82,20 @@
                                     <asp:ListItem Text="Shorelines Casino Thousand Islands" Value="18"></asp:ListItem>
                                     <asp:ListItem Text="Shorelines Casino Belleville" Value="20"></asp:ListItem>
                                     <asp:ListItem Text="Casino New Brunswick" Value="19"></asp:ListItem>
-                                    
+
                                     <asp:ListItem Text="Bingo Esquimalt" Value="21"></asp:ListItem>
                                     <asp:ListItem Text="Casino Woodbine" Value="22"></asp:ListItem>
                                     <asp:ListItem Text="Casino Ajax" Value="23"></asp:ListItem>
                                     <asp:ListItem Text="Great Blue Heron Casino" Value="24"></asp:ListItem>
                                     <asp:ListItem Text="Elements Casino Brantford" Value="25"></asp:ListItem>
-                                <asp:ListItem Text="Elements Casino Flamboro" Value="26"></asp:ListItem>
-                                <asp:ListItem Text="Elements Casino Grand River" Value="27"></asp:ListItem>
-                                <asp:ListItem Text="Elements Casino Mohawk" Value="28"></asp:ListItem>
+                                    <asp:ListItem Text="Elements Casino Flamboro" Value="26"></asp:ListItem>
+                                    <asp:ListItem Text="Elements Casino Grand River" Value="27"></asp:ListItem>
+                                    <asp:ListItem Text="Elements Casino Mohawk" Value="28"></asp:ListItem>
+                                    <asp:ListItem Text="Ontario Operations" Value="91"></asp:ListItem>
+                                    <asp:ListItem Text="Nova Scotia and New Brunsqick Operations" Value="92"></asp:ListItem>
+                                    <asp:ListItem Text="British Columbia Operations" Value="93"></asp:ListItem>
+                                    <asp:ListItem Text="Washington State Operations" Value="94"></asp:ListItem>
+                                    <asp:ListItem Text="Corporate Office" Value="95"></asp:ListItem>
 
                                 </asp:DropDownList>
                             </div>
@@ -252,13 +257,13 @@
             $mtr.prepend($tds.clone());
             $('#<%= hdnPSRID.ClientID %>').val($btn.data('p'));
 
-        $.getJSON(
-            "/Admin/NotificationManagement/?a=1&t=2",
-            { p: $btn.data('p') },
-            function (data) {
-                if (data.s === 0) {
-                    // constructs the suggestion engine
-                    var $ddl = $('#<%= ddlUserSearch.ClientID %>');
+            $.getJSON(
+                "/Admin/NotificationManagement/?a=1&t=2",
+                { p: $btn.data('p') },
+                function (data) {
+                    if (data.s === 0) {
+                        // constructs the suggestion engine
+                        var $ddl = $('#<%= ddlUserSearch.ClientID %>');
                     $ddl.empty();
                     $.each(data.ubh, function (i, u) {
                         $ddl.append('<option value="' + u.i + '">' + u.n + '</option>');
@@ -268,8 +273,8 @@
                     alert("We were unable to load the user list. Please refresh the page and try again.");
                 }
             });
-        evt.preventDefault();
-    });
+            evt.preventDefault();
+        });
         $('#results').on("click", "a.rm", function (evt) {
             if (confirm("Are you sure you want to remove this user?")) {
                 var $li = $(this).parents('li');

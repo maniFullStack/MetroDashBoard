@@ -34,7 +34,13 @@ namespace SharedClasses {
         ElementsCasinoBrantford = 25,
         ElementsCasinoFlamboro = 26,
         ElementsCasinoGrandRiver = 27,
-        ElementsCasinoMohawk = 28
+        ElementsCasinoMohawk = 28,
+        OntarioOperations = 91,
+        NovaScotiaandNewBrunswuickOperations = 92,
+        BritishColumbiaOperations = 93,
+        WashingtonStateOperations = 94,
+        CorporateOffice = 95
+
 
     }
 }
