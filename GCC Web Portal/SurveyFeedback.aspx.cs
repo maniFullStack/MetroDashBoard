@@ -197,7 +197,7 @@ namespace GCC_Web_Portal
 				fbkProperty.Items.Insert(21, new ListItem(Lang.Page1_Question2_26, "26"));
 				fbkProperty.Items.Insert(22, new ListItem(Lang.Page1_Question2_27, "27"));
 				fbkProperty.Items.Insert(23, new ListItem(Lang.Page1_Question2_28, "28"));
-                
+				
 				fbkProperty.Items.Insert(24, new ListItem(Lang.Page1_Question2_1, "1")); //No Specific Property
 
 
@@ -280,12 +280,12 @@ namespace GCC_Web_Portal
 			int j = 1;
 
 			//slots
-            fbkQ2.Items[j++].Enabled = (new[] { "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECB", "ECF", "ECGR", "ECM" }.Contains(AlignedPropertyShortCode.ToString()));
-            //Electronic Table Games	
-            fbkQ2.Items[j++].Enabled = (new[] { "ECM", "ECF" }.Contains(AlignedPropertyShortCode.ToString()));
-            //Table Games / Poker
-            fbkQ2.Items[j++].Enabled = (new[] { "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "VRL", "NAN", "GAG", "CNSH", "CNSS", "EC", "SCTI", "CNB", "SCBE", "WDB", "GBH", "ECB" }.Contains(AlignedPropertyShortCode.ToString()));
-                     
+			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECB", "ECF", "ECGR", "ECM" }.Contains(AlignedPropertyShortCode.ToString()));
+			//Electronic Table Games	
+			fbkQ2.Items[j++].Enabled = (new[] { "ECM", "ECF" }.Contains(AlignedPropertyShortCode.ToString()));
+			//Table Games / Poker
+			fbkQ2.Items[j++].Enabled = (new[] { "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "VRL", "NAN", "GAG", "CNSH", "CNSS", "EC", "SCTI", "CNB", "SCBE", "WDB", "GBH", "ECB" }.Contains(AlignedPropertyShortCode.ToString()));
+					 
 			//Bingo
 			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "GCC", "CCH", "CMR", "CDC" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Food & Beverage
@@ -293,7 +293,7 @@ namespace GCC_Web_Portal
 			//Entertainment
 			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "CCH", "CMR", "CDC", "CNSH", "EC", "ECM", "ECB", "ECF" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Hotel
-            fbkQ2.Items[j++].Enabled = (new[] { "BCO", "NSB", "GCC", "RR" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "NSB", "GCC", "RR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Racebook
 			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "GCC", "RR", "HRCV", "HA", "NAN", "CMR", "CNSS", "EC", "SSKD", "SCBE", "AJA" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Horse Racing

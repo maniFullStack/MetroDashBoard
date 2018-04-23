@@ -274,20 +274,20 @@
 
 
         <div class="row">
-            <div class="col-xs-6 col-md-5">Elements Casino Flamboro (Flamboro, ON)</div>
+            <div class="col-xs-6 col-md-5">Elements Casino Flamboro (Dundas, ON)</div>
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11X_PastSupport" SessionKey="Q11X_PastSupport" DBColumn="Q11T_PastSupport" DBValue="1" /></div>
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11X_CurrentRequest" SessionKey="Q11X_CurrentRequest" DBColumn="Q11T_CurrentRequest" DBValue="1" /></div>
         </div>
 
 
         <div class="row">
-            <div class="col-xs-6 col-md-5">Elements Casino Grand River (Grand River, ON)</div>
+            <div class="col-xs-6 col-md-5">Elements Casino Grand River (Elora, ON)</div>
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11Y_PastSupport" SessionKey="Q11Y_PastSupport" DBColumn="Q11T_PastSupport" DBValue="1" /></div>
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11Y_CurrentRequest" SessionKey="Q11Y_CurrentRequest" DBColumn="Q11T_CurrentRequest" DBValue="1" /></div>
         </div>
 
         <div class="row">
-            <div class="col-xs-6 col-md-5">Elements Casino Mohawk (Mohawk, ON)</div>
+            <div class="col-xs-6 col-md-5">Elements Casino Mohawk (Cambelville, ON)</div>
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11Z_PastSupport" SessionKey="Q11Z_PastSupport" DBColumn="Q11T_PastSupport" DBValue="1" /></div>
             <div class="col-xs-3 col-md-2 text-center"><sc:SurveyCheckBox runat="server" ID="Q11Z_CurrentRequest" SessionKey="Q11Z_CurrentRequest" DBColumn="Q11T_CurrentRequest" DBValue="1" /></div>
         </div>
