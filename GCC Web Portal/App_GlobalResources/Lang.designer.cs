@@ -539,7 +539,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to View Royal Casino.
+        ///   Looks up a localized string similar to Elements Casino Victoria.
         /// </summary>
         internal static string Page1_Question2_16 {
             get {

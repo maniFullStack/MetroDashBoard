@@ -1605,8 +1605,8 @@
 					<sc:SurveyCheckBox ID="Q18_12" runat="server" SessionKey="Q18_12" DBColumn="Q18_12" DBValue="1" Text="&nbsp;Jade Room" /><br />
 					<sc:SurveyCheckBox ID="Q18_13" runat="server" SessionKey="Q18_13" DBColumn="Q18_13" DBValue="1" Text="&nbsp;Phoenix Room" /><br />
 					<% } %>
-					<%--<% if (PropertyShortCode == GCCPropertyShortCode.FD || PropertyShortCode == GCCPropertyShortCode.EC) { %>--%>
-					<% if (PropertyShortCode == GCCPropertyShortCode.EC)
+					<%--<% if (PropertyShortCode == GCCPropertyShortCode.FD || PropertyShortCode == GCCPropertyShortCode.ECS) { %>--%>
+					<% if (PropertyShortCode == GCCPropertyShortCode.ECS)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_21" runat="server" SessionKey="Q18_21" DBColumn="Q18_21" DBValue="1" Text="&nbsp;The Homestretch Buffet" /><br />
 					<% } %>
@@ -1615,8 +1615,8 @@
 					<sc:SurveyCheckBox ID="Q18_23" runat="server" SessionKey="Q18_23" DBColumn="Q18_23" DBValue="1" Text="&nbsp;The Clubhouse Buffet" /><br />
 					<sc:SurveyCheckBox ID="Q18_24" runat="server" SessionKey="Q18_24" DBColumn="Q18_24" DBValue="1" Text="&nbsp;Casino Bar" /><br />
 					<% } %>--%>
-					<%--<% if (PropertyShortCode == GCCPropertyShortCode.FD || PropertyShortCode == GCCPropertyShortCode.EC) { %>--%>
-					<% if (PropertyShortCode == GCCPropertyShortCode.EC)
+					<%--<% if (PropertyShortCode == GCCPropertyShortCode.FD || PropertyShortCode == GCCPropertyShortCode.ECS) { %>--%>
+					<% if (PropertyShortCode == GCCPropertyShortCode.ECS)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_25" runat="server" SessionKey="Q18_25" DBColumn="Q18_25" DBValue="1" Text="&nbsp;Racebook" /><br />
 					<% } %>
@@ -1629,11 +1629,29 @@
 					<sc:SurveyCheckBox ID="Q18_30" runat="server" SessionKey="Q18_30" DBColumn="Q18_30" DBValue="1" Text="&nbsp;George Royal Room" /><br />
 					<sc:SurveyCheckBox ID="Q18_31" runat="server" SessionKey="Q18_31" DBColumn="Q18_31" DBValue="1" Text="&nbsp;Concessions" /><br />
 					<% } %>
-					<% if (PropertyShortCode == GCCPropertyShortCode.VRL)
+					
+                    
+                    
+                    
+                  <%--  <% if (PropertyShortCode == GCCPropertyShortCode.ECV)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_32" runat="server" SessionKey="Q18_32" DBColumn="Q18_32" DBValue="1" Text="&nbsp;View Royal Restaurant" /><br />
 					<sc:SurveyCheckBox ID="Q18_33" runat="server" SessionKey="Q18_33" DBColumn="Q18_33" DBValue="1" Text="&nbsp;View Royal Patio" /><br />
+					<% } %>--%>
+
+                    <% if (PropertyShortCode == GCCPropertyShortCode.ECV)
+					   { %>
+					<sc:SurveyCheckBox ID="Q18_69" runat="server" SessionKey="Q18_69" DBColumn="Q18_69" DBValue="1" Text="&nbsp;The Well Public House" /><br />
+					<sc:SurveyCheckBox ID="Q18_70" runat="server" SessionKey="Q18_70" DBColumn="Q18_70" DBValue="1" Text="&nbsp;Chi Express" /><br />
+                    <sc:SurveyCheckBox ID="Q18_71" runat="server" SessionKey="Q18_71" DBColumn="Q18_71" DBValue="1" Text="&nbsp;The Diamond Buffet" /><br />
+                    <sc:SurveyCheckBox ID="Q18_72" runat="server" SessionKey="Q18_72" DBColumn="Q18_72" DBValue="1" Text="&nbsp;1708 Quick Bites" /><br />
 					<% } %>
+
+
+
+
+
+
 					<% if (PropertyShortCode == GCCPropertyShortCode.NAN)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_34" runat="server" SessionKey="Q18_34" DBColumn="Q18_34" DBValue="1" Text="&nbsp;Black Diamond Bar & Grille" /><br />
@@ -1669,7 +1687,7 @@
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_42" runat="server" SessionKey="Q18_42" DBColumn="Q18_42" DBValue="1" Text="&nbsp;Bar / Restuarant at Great American Casino" /><br />
 					<% } %>
-					<% if (PropertyShortCode == GCCPropertyShortCode.EC)
+					<% if (PropertyShortCode == GCCPropertyShortCode.ECS)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_43" runat="server" SessionKey="Q18_43" DBColumn="Q18_43" DBValue="1" Text="&nbsp;Diamond Buffet" /><br />
 					<sc:SurveyCheckBox ID="Q18_44" runat="server" SessionKey="Q18_44" DBColumn="Q18_44" DBValue="1" Text="&nbsp;Foodies" /><br />
@@ -1794,8 +1812,8 @@
 					<sc:SurveyCheckBox ID="Q18_12_F" runat="server" SessionKey="Q18_12" DBColumn="Q18_12" DBValue="1" Text="&nbsp;Chambre Jade" /><br />
 					<sc:SurveyCheckBox ID="Q18_13_F" runat="server" SessionKey="Q18_13" DBColumn="Q18_13" DBValue="1" Text="&nbsp;Chambre Phoenix" /><br />
 					<% } %>
-					<%--<% if (PropertyShortCode == GCCPropertyShortCode.FD || PropertyShortCode == GCCPropertyShortCode.EC) { %>--%>
-					<% if (PropertyShortCode == GCCPropertyShortCode.EC)
+					<%--<% if (PropertyShortCode == GCCPropertyShortCode.FD || PropertyShortCode == GCCPropertyShortCode.ECS) { %>--%>
+					<% if (PropertyShortCode == GCCPropertyShortCode.ECS)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_21_F" runat="server" SessionKey="Q18_21" DBColumn="Q18_21" DBValue="1" Text="&nbsp;Le Buffet Homestretch" /><br />
 					<% } %>
@@ -1804,8 +1822,8 @@
 					<sc:SurveyCheckBox ID="Q18_23" runat="server" SessionKey="Q18_23" DBColumn="Q18_23" DBValue="1" Text="&nbsp;The Clubhouse Buffet" /><br />
 					<sc:SurveyCheckBox ID="Q18_24" runat="server" SessionKey="Q18_24" DBColumn="Q18_24" DBValue="1" Text="&nbsp;Casino Bar" /><br />
 					<% } %>--%>
-					<%--<% if (PropertyShortCode == GCCPropertyShortCode.FD || PropertyShortCode == GCCPropertyShortCode.EC) { %>--%>
-					<% if (PropertyShortCode == GCCPropertyShortCode.EC)
+					<%--<% if (PropertyShortCode == GCCPropertyShortCode.FD || PropertyShortCode == GCCPropertyShortCode.ECS) { %>--%>
+					<% if (PropertyShortCode == GCCPropertyShortCode.ECS)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_25_F" runat="server" SessionKey="Q18_25" DBColumn="Q18_25" DBValue="1" Text="&nbsp;Carnet de course" /><br />
 					<% } %>
@@ -1818,11 +1836,24 @@
 					<sc:SurveyCheckBox ID="Q18_30_F" runat="server" SessionKey="Q18_30" DBColumn="Q18_30" DBValue="1" Text="&nbsp;Chambre George Royal" /><br />
 					<sc:SurveyCheckBox ID="Q18_31_F" runat="server" SessionKey="Q18_31" DBColumn="Q18_31" DBValue="1" Text="&nbsp;Concessions" /><br />
 					<% } %>
-					<% if (PropertyShortCode == GCCPropertyShortCode.VRL)
+					<%--<% if (PropertyShortCode == GCCPropertyShortCode.ECV)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_32_F" runat="server" SessionKey="Q18_32" DBColumn="Q18_32" DBValue="1" Text="&nbsp;Voir Royal Restaurant" /><br />
 					<sc:SurveyCheckBox ID="Q18_33_F" runat="server" SessionKey="Q18_33" DBColumn="Q18_33" DBValue="1" Text="&nbsp;Voir Royal Patio" /><br />
+					<% } %>--%>
+
+
+                     <% if (PropertyShortCode == GCCPropertyShortCode.ECV)
+					   { %>
+					<sc:SurveyCheckBox ID="Q18_69_F" runat="server" SessionKey="Q18_69" DBColumn="Q18_69" DBValue="1" Text="&nbsp;The Well Public House" /><br />
+					<sc:SurveyCheckBox ID="Q18_70_F" runat="server" SessionKey="Q18_70" DBColumn="Q18_70" DBValue="1" Text="&nbsp;Chi Express" /><br />
+                    <sc:SurveyCheckBox ID="Q18_71_F" runat="server" SessionKey="Q18_71" DBColumn="Q18_71" DBValue="1" Text="&nbsp;The Diamond Buffet" /><br />
+                    <sc:SurveyCheckBox ID="Q18_72_F" runat="server" SessionKey="Q18_72" DBColumn="Q18_72" DBValue="1" Text="&nbsp;1708 Quick Bites" /><br />
 					<% } %>
+
+
+
+
 					<% if (PropertyShortCode == GCCPropertyShortCode.NAN)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_34_F" runat="server" SessionKey="Q18_34" DBColumn="Q18_34" DBValue="1" Text="&nbsp;Black Diamond Bar & Grille" /><br />
@@ -1856,7 +1887,7 @@
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_42_F" runat="server" SessionKey="Q18_42" DBColumn="Q18_42" DBValue="1" Text="&nbsp;Bar / Restaurant au Great American Casino" /><br />
 					<% } %>
-					<% if (PropertyShortCode == GCCPropertyShortCode.EC)
+					<% if (PropertyShortCode == GCCPropertyShortCode.ECS)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_43_F" runat="server" SessionKey="Q18_43" DBColumn="Q18_43" DBValue="1" Text="&nbsp;Buffet de diamants" /><br />
 					<sc:SurveyCheckBox ID="Q18_44_F" runat="server" SessionKey="Q18_44" DBColumn="Q18_44" DBValue="1" Text="&nbsp;Gourmandises" /><br />
@@ -1985,7 +2016,8 @@
 				<uc1:QuestionRowControl runat="server" ID="Q20G_M1" SessionKey="Q20G_M1" DBColumn="Q20G_M1" ShowNAColumn="True" Label="Quality of food" />
 				<% } %>
 				<% } %>
-				<% if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked)
+				<%--<% if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked)--%>
+                <% if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked || Q18_69.Checked)
 				   { %>
 				<h2>Food & Beverage Experience - <%= GetFoodAndBevName(2) %></h2>
 				<p class="question">
@@ -2018,8 +2050,9 @@
 				<uc1:QuestionRowControl runat="server" ID="Q20G_M2" SessionKey="Q20G_M2" DBColumn="Q20G_M2" ShowNAColumn="True" Label="Quality of food" />
 				<% } %>
 				<% } %>
-				<%--<% if (Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked) { %>--%>
-				<% if (Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked)
+				<%--<% if (Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked) { %>--%>
+				<%--<% if (Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked)--%>
+                <% if (Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS) || Q18_27.Checked|| Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked || Q18_70.Checked)
 				   { %>
 				<h2>Food & Beverage Experience - <%= GetFoodAndBevName(3) %></h2>
 				<p class="question">
@@ -2050,7 +2083,7 @@
 				<% } %>
 				<% } %>
 				<%-- <% if (Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked) { %>--%>
-				<% if (Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked|| Q18_65.Checked || Q18_68.Checked)
+				<% if (Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked|| Q18_65.Checked || Q18_68.Checked || Q18_71.Checked)
 				   { %>
 				<h2>Food & Beverage Experience - <%= GetFoodAndBevName(4) %></h2>
 				<p class="question">
@@ -2081,7 +2114,7 @@
 				<% } %>
 				<% } %>
 				<%--  <% if (Q18_5.Checked || Q18_17.Checked || Q18_24.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked) { %>--%>
-				<% if (Q18_5.Checked || Q18_17.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked || Q18_52.Checked  || Q18_62.Checked)
+				<% if (Q18_5.Checked || Q18_17.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked || Q18_52.Checked  || Q18_62.Checked || Q18_72.Checked)
 				   { %>
 				<h2>Food & Beverage Experience - <%= GetFoodAndBevName(5) %></h2>
 				<p class="question">
@@ -2111,7 +2144,7 @@
 				<uc1:QuestionRowControl runat="server" ID="Q20G_M5" SessionKey="Q20G_M5" DBColumn="Q20G_M5" ShowNAColumn="True" Label="Quality of food" />
 				<% } %>
 				<% } %>
-				<% if (Q18_6.Checked || Q18_18.Checked || (Q18_25.Checked && PropertyShortCode != GCCPropertyShortCode.EC) || Q18_30.Checked || (Q18_9.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45.Checked)
+				<% if (Q18_6.Checked || Q18_18.Checked || (Q18_25.Checked && PropertyShortCode != GCCPropertyShortCode.ECS) || Q18_30.Checked || (Q18_9.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45.Checked)
 				   { %>
 				<h2>Food & Beverage Experience - <%= GetFoodAndBevName(6) %></h2>
 				<p class="question">
@@ -2396,7 +2429,7 @@
 				<uc1:QuestionRowControl runat="server" ID="Q20G_M1_F" SessionKey="Q20G_M1" DBColumn="Q20G_M1" ShowNAColumn="True" Label="Qualité de la nourriture" />
 				<% } %>
 				<% } %>
-				<% if (Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked || Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked || Q18_63_F.Checked || Q18_66_F.Checked)
+				<% if (Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_69_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked || Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked || Q18_63_F.Checked || Q18_66_F.Checked)
 				   { %>
 				<h2>Expérience restauration - <%= GetFoodAndBevName_French(2) %></h2>
 				<p class="question">
@@ -2428,8 +2461,8 @@
 				<uc1:QuestionRowControl runat="server" ID="Q20G_M2_F" SessionKey="Q20G_M2" DBColumn="Q20G_M2" ShowNAColumn="True" Label="Qualité de la nourriture" />
 				<% } %>
 				<% } %>
-				<%--<% if (Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked) { %>--%>
-				<% if (Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27_F.Checked || Q18_33_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked || Q18_54_F.Checked || Q18_56_F.Checked || Q18_60_F.Checked || Q18_64_F.Checked || Q18_67_F.Checked)
+				<%--<% if (Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked) { %>--%>
+				<% if (Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.ECS) || Q18_27_F.Checked || Q18_70_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked || Q18_54_F.Checked || Q18_56_F.Checked || Q18_60_F.Checked || Q18_64_F.Checked || Q18_67_F.Checked)
 				   { %>
 				<h2>Expérience restauration - <%= GetFoodAndBevName_French(3) %></h2>
 				<p class="question">
@@ -2460,7 +2493,7 @@
 				<% } %>
 				<% } %>
 				<%-- <% if (Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked) { %>--%>
-				<% if (Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked || Q18_65_F.Checked || Q18_68_F.Checked)
+				<% if (Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked || Q18_65_F.Checked || Q18_68_F.Checked || Q18_71_F.Checked)
 				   { %>
 				<h2>Expérience restauration - <%= GetFoodAndBevName_French(4) %></h2>
 				<p class="question">
@@ -2491,7 +2524,7 @@
 				<% } %>
 				<% } %>
 				<%--  <% if (Q18_5.Checked || Q18_17.Checked || Q18_24.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked) { %>--%>
-				<% if (Q18_5_F.Checked || Q18_17_F.Checked || Q18_29_F.Checked || Q18_40_F.Checked || Q18_44_F.Checked || Q18_52_F.Checked || Q18_62_F.Checked )
+				<% if (Q18_5_F.Checked || Q18_17_F.Checked || Q18_29_F.Checked || Q18_40_F.Checked || Q18_44_F.Checked || Q18_52_F.Checked || Q18_62_F.Checked || Q18_72_F.Checked)
 				   { %>
 				<h2>Expérience restauration - <%= GetFoodAndBevName_French(5) %></h2>
 				<p class="question">
@@ -2524,7 +2557,7 @@
 				<uc1:QuestionRowControl runat="server" ID="Q20G_M5_F" SessionKey="Q20G_M5" DBColumn="Q20G_M5" ShowNAColumn="True" Label="Qualité de la nourriture" />
 				<% } %>
 				<% } %>
-				<% if (Q18_6_F.Checked || Q18_18_F.Checked || (Q18_25_F.Checked && PropertyShortCode != GCCPropertyShortCode.EC) || Q18_30_F.Checked || (Q18_9_F.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45_F.Checked)
+				<% if (Q18_6_F.Checked || Q18_18_F.Checked || (Q18_25_F.Checked && PropertyShortCode != GCCPropertyShortCode.ECS) || Q18_30_F.Checked || (Q18_9_F.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45_F.Checked)
 				   { %>
 				<h2>Expérience restauration - <%= GetFoodAndBevName_French(6) %></h2>
 				<p class="question">
@@ -2797,12 +2830,12 @@
 				<h2>Entertainment</h2>
 				<% if (PropertyShortCode == GCCPropertyShortCode.RR
 					   || PropertyShortCode == GCCPropertyShortCode.HRCV
-					   || PropertyShortCode == GCCPropertyShortCode.VRL
+					   || PropertyShortCode == GCCPropertyShortCode.ECV
 					   || PropertyShortCode == GCCPropertyShortCode.CCH
 					   || PropertyShortCode == GCCPropertyShortCode.CMR
 					   || PropertyShortCode == GCCPropertyShortCode.CDC
 					   || PropertyShortCode == GCCPropertyShortCode.CNSH
-					   || PropertyShortCode == GCCPropertyShortCode.EC
+					   || PropertyShortCode == GCCPropertyShortCode.ECS
 					   || PropertyShortCode == GCCPropertyShortCode.SCTI					 
 					   || PropertyShortCode == GCCPropertyShortCode.CNB
 					   || PropertyShortCode == GCCPropertyShortCode.SCBE
@@ -2839,7 +2872,7 @@
 
 
 
-				<% if (PropertyShortCode == GCCPropertyShortCode.EC)
+				<% if (PropertyShortCode == GCCPropertyShortCode.ECS)
 				   { %>
 				<p class="question">
 					Which Show Lounge did you visit at Elements Casino?
@@ -2863,12 +2896,12 @@
 				<h2>Divertissement</h2>
 				<% if (PropertyShortCode == GCCPropertyShortCode.RR
 					   || PropertyShortCode == GCCPropertyShortCode.HRCV
-					   || PropertyShortCode == GCCPropertyShortCode.VRL
+					   || PropertyShortCode == GCCPropertyShortCode.ECV
 					   || PropertyShortCode == GCCPropertyShortCode.CCH
 					   || PropertyShortCode == GCCPropertyShortCode.CMR
 					   || PropertyShortCode == GCCPropertyShortCode.CDC
 					   || PropertyShortCode == GCCPropertyShortCode.CNSH
-					   || PropertyShortCode == GCCPropertyShortCode.EC
+					   || PropertyShortCode == GCCPropertyShortCode.ECS
 					   || PropertyShortCode == GCCPropertyShortCode.SCTI
 					 
 					   || PropertyShortCode == GCCPropertyShortCode.CNB
@@ -2902,7 +2935,7 @@
 				<sc:SurveyRadioButton ID="radQ21_HRCV_LoungeA_F" runat="server" GroupName="Q21_HRCV_Lounge" SessionKey="Q21_HRCV_LoungeA" DBColumn="Q21_HRCV_Lounge" DBValue="Asylum" Text="&nbsp;Asile" /><br />
 				<sc:SurveyRadioButton ID="radQ21_HRCV_LoungeU_F" runat="server" GroupName="Q21_HRCV_Lounge" SessionKey="Q21_HRCV_LoungeB" DBColumn="Q21_HRCV_Lounge" DBValue="UnListed" Text="&nbsp;Non répertorié" /><br />
 				<% } %>
-				<% if (PropertyShortCode == GCCPropertyShortCode.EC)
+				<% if (PropertyShortCode == GCCPropertyShortCode.ECS)
 				   { %>
 				<p class="question">
 					Quel Salon avez-vous visité au Casino Elements?

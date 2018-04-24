@@ -1722,7 +1722,7 @@
 					<td class="text-center"><%= Data["Q11D_CurrentRequest"].Equals( 1 ) ? "Yes" : "No" %></td>
 				</tr>--%>
 				<tr>
-					<th>View Royal Casino (Victoria, BC)</th>
+					<th>Elements Casino Victoria (Victoria, BC)</th>
 					<td class="text-center"><%= Data["Q11E_PastSupport"].Equals( 1 ) ? "Yes" : "No" %></td>
 					<td class="text-center"><%= Data["Q11E_CurrentRequest"].Equals( 1 ) ? "Yes" : "No" %></td>
 				</tr>

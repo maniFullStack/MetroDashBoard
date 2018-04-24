@@ -208,6 +208,7 @@
     <Content Include="Images\headers\ECGRHeader.jpg" />
     <Content Include="Images\headers\ECMHeader.jpg" />
     <Content Include="Images\headers\ElementsCasinoHeader.jpg" />
+    <Content Include="Images\headers\ElementsCasinoVictoriaHeader.jpg" />
     <Content Include="Images\headers\GBHHeader.jpg" />
     <Content Include="Images\headers\KawarthaDownsHeader.jpg" />
     <Content Include="Images\headers\ThousandIslandsHeader.jpg" />

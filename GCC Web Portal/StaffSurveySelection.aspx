@@ -53,7 +53,7 @@
                                 <asp:ListItem Text="Chances Chilliwack" Value="8"></asp:ListItem>
                                 <asp:ListItem Text="Chances Maple Ridge" Value="9"></asp:ListItem>
                                 <asp:ListItem Text="Chances Dawson Creek" Value="10"></asp:ListItem>
-                                <asp:ListItem Text="Elements Casino" Value="14"></asp:ListItem>
+                                <asp:ListItem Text="Elements Casino Surrey" Value="14"></asp:ListItem>
                                 <asp:ListItem Text="Great American Casino" Value="13"></asp:ListItem>
                               
                                   <%--<asp:ListItem Text="Fraser Downs Racetrack & Casino" Value="4"></asp:ListItem>--%>
@@ -65,7 +65,7 @@
                                 <asp:ListItem Text="Shorelines Casino Belleville" Value="20"></asp:ListItem>
                                    <asp:ListItem Text="Shorelines Casino Thousand Islands" Value="18"></asp:ListItem>
                               <asp:ListItem Text="Shorelines Slots at Kawartha Downs" Value="17"></asp:ListItem>
-                                  <asp:ListItem Text="View Royal Casino" Value="6"></asp:ListItem>
+                                  <asp:ListItem Text="Elements Casino Victoria" Value="6"></asp:ListItem>
 
                                  <asp:ListItem Text="Casino Woodbine" Value="22"></asp:ListItem>
                                  <asp:ListItem Text="Casino Ajax" Value="23"></asp:ListItem>

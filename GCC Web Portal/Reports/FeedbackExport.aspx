@@ -44,9 +44,9 @@
                             <asp:DropDownList runat="server" ID="ddlProperty" CssClass="form-control">
                                 <asp:ListItem Text="River Rock Casino Resort" Value="2"></asp:ListItem>
                                 <asp:ListItem Text="Hard Rock Casino Vancouver" Value="3"></asp:ListItem>
-                                 <asp:ListItem Text="Elements Casino" Value="14"></asp:ListItem>
+                                 <asp:ListItem Text="Elements Casino Surrey" Value="14"></asp:ListItem>
                                 <asp:ListItem Text="Hastings Racetrack & Casino" Value="5"></asp:ListItem>
-                                <asp:ListItem Text="View Royal Casino" Value="6"></asp:ListItem>
+                                <asp:ListItem Text="Elements Casino Victoria" Value="6"></asp:ListItem>
                                 <asp:ListItem Text="Casino Nanaimo" Value="7"></asp:ListItem>
                                 <asp:ListItem Text="Chances Chilliwack" Value="8"></asp:ListItem>
                                 <asp:ListItem Text="Chances Maple Ridge" Value="9"></asp:ListItem>

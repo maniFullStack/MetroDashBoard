@@ -60,10 +60,10 @@
 								<asp:ListItem Text="All" Value=""></asp:ListItem>
 								<asp:ListItem Text="River Rock Casino Resort" Value="2"></asp:ListItem>
 								<asp:ListItem Text="Hard Rock Casino Vancouver" Value="3"></asp:ListItem>
-								<asp:ListItem Text="Elements Casino" Value="14"></asp:ListItem>
+								<asp:ListItem Text="Elements Casino Surrey" Value="14"></asp:ListItem>
 							   <%-- <asp:ListItem Text="Fraser Downs Racetrack & Casino" Value="4"></asp:ListItem>--%>
 								<asp:ListItem Text="Hastings Racetrack & Casino" Value="5"></asp:ListItem>
-								<asp:ListItem Text="View Royal Casino" Value="6"></asp:ListItem>
+								<asp:ListItem Text="Elements Casino Victoria" Value="6"></asp:ListItem>
 								<asp:ListItem Text="Casino Nanaimo" Value="7"></asp:ListItem>
 								<asp:ListItem Text="Chances Chilliwack" Value="8"></asp:ListItem>
 								<asp:ListItem Text="Chances Maple Ridge" Value="9"></asp:ListItem>
@@ -79,6 +79,10 @@
 								<asp:ListItem Text="Casino Woodbine" Value="22"></asp:ListItem>
 								<asp:ListItem Text="Casino Ajax" Value="23"></asp:ListItem>
 								<asp:ListItem Text="Great Blue Heron Casino" Value="24"></asp:ListItem>
+                                <asp:ListItem Text="Elements Casino Brantford" Value="25"></asp:ListItem>
+                                <asp:ListItem Text="Elements Casino Flamboro" Value="26"></asp:ListItem>
+                                <asp:ListItem Text="Elements Casino Grand River" Value="27"></asp:ListItem>
+                                <asp:ListItem Text="Elements Casino Mohawk" Value="28"></asp:ListItem>
 							</asp:DropDownList>
 						</div>
 					</div>

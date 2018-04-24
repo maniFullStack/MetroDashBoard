@@ -252,9 +252,9 @@ namespace GCC_Web_Portal.Admin
                                                 errs += String.Format(", \"{0}\" is not a valid value for the GSEISurvey column (Note: this value is case sensitive)", gseiVal);
                                                 //} else if ( gseiVal == "BC" && PropertyTools.GetCasinoRegion( sc ) != "BC" ) {
                                                 //	errs += ", you can only use GSEISurvey value of \"BC\" for locations in BC";
-                                                //} else if ( gseiVal == "HPI" && sc != GCCPropertyShortCode.FD && sc != GCCPropertyShortCode.EC && sc != GCCPropertyShortCode.HA ) {
+                                                //} else if ( gseiVal == "HPI" && sc != GCCPropertyShortCode.FD && sc != GCCPropertyShortCode.ECS && sc != GCCPropertyShortCode.HA ) {
                                             }
-                                            else if (gseiVal == "HPI" && sc != GCCPropertyShortCode.EC && sc != GCCPropertyShortCode.HA)
+                                            else if (gseiVal == "HPI" && sc != GCCPropertyShortCode.ECS && sc != GCCPropertyShortCode.HA)
                                             {
                                                 errs += ", you can only use GSEISurvey value of \"HPI\" for locations FD, EC, or HA";
                                             }

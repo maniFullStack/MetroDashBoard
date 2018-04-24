@@ -171,7 +171,7 @@ namespace GCC_Web_Portal
 				case GSEISurveyType.HP:
 					if (SurveyTools.GetValue(radLocation_EC, false, false))
 					{
-						return GCCPropertyShortCode.EC;
+						return GCCPropertyShortCode.ECS;
 					}
 					else if (SurveyTools.GetValue(radLocation_HA, false, false))
 					{

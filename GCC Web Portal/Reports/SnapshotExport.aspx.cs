@@ -1024,8 +1024,8 @@ namespace GCC_Web_Portal
                 //locationSurveyYears.Add( GCCPropertyShortCode.FD, new HashSet<int>() { 2015, 2014, 2013, 2012, 2011, 2010, 2009 } );
                 /// Hastings Racetrack and Casino
                 locationSurveyYears.Add(GCCPropertyShortCode.HA, new HashSet<int>() { 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008 });
-                /// View Royal Casino
-                locationSurveyYears.Add(GCCPropertyShortCode.VRL, new HashSet<int>() { 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008 });
+                /// Elements Casino Victoria
+                locationSurveyYears.Add(GCCPropertyShortCode.ECV, new HashSet<int>() { 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008 });
                 /// Casino Nanaimo
                 locationSurveyYears.Add(GCCPropertyShortCode.NAN, new HashSet<int>() { 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008 });
                 /// Chances - Chilliwack

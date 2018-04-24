@@ -54,7 +54,7 @@
         <asp:ListItem Value="8" Text="Chances Chilliwack"></asp:ListItem>
         <asp:ListItem Value="10" Text="Chances Dawson Creek"></asp:ListItem>
         <asp:ListItem Value="9" Text="Chances Maple Ridge"></asp:ListItem>
-        <asp:ListItem Value="14" Text="Elements Casino"></asp:ListItem>
+        <asp:ListItem Value="14" Text="Elements Casino Surrey"></asp:ListItem>
         <asp:ListItem Value="15" Text="Flamboro Downs"></asp:ListItem>
         <asp:ListItem Value="1" Text="GCGC Corporate Office(s) - BC"></asp:ListItem>
         <asp:ListItem Value="16" Text="Georgian Downs"></asp:ListItem>  
@@ -66,7 +66,7 @@
         <asp:ListItem Value="17" Text="Kawartha Downs"></asp:ListItem>
         <asp:ListItem Value="2" Text="River Rock Casino Resort"></asp:ListItem>
         <asp:ListItem Value="18" Text="Thousand Islands"></asp:ListItem>
-        <asp:ListItem Value="6" Text="View Royal Casino"></asp:ListItem>             
+        <asp:ListItem Value="6" Text="Elements Casino Victoria"></asp:ListItem>             
         <asp:ListItem Value="20" Text="Shorelines Casino Belleville"></asp:ListItem>             
     </sc:SurveyDropDown>
     <div class="button-container">

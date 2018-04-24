@@ -27,7 +27,7 @@
                        || PropertyShortCode == GCCPropertyShortCode.HRCV
                        || PropertyShortCode == GCCPropertyShortCode.FD
                        || PropertyShortCode == GCCPropertyShortCode.HA
-                       || PropertyShortCode == GCCPropertyShortCode.VRL
+                       || PropertyShortCode == GCCPropertyShortCode.ECV
                        || PropertyShortCode == GCCPropertyShortCode.NAN
                        || PropertyShortCode == GCCPropertyShortCode.CCH
                        || PropertyShortCode == GCCPropertyShortCode.CMR

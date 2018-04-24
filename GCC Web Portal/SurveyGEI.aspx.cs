@@ -493,16 +493,16 @@ namespace GCC_Web_Portal
 						|| PropertyShortCode == GCCPropertyShortCode.CDC
 						|| PropertyShortCode == GCCPropertyShortCode.CNSH
 						|| PropertyShortCode == GCCPropertyShortCode.CNB
-						|| PropertyShortCode == GCCPropertyShortCode.EC
+						|| PropertyShortCode == GCCPropertyShortCode.ECS
 						|| PropertyShortCode == GCCPropertyShortCode.ECF
 						|| PropertyShortCode == GCCPropertyShortCode.ECM
 						|| PropertyShortCode == GCCPropertyShortCode.ECGR
 						);
 					radQ27A_13.Visible = (PropertyShortCode == GCCPropertyShortCode.HA
-						|| PropertyShortCode == GCCPropertyShortCode.EC
-                        || PropertyShortCode == GCCPropertyShortCode.ECF
-                        || PropertyShortCode == GCCPropertyShortCode.ECM
-                        || PropertyShortCode == GCCPropertyShortCode.ECGR);
+						|| PropertyShortCode == GCCPropertyShortCode.ECS
+						|| PropertyShortCode == GCCPropertyShortCode.ECF
+						|| PropertyShortCode == GCCPropertyShortCode.ECM
+						|| PropertyShortCode == GCCPropertyShortCode.ECGR);
 
 					radQ40A_6.Visible = PropertyShortCode != GCCPropertyShortCode.GAG;
 					radQ40A_7.Visible = !new string[] { "HA", "CCH", "CMR", "CDC" }.Contains(PropertyShortCode.ToString());
@@ -518,9 +518,9 @@ namespace GCC_Web_Portal
 						|| PropertyShortCode == GCCPropertyShortCode.CDC
 						|| PropertyShortCode == GCCPropertyShortCode.CNSH
 						|| PropertyShortCode == GCCPropertyShortCode.CNB
-						|| PropertyShortCode == GCCPropertyShortCode.EC);
+						|| PropertyShortCode == GCCPropertyShortCode.ECS);
 					radQ40A_13.Visible = (PropertyShortCode == GCCPropertyShortCode.HA
-						|| PropertyShortCode == GCCPropertyShortCode.EC);
+						|| PropertyShortCode == GCCPropertyShortCode.ECS);
 
 
 
@@ -599,12 +599,12 @@ namespace GCC_Web_Portal
 						|| PropertyShortCode == GCCPropertyShortCode.CDC
 						|| PropertyShortCode == GCCPropertyShortCode.CNSH
 						|| PropertyShortCode == GCCPropertyShortCode.CNB
-						|| PropertyShortCode == GCCPropertyShortCode.EC);
+						|| PropertyShortCode == GCCPropertyShortCode.ECS);
 					radQ27A_13_F.Visible = (PropertyShortCode == GCCPropertyShortCode.HA
-						|| PropertyShortCode == GCCPropertyShortCode.EC
-                        || PropertyShortCode == GCCPropertyShortCode.ECF
-                        || PropertyShortCode == GCCPropertyShortCode.ECM
-                        || PropertyShortCode == GCCPropertyShortCode.ECGR);
+						|| PropertyShortCode == GCCPropertyShortCode.ECS
+						|| PropertyShortCode == GCCPropertyShortCode.ECF
+						|| PropertyShortCode == GCCPropertyShortCode.ECM
+						|| PropertyShortCode == GCCPropertyShortCode.ECGR);
 
 					radQ40A_6_F.Visible = PropertyShortCode != GCCPropertyShortCode.GAG;
 					radQ40A_7_F.Visible = !new string[] { "HA", "CCH", "CMR", "CDC" }.Contains(PropertyShortCode.ToString());
@@ -620,9 +620,9 @@ namespace GCC_Web_Portal
 						|| PropertyShortCode == GCCPropertyShortCode.CDC
 						|| PropertyShortCode == GCCPropertyShortCode.CNSH
 						|| PropertyShortCode == GCCPropertyShortCode.CNB
-						|| PropertyShortCode == GCCPropertyShortCode.EC);
+						|| PropertyShortCode == GCCPropertyShortCode.ECS);
 					radQ40A_13_F.Visible = (PropertyShortCode == GCCPropertyShortCode.HA
-						|| PropertyShortCode == GCCPropertyShortCode.EC);
+						|| PropertyShortCode == GCCPropertyShortCode.ECS);
 
 
 					if (PropertyShortCode == GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.ECF || PropertyShortCode == GCCPropertyShortCode.ECM)
@@ -1777,8 +1777,8 @@ namespace GCC_Web_Portal
 						&& !Q18_29.Checked
 						&& !Q18_30.Checked
 						&& !Q18_31.Checked
-						&& !Q18_32.Checked
-						&& !Q18_33.Checked
+						//&& !Q18_32.Checked
+						//&& !Q18_33.Checked
 						&& !Q18_34.Checked
 						&& !Q18_35.Checked
 						&& !Q18_36.Checked
@@ -1813,7 +1813,12 @@ namespace GCC_Web_Portal
 						&& !Q18_65.Checked
 						&& !Q18_66.Checked
 						&& !Q18_67.Checked
-						&& !Q18_68.Checked)
+						&& !Q18_68.Checked
+						&& !Q18_69.Checked
+						&& !Q18_70.Checked
+						&& !Q18_71.Checked
+						&& !Q18_72.Checked
+						)
 					{
 						return true;
 					}
@@ -1855,8 +1860,8 @@ namespace GCC_Web_Portal
 						&& !Q18_29_F.Checked
 						&& !Q18_30_F.Checked
 						&& !Q18_31_F.Checked
-						&& !Q18_32_F.Checked
-						&& !Q18_33_F.Checked
+						//&& !Q18_32_F.Checked
+						//&& !Q18_33_F.Checked
 						&& !Q18_34_F.Checked
 						&& !Q18_35_F.Checked
 						&& !Q18_36_F.Checked
@@ -1891,7 +1896,12 @@ namespace GCC_Web_Portal
 						&& !Q18_65_F.Checked
 						&& !Q18_66_F.Checked
 						&& !Q18_67_F.Checked
-						&& !Q18_68_F.Checked)
+						&& !Q18_68_F.Checked
+						&& !Q18_69_F.Checked
+						&& !Q18_70_F.Checked
+						&& !Q18_71_F.Checked
+						&& !Q18_72_F.Checked
+						)
 					{
 						return true;
 					}
@@ -1907,18 +1917,18 @@ namespace GCC_Web_Portal
 					
 					if ( PropertyShortCode != GCCPropertyShortCode.RR
 						&& PropertyShortCode != GCCPropertyShortCode.HRCV
-						&& PropertyShortCode != GCCPropertyShortCode.VRL
+						&& PropertyShortCode != GCCPropertyShortCode.ECV
 						&& PropertyShortCode != GCCPropertyShortCode.CCH
 						&& PropertyShortCode != GCCPropertyShortCode.CMR
 						&& PropertyShortCode != GCCPropertyShortCode.CDC
 						&& PropertyShortCode != GCCPropertyShortCode.CNSH
-						&& PropertyShortCode != GCCPropertyShortCode.EC
+						&& PropertyShortCode != GCCPropertyShortCode.ECS
 						&& PropertyShortCode != GCCPropertyShortCode.SCTI
 						&& PropertyShortCode != GCCPropertyShortCode.CNB
 						&& PropertyShortCode != GCCPropertyShortCode.SCBE
-                        && PropertyShortCode != GCCPropertyShortCode.ECF
-                        && PropertyShortCode != GCCPropertyShortCode.ECM
-                        && PropertyShortCode != GCCPropertyShortCode.ECB
+						&& PropertyShortCode != GCCPropertyShortCode.ECF
+						&& PropertyShortCode != GCCPropertyShortCode.ECM
+						&& PropertyShortCode != GCCPropertyShortCode.ECB
 						) {
 						return true;
 					}
@@ -2891,8 +2901,8 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							SaveValue(Q18_29);
 							SaveValue(Q18_30);
 							SaveValue(Q18_31);
-							SaveValue(Q18_32);
-							SaveValue(Q18_33);
+							//SaveValue(Q18_32);
+							//SaveValue(Q18_33);
 							SaveValue(Q18_34);
 							SaveValue(Q18_35);
 							SaveValue(Q18_36);
@@ -2928,6 +2938,11 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							SaveValue(Q18_66);
 							SaveValue(Q18_67);
 							SaveValue(Q18_68);
+							SaveValue(Q18_69);
+							SaveValue(Q18_70);
+							SaveValue(Q18_71);
+							SaveValue(Q18_72);
+
 						}
 				 
 
@@ -2968,8 +2983,8 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							SaveValue(Q18_29_F);
 							SaveValue(Q18_30_F);
 							SaveValue(Q18_31_F);
-							SaveValue(Q18_32_F);
-							SaveValue(Q18_33_F);
+							//SaveValue(Q18_32_F);
+							//SaveValue(Q18_33_F);
 							SaveValue(Q18_34_F);
 							SaveValue(Q18_35_F);
 							SaveValue(Q18_36_F);
@@ -3005,6 +3020,11 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							SaveValue(Q18_66_F);
 							SaveValue(Q18_67_F);
 							SaveValue(Q18_68_F);
+							SaveValue(Q18_69_F);
+							SaveValue(Q18_70_F);
+							SaveValue(Q18_71_F);
+							SaveValue(Q18_72_F);
+
 						}
 				 
 
@@ -3038,7 +3058,8 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								retVal = false;
 							}
-							if ((Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked) && (
+							//if ((Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked) && (
+							if ((Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_69.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked) && (
 								  !CheckForAnswer(Q19_M2)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M2))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M2))
@@ -3051,8 +3072,9 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								retVal = false;
 							}
-							//if ( ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) && (
-							if ((Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked) && (
+							//if ( ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) && (
+							//if ((Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked) && (
+							if ((Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS) || Q18_27.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked || Q18_70.Checked) && (
 								  !CheckForAnswer(Q19_M3)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M3))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M3))
@@ -3066,7 +3088,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								retVal = false;
 							}
 							//if ( ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) && (
-							if ((Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked || Q18_65.Checked || Q18_68.Checked) && (
+							if ((Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked || Q18_65.Checked || Q18_68.Checked || Q18_71.Checked) && (
 								  !CheckForAnswer(Q19_M4)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M4))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M4))
@@ -3080,7 +3102,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								retVal = false;
 							}
 							//if ( ( Q18_5.Checked || Q18_17.Checked || Q18_24.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked ) && (
-							if ((Q18_5.Checked || Q18_17.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked || Q18_52.Checked || Q18_62.Checked) && (
+							if ((Q18_5.Checked || Q18_17.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked || Q18_52.Checked || Q18_62.Checked || Q18_72.Checked) && (
 								  !CheckForAnswer(Q19_M5)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M5))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M5))
@@ -3093,7 +3115,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								retVal = false;
 							}
-							if ((Q18_6.Checked || Q18_18.Checked || (Q18_25.Checked && PropertyShortCode != GCCPropertyShortCode.EC) || Q18_30.Checked || (Q18_9.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45.Checked) && (
+							if ((Q18_6.Checked || Q18_18.Checked || (Q18_25.Checked && PropertyShortCode != GCCPropertyShortCode.ECS) || Q18_30.Checked || (Q18_9.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45.Checked) && (
 								  !CheckForAnswer(Q19_M6)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M6))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M6))
@@ -3211,7 +3233,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20F_M1);
 								SaveValue(Q20G_M1);
 							}
-							if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked)
+							if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_69.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked)
 							{
 								SaveValue(Q19_M2);
 								SaveValue(Q20A_M2);
@@ -3225,8 +3247,8 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20F_M2);
 								SaveValue(Q20G_M2);
 							}
-							//if ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) {
-							if (Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked)
+							//if ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) {
+							if (Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS) || Q18_27.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked || Q18_70.Checked)
 							{
 								SaveValue(Q19_M3);
 								SaveValue(Q20A_M3);
@@ -3238,7 +3260,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20G_M3);
 							}
 							//if ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) {
-							if (Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked || Q18_65.Checked || Q18_68.Checked)
+							if (Q18_16.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked || Q18_51.Checked || Q18_57.Checked || Q18_61.Checked || Q18_65.Checked || Q18_68.Checked || Q18_71.Checked) 
 							{
 								SaveValue(Q19_M4);
 								SaveValue(Q20A_M4);
@@ -3250,7 +3272,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20G_M4);
 							}
 							//if ( Q18_5.Checked || Q18_17.Checked || Q18_24.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked ) {
-							if (Q18_5.Checked || Q18_17.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked || Q18_52.Checked || Q18_62.Checked)
+							if (Q18_5.Checked || Q18_17.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked || Q18_52.Checked || Q18_62.Checked || Q18_72.Checked)
 							{
 								SaveValue(Q19_M5);
 								SaveValue(Q20A_M5);
@@ -3261,7 +3283,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20F_M5);
 								SaveValue(Q20G_M5);
 							}
-							if (Q18_6.Checked || Q18_18.Checked || (Q18_25.Checked && PropertyShortCode != GCCPropertyShortCode.EC) || Q18_30.Checked || (Q18_9.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45.Checked)
+							if (Q18_6.Checked || Q18_18.Checked || (Q18_25.Checked && PropertyShortCode != GCCPropertyShortCode.ECS) || Q18_30.Checked || (Q18_9.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45.Checked)
 							{
 								SaveValue(Q19_M6);
 								SaveValue(Q20A_M6);
@@ -3371,7 +3393,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								retVal = false;
 							}
-							if ((Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked || Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked || Q18_63_F.Checked || Q18_66_F.Checked) && (
+							if ((Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_69_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked || Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked || Q18_63_F.Checked || Q18_66_F.Checked) && (
 								  !CheckForAnswer(Q19_M2_F)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M2_F))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M2_F))
@@ -3384,8 +3406,8 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								retVal = false;
 							}
-							//if ( ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) && (
-							if ((Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27_F.Checked || Q18_33_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked || Q18_54_F.Checked || Q18_56_F.Checked || Q18_60_F.Checked || Q18_64_F.Checked || Q18_67_F.Checked) && (
+							//if ( ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) && (
+							if ((Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.ECS) || Q18_27_F.Checked || Q18_70_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked || Q18_54_F.Checked || Q18_56_F.Checked || Q18_60_F.Checked || Q18_64_F.Checked || Q18_67_F.Checked) && (
 								  !CheckForAnswer(Q19_M3_F)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M3_F))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M3_F))
@@ -3399,7 +3421,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								retVal = false;
 							}
 							//if ( ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) && (
-							if ((Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked || Q18_65_F.Checked || Q18_68_F.Checked) && (
+							if ((Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked || Q18_65_F.Checked || Q18_68_F.Checked || Q18_71_F.Checked) && (
 								  !CheckForAnswer(Q19_M4_F)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M4_F))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M4_F))
@@ -3413,7 +3435,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								retVal = false;
 							}
 							//if ( ( Q18_5.Checked || Q18_17.Checked || Q18_24.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked ) && (
-							if ((Q18_5_F.Checked || Q18_17_F.Checked || Q18_29_F.Checked || Q18_40_F.Checked || Q18_44_F.Checked || Q18_52_F.Checked || Q18_62_F.Checked) && (
+							if ((Q18_5_F.Checked || Q18_17_F.Checked || Q18_29_F.Checked || Q18_40_F.Checked || Q18_44_F.Checked || Q18_52_F.Checked || Q18_62_F.Checked || Q18_72_F.Checked) && (
 								  !CheckForAnswer(Q19_M5_F)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M5_F))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M5_F))
@@ -3426,7 +3448,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								retVal = false;
 							}
-							if ((Q18_6_F.Checked || Q18_18_F.Checked || (Q18_25_F.Checked && PropertyShortCode != GCCPropertyShortCode.EC) || Q18_30_F.Checked || (Q18_9_F.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45_F.Checked) && (
+							if ((Q18_6_F.Checked || Q18_18_F.Checked || (Q18_25_F.Checked && PropertyShortCode != GCCPropertyShortCode.ECS) || Q18_30_F.Checked || (Q18_9_F.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45_F.Checked) && (
 								  !CheckForAnswer(Q19_M6_F)
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20A_M6_F))
 								| (!IsKioskOrStaffEntry && !CheckForAnswer(Q20B_M6_F))
@@ -3544,7 +3566,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20F_M1_F);
 								SaveValue(Q20G_M1_F);
 							}
-							if (Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_32_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked ||  Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked || Q18_63_F.Checked || Q18_66_F.Checked)
+							if (Q18_2_F.Checked || Q18_14_F.Checked || Q18_21_F.Checked || Q18_26_F.Checked || Q18_69_F.Checked || Q18_34_F.Checked || Q18_35_F.Checked || Q18_36_F.Checked || Q18_37_F.Checked || Q18_41_F.Checked || Q18_47_F.Checked || Q18_48_F.Checked ||  Q18_49_F.Checked || Q18_53_F.Checked || Q18_55_F.Checked || Q18_58_F.Checked || Q18_59_F.Checked || Q18_63_F.Checked || Q18_66_F.Checked)
 							{
 								SaveValue(Q19_M2_F);
 								SaveValue(Q20A_M2_F);
@@ -3563,8 +3585,8 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 
 
 
-							//if ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.EC ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) {
-							if (Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.EC) || Q18_27_F.Checked || Q18_33_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked || Q18_54_F.Checked || Q18_56_F.Checked || Q18_60_F.Checked || Q18_64_F.Checked || Q18_67_F.Checked)
+							//if ( Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked ) {
+							if (Q18_3_F.Checked || Q18_15_F.Checked || (Q18_25_F.Checked && PropertyShortCode == GCCPropertyShortCode.ECS) || Q18_27_F.Checked || Q18_70_F.Checked || Q18_38_F.Checked || Q18_50_F.Checked || Q18_54_F.Checked || Q18_56_F.Checked || Q18_60_F.Checked || Q18_64_F.Checked || Q18_67_F.Checked)
 								
 							{
 								SaveValue(Q19_M3_F);
@@ -3577,7 +3599,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20G_M3_F);
 							}
 							//if ( Q18_4.Checked || Q18_16.Checked || Q18_23.Checked || Q18_28.Checked || Q18_39.Checked || Q18_43.Checked ) {
-							if (Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked || Q18_65_F.Checked || Q18_68_F.Checked)
+							if (Q18_16_F.Checked || Q18_28_F.Checked || Q18_39_F.Checked || Q18_43_F.Checked || Q18_51_F.Checked || Q18_57_F.Checked || Q18_61_F.Checked || Q18_65_F.Checked || Q18_68_F.Checked || Q18_71_F.Checked)
 							{
 								SaveValue(Q19_M4_F);
 								SaveValue(Q20A_M4_F);
@@ -3589,7 +3611,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20G_M4_F);
 							}
 							//if ( Q18_5.Checked || Q18_17.Checked || Q18_24.Checked || Q18_29.Checked || Q18_40.Checked || Q18_44.Checked ) {
-							if (Q18_5_F.Checked || Q18_17_F.Checked || Q18_29_F.Checked || Q18_40_F.Checked || Q18_44_F.Checked || Q18_52_F.Checked || Q18_54.Checked || Q18_62_F.Checked)
+							if (Q18_5_F.Checked || Q18_17_F.Checked || Q18_29_F.Checked || Q18_40_F.Checked || Q18_44_F.Checked || Q18_52_F.Checked || Q18_54.Checked || Q18_62_F.Checked || Q18_72_F.Checked)
 							{
 								SaveValue(Q19_M5_F);
 								SaveValue(Q20A_M5_F);
@@ -3600,7 +3622,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q20F_M5_F);
 								SaveValue(Q20G_M5_F);
 							}
-							if (Q18_6_F.Checked || Q18_18_F.Checked || (Q18_25_F.Checked && PropertyShortCode != GCCPropertyShortCode.EC) || Q18_30_F.Checked || (Q18_9_F.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45_F.Checked)
+							if (Q18_6_F.Checked || Q18_18_F.Checked || (Q18_25_F.Checked && PropertyShortCode != GCCPropertyShortCode.ECS) || Q18_30_F.Checked || (Q18_9_F.Checked && PropertyShortCode == GCCPropertyShortCode.CNSH) || Q18_45_F.Checked)
 							{
 								SaveValue(Q19_M6_F);
 								SaveValue(Q20A_M6_F);
@@ -3708,12 +3730,12 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 						{
 							if (PropertyShortCode == GCCPropertyShortCode.RR
 								|| PropertyShortCode == GCCPropertyShortCode.HRCV
-								|| PropertyShortCode == GCCPropertyShortCode.VRL
+								|| PropertyShortCode == GCCPropertyShortCode.ECV
 								|| PropertyShortCode == GCCPropertyShortCode.CCH
 								|| PropertyShortCode == GCCPropertyShortCode.CMR
 								|| PropertyShortCode == GCCPropertyShortCode.CDC
 								|| PropertyShortCode == GCCPropertyShortCode.CNSH
-								|| PropertyShortCode == GCCPropertyShortCode.EC
+								|| PropertyShortCode == GCCPropertyShortCode.ECS
 								|| PropertyShortCode == GCCPropertyShortCode.SCTI
 								|| PropertyShortCode == GCCPropertyShortCode.CNB
 								|| PropertyShortCode == GCCPropertyShortCode.SCBE)
@@ -3735,7 +3757,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 									retVal = false;
 								}
 							}
-							if (PropertyShortCode == GCCPropertyShortCode.EC && Q21.SelectedValue == 1)
+							if (PropertyShortCode == GCCPropertyShortCode.ECS && Q21.SelectedValue == 1)
 							{
 								bool noneSelected = !GetValue(radQ21_EC_LoungeM, currentPage, false) &&
 													!GetValue(radQ21_EC_LoungeE, currentPage, false);
@@ -3755,7 +3777,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								SurveyTools.SaveRadioButtons(radQ21_HRCV_LoungeA, radQ21_HRCV_LoungeU);
 							}
-							if (PropertyShortCode == GCCPropertyShortCode.EC)
+							if (PropertyShortCode == GCCPropertyShortCode.ECS)
 							{
 								SurveyTools.SaveRadioButtons(radQ21_EC_LoungeM, radQ21_EC_LoungeE);
 							}
@@ -3771,12 +3793,12 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 						{
 							if (PropertyShortCode == GCCPropertyShortCode.RR
 								|| PropertyShortCode == GCCPropertyShortCode.HRCV
-								|| PropertyShortCode == GCCPropertyShortCode.VRL
+								|| PropertyShortCode == GCCPropertyShortCode.ECV
 								|| PropertyShortCode == GCCPropertyShortCode.CCH
 								|| PropertyShortCode == GCCPropertyShortCode.CMR
 								|| PropertyShortCode == GCCPropertyShortCode.CDC
 								|| PropertyShortCode == GCCPropertyShortCode.CNSH
-								|| PropertyShortCode == GCCPropertyShortCode.EC
+								|| PropertyShortCode == GCCPropertyShortCode.ECS
 								|| PropertyShortCode == GCCPropertyShortCode.SCTI
 								|| PropertyShortCode == GCCPropertyShortCode.CNB
 								|| PropertyShortCode == GCCPropertyShortCode.SCBE)
@@ -3799,7 +3821,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 									retVal = false;
 								}
 							}
-							if (PropertyShortCode == GCCPropertyShortCode.EC && Q21_F.SelectedValue_F == 1)
+							if (PropertyShortCode == GCCPropertyShortCode.ECS && Q21_F.SelectedValue_F == 1)
 							{
 								bool noneSelected = !GetValue(radQ21_EC_LoungeM_F, currentPage, false) &&
 													!GetValue(radQ21_EC_LoungeE_F, currentPage, false);
@@ -3819,7 +3841,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 							{
 								SurveyTools.SaveRadioButtons(radQ21_HRCV_LoungeA_F, radQ21_HRCV_LoungeU_F);
 							}
-							if (PropertyShortCode == GCCPropertyShortCode.EC)
+							if (PropertyShortCode == GCCPropertyShortCode.ECS)
 							{
 								SurveyTools.SaveRadioButtons(radQ21_EC_LoungeM_F, radQ21_EC_LoungeE_F);
 							}
@@ -4959,8 +4981,8 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 			Q18_29.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_30.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_31.PrepareQuestionForDB( columnList, sqlParams );
-			Q18_32.PrepareQuestionForDB( columnList, sqlParams );
-			Q18_33.PrepareQuestionForDB( columnList, sqlParams );
+			//Q18_32.PrepareQuestionForDB( columnList, sqlParams );
+			//Q18_33.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_34.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_35.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_36.PrepareQuestionForDB( columnList, sqlParams );
@@ -4996,6 +5018,12 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 			Q18_66.PrepareQuestionForDB(columnList, sqlParams);
 			Q18_67.PrepareQuestionForDB(columnList, sqlParams);
 			Q18_68.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_69.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_70.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_71.PrepareQuestionForDB(columnList, sqlParams);
+			Q18_72.PrepareQuestionForDB(columnList, sqlParams);
+
+
 
 			Q19_M1.PrepareQuestionForDB( columnList, sqlParams );
 			Q20A_M1.PrepareQuestionForDB( columnList, sqlParams );
@@ -5380,8 +5408,8 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 			Q18_29_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_30_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_31_F.PrepareQuestionForDB( columnList, sqlParams );
-			Q18_32_F.PrepareQuestionForDB( columnList, sqlParams );
-			Q18_33_F.PrepareQuestionForDB( columnList, sqlParams );
+			//Q18_32_F.PrepareQuestionForDB( columnList, sqlParams );
+			//Q18_33_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_34_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_35_F.PrepareQuestionForDB( columnList, sqlParams );
 			Q18_36_F.PrepareQuestionForDB( columnList, sqlParams );
