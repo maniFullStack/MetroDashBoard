@@ -170,17 +170,17 @@
     <sc:MessageManager runat="server" ID="mmQ1"></sc:MessageManager>
     <div id="q1">
          <asp:Panel runat="server">
-            <% if ( new[] { "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "WDB","AJA","GBH" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "RR", "HRCV", "HA","ECV", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS","ECS", "SSKD", "SCTI", "CNB", "WDB","AJA","GBH" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Slots" runat="server" GroupName="Q1" SessionKey="Q1Slots" DBColumn="Q1" DBValue="Slots" Text="Playing Slots" /><br />
             <% } %>
-            <% if ( new[] { "RR", "HRCV", "VRL", "NAN", "CNSH", "CNSS", "GAG", "EC", "SCTI", "CNB", "WDB","GBH" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "RR", "HRCV","ECV", "NAN", "CNSH", "CNSS", "GAG","ECS", "SCTI", "CNB", "WDB","GBH" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Tables" runat="server" GroupName="Q1" SessionKey="Q1Tables" DBColumn="Q1" DBValue="Tables" Text="Playing Tables" /><br />
             <% } %>
-            <% if ( new[] { "RR", "HRCV", "VRL", "NAN", "CNSH", "CNSS", "EC", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "RR", "HRCV","ECV", "NAN", "CNSH", "CNSS","ECS", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Poker" runat="server" GroupName="Q1" SessionKey="Q1Poker" DBColumn="Q1" DBValue="Poker" Text="Playing Poker" /><br />
             <% } %>
             <sc:SurveyRadioButton ID="radQ1_Food" runat="server" GroupName="Q1" SessionKey="Q1Food" DBColumn="Q1" DBValue="Food" Text="Enjoying Food or Beverages" /><br />
-            <% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "WDB", "GBH" }.Contains(Master.PropertyShortCode.ToString()))
+            <% if (new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI", "WDB", "GBH" }.Contains(Master.PropertyShortCode.ToString()))
                { %>
             <sc:SurveyRadioButton ID="radQ1_Entertainment" runat="server" GroupName="Q1" SessionKey="Q1Entertainment" DBColumn="Q1" DBValue="Entertainment" Text="Watching Live Entertainment at a show lounge or theatre" /><br />
             <% } %>
@@ -188,48 +188,48 @@
                { %>
             <sc:SurveyRadioButton ID="radQ1_Hotel" runat="server" GroupName="Q1" SessionKey="Q1Hotel" DBColumn="Q1" DBValue="Hotel" Text="Staying at our Hotel" /><br />
             <% } %>
-            <% if ( new[] { "FD", "HA", "EC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "FD", "HA","ECS" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_LiveRacing" runat="server" GroupName="Q1" SessionKey="Q1LiveRacing" DBColumn="Q1" DBValue="LiveRacing" Text="Watching Live Racing" /><br />
             <% } %>
-            <% if ( new[] { "RR", "HRCV", "HA", "NAN", "CMR", "EC", "SSKD" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "RR", "HRCV", "HA", "NAN", "CMR","ECS", "SSKD" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Racebook" runat="server" GroupName="Q1" SessionKey="Q1Racebook" DBColumn="Q1" DBValue="Racebook" Text="Watching Racing at our Racebook" /><br />
             <% } %>
             <% if ( new[] { "CCH", "CMR", "CDC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Bingo" runat="server" GroupName="Q1" SessionKey="Q1Bingo" DBColumn="Q1" DBValue="Bingo" Text="Playing Bingo" /><br />
             <% } %>
-            <% if ( !new[] { "CNSH", "CNSS", "EC", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( !new[] { "CNSH", "CNSS","ECS", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Lottery" runat="server" GroupName="Q1" SessionKey="Q1Lottery" DBColumn="Q1" DBValue="Lottery" Text="Lottery / Pull Tabs" /><br />
             <% } %>
             <sc:SurveyRadioButton ID="radQ1_None" runat="server" GroupName="Q1" SessionKey="Q1None" DBColumn="Q1" DBValue="None" Text="None" /><br />
         </asp:Panel>
 
        <%-- <asp:Panel runat="server">
-            <% if ( new[] { "RR", "HRCV", "FD", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "RR", "HRCV", "FD", "HA","ECV", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS","ECS", "SSKD", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Slots" runat="server" GroupName="Q1" SessionKey="Q1Slots" DBColumn="Q1" DBValue="Slots" Text="Playing Slots" /><br />
             <% } %>
-            <% if ( new[] { "RR", "HRCV", "FD", "VRL", "NAN", "CNSH", "CNSS", "GAG", "EC", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "RR", "HRCV", "FD","ECV", "NAN", "CNSH", "CNSS", "GAG","ECS", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Tables" runat="server" GroupName="Q1" SessionKey="Q1Tables" DBColumn="Q1" DBValue="Tables" Text="Playing Tables" /><br />
             <% } %>
-            <% if ( new[] { "RR", "HRCV", "FD", "VRL", "NAN", "CNSH", "CNSS", "EC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "RR", "HRCV", "FD","ECV", "NAN", "CNSH", "CNSS","ECS" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Poker" runat="server" GroupName="Q1" SessionKey="Q1Poker" DBColumn="Q1" DBValue="Poker" Text="Playing Poker" /><br />
             <% } %>
             <sc:SurveyRadioButton ID="radQ1_Food" runat="server" GroupName="Q1" SessionKey="Q1Food" DBColumn="Q1" DBValue="Food" Text="Enjoying Food or Beverages" /><br />
-            <% if ( new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Entertainment" runat="server" GroupName="Q1" SessionKey="Q1Entertainment" DBColumn="Q1" DBValue="Entertainment" Text="Watching Live Entertainment at a show lounge or theatre" /><br />
             <% } %>
             <% if ( Master.PropertyShortCode == GCCPropertyShortCode.RR ) { %>
             <sc:SurveyRadioButton ID="radQ1_Hotel" runat="server" GroupName="Q1" SessionKey="Q1Hotel" DBColumn="Q1" DBValue="Hotel" Text="Staying at our Hotel" /><br />
             <% } %>
-            <% if ( new[] { "FD", "HA", "EC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "FD", "HA","ECS" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_LiveRacing" runat="server" GroupName="Q1" SessionKey="Q1LiveRacing" DBColumn="Q1" DBValue="LiveRacing" Text="Watching Live Racing" /><br />
             <% } %>
-            <% if ( new[] { "RR", "HRCV", "FD", "HA", "NAN", "CMR", "EC", "SSKD" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( new[] { "RR", "HRCV", "FD", "HA", "NAN", "CMR","ECS", "SSKD" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Racebook" runat="server" GroupName="Q1" SessionKey="Q1Racebook" DBColumn="Q1" DBValue="Racebook" Text="Watching Racing at our Racebook" /><br />
             <% } %>
             <% if ( new[] { "CCH", "CMR", "CDC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Bingo" runat="server" GroupName="Q1" SessionKey="Q1Bingo" DBColumn="Q1" DBValue="Bingo" Text="Playing Bingo" /><br />
             <% } %>
-            <% if ( !new[] { "CNSH", "CNSS", "EC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+            <% if ( !new[] { "CNSH", "CNSS","ECS" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
             <sc:SurveyRadioButton ID="radQ1_Lottery" runat="server" GroupName="Q1" SessionKey="Q1Lottery" DBColumn="Q1" DBValue="Lottery" Text="Lottery / Pull Tabs" /><br />
             <% } %>
             <sc:SurveyRadioButton ID="radQ1_None" runat="server" GroupName="Q1" SessionKey="Q1None" DBColumn="Q1" DBValue="None" Text="None" /><br />
@@ -242,21 +242,21 @@
     </p>
 
     <div id="q2">
-        <% if (new[] { "RR", "HRCV", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI", "CNB", "WDB", "AJA", "GBH" }.Contains(Master.PropertyShortCode.ToString()))
+        <% if (new[] { "RR", "HRCV", "HA","ECV", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS","ECS", "SSKD", "SCTI", "CNB", "WDB", "AJA", "GBH" }.Contains(Master.PropertyShortCode.ToString()))
            { %>
         <sc:SurveyCheckBox ID="chkQ2_Slots" runat="server" SessionKey="Q2Slots" DBColumn="Q2_Slots" DBValue="1" Text="Playing Slots" /><br />
         <% } %>
-        <% if (new[] { "RR", "HRCV", "VRL", "NAN", "CNSH", "CNSS", "GAG", "EC", "SCTI", "CNB", "WDB", "GBH" }.Contains(Master.PropertyShortCode.ToString()))
+        <% if (new[] { "RR", "HRCV","ECV", "NAN", "CNSH", "CNSS", "GAG","ECS", "SCTI", "CNB", "WDB", "GBH" }.Contains(Master.PropertyShortCode.ToString()))
            { %>
         <sc:SurveyCheckBox ID="chkQ2_Tables" runat="server" SessionKey="Q2Tables" DBColumn="Q2_Tables" DBValue="1" Text="Playing Tables" /><br />
         <% } %>
-        <% if ( new[] { "RR", "HRCV", "VRL", "NAN", "CNSH", "CNSS", "EC", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if ( new[] { "RR", "HRCV","ECV", "NAN", "CNSH", "CNSS","ECS", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Poker" runat="server" SessionKey="Q2Poker" DBColumn="Q2_Poker" DBValue="1" Text="Playing Poker" /><br />
         <% } %>
         <% if (  !radQ1_Food.Checked ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Food" runat="server" SessionKey="Q2Food" DBColumn="Q2_Food" DBValue="1" Text="Enjoying Food or Beverages" /><br />
         <% } %>
-        <% if (new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI", "WDB","GBH" }.Contains(Master.PropertyShortCode.ToString()))
+        <% if (new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI", "WDB","GBH" }.Contains(Master.PropertyShortCode.ToString()))
            { %>
         <sc:SurveyCheckBox ID="chkQ2_Entertainment" runat="server" SessionKey="Q2Entertainment" DBColumn="Q2_Entertainment" DBValue="1" Text="Watching Live Entertainment at a show lounge or theatre" /><br />
         <% } %>
@@ -264,49 +264,49 @@
            { %>
         <sc:SurveyCheckBox ID="chkQ2_Hotel" runat="server" SessionKey="Q2Hotel" DBColumn="Q2_Hotel" DBValue="1" Text="Staying at our Hotel" /><br />
         <% } %>
-        <% if ( new[] { "FD", "HA", "EC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if ( new[] { "FD", "HA","ECS" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_LiveRacing" runat="server" SessionKey="Q2LiveRacing" DBColumn="Q2_LiveRacing" DBValue="1" Text="Watching Live Racing" /><br />
         <% } %>
-        <% if ( new[] { "RR", "HRCV", "HA", "NAN", "CMR", "EC", "SSKD" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if ( new[] { "RR", "HRCV", "HA", "NAN", "CMR","ECS", "SSKD" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Racebook" runat="server" SessionKey="Q2Racebook" DBColumn="Q2_Racebook" DBValue="1" Text="Watching Racing at our Racebook" /><br />
         <% } %>
         <% if ( new[] { "CCH", "CMR", "CDC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Bingo" runat="server" SessionKey="Q2Bingo" DBColumn="Q2_Bingo" DBValue="1" Text="Playing Bingo" /><br />
         <% } %>
-        <% if ( !new[] { "CNSH", "CNSS", "EC", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if ( !new[] { "CNSH", "CNSS","ECS", "CNB" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Lottery" runat="server" SessionKey="Q2Lottery" DBColumn="Q2_Lottery" DBValue="1" Text="Lottery / Pull Tabs" /><br />
         <% } %>
     </div>
     
     <%--<div id="q2">
-        <% if ( new[] { "RR", "HRCV", "FD", "HA", "VRL", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS", "EC", "SSKD", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if ( new[] { "RR", "HRCV", "FD", "HA","ECV", "NAN", "CCH", "CMR", "CDC", "CNSH", "CNSS","ECS", "SSKD", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Slots" runat="server" SessionKey="Q2Slots" DBColumn="Q2_Slots" DBValue="1" Text="Playing Slots" /><br />
         <% } %>
-        <% if ( new[] { "RR", "HRCV", "FD", "VRL", "NAN", "CNSH", "CNSS", "GAG", "EC", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if ( new[] { "RR", "HRCV", "FD","ECV", "NAN", "CNSH", "CNSS", "GAG","ECS", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Tables" runat="server" SessionKey="Q2Tables" DBColumn="Q2_Tables" DBValue="1" Text="Playing Tables" /><br />
         <% } %>
-        <% if ( new[] { "RR", "HRCV", "FD", "VRL", "NAN", "CNSH", "CNSS", "EC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if ( new[] { "RR", "HRCV", "FD","ECV", "NAN", "CNSH", "CNSS","ECS" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Poker" runat="server" SessionKey="Q2Poker" DBColumn="Q2_Poker" DBValue="1" Text="Playing Poker" /><br />
         <% } %>
         <% if (  !radQ1_Food.Checked ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Food" runat="server" SessionKey="Q2Food" DBColumn="Q2_Food" DBValue="1" Text="Enjoying Food or Beverages" /><br />
         <% } %>
-        <% if ( new[] { "RR", "HRCV", "VRL", "CCH", "CMR", "CDC", "CNSH", "EC", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if ( new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Entertainment" runat="server" SessionKey="Q2Entertainment" DBColumn="Q2_Entertainment" DBValue="1" Text="Watching Live Entertainment at a show lounge or theatre" /><br />
         <% } %>
         <% if ( Master.PropertyShortCode == GCCPropertyShortCode.RR ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Hotel" runat="server" SessionKey="Q2Hotel" DBColumn="Q2_Hotel" DBValue="1" Text="Staying at our Hotel" /><br />
         <% } %>
-        <% if ( new[] { "FD", "HA", "EC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if ( new[] { "FD", "HA","ECS" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_LiveRacing" runat="server" SessionKey="Q2LiveRacing" DBColumn="Q2_LiveRacing" DBValue="1" Text="Watching Live Racing" /><br />
         <% } %>
-        <% if ( new[] { "RR", "HRCV", "FD", "HA", "NAN", "CMR", "EC", "SSKD" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if ( new[] { "RR", "HRCV", "FD", "HA", "NAN", "CMR","ECS", "SSKD" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Racebook" runat="server" SessionKey="Q2Racebook" DBColumn="Q2_Racebook" DBValue="1" Text="Watching Racing at our Racebook" /><br />
         <% } %>
         <% if ( new[] { "CCH", "CMR", "CDC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Bingo" runat="server" SessionKey="Q2Bingo" DBColumn="Q2_Bingo" DBValue="1" Text="Playing Bingo" /><br />
         <% } %>
-        <% if ( !new[] { "CNSH", "CNSS", "EC" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
+        <% if ( !new[] { "CNSH", "CNSS","ECS" }.Contains( Master.PropertyShortCode.ToString() ) ) { %>
         <sc:SurveyCheckBox ID="chkQ2_Lottery" runat="server" SessionKey="Q2Lottery" DBColumn="Q2_Lottery" DBValue="1" Text="Lottery / Pull Tabs" /><br />
         <% } %>
     </div>--%>
