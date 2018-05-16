@@ -451,7 +451,7 @@
             <% if ( Data["Q18_55"].Equals( 1 ) ) { %><li>Willows Dining Room</li><% } %>
             <% if ( Data["Q18_56"].Equals( 1 ) ) { %><li>Willows Noddle Bar</li><% } %>
             <% if ( Data["Q18_57"].Equals( 1 ) ) { %><li>Hoofbeats Lounge</li><% } %>
-            <% if ( Data["Q18_58"].Equals( 1 ) ) { %><li>Getaway Restaurant</li><% } %>
+            <% if ( Data["Q18_58"].Equals( 1 ) ) { %><li>Getaway Bar & Grill</li><% } %>
             <% if ( Data["Q18_59"].Equals( 1 ) ) { %><li>Waters Edge Buffet</li><% } %>
             <% if ( Data["Q18_60"].Equals( 1 ) ) { %><li>Lucky Stone Bar & Grill</li><% } %>
             <% if ( Data["Q18_61"].Equals( 1 ) ) { %><li>Heron Bar</li><% } %>
@@ -1653,7 +1653,7 @@
 	<p class="answer">
 		<%= ReportingTools.CleanData( Data["Q3"] ) %>
 	</p>
-	<p class="question">4. If No, what kind of organization are you? (School PAC, Nor-for-profit Org, Community Group, etc.)</p>
+	<p class="question">4. If No, what kind of organization are you? (School PAC, Not-for-profit Org, Community Group, etc.)</p>
 	<p class="answer">
 		<%= ReportingTools.CleanData( Data["Q4"] ) %>
 	</p>

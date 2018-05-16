@@ -181,14 +181,22 @@ namespace GCC_Web_Portal
 				fbkProperty.Items.Insert(6, new ListItem(Lang.Page1_Question2_6, "10"));
 				fbkProperty.Items.Insert(7, new ListItem(Lang.Page1_Question2_7, "9"));
 				fbkProperty.Items.Insert(8, new ListItem(Lang.Page1_Question2_8, "14"));
+                fbkProperty.Items.Insert(9, new ListItem(Lang.Page1_Question2_16, "6"));
 				//fbkProperty.Items.Insert(SequenceNumberHere, new ListItem(Lang.Page1_Question2_9, "4"));
-				fbkProperty.Items.Insert(9, new ListItem(Lang.Page1_Question2_10, "13"));
-				fbkProperty.Items.Insert(10, new ListItem(Lang.Page1_Question2_11, "3"));
-				fbkProperty.Items.Insert(11, new ListItem(Lang.Page1_Question2_12, "5"));
-				fbkProperty.Items.Insert(12, new ListItem(Lang.Page1_Question2_13, "2"));
-				fbkProperty.Items.Insert(13, new ListItem(Lang.Page1_Question2_14, "18"));
-				fbkProperty.Items.Insert(14, new ListItem(Lang.Page1_Question2_15, "17"));
-				fbkProperty.Items.Insert(15, new ListItem(Lang.Page1_Question2_16, "6"));
+				fbkProperty.Items.Insert(10, new ListItem(Lang.Page1_Question2_10, "13"));
+				fbkProperty.Items.Insert(11, new ListItem(Lang.Page1_Question2_11, "3"));
+				fbkProperty.Items.Insert(12, new ListItem(Lang.Page1_Question2_12, "5"));
+				fbkProperty.Items.Insert(13, new ListItem(Lang.Page1_Question2_13, "2"));
+				fbkProperty.Items.Insert(14, new ListItem(Lang.Page1_Question2_14, "18"));
+				fbkProperty.Items.Insert(15, new ListItem(Lang.Page1_Question2_15, "17"));
+				
+                
+                
+                //fbkProperty.Items.Insert(15, new ListItem(Lang.Page1_Question2_16, "6"));
+                
+
+
+
 				fbkProperty.Items.Insert(16, new ListItem(Lang.Page1_Question2_18, "20"));
 				fbkProperty.Items.Insert(17, new ListItem(Lang.Page1_Question2_19, "22"));
 				fbkProperty.Items.Insert(18, new ListItem(Lang.Page1_Question2_20, "23"));
@@ -291,7 +299,7 @@ namespace GCC_Web_Portal
 			//Food & Beverage
 			fbkQ2.Items[j++].Enabled = (new[] { "WSO", "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "HA","ECV", "NAN", "CCH", "CMR", "CDC", "GAG", "CNSH", "CNSS","ECS", "SSKD", "SCTI", "CNB", "SCBE", "WDB", "GBH", "AJA", "ECM", "ECB", "ECF", "ECGR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Entertainment
-			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "CCH", "CMR", "CDC", "CNSH","ECS", "ECM", "ECB", "ECF" }.Contains(AlignedPropertyShortCode.ToString()));
+			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "NSB", "ONO", "GCC", "RR", "HRCV", "CCH", "CMR", "CDC", "CNSH","ECS", "ECM", "ECF" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Hotel
 			fbkQ2.Items[j++].Enabled = (new[] { "BCO", "NSB", "GCC", "RR" }.Contains(AlignedPropertyShortCode.ToString()));
 			//Racebook

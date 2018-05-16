@@ -162,6 +162,9 @@
   <data name="Donation_Q1Title" xml:space="preserve">
     <value>Vous souhaitez savoir si Great Canadian peut appuyer votre organisme? Veuillez remplir et soumettre ce formulaire de demande.</value>
   </data>
+  <data name="Donation_Q1TitlePre" xml:space="preserve">
+    <value>Soumis à : </value>
+  </data>
   <data name="Donation_Q2" xml:space="preserve">
     <value>* 2. Votre organisme est-il un organisme de bienfaisance enregistré?</value>
   </data>
@@ -307,7 +310,7 @@
     <value>Chances Maple Ridge</value>
   </data>
   <data name="Page1_Question2_8" xml:space="preserve">
-    <value>Elements Casino</value>
+    <value>Elements Casino Surrey</value>
   </data>
   <data name="Page1_Question2_9" xml:space="preserve">
     <value>Fraser Downs Racetrack &amp; Casino</value>

@@ -428,7 +428,7 @@
 
 					<% } else if (PropertyShortCode ==  GCCPropertyShortCode.WDB || PropertyShortCode == GCCPropertyShortCode.GBH || PropertyShortCode == GCCPropertyShortCode.AJA|| PropertyShortCode == GCCPropertyShortCode.GBH || PropertyShortCode == GCCPropertyShortCode.ECB|| PropertyShortCode == GCCPropertyShortCode.ECF|| PropertyShortCode == GCCPropertyShortCode.ECGR|| PropertyShortCode == GCCPropertyShortCode.ECM) { %>
 					
-			  <h2>test</h2>
+			  
 				<p>No purchase necessary. An Entrant may only enter the contest once during the promotional period. The contest promotional period will close at the end of the month in which this survey was completed. Duplicate entries will be deleted. Your personal information is collected and used by <%=CasinoName %> on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research.  It will be used for GCGC's research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
 				
 				
@@ -632,7 +632,7 @@
 						<sc:SurveyRadioButton ID="radQ1_Poker" runat="server" GroupName="Q1" SessionKey="Q1Poker" DBColumn="Q1" DBValue="Poker" Text="&nbsp;Playing Poker" /><br />
 						<% } %>
 						<sc:SurveyRadioButton ID="radQ1_Food" runat="server" GroupName="Q1" SessionKey="Q1Food" DBColumn="Q1" DBValue="Food" Text="&nbsp;Enjoying Food or Beverages" /><br />
-						<% if (new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI", "CNB", "ECB", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()))
+						<% if (new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI", "CNB", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()))
 						   { %>
 						<sc:SurveyRadioButton ID="radQ1_Entertainment" runat="server" GroupName="Q1" SessionKey="Q1Entertainment" DBColumn="Q1" DBValue="Entertainment" Text="&nbsp;Watching Live Entertainment at a show lounge or theatre" /><br />
 						<% } %>
@@ -652,7 +652,7 @@
 						   { %>
 						<sc:SurveyRadioButton ID="radQ1_Bingo" runat="server" GroupName="Q1" SessionKey="Q1Bingo" DBColumn="Q1" DBValue="Bingo" Text="&nbsp;Playing Bingo" /><br />
 						<% } %>
-						<% if (!new[] { "CNSH", "CNSS","ECS","CNB"}.Contains(PropertyShortCode.ToString()))
+						<% if (!new[] { "CNSH", "CNSS","ECS","CNB","ECGR", "ECB"}.Contains(PropertyShortCode.ToString()))
 						   { %>
 						<sc:SurveyRadioButton ID="radQ1_Lottery" runat="server" GroupName="Q1" SessionKey="Q1Lottery" DBColumn="Q1" DBValue="Lottery" Text="&nbsp;Lottery / Pull Tabs" /><br />
 						<% } %>
@@ -693,7 +693,7 @@
 						<sc:SurveyRadioButton ID="radQ1_Poker_F" runat="server" GroupName="Q1" SessionKey="Q1Poker" DBColumn="Q1" DBValue="Poker" Text="&nbsp;Jouer au poker" /><br />
 						<% } %>
 						<sc:SurveyRadioButton ID="radQ1_Food_F" runat="server" GroupName="Q1" SessionKey="Q1Food" DBColumn="Q1" DBValue="Food" Text="&nbsp;Profiter de la gastronomie" /><br />
-						<% if (new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI", "CNB", "GBH", "ECB", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()))
+						<% if (new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI", "CNB", "GBH", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()))
 						   { %>
 						<sc:SurveyRadioButton ID="radQ1_Entertainment_F" runat="server" GroupName="Q1" SessionKey="Q1Entertainment" DBColumn="Q1" DBValue="Entertainment" Text="&nbsp;Profiter du divertissement à notre Lounge " /><br />
 						<% } %>
@@ -765,7 +765,7 @@
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Food" runat="server" SessionKey="Q2Food" DBColumn="Q2_Food" DBValue="1" Text="&nbsp;Enjoying Food or Beverages" /><br />
 					<% } %>
-					<% if (new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI", "CNB", "GBH", "ECB", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
+					<% if (new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI", "CNB", "GBH", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Entertainment" runat="server" SessionKey="Q2Entertainment" DBColumn="Q2_Entertainment" DBValue="1" Text="&nbsp;Watching Live Entertainment at a show lounge or theatre" /><br />
 					<% } %>
@@ -785,7 +785,7 @@
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Bingo" runat="server" SessionKey="Q2Bingo" DBColumn="Q2_Bingo" DBValue="1" Text="&nbsp;Playing Bingo" /><br />
 					<% } %>
-					<% if (!new[] { "CNSH", "CNSS","ECS","CNB"}.Contains(PropertyShortCode.ToString()) && !radQ1_Lottery.Checked)
+					<% if (!new[] { "CNSH", "CNSS","ECS","CNB", "ECGR", "ECB"}.Contains(PropertyShortCode.ToString()) && !radQ1_Lottery.Checked)
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Lottery" runat="server" SessionKey="Q2Lottery" DBColumn="Q2_Lottery" DBValue="1" Text="&nbsp;Lottery / Pull Tabs" /><br />
 					<% } %>
@@ -818,7 +818,7 @@
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Food_F" runat="server" SessionKey="Q2Food" DBColumn="Q2_Food" DBValue="1" Text="&nbsp;Profiter de la gastronomie" /><br />
 					<% } %>
-					<% if (new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI", "CNB", "GBH", "ECB", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
+					<% if (new[] { "RR", "HRCV","ECV", "CCH", "CMR", "CDC", "CNSH","ECS", "SCTI", "CNB", "GBH", "ECF", "ECM" }.Contains(PropertyShortCode.ToString()) && !radQ1_Entertainment.Checked)
 					   { %>
 					<sc:SurveyCheckBox ID="chkQ2_Entertainment_F" runat="server" SessionKey="Q2Entertainment" DBColumn="Q2_Entertainment" DBValue="1" Text="&nbsp;Profiter du divertissement à notre Lounge " /><br />
 					<%--"&nbsp;Assister à un spectacle à notre salle de spectacles ou à notre pub"--%>
@@ -1630,21 +1630,21 @@
 					<sc:SurveyCheckBox ID="Q18_31" runat="server" SessionKey="Q18_31" DBColumn="Q18_31" DBValue="1" Text="&nbsp;Concessions" /><br />
 					<% } %>
 					
-                    
-                    
-                    
-                  <%--  <% if (PropertyShortCode == GCCPropertyShortCode.ECV)
+					
+					
+					
+				  <%--  <% if (PropertyShortCode == GCCPropertyShortCode.ECV)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_32" runat="server" SessionKey="Q18_32" DBColumn="Q18_32" DBValue="1" Text="&nbsp;View Royal Restaurant" /><br />
 					<sc:SurveyCheckBox ID="Q18_33" runat="server" SessionKey="Q18_33" DBColumn="Q18_33" DBValue="1" Text="&nbsp;View Royal Patio" /><br />
 					<% } %>--%>
 
-                    <% if (PropertyShortCode == GCCPropertyShortCode.ECV)
+					<% if (PropertyShortCode == GCCPropertyShortCode.ECV)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_69" runat="server" SessionKey="Q18_69" DBColumn="Q18_69" DBValue="1" Text="&nbsp;The Well Public House" /><br />
 					<sc:SurveyCheckBox ID="Q18_70" runat="server" SessionKey="Q18_70" DBColumn="Q18_70" DBValue="1" Text="&nbsp;Chi Express" /><br />
-                    <sc:SurveyCheckBox ID="Q18_71" runat="server" SessionKey="Q18_71" DBColumn="Q18_71" DBValue="1" Text="&nbsp;The Diamond Buffet" /><br />
-                    <sc:SurveyCheckBox ID="Q18_72" runat="server" SessionKey="Q18_72" DBColumn="Q18_72" DBValue="1" Text="&nbsp;1708 Quick Bites" /><br />
+					<sc:SurveyCheckBox ID="Q18_71" runat="server" SessionKey="Q18_71" DBColumn="Q18_71" DBValue="1" Text="&nbsp;The Diamond Buffet" /><br />
+					<sc:SurveyCheckBox ID="Q18_72" runat="server" SessionKey="Q18_72" DBColumn="Q18_72" DBValue="1" Text="&nbsp;1708 Quick Bites" /><br />
 					<% } %>
 
 
@@ -1722,7 +1722,7 @@
 					<% } %>
 					<%if (PropertyShortCode == GCCPropertyShortCode.AJA || PropertyShortCode == GCCPropertyShortCode.ECB || PropertyShortCode == GCCPropertyShortCode.ECGR )
 					  { %>
-					<sc:SurveyCheckBox ID="Q18_58" runat="server" SessionKey="Q18_58" DBColumn="Q18_58" DBValue="1" Text="&nbsp;Getaway Restaurant" /><br />
+					<sc:SurveyCheckBox ID="Q18_58" runat="server" SessionKey="Q18_58" DBColumn="Q18_58" DBValue="1" Text="&nbsp;Getaway Bar & Grill" /><br />
 
 					<% } %>
 					<%if (PropertyShortCode == GCCPropertyShortCode.GBH)
@@ -1843,12 +1843,12 @@
 					<% } %>--%>
 
 
-                     <% if (PropertyShortCode == GCCPropertyShortCode.ECV)
+					 <% if (PropertyShortCode == GCCPropertyShortCode.ECV)
 					   { %>
 					<sc:SurveyCheckBox ID="Q18_69_F" runat="server" SessionKey="Q18_69" DBColumn="Q18_69" DBValue="1" Text="&nbsp;The Well Public House" /><br />
 					<sc:SurveyCheckBox ID="Q18_70_F" runat="server" SessionKey="Q18_70" DBColumn="Q18_70" DBValue="1" Text="&nbsp;Chi Express" /><br />
-                    <sc:SurveyCheckBox ID="Q18_71_F" runat="server" SessionKey="Q18_71" DBColumn="Q18_71" DBValue="1" Text="&nbsp;The Diamond Buffet" /><br />
-                    <sc:SurveyCheckBox ID="Q18_72_F" runat="server" SessionKey="Q18_72" DBColumn="Q18_72" DBValue="1" Text="&nbsp;1708 Quick Bites" /><br />
+					<sc:SurveyCheckBox ID="Q18_71_F" runat="server" SessionKey="Q18_71" DBColumn="Q18_71" DBValue="1" Text="&nbsp;The Diamond Buffet" /><br />
+					<sc:SurveyCheckBox ID="Q18_72_F" runat="server" SessionKey="Q18_72" DBColumn="Q18_72" DBValue="1" Text="&nbsp;1708 Quick Bites" /><br />
 					<% } %>
 
 
@@ -1924,7 +1924,7 @@
 					<% } %>
 					<%if (PropertyShortCode == GCCPropertyShortCode.AJA || PropertyShortCode == GCCPropertyShortCode.ECB || PropertyShortCode == GCCPropertyShortCode.ECGR)
 					  { %>
-					<sc:SurveyCheckBox ID="Q18_58_F" runat="server" SessionKey="Q18_58" DBColumn="Q18_58" DBValue="1" Text="&nbsp;Getaway Restaurant" /><br />
+					<sc:SurveyCheckBox ID="Q18_58_F" runat="server" SessionKey="Q18_58" DBColumn="Q18_58" DBValue="1" Text="&nbsp;Getaway Bar & Grill" /><br />
 
 					<% } %>
 					<%if (PropertyShortCode == GCCPropertyShortCode.GBH)
@@ -2017,7 +2017,7 @@
 				<% } %>
 				<% } %>
 				<%--<% if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_32.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked)--%>
-                <% if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked || Q18_69.Checked)
+				<% if (Q18_2.Checked || Q18_14.Checked || Q18_21.Checked || Q18_26.Checked || Q18_34.Checked || Q18_35.Checked || Q18_36.Checked || Q18_37.Checked || Q18_41.Checked || Q18_47.Checked || Q18_48.Checked || Q18_49.Checked || Q18_53.Checked || Q18_55.Checked || Q18_58.Checked || Q18_59.Checked || Q18_63.Checked || Q18_66.Checked || Q18_69.Checked)
 				   { %>
 				<h2>Food & Beverage Experience - <%= GetFoodAndBevName(2) %></h2>
 				<p class="question">
@@ -2052,7 +2052,7 @@
 				<% } %>
 				<%--<% if (Q18_3.Checked || Q18_15.Checked || Q18_22.Checked || ( Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS ) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked) { %>--%>
 				<%--<% if (Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS) || Q18_27.Checked || Q18_33.Checked || Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked)--%>
-                <% if (Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS) || Q18_27.Checked|| Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked || Q18_70.Checked)
+				<% if (Q18_3.Checked || Q18_15.Checked || (Q18_25.Checked && PropertyShortCode == GCCPropertyShortCode.ECS) || Q18_27.Checked|| Q18_38.Checked || Q18_50.Checked || Q18_54.Checked || Q18_56.Checked || Q18_60.Checked || Q18_64.Checked || Q18_67.Checked || Q18_70.Checked)
 				   { %>
 				<h2>Food & Beverage Experience - <%= GetFoodAndBevName(3) %></h2>
 				<p class="question">
@@ -2839,7 +2839,7 @@
 					   || PropertyShortCode == GCCPropertyShortCode.SCTI					 
 					   || PropertyShortCode == GCCPropertyShortCode.CNB
 					   || PropertyShortCode == GCCPropertyShortCode.SCBE
-					   || PropertyShortCode == GCCPropertyShortCode.ECB
+					  
 					   || PropertyShortCode == GCCPropertyShortCode.ECF
 					   || PropertyShortCode == GCCPropertyShortCode.ECM)
 				   { %>
@@ -2906,7 +2906,7 @@
 					 
 					   || PropertyShortCode == GCCPropertyShortCode.CNB
 					   || PropertyShortCode == GCCPropertyShortCode.SCBE
-					   || PropertyShortCode == GCCPropertyShortCode.ECB
+					   
 					   || PropertyShortCode == GCCPropertyShortCode.ECF
 					   || PropertyShortCode == GCCPropertyShortCode.ECM
 					)
@@ -2994,9 +2994,14 @@
 					<div class="col-md-1 col-xs-2 title">Poor</div>
 					<div class="col-md-1 col-xs-2 title">Don't Know / N/A</div>
 				</div>
+
+				<%if(PropertyShortCode != GCCPropertyShortCode.ECB){ %>
 				<uc1:QuestionRowControl runat="server" ID="Q23A" SessionKey="Q23A" DBColumn="Q23A" ShowNAColumn="True" Label="Sound / quality" />
 				<uc1:QuestionRowControl runat="server" ID="Q23B" SessionKey="Q23B" DBColumn="Q23B" ShowNAColumn="True" Label="Seating availability" />
 				<uc1:QuestionRowControl runat="server" ID="Q23C" SessionKey="Q23C" DBColumn="Q23C" ShowNAColumn="True" Label="Dance floor" />
+
+				<%} %>
+
 				<uc1:QuestionRowControl runat="server" ID="Q23D" SessionKey="Q23D" DBColumn="Q23D" ShowNAColumn="True" Label="Fun and enjoyable atmosphere" />
 				<% } %>
 				<% } %>
@@ -3034,9 +3039,12 @@
 					<div class="col-md-1 col-xs-2 title">Mauvais</div>
 					<div class="col-md-1 col-xs-2 title">Ne sais pas/ N/A</div>
 				</div>
+
+				 <%if(PropertyShortCode != GCCPropertyShortCode.ECB){ %>
 				<uc1:QuestionRowControl runat="server" ID="Q23A_F" SessionKey="Q23A" DBColumn="Q23A" ShowNAColumn="True" Label="Qualité /sonore" />
 				<uc1:QuestionRowControl runat="server" ID="Q23B_F" SessionKey="Q23B" DBColumn="Q23B" ShowNAColumn="True" Label="Disponibilité des places" />
 				<uc1:QuestionRowControl runat="server" ID="Q23C_F" SessionKey="Q23C" DBColumn="Q23C" ShowNAColumn="True" Label="Piste de dance" />
+				<%} %>
 				<uc1:QuestionRowControl runat="server" ID="Q23D_F" SessionKey="Q23D" DBColumn="Q23D" ShowNAColumn="True" Label="Ambiance amusante et agréable" />
 				<% } %>
 				<% } %>

@@ -43,6 +43,7 @@
         //PAGE 1 - Everything
         //===========================================================================
     if ( Master.CurrentPage == 1) {%>
+    <p><b><%= Lang.Donation_Q1TitlePre %> </b><%= PropertyTools.GetCasinoName((int)Master.PropertyShortCode)%></p>
     <p><%= Lang.Donation_Q1Title %></p>
     <p class="question"><%= Lang.Donation_Q1 %></p>
     <sc:SurveyTextBox ID="Q1" runat="server" SessionKey="Q1" DBColumn="Q1" MaxLength="200" Size="50"></sc:SurveyTextBox>

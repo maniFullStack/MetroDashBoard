@@ -197,6 +197,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Submitted To :.
+        /// </summary>
+        internal static string Donation_Q1TitlePre {
+            get {
+                return ResourceManager.GetString("Donation_Q1TitlePre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to * 2. Is your organization a registered charity?.
         /// </summary>
         internal static string Donation_Q2 {
@@ -215,7 +224,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 4. If No, what kind of organization are you? (School PAC, Nor-for-profit Org, Community Group, etc.).
+        ///   Looks up a localized string similar to 4. If No, what kind of organization are you? (School PAC, Not-for-profit Org, Community Group, etc.).
         /// </summary>
         internal static string Donation_Q4 {
             get {
@@ -683,7 +692,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Elements Casino.
+        ///   Looks up a localized string similar to Elements Casino Surrey.
         /// </summary>
         internal static string Page1_Question2_8 {
             get {

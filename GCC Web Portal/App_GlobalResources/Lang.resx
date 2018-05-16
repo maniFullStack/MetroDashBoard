@@ -167,7 +167,7 @@
     <value>3. If Yes, please provide the charity license number:</value>
   </data>
   <data name="Donation_Q4" xml:space="preserve">
-    <value>4. If No, what kind of organization are you? (School PAC, Nor-for-profit Org, Community Group, etc.)</value>
+    <value>4. If No, what kind of organization are you? (School PAC, Not-for-profit Org, Community Group, etc.)</value>
   </data>
   <data name="Donation_Q5ContactEmail" xml:space="preserve">
     <value>*Contact Email Address:</value>
@@ -314,7 +314,7 @@
     <value>Chances Maple Ridge</value>
   </data>
   <data name="Page1_Question2_8" xml:space="preserve">
-    <value>Elements Casino</value>
+    <value>Elements Casino Surrey</value>
   </data>
   <data name="Page1_Question2_9" xml:space="preserve">
     <value>Fraser Downs Racetrack &amp; Casino</value>
@@ -531,5 +531,8 @@
   </data>
   <data name="Page3_Question1_19" xml:space="preserve">
     <value>Electronic Table Games</value>
+  </data>
+  <data name="Donation_Q1TitlePre" xml:space="preserve">
+    <value>Submitted To :</value>
   </data>
 </root>

@@ -25,7 +25,7 @@ namespace GCGC_Web_Portal
 			routes.MapPageRoute( "GEISurveyStaff", "SurveyS/{propertyshortcode}/{page}/{redirectdirection}", "~/SurveyGEI.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" }, { "page", "1" }, { "redirectdirection", "1" } } );
 			routes.MapPageRoute( "TermsAndConditions", "TermsAndConditions/{propertyshortcode}", "~/TAndCs.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } } );
 			routes.MapPageRoute("TermsAndConditions_French", "TermsAndConditions_French/{propertyshortcode}", "~/TAndCs_French.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
-
+            ///TermsAndConditions/SCBE
 			//Seperate Terms and Conditions for CNB
 			routes.MapPageRoute("TermsAndConditions_CNB", "TermsAndConditions_CNB/{propertyshortcode}", "~/TAndCCNB.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });
 			routes.MapPageRoute("TermsAndConditions_French_CNB", "TermsAndConditions_French_CNB/{propertyshortcode}", "~/TAndCCNB_French.aspx", false, new RouteValueDictionary() { { "propertyshortcode", "GCC" } });

@@ -1928,7 +1928,7 @@ namespace GCC_Web_Portal
 						&& PropertyShortCode != GCCPropertyShortCode.SCBE
 						&& PropertyShortCode != GCCPropertyShortCode.ECF
 						&& PropertyShortCode != GCCPropertyShortCode.ECM
-						&& PropertyShortCode != GCCPropertyShortCode.ECB
+						
 						) {
 						return true;
 					}
@@ -3861,7 +3861,7 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 					if(strSurveyLang != "French")
 					{
 
-						if (Q21.SelectedValue == 1)
+						if (Q21.SelectedValue == 1 && PropertyShortCode != GCCPropertyShortCode.ECB)
 						{
 							if (!saveOnly)
 							{
@@ -3883,12 +3883,29 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q23D);
 							}
 						}
+						else if (Q21.SelectedValue == 1 && PropertyShortCode == GCCPropertyShortCode.ECB)
+						{
+							if (!saveOnly)
+							{
+								if (!CheckForAnswer(Q22)
+									| (!IsKioskOrStaffEntry && !CheckForAnswer(Q23D)))
+								{
+									retVal = false;
+								}
+							}
+							if (currentPage)
+							{
+								SaveValue(Q22);
+							
+								SaveValue(Q23D);
+							}
+						}
 				  
 					}
 
 					else if(strSurveyLang == "French")
 					{
-						if (Q21_F.SelectedValue_F == 1)
+						if (Q21_F.SelectedValue_F == 1 && PropertyShortCode != GCCPropertyShortCode.ECB)
 						{
 							if (!saveOnly)
 							{
@@ -3909,6 +3926,24 @@ if ( Q21_F.SelectedValue_F != 1 ) {
 								SaveValue(Q23C_F);
 								SaveValue(Q23D_F);
 							}
+						}
+						else if (Q21_F.SelectedValue_F == 1 && PropertyShortCode == GCCPropertyShortCode.ECB)
+						{
+							if (!saveOnly)
+							{
+								if (!CheckForAnswer(Q22_F)
+									| (!IsKioskOrStaffEntry && !CheckForAnswer(Q23D_F)))
+								{
+									retVal = false;
+								}
+							}
+							if (currentPage)
+							{
+								SaveValue(Q22_F);
+					
+								SaveValue(Q23D_F);
+							}
+
 						}
 				  
 

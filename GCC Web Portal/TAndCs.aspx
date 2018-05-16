@@ -32,9 +32,8 @@
                        || PropertyShortCode == GCCPropertyShortCode.CCH
                        || PropertyShortCode == GCCPropertyShortCode.CMR
                        || PropertyShortCode == GCCPropertyShortCode.CDC
-                       || PropertyShortCode == GCCPropertyShortCode.EC
-                       || PropertyShortCode == GCCPropertyShortCode.CNB
-                       || PropertyShortCode == GCCPropertyShortCode.SCBE) { %>
+                       || PropertyShortCode == GCCPropertyShortCode.ECS
+                       || PropertyShortCode == GCCPropertyShortCode.CNB) { %>
                 <ul>
                     <li>To enter and be eligible to win, the entrant must answer all mandatory questions on the Guest Experience Survey.</li>
                     <li>No purchase necessary.</li>
@@ -221,7 +220,7 @@
                 </ul>
                 <h3>Personal Information and Privacy policy</h3>
                 <p>Your personal information is collected and used by GAC in accordance with applicable Freedom of Information and Protection of Privacy laws. Your personal information is collected and used by GAC for research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes.</p>
-                <% } else if( PropertyShortCode == GCCPropertyShortCode.SSKD || PropertyShortCode == GCCPropertyShortCode.SCTI ) { %>
+                <% } else if( PropertyShortCode == GCCPropertyShortCode.SSKD || PropertyShortCode == GCCPropertyShortCode.SCTI || PropertyShortCode == GCCPropertyShortCode.SCBE ) { %>
                 <ul>
                     <li>To enter and be eligible to win, the entrant must answer all mandatory questions on the Guest Experience Survey.</li>
                     <li>No purchase necessary.</li>

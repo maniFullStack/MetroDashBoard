@@ -490,7 +490,7 @@
 												<asp:ListItem Text="View Royal Patio" Value="33"></asp:ListItem>
 												<asp:ListItem Text="View Royal Restaurant" Value="32"></asp:ListItem>
 												<asp:ListItem Text="The Well" Value="35"></asp:ListItem>
-												<asp:ListItem Text="Getaway Restaurant" Value="53"></asp:ListItem>
+												<asp:ListItem Text="Getaway Bar & Grill" Value="53"></asp:ListItem>
 												<asp:ListItem Text="Pavillion Restaurant" Value="54"></asp:ListItem>
 												<asp:ListItem Text="Moon Bar" Value="55"></asp:ListItem>
 												<asp:ListItem Text="Sunset Bar" Value="56"></asp:ListItem>
