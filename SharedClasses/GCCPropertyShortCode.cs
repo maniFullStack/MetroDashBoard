@@ -28,9 +28,13 @@ namespace SharedClasses {
 		/// </summary>
 		HA = 5,
 		/// <summary>
-		/// View Royal Casino
+		///// Elements Casino Victoria
+		///// </summary>
+		//VRL = 6,
+
+		/// Elements Casino Victoria
 		/// </summary>
-		VRL = 6,
+		ECV = 6,
 		/// <summary>
 		/// Casino Nanaimo
 		/// </summary>
@@ -60,9 +64,9 @@ namespace SharedClasses {
 		/// </summary>
 		GAG = 13,
 		/// <summary>
-		/// Elements Casino
+		/// Elements Casino Surrey
 		/// </summary>
-		EC = 14,
+		ECS = 14,
 		/// <summary>
 		/// Flamboro Downs
 		/// </summary>
@@ -118,19 +122,19 @@ namespace SharedClasses {
 		GBH = 24,
 
 
-             
+			 
 
 
-        	  ///<summary>
+			  ///<summary>
 		///ElementsCasinoBrantford
 		///</summary>
 		ECB = 25,
 
 
-        	
-                   
+			
+				   
    
-            ///<summary>
+			///<summary>
 		/// ElementsCasinoFlamboro
 		///</summary>
 		ECF = 26,
@@ -138,9 +142,9 @@ namespace SharedClasses {
 
 
 
-                 
-       
-        	  ///<summary>
+				 
+	   
+			  ///<summary>
 		///ElementsCasinoGrandRiver
 		///</summary>
 		ECGR = 27,
@@ -149,39 +153,39 @@ namespace SharedClasses {
 
 
 		///</summary>
-        ///ElementsCasino Mohawk
-        
+		///ElementsCasino Mohawk
+		
 		ECM = 28,
 
 
 
-        ///</summary>
-        ///Ontario Operations
-        ONO = 91,
+		///</summary>
+		///Ontario Operations
+		ONO = 91,
 
 
 
-        ///</summary>
-        ///Nova Scotia and New Brunswick
-        NSB = 92,
+		///</summary>
+		///Nova Scotia and New Brunswick
+		NSB = 92,
 
 
 
-        ///</summary>
-        ///British Columbia Operations
-        BCO = 93,
+		///</summary>
+		///British Columbia Operations
+		BCO = 93,
 
 
 
-        ///</summary>
-        ///Washington State Operations
-        WSO = 94,
+		///</summary>
+		///Washington State Operations
+		WSO = 94,
 
 
 
-        ///</summary>
-        ///Corporate Office
-        CO  = 95
+		///</summary>
+		///Corporate Office
+		CO  = 95
 
 
 

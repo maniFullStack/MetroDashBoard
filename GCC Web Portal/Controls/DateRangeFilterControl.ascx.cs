@@ -34,6 +34,9 @@ namespace GCC_Web_Portal.Controls
                 if (DateTime.TryParseExact(hdnBegin.Value, DATE_FORMAT, CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
                 {
                     return date;
+                    // For Archived Data setting from date to 2016 
+                    //date = new DateTime(2016, 01, 01, 00, 00, 01); //20180312 - Since the End date was having 00:00:00 HH:mm:ss end of day was not selected so manually forcing to select till End of day
+                    //return date;
                 }
                 else
                 {
@@ -73,6 +76,11 @@ namespace GCC_Web_Portal.Controls
                     //return date.AddDays(1).AddMilliseconds(-1); //Return end of day
 
                     date = new DateTime(date.Year, date.Month, date.Day, 23, 59, 59); //20180312 - Since the End date was having 00:00:00 HH:mm:ss end of day was not selected so manually forcing to select till End of day
+
+
+
+                    // For Archived Data setting from date to 2016 
+                   // date = new DateTime(2016, date.Month, date.Day, 23, 59, 59); //20180312 - Since the End date was having 00:00:00 HH:mm:ss end of day was not selected so manually forcing to select till End of day
                     return date;
                 }
                 else

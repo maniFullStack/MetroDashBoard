@@ -21,17 +21,32 @@ namespace GCC_Web_Portal
 
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            SQLDatabase sql = new SQLDatabase();    sql.CommandTimeout = 120;
-            sql.CommandTimeout = 520;
-            SQLParamList sqlParams = Master.GetFilters();
-            DataSet ds = sql.ExecStoredProcedureDataSet("[spReports_Main]", sqlParams);
-            if (!sql.HasError)
+            try
             {
-                Data = ds;
-                if (ds.Tables[DATA_SCORES].Rows.Count > 0)
+                SQLDatabase sql = new SQLDatabase(); sql.CommandTimeout = 120;
+                sql.CommandTimeout = 520;
+                SQLParamList sqlParams = Master.GetFilters();
+                DataSet ds = sql.ExecStoredProcedureDataSet("[spReports_Main]", sqlParams);
+
+
+
+                if (!sql.HasError)
                 {
-                    Master.RecordCount = ds.Tables[DATA_SCORES].Rows[0]["TotalRecords"].ToString();
+                    Data = ds;
+                    if (ds.Tables[DATA_SCORES].Rows.Count > 0)
+                    {
+                        Master.RecordCount = ds.Tables[DATA_SCORES].Rows[0]["TotalRecords"].ToString();
+                    }
                 }
+                else
+                {
+                    ErrorHandler.WriteLog("GCC_Web_Portal.SurveyGEI", sql.ExceptionList.ToString().ToString(), ErrorHandler.ErrorEventID.General);
+                    Console.Write(sql.ExceptionList.ToString());
+                }
+            }
+            catch(Exception ex)
+            {
+                ErrorHandler.WriteLog("GCC_Web_Portal.SurveyGEI", ex.Message.ToString().ToString(), ErrorHandler.ErrorEventID.General);
             }
         }
     }
