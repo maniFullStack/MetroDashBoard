@@ -92,7 +92,9 @@
 
 
                 <h3>Personal Information and Privacy policy</h3>
-                <p>Your personal information is collected and used by <%= CasinoName%> on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research.  It will be used for GCGC's research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
+                 <p>Your personal information is collected by Forum Research and used by <%=CasinoName %> on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research. It will be used for GCGC's research purposes and to administer this contest. If you require a response to your feedback, your personal information will be used to contact you and may be shared with OLG.
+Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.
+</p>
             </div>
         </div>
         <asp:ScriptManager runat="server">

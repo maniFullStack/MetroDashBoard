@@ -40,7 +40,7 @@
 	</div>
 </div>
 <% } else { %>
-	<div class="row">
+	<div class="row" onload="CheckDate()">
 		<div class="col-md-12 col-lg-6">
 			<div class="box box-success">
 				<div class="box-header with-border">

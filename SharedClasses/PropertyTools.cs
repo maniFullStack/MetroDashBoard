@@ -1332,24 +1332,24 @@ namespace SharedClasses {
 				case 28:
 					return "Elements Casino Mohawk";
 
-                case 91:
-                    	return "Ontario Operations";
+				case 91:
+						return "Ontario Operations";
 
 
-                                    case 92:
-                    	return "NovaScotia and NewBrunswuick Operations";
+									case 92:
+						return "NovaScotia and NewBrunswuick Operations";
 
 
-                                    case 93:
-                    	return "British Columbia Operations";
+									case 93:
+						return "British Columbia Operations";
 
 
-                                    case 94:
-                    	return "Washington State Operations";
+									case 94:
+						return "Washington State Operations";
 
 
-                                    case 95:
-                    	return "Corporate Office";
+									case 95:
+						return "Corporate Office";
 
 
 
@@ -1442,24 +1442,24 @@ namespace SharedClasses {
 					return "Elements Casino Mohawk";
 
 
-                case 91:
-                    return "Ontario Operations";
+				case 91:
+					return "Ontario Operations";
 
 
-                case 92:
-                    return "NovaScotia and NewBrunswuick Operations";
+				case 92:
+					return "NovaScotia and NewBrunswuick Operations";
 
 
-                case 93:
-                    return "British Columbia Operations";
+				case 93:
+					return "British Columbia Operations";
 
 
-                case 94:
-                    return "Washington State Operations";
+				case 94:
+					return "Washington State Operations";
 
 
-                case 95:
-                    return "Corporate Office";
+				case 95:
+					return "Corporate Office";
 
 
 

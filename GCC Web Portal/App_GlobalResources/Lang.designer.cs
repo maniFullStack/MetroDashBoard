@@ -79,7 +79,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to By clicking &quot;Done&quot; below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected and used by Great Canadian Casino Corporation (GCGC) on behalf of BCLC in accordance with British Columbia&apos;s Freedom of Information and Protection of Privacy Act. It will only be used for GCGC&apos;s reporting &amp; research purposes and to administer the guest feedback process..
+        ///   Looks up a localized string similar to By clicking &quot;Done&quot; below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected by Forum Research and used by Great Canadian Casino Corporation (GCGC) in accordance with applicable Freedom of Information and Protection of Privacy laws. It will only be used for GCGC&apos;s reporting &amp; research purposes and to administer the guest feedback process.  If you require a response to your feedback, your personal information will be used to contact you and [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Donation_Final2 {
             get {
@@ -88,7 +88,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to By clicking &quot;Done&quot; below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected and used by Great Canadian Casino Corporation (GCGC) on behalf of OLG in accordance with Ontario&apos;s Freedom of Information and Protection of Privacy Act. It will only be used for GCGC&apos;s reporting &amp; research purposes and to administer the guest feedback process..
+        ///   Looks up a localized string similar to By clicking &quot;Done&quot; below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected by Forum Research and used by Great Canadian Casino Corporation (GCGC) in accordance with applicable Freedom of Information and Protection of Privacy laws. It will only be used for GCGC&apos;s reporting &amp; research purposes and to administer the guest feedback process.  If you require a response to your feedback, your personal information will be used to contact you and [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Donation_Final2_Ontario {
             get {
@@ -1178,7 +1178,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to By clicking &quot;Done&quot; below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected and used by Great Canadian Casino Corporation (GCGC) in accordance with applicable Freedom of Information and Protection of Privacy laws. It will only be used for GCGC&apos;s reporting &amp; research purposes and to administer the guest feedback process..
+        ///   Looks up a localized string similar to By clicking &quot;Done&quot; below, you acknowledge that you are aware that your personal information (contact information and feedback) is being collected by Forum Research and used by Great Canadian Casino Corporation (GCGC) in accordance with applicable Freedom of Information and Protection of Privacy laws. It will only be used for GCGC&apos;s reporting &amp; research purposes and to administer the guest feedback process.  If you require a response to your feedback, your personal information will be used to contact you and [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Page5_Response2_2_Ontario {
             get {

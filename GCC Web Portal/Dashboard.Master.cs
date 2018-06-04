@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebsiteUtilities;
 
@@ -487,12 +488,24 @@ namespace GCC_Web_Portal
             //{
 
             // connection timeout set to = 120 in Feddbacklist Page load complete
-                fltDateRange.DefaultBeginDate = DateTime.Now.AddMonths(-1).AddDays(-DateTime.Now.AddMonths(-1).Day + 1).Date;
+                //fltDateRange.DefaultBeginDate = DateTime.Now.AddMonths(-1).AddDays(-DateTime.Now.AddMonths(-1).Day + 1).Date;
            // }
-          
-            
-            
-            fltDateRange.DefaultEndDate = DateTime.Now.Date;
+
+
+
+
+
+
+
+            fltDateRange.DefaultBeginDate = DateTime.Now.AddMonths(-1).AddDays(-DateTime.Now.AddMonths(-1).Day + 1).Date;
+
+
+
+
+            // For Archived Portal setting up from Jan to Dec 2016
+            //fltDateRange.DefaultBeginDate = new DateTime(2016, 01, 01, 00, 00, 01); ;
+
+            fltDateRange.DefaultEndDate = DateTime.Now;
         }
 
         private void fltProperty_SelectedIndexChanged(object sender, EventArgs e)
@@ -519,6 +532,14 @@ namespace GCC_Web_Portal
             {
                 flt.Save();
             }
+
+
+            //if (fltDateRange.BeginDate.Value.Year > 2016)
+            //{
+
+            //    Response.Write(@"<script language='javascript'>alert('Please Check archive reports')</script>");
+            //}
+          
         }
 
         public SQLParamList GetFilters()

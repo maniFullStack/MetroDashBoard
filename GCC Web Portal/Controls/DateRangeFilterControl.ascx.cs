@@ -31,8 +31,15 @@ namespace GCC_Web_Portal.Controls
             get
             {
                 DateTime date;
-                if (DateTime.TryParseExact(hdnBegin.Value, DATE_FORMAT, CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+              /*  if (DateTime.TryParseExact(hdnBegin.Value, DATE_FORMAT, CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
                 {
+
+                    if (date.Year > 2016)
+                    {
+                        //Response.Write(@"<script language='javascript'>alert('Details saved successfully')</script>");
+                        date = new DateTime(2016, 01, 01);
+                    }
+
                     return date;
                     // For Archived Data setting from date to 2016 
                     //date = new DateTime(2016, 01, 01, 00, 00, 01); //20180312 - Since the End date was having 00:00:00 HH:mm:ss end of day was not selected so manually forcing to select till End of day
@@ -41,7 +48,21 @@ namespace GCC_Web_Portal.Controls
                 else
                 {
                     return DefaultBeginDate;
-                }
+                } */
+
+
+
+
+              if (DateTime.TryParseExact(hdnBegin.Value, DATE_FORMAT, CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+             {
+
+                 return date;
+             }
+             else
+             {
+                 return DefaultBeginDate;
+             } 
+
             }
             set
             {
@@ -69,14 +90,22 @@ namespace GCC_Web_Portal.Controls
             {
                 DateTime date;
 
-              //  DateTime date; =  new DateTime(date.Year,date.Month,date.Day,0,0,0);
+               // DateTime date =  new DateTime(date.Year,date.Month,date.Day,0,0,0);
 
-                if (DateTime.TryParseExact(hdnEnd.Value, DATE_FORMAT, CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+               /* if (DateTime.TryParseExact(hdnEnd.Value, DATE_FORMAT, CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
                 {
+
+                    if (date.Year > 2016)
+                    {
+
+                        //Response.Write(@"<script language='javascript'>alert('Details saved successfully')</script>");
+                        date = new DateTime(2016, 12, 31, 23, 59, 59);
+                    }
                     //return date.AddDays(1).AddMilliseconds(-1); //Return end of day
-
-                    date = new DateTime(date.Year, date.Month, date.Day, 23, 59, 59); //20180312 - Since the End date was having 00:00:00 HH:mm:ss end of day was not selected so manually forcing to select till End of day
-
+                    else
+                    {
+                        date = new DateTime(date.Year, date.Month, date.Day, 23, 59, 59); //20180312 - Since the End date was having 00:00:00 HH:mm:ss end of day was not selected so manually forcing to select till End of day
+                    }
 
 
                     // For Archived Data setting from date to 2016 
@@ -86,7 +115,28 @@ namespace GCC_Web_Portal.Controls
                 else
                 {
                     return DefaultEndDate;
-                }
+                } */
+
+
+
+
+
+
+
+                if (DateTime.TryParseExact(hdnEnd.Value, DATE_FORMAT, CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+             {
+
+                 date = new DateTime(date.Year, date.Month, date.Day, 23, 59, 59); //20180312 - Since the End date was having 00:00:00 HH:mm:ss end of day was not selected so manually forcing to select till End of day
+                 return date;
+             }
+             else
+             {
+                 return DefaultEndDate;
+             } 
+
+
+
+
             }
             set
             {
@@ -111,6 +161,7 @@ namespace GCC_Web_Portal.Controls
         public DateRangeFilterControl()
         {
             MessageManager = new MessageManager();
+           // MessageManager.AlertMessage ="TEst";
         }
 
         public void SetValues(string beginDate, string endDate)

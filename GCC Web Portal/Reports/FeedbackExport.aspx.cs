@@ -23,7 +23,11 @@ namespace GCC_Web_Portal.Reports
             if (!IsPostBack)
             {
                 DateTime startDate = new DateTime(2015, 05, 01);
-                DateTime bom = DateTime.Now.Date.AddDays(-DateTime.Now.Day + 1);
+                //DateTime bom = DateTime.Now.Date.AddDays(-DateTime.Now.Day + 1);
+
+                // For archived portal setting up date time till end of 2016
+
+                DateTime bom = new DateTime(2017, 01, 01);
                 int months = ((bom.Year - startDate.Year) * 12) + bom.Month - startDate.Month;
                 for (int i = months - 1; i >= 0; i--)
                 {
