@@ -77,7 +77,7 @@
                     <li>If an Entrant is found to be ineligible, an alternate winner will be selected from the pool of all eligible entries received. Information collected by GCGC will be stored in a secure database only accessible by GCGC Head Office staff.</li>
                 </ul>
                 <h3>Personal Information and Privacy policy</h3>
-                <p>Your personal information is collected and used by GCGC in accordance with British Columbia's Freedom of Information and Protection of Privacy Act. It will be used for GCGC's research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
+                <p>Your personal information is collected and used by GCGC in accordance with British Columbia's Freedom of Information and Protection of Privacy Act.  Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
                     </div>
 
 

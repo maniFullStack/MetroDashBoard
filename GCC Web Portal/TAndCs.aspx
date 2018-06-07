@@ -111,7 +111,7 @@
                 <% if ( PropertyShortCode == GCCPropertyShortCode.CNB ) { %>
                 <p>Your personal information is collected and used by Great Canadian Gaming Corporation (GCGC) for GCGC's research purposes only. Any personal information provided is managed according to the Right to Information and Protection of Privacy Act of New Brunswick (RTIPPA NB) and other applicable legislation. Your information is kept confidential and secure and is not disclosed to anyone outside of the company or other third parties without your consent, unless required by law or regulation. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
                 <% } else { %>
-                <p>Your personal information is collected and used by GCGC on behalf of BCLC in accordance with British Columbia's Freedom of Information and Protection of Privacy Act. It will be used for GCGC's research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
+                <p>Your personal information is collected and used by GCGC on behalf of BCLC in accordance with British Columbia's Freedom of Information and Protection of Privacy Act.  Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.</p>
                 <% } %>
                 <% } else if(  PropertyShortCode == GCCPropertyShortCode.CNSH
                             || PropertyShortCode == GCCPropertyShortCode.CNSS) { %>
@@ -164,7 +164,7 @@
                     <li>If an entrant is found to be ineligible, an alternate winner will be selected from the pool of all eligible entries received. Information collected by GCGC will be stored in a secure database only accessible by GCGC Head Office staff.</li>
                 </ul>
                 <h3>Personal Information and Privacy policy</h3>
-                <p>Your personal information is collected and used by GCGC in accordance with Nova Scotia's Freedom of Information and Protection of Privacy Act. It will be used for GCGC's research purposes and to administer this contest. Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to Casino Nova Scotia's Security and Compliance Manager at <a href="mailto:gfiander@casinonovascotia.com" title="Email the Compliance Manager">gfiander@casinonovascotia.com</a>.</p>
+                <p>Your personal information is collected and used by GCGC in accordance with Nova Scotia's Freedom of Information and Protection of Privacy Act.  Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to Casino Nova Scotia's Security and Compliance Manager at <a href="mailto:gfiander@casinonovascotia.com" title="Email the Compliance Manager">gfiander@casinonovascotia.com</a>.</p>
                 <% } else if( PropertyShortCode == GCCPropertyShortCode.GAG ) { %>
                 <ul>
                     <li>No purchase necessary.</li>
@@ -275,7 +275,7 @@
                     <li>If an Entrant is found to be ineligible, an alternate winner will be selected from the pool of all eligible entries received. Information collected by GCGC will be stored in a secure database only accessible by GCGC Head Office staff.</li>
                 </ul>
                 <h3>Personal Information and Privacy policy</h3>
-                <p>Your personal information is collected by Forum Research and used by <%=CasinoName %> on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research. It will be used for GCGC's research purposes and to administer this contest. If you require a response to your feedback, your personal information will be used to contact you and may be shared with OLG.
+                <p>Your personal information is collected by Forum Research and used by <%=CasinoName %> on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with the Ontario Lottery and Gaming Corporation Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research. If you require a response to your feedback, your personal information will be used to contact you and may be shared with OLG.
 Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.
 </p>
                 <% } %>

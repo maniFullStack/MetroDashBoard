@@ -203,10 +203,8 @@
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 									<div class="panel-body">
-										<%--<uc1:DateRangeFilterControl runat="server" BeginDate="2016/01/01" EndDate="2016/12/31" DefaultBeginDate="2016/01/01" DefaultEndDate="2016/12/31"  ID="fltDateRange" SessionKey="fltDateRange" DBColumn="DateCreated" Label="Date Range" />--%>
-									
-                                    <uc1:DateRangeFilterControl runat="server" ID="fltDateRange" SessionKey="fltDateRange" DBColumn="DateCreated" Label="Date Range" />
-                                    </div>
+										<uc1:DateRangeFilterControl runat="server" ID="fltDateRange" SessionKey="fltDateRange" DBColumn="DateCreated" Label="Date Range" />
+									</div>
 								</div>
 							</div>
 							<% } %>
@@ -723,25 +721,11 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-						<asp:Button runat="server" CssClass="btn btn-primary" Text="Apply Filters" OnClick="ApplyFilters_Click"/>
+						<asp:Button runat="server" CssClass="btn btn-primary" Text="Apply Filters" OnClick="ApplyFilters_Click" />
 					</div>
-
+				</div>
 				<!-- /.modal-content -->
-                                                          
 			</div>
-
-
-
-
-
-
-
-
-
-		
-
-
-
 			<!-- /.modal-dialog -->
 		</div>
 		<!-- /.modal -->
@@ -768,51 +752,6 @@
 				Both of these plugins are recommended to enhance the
 				user experience. Slimscroll is required when using the
 				fixed layout. -->
-
-            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-
-		  <script>
-
-		      function CheckDate() {
-
-		          //let Begindate = Date.parse(new Date(document.getElementById("fltDateRange_hdnBegin").value));
-		          //let Enddate = Date.parse(new Date(document.getElementById("fltDateRange_hdnEnd").value));
-
-
-		          //console.log("Begin : " + document.getElementById("fltDateRange_hdnBegin").value);
-		          //console.log("End : " + document.getElementById("fltDateRange_hdnEnd").value);
-
-		          //console.log(Begindate);
-		          //console.log(Enddate);
-
-		          //if (Begindate.getFullYear() > 2016 || Enddate.getFullYear() > 2016) {
-		          //    let msg = `Info ! Since This is Archived Site only Data after 2016 availabe, \n
-                  //    any data after that is available only on the live portal, \n
-                  //    Selected : \n
-		          //    Start Date : ${Begindate}   \n
-		          //    End Date ${Enddate} \n`;
-		          //    //alert(msg);
-		          //    //swal(msg);
-
-
-		          //    swal({
-		          //        title: "Date Selection Alert!",
-		          //        text: msg,
-		          //        icon: "success",
-		                  
-		          //    });
-		          //}
-                  
-
-		          
-
-		          
-		      };
-
-		  </script>
-
-
 	</form>
 </body>
 </html>

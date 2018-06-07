@@ -820,7 +820,7 @@
 		<% if ( !IsKioskOrStaffEntry ) { %>
 		Would you like casino staff to contact you about your feedback? Only respond “Yes” if you want to be further contacted by staff <u>about your feedback</u>.
 		<% } else { %>
-		Please confirm your contact information if you wish to be contacted. First and last name are mandatory. All feedback will be responded to via email.  If you would prefer to be contacted via Telephone, please provide it below.
+		Please confirm your contact information if you wish to be contacted. First and last name are mandatory. All feedback will be responded to via email. If you would prefer to be contacted via Telephone, please provide it below.
 		<% } %>
 	</p>
 	<p class="answer">

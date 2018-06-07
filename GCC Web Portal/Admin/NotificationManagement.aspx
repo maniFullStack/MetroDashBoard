@@ -163,6 +163,7 @@
                                 <td>
                                     <a href="#" class="btn btn-success pull-right ad" data-p="<%= dr["PropertySurveyReasonID"] %>" title="Add user to the <%= dr["SurveyName"] %> - <%= ReportingTools.CleanData( dr["ReasonDescription"] ) %> for <%= ReportingTools.CleanData( dr["PropertyName"] ) %>">Add <i class="fa fa-plus-circle"></i></a>
                                     <%
+                                
                                 bool first = true;
                                 int curID = (int)dr["PropertySurveyReasonID"];
                                 while ( i < Data.Rows.Count 

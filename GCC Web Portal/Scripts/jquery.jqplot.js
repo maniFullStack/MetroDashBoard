@@ -1148,7 +1148,7 @@
         $.jqplot.ElemContainer.call(this);
         // Group: Properties
         // Properties will be assigned from a series array at the top level of the
-        // options.  If you had two series and wanted to change the color and line
+        // options. If you had two series and wanted to change the color and line
         // width of the first and set the second to use the secondary y axis with
         // no shadow and supply custom labels for each:
         // > {

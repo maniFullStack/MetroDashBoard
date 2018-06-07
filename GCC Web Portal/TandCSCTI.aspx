@@ -90,13 +90,13 @@
                     <li>Any intent by the Entrant to misrepresent themselves through the use of aliases and e-mail addresses will be disqualified. In the event of a dispute regarding the identity of the person submitting an electronic entry, the entry will be deemed submitted by the person whose name appears in the database.</li>
                     <li>If an Entrant is found to be ineligible, an alternate winner will be selected from the pool of all eligible entries received. Information collected by GCGC will be stored in a secure database only accessible by GCGC Head Office staff.</li>
 
-
+                     
 
                 </ul>
 
 
                 <h3>Personal Information and Privacy policy</h3>
-                 <p>Your personal information is collected by Forum Research and used by <%=CasinoName %> on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with Ontario’s Freedom of Information and Protection of Privacy Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research. It will be used for GCGC's research purposes and to administer this contest. If you require a response to your feedback, your personal information will be used to contact you and may be shared with OLG.
+                 <p>Your personal information is collected by Forum Research and used by <%=CasinoName %> on behalf of Great Canadian Gaming Corporation (GCGC) and Ontario Lottery and Gaming Corporation (OLG) in accordance with the Ontario Lottery and Gaming Corporation Act. Your personal information is used for the purposes of: administering this contest, for customer service research, and for Responsible Gaming research. If you require a response to your feedback, your personal information will be used to contact you and may be shared with OLG.
 Your information will not be sold, shared with third parties, or used for soliciting purposes. If you have any questions about this, please write to GCGC's Privacy Officer at 95 Schooner Street, Coquitlam, BC V3K 7A8.
 </p>
             </div>

@@ -9455,7 +9455,7 @@
              This class can be used to verify the CRC of a ZipEntry when
              reading from a stream, or to calculate a CRC when writing to a
              stream.  The stream should be used to either read, or write, but
-             not both.  If you intermix reads and writes, the results are not
+             not both. If you intermix reads and writes, the results are not
              defined.
              </para>
             
@@ -9708,7 +9708,7 @@
             
              <para>
                A word about password strength and length: The AES encryption technology is
-               very good, but any system is only as secure as the weakest link.  If you want
+               very good, but any system is only as secure as the weakest link. If you want
                to secure your data, be sure to use a password that is hard to guess.  To make
                it harder to guess (increase its "entropy"), you should make it longer.  If
                you use normal characters from an ASCII keyboard, a password of length 20 will
@@ -10320,7 +10320,7 @@
             want to NOT extract the file, set <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.ExtractExistingFile"/>
             on the <c>ZipProgressEventArgs.CurrentEntry</c> to <c>DoNotOverwrite</c>.
             If you do want to extract the file, set <c>ZipEntry.ExtractExistingFile</c>
-            to <c>OverwriteSilently</c>.  If you want to cancel the Extraction, set
+            to <c>OverwriteSilently</c>. If you want to cancel the Extraction, set
             <c>ZipProgressEventArgs.Cancel</c> to true.  Cancelling differs from using
             DoNotOverwrite in that a cancel will not extract any further entries, if
             there are any.  (For COM clients, the value of this enum is a 3.)
@@ -10572,7 +10572,7 @@
             
              <para>
                To specify a time, use YYYY-MM-DD-HH:mm:ss or YYYY/MM/DD-HH:mm:ss as
-               the format.  If you omit the HH:mm:ss portion, it is assumed to be
+               the format. If you omit the HH:mm:ss portion, it is assumed to be
                00:00:00 (midnight).
              </para>
             
@@ -11180,7 +11180,7 @@
                filesystem values. When adding an entry from a stream or string, the
                values are implicitly set to DateTime.Now.  The application may wish to
                set these values to some arbitrary value, before saving the archive, and
-               can do so using the various setters.  If you want to set all of the times,
+               can do so using the various setters. If you want to set all of the times,
                this method is more efficient.
              </para>
             
@@ -12043,12 +12043,12 @@
                <c>CreationTime</c>) are set on the ZipEntry instance, and these data are
                stored in the zip archive for each entry, in NTFS format. If you add an
                entry from an actual filesystem file, then the entry gets the actual file
-               times for that file, to NTFS-level precision.  If you add an entry from a
+               times for that file, to NTFS-level precision. If you add an entry from a
                stream, or a string, then the times get the value <c>DateTime.Now</c>.  In
                this case <c>LastModified</c> and <c>ModifiedTime</c> will be identical,
                to 2 seconds of precision.  You can explicitly set the
                <c>CreationTime</c>, <c>AccessedTime</c>, and <c>ModifiedTime</c> of an
-               entry using the property setters.  If you want to set all of those
+               entry using the property setters. If you want to set all of those
                quantities, it's more efficient to use the <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.SetEntryTimes(System.DateTime,System.DateTime,System.DateTime)"/> method.  Those
                changes are not made permanent in the zip file until you call <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.Save"/> or one of its cousins.
              </para>
@@ -12335,7 +12335,7 @@
               </para>
             
               <para>
-                When it is set, the value of this property may be different than <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.FileName"/>, which is the path used in the archive itself.  If you
+                When it is set, the value of this property may be different than <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.FileName"/>, which is the path used in the archive itself. If you
                 call <c>Zip.AddFile("foop.txt", AlternativeDirectory)</c>, then the path
                 used for the <c>ZipEntry</c> within the zip archive will be different
                 than this path.
@@ -12414,7 +12414,7 @@
                When a <c>ZipEntry</c> is contained within a <c>ZipFile</c>, applications
                cannot rename the entry within the context of a <c>foreach</c> (<c>For
                Each</c> in VB) loop, because of the way the <c>ZipFile</c> stores
-               entries.  If you need to enumerate through all the entries and rename one
+               entries. If you need to enumerate through all the entries and rename one
                or more of them, use <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.EntriesSorted">ZipFile.EntriesSorted</see> as the
                collection.  See also, <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.GetEnumerator">ZipFile.GetEnumerator()</see>.
              </para>
@@ -12801,7 +12801,7 @@
                When reading an entry from an existing zipfile, the value you retrieve
                here indicates the compression method used on the entry by the original
                creator of the zip.  When writing a zipfile, you can specify either 0x08
-               (Deflate) or 0x00 (None).  If you try setting something else, you will get
+               (Deflate) or 0x00 (None). If you try setting something else, you will get
                an exception.
              </para>
             
@@ -12871,7 +12871,7 @@
                 compression speed.  In some tests, using <c>BestCompression</c> can
                 double the time it takes to compress, while delivering just a small
                 increase in compression efficiency.  This behavior will vary with the
-                type of data you compress.  If you are in doubt, just leave this setting
+                type of data you compress. If you are in doubt, just leave this setting
                 alone, and accept the default.
               </para>
             
@@ -13009,7 +13009,7 @@
             
              <para>
                Set this property in order to encrypt the entry when the <c>ZipFile</c> is
-               saved. When setting this property, you must also set a <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.Password"/> on the entry.  If you set a value other than <see cref="F:OfficeOpenXml.Packaging.Ionic.Zip.EncryptionAlgorithm.None"/> on this property and do not set a
+               saved. When setting this property, you must also set a <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.Password"/> on the entry. If you set a value other than <see cref="F:OfficeOpenXml.Packaging.Ionic.Zip.EncryptionAlgorithm.None"/> on this property and do not set a
                <c>Password</c> then the entry will not be encrypted. The <c>ZipEntry</c>
                data is encrypted as the <c>ZipFile</c> is saved, when you call <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.Save"/> or one of its cousins on the containing
                <c>ZipFile</c> instance. You do not need to specify the <c>Encryption</c>
@@ -13161,7 +13161,7 @@
             
              <para>
                The password set here is implicitly used to encrypt the entry during the
-               <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.Save"/> operation, or to decrypt during the <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.Extract"/> or <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.OpenReader"/> operation.  If you set
+               <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.Save"/> operation, or to decrypt during the <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.Extract"/> or <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.OpenReader"/> operation. If you set
                the Password on a <c>ZipEntry</c> after calling <c>Save()</c>, there is no
                effect.
              </para>
@@ -13786,9 +13786,9 @@
             a GUI application may wish to pop up a dialog to allow the user to view the
             error that occurred, and choose an appropriate action.  After your
             processing in the error event, if you want to skip the file, set <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.ZipErrorAction"/> on the
-            <c>ZipProgressEventArgs.CurrentEntry</c> to <c>Skip</c>.  If you want the
+            <c>ZipProgressEventArgs.CurrentEntry</c> to <c>Skip</c>. If you want the
             exception to be thrown, set <c>ZipErrorAction</c> on the <c>CurrentEntry</c>
-            to <c>Throw</c>.  If you want to cancel the zip, set
+            to <c>Throw</c>. If you want to cancel the zip, set
             <c>ZipProgressEventArgs.Cancel</c> to true.  Cancelling differs from using
             Skip in that a cancel will not save any further entries, if there are any.
             (For COM clients, the value of this enum is a 3.)
@@ -14979,7 +14979,7 @@
                streams, and it can lead to correctness problems when you use a
                <c>WriteDelegate</c>. This is a pretty big pitfall.  There are two
                ways to avoid it.  First, and most preferred: don't use PKZIP
-               encryption.  If you use the WinZip AES encryption, this problem
+               encryption. If you use the WinZip AES encryption, this problem
                doesn't occur, because the encryption protocol doesn't require the CRC
                up front. Second: if you do choose to use PKZIP encryption, write out
                to a non-seekable stream (like standard output, or the
@@ -14992,7 +14992,7 @@
              <para>
                In the future I may modify DotNetZip to *always* use bit 3 when PKZIP
                encryption is in use.  This seems like a win overall, but there will
-               be some work involved.  If you feel strongly about it, visit the
+               be some work involved. If you feel strongly about it, visit the
                DotNetZip forums and vote up <see href="http://dotnetzip.codeplex.com/workitem/13686">the Workitem
                tracking this issue</see>.
              </para>
@@ -16258,7 +16258,7 @@
             
              <para>
                The action to take when an extract would overwrite an existing file
-               applies to all entries.  If you want to set this on a per-entry basis,
+               applies to all entries. If you want to set this on a per-entry basis,
                then you must use one of the <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.Extract">ZipEntry.Extract</see> methods.
              </para>
             
@@ -16305,7 +16305,7 @@
                This compensation is performed only within the context of an
                <c>ExtractAll</c>. If you call <c>ZipEntry.Extract</c> on a directory
                entry, the timestamps on directory in the filesystem will reflect the
-               times stored in the zip.  If you then call <c>ZipEntry.Extract</c> on
+               times stored in the zip. If you then call <c>ZipEntry.Extract</c> on
                a file entry, which is extracted into the directory, the timestamps on
                the directory will be updated to the current time.
              </para>
@@ -16361,7 +16361,7 @@
             
              <para>
              The action to take when an extract would overwrite an existing file
-             applies to all entries.  If you want to set this on a per-entry basis,
+             applies to all entries. If you want to set this on a per-entry basis,
              then you must use <see cref="M:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.Extract(System.String,OfficeOpenXml.Packaging.Ionic.Zip.ExtractExistingFileAction)"/> or one of the similar methods.
              </para>
             
@@ -16830,7 +16830,7 @@
             
              <para>
                If <paramref name="testExtract"/> is true, and if any of the zip entries
-               are protected with a password, this method will return false.  If you want
+               are protected with a password, this method will return false. If you want
                to verify a <c>ZipFile</c> that has entries which are protected with a
                password, you will need to do that manually.
              </para>
@@ -16868,7 +16868,7 @@
             
              <para>
              If <c>testExtract</c> is true, and if any of the zip entries are protected
-             with a password, this method will return false.  If you want to verify a
+             with a password, this method will return false. If you want to verify a
              ZipFile that has entries which are protected with a password, you will need
              to do that manually.
              </para>
@@ -17155,7 +17155,7 @@
             
              <para>
              When a user runs the WinForms SFX, the user's personal directory (<see cref="F:System.Environment.SpecialFolder.Personal">Environment.SpecialFolder.Personal</see>)
-             will be used as the default extract location.  If you want to set the
+             will be used as the default extract location. If you want to set the
              default extract location, you should use the other overload of
              <c>SaveSelfExtractor()</c>/ The user who runs the SFX will have the
              opportunity to change the extract directory before extracting. When
@@ -17305,7 +17305,7 @@
             
              <para>
              To specify a time, use YYYY-MM-DD-HH:mm:ss or YYYY/MM/DD-HH:mm:ss as the
-             format.  If you omit the HH:mm:ss portion, it is assumed to be 00:00:00
+             format. If you omit the HH:mm:ss portion, it is assumed to be 00:00:00
              (midnight).
              </para>
             
@@ -17443,7 +17443,7 @@
              <para>
                Using this method, the file selection does not recurse into
                subdirectories, and the full path of the selected files is included in the
-               entries added into the zip archive.  If you don't like these behaviors,
+               entries added into the zip archive. If you don't like these behaviors,
                see the other overloads of this method.
              </para>
              </remarks>
@@ -17486,7 +17486,7 @@
             
              <para>
                Using this method, the full path of the selected files is included in the
-               entries added into the zip archive.  If you don't want this behavior, use
+               entries added into the zip archive. If you don't want this behavior, use
                one of the overloads of this method that allows the specification of a
                <c>directoryInArchive</c>.
              </para>
@@ -17540,7 +17540,7 @@
             
              <para>
                Using this method, the full filesystem path of the files on disk is
-               reproduced on the entries added to the zip file.  If you don't want this
+               reproduced on the entries added to the zip file. If you don't want this
                behavior, use one of the other overloads of this method.
              </para>
             
@@ -17596,7 +17596,7 @@
             
              <para>
                The full directory structure in the filesystem is reproduced on the
-               entries added to the zip archive.  If you don't want this behavior, use
+               entries added to the zip archive. If you don't want this behavior, use
                one of the overloads of this method that allows the specification of a
                <c>directoryInArchive</c>.
              </para>
@@ -18416,7 +18416,7 @@
              </summary>
             
              <remarks>
-               The default is false.  If you have a large number of zip entries, the sort
+               The default is false. If you have a large number of zip entries, the sort
                alone can consume significant time.
              </remarks>
             
@@ -18647,7 +18647,7 @@
                 compression speed.  In some tests, using <c>BestCompression</c> can
                 double the time it takes to compress, while delivering just a small
                 increase in compression efficiency.  This behavior will vary with the
-                type of data you compress.  If you are in doubt, just leave this setting
+                type of data you compress. If you are in doubt, just leave this setting
                 alone, and accept the default.
               </para>
              </remarks>
@@ -18780,7 +18780,7 @@
             
              <para>
                When in doubt, test.  Sorry, I haven't got a complete list of tools and
-               which sort of timestamps they can use and will tolerate.  If you get any
+               which sort of timestamps they can use and will tolerate. If you get any
                good information and would like to pass it on, please do so and I will
                include that information in this documentation.
              </para>
@@ -18877,7 +18877,7 @@
             
              <para>
                When in doubt, test.  Sorry, I haven't got a complete list of tools and
-               which sort of timestamps they can use and will tolerate.  If you get any
+               which sort of timestamps they can use and will tolerate. If you get any
                good information and would like to pass it on, please do so and I will
                include that information in this documentation.
              </para>
@@ -18969,7 +18969,7 @@
             
              <para>
                The DotNetZip library can read and write zip files with UTF8-encoded
-               entries, according to the PKware spec.  If you use DotNetZip for both
+               entries, according to the PKware spec. If you use DotNetZip for both
                creating and reading the zip file, and you use UTF-8, there will be no
                loss of information in the filenames. For example, using a self-extractor
                created by this library will allow you to unpack files correctly with no
@@ -19227,7 +19227,7 @@
                depending on the tool or library you use to read the zip.  In DotNetZip,
                you use a ZipFile.Read() method that accepts an encoding parameter.  It
                isn't possible with Windows Explorer, as far as I know, to specify an
-               explicit codepage to use when reading a zip.  If you use an incorrect
+               explicit codepage to use when reading a zip. If you use an incorrect
                codepage when reading a zipfile, you will get entries with filenames that
                are incorrect, and the incorrect filenames may even contain characters
                that are not legal for use within filenames in Windows. Extracting entries
@@ -19238,7 +19238,7 @@
             
              <para>
                Example: Suppose you create a zipfile that contains entries with
-               filenames that have Danish characters.  If you use <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.ProvisionalAlternateEncoding"/> equal to "iso-8859-1" (cp 28591),
+               filenames that have Danish characters. If you use <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.ProvisionalAlternateEncoding"/> equal to "iso-8859-1" (cp 28591),
                the filenames will be correctly encoded in the zip.  But, to read that
                zipfile correctly, you have to specify the same codepage at the time you
                read it. If try to read that zip file with Windows Explorer or another
@@ -19465,7 +19465,7 @@
                When writing a zip archive, keep this in mind: though the password is set
                on the ZipFile object, according to the Zip spec, the "directory" of the
                archive - in other words the list of entries or files contained in the archive - is
-               not encrypted with the password, or protected in any way.  If you set the
+               not encrypted with the password, or protected in any way. If you set the
                Password property, the password actually applies to individual entries
                that are added to the archive, subsequent to the setting of this property.
                The list of filenames in the archive that is eventually created will
@@ -19476,7 +19476,7 @@
              <para>
                One simple way around this limitation is to simply double-wrap sensitive
                filenames: Store the files in a zip file, and then store that zip file
-               within a second, "outer" zip file.  If you apply a password to the outer
+               within a second, "outer" zip file. If you apply a password to the outer
                zip file, then readers will be able to see that the outer zip file
                contains an inner zip file.  But readers will not be able to read the
                directory or file list of the inner zip file.
@@ -19488,14 +19488,14 @@
                also want to change the password between adding different entries. If you
                set the password, add an entry, then set the password to <c>null</c>
                (<c>Nothing</c> in VB), and add another entry, the first entry is
-               encrypted and the second is not.  If you call <c>AddFile()</c>, then set
+               encrypted and the second is not. If you call <c>AddFile()</c>, then set
                the <c>Password</c> property, then call <c>ZipFile.Save</c>, the file
                added will not be password-protected, and no warning will be generated.
              </para>
             
              <para>
                When setting the Password, you may also want to explicitly set the <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.Encryption"/> property, to specify how to encrypt the entries added
-               to the ZipFile.  If you set the Password to a non-null value and do not
+               to the ZipFile. If you set the Password to a non-null value and do not
                set <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.Encryption"/>, then PKZip 2.0 ("Weak") encryption is used.
                This encryption is relatively weak but is very interoperable. If you set
                the password to a <c>null</c> value (<c>Nothing</c> in VB), Encryption is
@@ -19639,7 +19639,7 @@
             
               <para>
                 This property is implicitly set to <c>ZipErrorAction.InvokeErrorEvent</c>
-                if you add a handler to the <see cref="E:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.ZipError"/> event.  If you set
+                if you add a handler to the <see cref="E:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.ZipError"/> event. If you set
                 this property to something other than
                 <c>ZipErrorAction.InvokeErrorEvent</c>, then the <c>ZipError</c>
                 event is implicitly cleared.  What it means is you can set one or the
@@ -19944,7 +19944,7 @@
             </summary>
             <remarks>
               <para>
-                This is normally zero, unless you have set the <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.MaxOutputSegmentSize"/> property.  If you have set <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.MaxOutputSegmentSize"/>, and then you save a file, after the call to
+                This is normally zero, unless you have set the <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.MaxOutputSegmentSize"/> property. If you have set <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipFile.MaxOutputSegmentSize"/>, and then you save a file, after the call to
                 Save() completes, you can read this value to learn the number of segments that
                 were created.
               </para>
@@ -20053,7 +20053,7 @@
                pairs per CPU core, so if your machine has 4 cores, and you retain
                the default buffer size of 128k, then the
                ParallelDeflateOutputStream will use 4 * 4 * 2 * 128kb of buffer
-               memory in total, or 4mb, in blocks of 128kb.  If you then set this
+               memory in total, or 4mb, in blocks of 128kb. If you then set this
                property to 8, then the number will be 8 * 2 * 128kb of buffer
                memory, or 2mb.
              </para>
@@ -20236,7 +20236,7 @@
             
              <remarks>
                According to the ZIP specification, the names of the entries use forward
-               slashes in pathnames.  If you are scanning through the list, you may have
+               slashes in pathnames. If you are scanning through the list, you may have
                to swap forward slashes for backslashes.
              </remarks>
             
@@ -20297,7 +20297,7 @@
                the elements are returned in no particular order.
              </para>
              <para>
-               This is the implied enumerator on the <c>ZipFile</c> class.  If you use a
+               This is the implied enumerator on the <c>ZipFile</c> class. If you use a
                <c>ZipFile</c> instance in a context that expects an enumerator, you will
                get this collection.
              </para>
@@ -21129,8 +21129,8 @@
               <para>
                  Errors can occur as a file is being saved to the zip archive.  For
                  example, the File.Open may fail, or a File.Read may fail, because of
-                 lock conflicts or other reasons.  If you add a handler to this event,
-                 you can handle such errors in your own code.  If you don't add a
+                 lock conflicts or other reasons. If you add a handler to this event,
+                 you can handle such errors in your own code. If you don't add a
                  handler, the library will throw an exception if it encounters an I/O
                  error during a call to <c>Save()</c>.
               </para>
@@ -21580,7 +21580,7 @@
              <remarks>
              <para>
                Normally, DotNetZip will embed an "zipped folder" icon into the generated
-               SFX.  If you prefer to use a different icon, you can specify it here. It
+               SFX. If you prefer to use a different icon, you can specify it here. It
                should be a .ico file.  This file is passed as the <c>/win32icon</c>
                option to the csc.exe compiler when constructing the SFX file.
              </para>
@@ -21612,7 +21612,7 @@
                  window to appear briefly, before it disappears. If you run the
                  ConsoleApplication SFX from the cmd.exe prompt, it runs as a
                  normal console app; by default, because it is quiet, it displays
-                 no messages to the console.  If you pass the -v+ command line
+                 no messages to the console. If you pass the -v+ command line
                  argument to the Console SFX when you run it, you will get verbose
                  messages to the console. </para>
                </description>
@@ -21714,7 +21714,7 @@
             
              <remarks>
                You can use any arbitrary string, but a human-readable version number is
-               recommended. For example "v1.2 alpha" or "v4.2 RC2".  If you specify nothing,
+               recommended. For example "v1.2 alpha" or "v4.2 RC2". If you specify nothing,
                then there is no product version embedded into the EXE.
              </remarks>
             
@@ -21738,7 +21738,7 @@
             
              <remarks>
                Use any arbitrary string.  This text will be displayed during a
-               mouseover in Windows Explorer.  If you specify nothing, then the string
+               mouseover in Windows Explorer. If you specify nothing, then the string
                "DotNetZip SFX Archive" is embedded into the EXE as the description.
              </remarks>
             
@@ -22115,7 +22115,7 @@
             
              <para>
                Each time you call <c>GetNextEntry()</c>, the pointer in the wrapped
-               stream is moved to the next entry in the zip file.  If you call <see cref="M:Ionic.Zip.ZipInputStream.Seek(System.Int64,System.IO.SeekOrigin)"/>, and thus re-position the pointer within
+               stream is moved to the next entry in the zip file. If you call <see cref="M:Ionic.Zip.ZipInputStream.Seek(System.Int64,System.IO.SeekOrigin)"/>, and thus re-position the pointer within
                the file, you will need to call <c>GetNextEntry()</c> again, to insure
                that the file pointer is positioned at the beginning of a zip entry.
              </para>
@@ -22253,7 +22253,7 @@
                entries. Readers of zip files are not able to inspect the zip file and
                determine the codepage that was used for the entries contained within it.
                It is left to the application or user to determine the necessary codepage
-               when reading zip files encoded this way.  If you use an incorrect codepage
+               when reading zip files encoded this way. If you use an incorrect codepage
                when reading a zipfile, you will get entries with filenames that are
                incorrect, and the incorrect filenames may even contain characters that
                are not legal for use within filenames in Windows. Extracting entries with
@@ -22713,7 +22713,7 @@
                This method returns the <c>ZipEntry</c>.  You can modify public properties
                on the <c>ZipEntry</c>, such as <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.Encryption"/>, <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipEntry.Password"/>, and so on, until the first call to
                <c>ZipOutputStream.Write()</c>, or until the next call to
-               <c>PutNextEntry()</c>.  If you modify the <c>ZipEntry</c> <em>after</em>
+               <c>PutNextEntry()</c>. If you modify the <c>ZipEntry</c> <em>after</em>
                having called <c>Write()</c>, you may get a runtime exception, or you may
                silently get an invalid zip archive.
              </para>
@@ -22820,7 +22820,7 @@
             
              <para>
                Using a password does not encrypt or protect the "directory" of the
-               archive - the list of entries contained in the archive.  If you set the
+               archive - the list of entries contained in the archive. If you set the
                <c>Password</c> property, the password actually applies to individual
                entries that are added to the archive, subsequent to the setting of this
                property.  The list of filenames in the archive that is eventually created
@@ -22839,7 +22839,7 @@
             
              <para>
                When setting the <c>Password</c>, you may also want to explicitly set the <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipOutputStream.Encryption"/> property, to specify how to encrypt the entries added
-               to the ZipFile.  If you set the <c>Password</c> to a non-null value and do not
+               to the ZipFile. If you set the <c>Password</c> to a non-null value and do not
                set <see cref="P:OfficeOpenXml.Packaging.Ionic.Zip.ZipOutputStream.Encryption"/>, then PKZip 2.0 ("Weak") encryption is used.
                This encryption is relatively weak but is very interoperable. If
                you set the password to a <c>null</c> value (<c>Nothing</c> in VB),
@@ -22939,7 +22939,7 @@
                 compression speed.  In some tests, using <c>BestCompression</c> can
                 double the time it takes to compress, while delivering just a small
                 increase in compression efficiency.  This behavior will vary with the
-                type of data you compress.  If you are in doubt, just leave this setting
+                type of data you compress. If you are in doubt, just leave this setting
                 alone, and accept the default.
               </para>
              </remarks>
@@ -23092,7 +23092,7 @@
             
              <para>
                The DotNetZip library can read and write zip files with UTF8-encoded
-               entries, according to the PKware spec.  If you use DotNetZip for both
+               entries, according to the PKware spec. If you use DotNetZip for both
                creating and reading the zip file, and you use UTF-8, there will be no
                loss of information in the filenames. For example, using a self-extractor
                created by this library will allow you to unpack files correctly with no
@@ -23211,7 +23211,7 @@
                are not able to inspect the zip file and determine the codepage that was
                used for the entries contained within it.  It is left to the application
                or user to determine the necessary codepage when reading zip files encoded
-               this way.  If you use an incorrect codepage when reading a zipfile, you
+               this way. If you use an incorrect codepage when reading a zipfile, you
                will get entries with filenames that are incorrect, and the incorrect
                filenames may even contain characters that are not legal for use within
                filenames in Windows. Extracting entries with illegal characters in the
@@ -23357,7 +23357,7 @@
                pairs per CPU core, so if your machine has 4 cores, and you retain
                the default buffer size of 128k, then the
                ParallelDeflateOutputStream will use 4 * 4 * 2 * 128kb of buffer
-               memory in total, or 4mb, in blocks of 128kb.  If you then set this
+               memory in total, or 4mb, in blocks of 128kb. If you then set this
                property to 8, then the number will be 8 * 2 * 128kb of buffer
                memory, or 2mb.
              </para>
@@ -23774,7 +23774,7 @@
                reading, you can create a <c>DeflateStream</c> with
                <c>CompressionMode.Compress</c>, providing an uncompressed data stream.
                Then call Read() on that <c>DeflateStream</c>, and the data read will be
-               compressed as you read.  If you wish to use the <c>DeflateStream</c> to
+               compressed as you read. If you wish to use the <c>DeflateStream</c> to
                decompress data while reading, you can create a <c>DeflateStream</c> with
                <c>CompressionMode.Decompress</c>, providing a readable compressed data
                stream.  Then call Read() on that <c>DeflateStream</c>, and the data read
@@ -23817,7 +23817,7 @@
                <c>CompressionMode.Compress</c>, and a writable output stream.  Then call
                <c>Write()</c> on that <c>DeflateStream</c>, providing uncompressed data
                as input.  The data sent to the output stream will be the compressed form
-               of the data written.  If you wish to use the <c>DeflateStream</c> to
+               of the data written. If you wish to use the <c>DeflateStream</c> to
                decompress data while writing, you can create a <c>DeflateStream</c> with
                <c>CompressionMode.Decompress</c>, and a writable output stream.  Then
                call <c>Write()</c> on that stream, providing previously compressed
@@ -24019,7 +24019,7 @@
              <para>
                If you wish to use the <c>GZipStream</c> to compress data, you must wrap it
                around a write-able stream. As you call <c>Write()</c> on the <c>GZipStream</c>, the
-               data will be compressed into the GZIP format.  If you want to decompress data,
+               data will be compressed into the GZIP format. If you want to decompress data,
                you must wrap the <c>GZipStream</c> around a readable stream that contains an
                IETF RFC 1952-compliant stream.  The data will be decompressed as you call
                <c>Read()</c> on the <c>GZipStream</c>.
@@ -25001,7 +25001,7 @@
                pairs per CPU core, so if your machine has 4 cores, and you retain
                the default buffer size of 128k, then the
                ParallelDeflateOutputStream will use 4 * 4 * 2 * 128kb of buffer
-               memory in total, or 4mb, in blocks of 128kb.  If you then set this
+               memory in total, or 4mb, in blocks of 128kb. If you then set this
                property to 8, then the number will be 8 * 2 * 128kb of buffer
                memory, or 2mb.
              </para>
@@ -25070,7 +25070,7 @@
                cores, then the number of buffer pairs used will be 16. If you
                accept the default value of this property, 128k, then the
                ParallelDeflateOutputStream will use 16 * 2 * 128kb of buffer memory
-               in total, or 4mb, in blocks of 128kb.  If you set this property to
+               in total, or 4mb, in blocks of 128kb. If you set this property to
                64kb, then the number will be 16 * 2 * 64kb of buffer memory, or
                2mb.
              </para>
@@ -25509,7 +25509,7 @@
              By default, the ZLIB header defined in <see
              href="http://www.ietf.org/rfc/rfc1950.txt">RFC 1950</see> is expected.  If
              you want to read a zlib stream you should specify true for
-             expectRfc1950Header.  If you have a deflate stream, you will want to specify
+             expectRfc1950Header. If you have a deflate stream, you will want to specify
              false. It is only necessary to invoke this initializer explicitly if you
              want to specify false.
              </remarks>
@@ -25537,7 +25537,7 @@
              If you want to read a zlib stream you should specify true for
              expectRfc1950Header. In this case, the library will expect to find a ZLIB
              header, as defined in <see href="http://www.ietf.org/rfc/rfc1950.txt">RFC
-             1950</see>, in the compressed stream.  If you will be reading a DEFLATE or
+             1950</see>, in the compressed stream. If you will be reading a DEFLATE or
              GZIP stream, which does not have such a header, you will want to specify
              false.
              </remarks>
@@ -25708,7 +25708,7 @@
             The codec will use the specified number of window bits and the specified CompressionLevel.
             </remarks>
             <param name="level">The compression level for the codec.</param>
-            <param name="bits">the number of window bits to use.  If you don't know what this means, don't use this method.</param>
+            <param name="bits">the number of window bits to use. If you don't know what this means, don't use this method.</param>
             <returns>Z_OK if all goes well.</returns>
         </member>
         <member name="M:OfficeOpenXml.Packaging.Ionic.Zlib.ZlibCodec.InitializeDeflate(OfficeOpenXml.Packaging.Ionic.Zlib.CompressionLevel,System.Int32,System.Boolean)">
@@ -25720,7 +25720,7 @@
             
              <param name="level">The compression level for the codec.</param>
              <param name="wantRfc1950Header">whether to emit an initial RFC1950 byte pair in the compressed stream.</param>
-             <param name="bits">the number of window bits to use.  If you don't know what this means, don't use this method.</param>
+             <param name="bits">the number of window bits to use. If you don't know what this means, don't use this method.</param>
              <returns>Z_OK if all goes well.</returns>
         </member>
         <member name="M:OfficeOpenXml.Packaging.Ionic.Zlib.ZlibCodec.Deflate(OfficeOpenXml.Packaging.Ionic.Zlib.FlushType)">
@@ -26198,7 +26198,7 @@
                If you wish to use the <c>ZlibStream</c> to compress data while reading,
                you can create a <c>ZlibStream</c> with <c>CompressionMode.Compress</c>,
                providing an uncompressed data stream.  Then call <c>Read()</c> on that
-               <c>ZlibStream</c>, and the data read will be compressed.  If you wish to
+               <c>ZlibStream</c>, and the data read will be compressed. If you wish to
                use the <c>ZlibStream</c> to decompress data while reading, you can create
                a <c>ZlibStream</c> with <c>CompressionMode.Decompress</c>, providing a
                readable compressed data stream.  Then call <c>Read()</c> on that
@@ -26258,7 +26258,7 @@
                you can create a <c>ZlibStream</c> with <c>CompressionMode.Compress</c>,
                and a writable output stream.  Then call <c>Write()</c> on that
                <c>ZlibStream</c>, providing uncompressed data as input.  The data sent to
-               the output stream will be the compressed form of the data written.  If you
+               the output stream will be the compressed form of the data written. If you
                wish to use the <c>ZlibStream</c> to decompress data while writing, you
                can create a <c>ZlibStream</c> with <c>CompressionMode.Decompress</c>, and a
                writable output stream.  Then call <c>Write()</c> on that stream,
